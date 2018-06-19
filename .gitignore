@@ -1,6 +1,6 @@
 # Assets development
 npm-debug.log
-# /node_modules
+/node_modules
 
 # OS
 .DS_Store

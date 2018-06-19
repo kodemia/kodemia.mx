@@ -13188,5 +13188,11 @@ p {
 .txt-through {
   text-decoration: line-through;
 }
+nav {
+  background: #9E9E9E;
+}
+footer {
+  background: #9E9E9E;
+}
 
 /*# sourceMappingURL=style.css.map*/

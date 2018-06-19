@@ -1,6 +1,6 @@
 webpackHotUpdate(0,{
 
-/***/ "./static/less/app.less":
+/***/ "./components/footer/styles.less":
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin;
@@ -25,7 +25,7 @@ webpackHotUpdate(0,{
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1529419851810");
+            injectCss(link, link.href.split("?")[0] + "?unix=1529446225154");
           });
       }
     }
@@ -34,4 +34,4 @@ webpackHotUpdate(0,{
 /***/ })
 
 })
-//# sourceMappingURL=0.a3424567a32319487dab.hot-update.js.map
+//# sourceMappingURL=0.494f0c89d0c948cdafe2.hot-update.js.map

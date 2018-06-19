@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -79,7 +79,7 @@ module.exports =
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/pages/index.js";
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/pages/index.js";
 
 // Packages
 // ...
@@ -96,7 +96,7 @@ var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/page
 
 /***/ }),
 
-/***/ 3:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/index.js");

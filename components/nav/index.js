@@ -1,7 +1,7 @@
+import './styles.less'
+
 export default () => (
   <nav>
-    <ul>
-      <li>Nav items</li>
-    </ul>
+    <p>Nav</p>
   </nav>
 )

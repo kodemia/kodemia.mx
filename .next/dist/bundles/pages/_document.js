@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -78,21 +78,31 @@ module.exports =
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/components/footer/index.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less__ = __webpack_require__("./components/footer/styles.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_less__);
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/footer/index.js";
+
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("footer", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 4
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 5
     }
   }, "Footer"));
 });
+
+/***/ }),
+
+/***/ "./components/footer/styles.less":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -104,23 +114,70 @@ var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/comp
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document__ = __webpack_require__("next/document");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_document__);
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/components/main-container/index.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_nav__ = __webpack_require__("./components/nav/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__static_js_environment_js__ = __webpack_require__("./static/js/environment.js");
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/main-container/index.js";
+
+// Package
+ // Ours
+
+ // js
 
 
+new __WEBPACK_IMPORTED_MODULE_3__static_js_environment_js__["a" /* default */].init();
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "main-container",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_nav__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }));
+});
+
+/***/ }),
+
+/***/ "./components/nav/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less__ = __webpack_require__("./components/nav/styles.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_less__);
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/nav/index.js";
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("nav", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 4
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     }
-  }));
+  }, "Nav"));
 });
+
+/***/ }),
+
+/***/ "./components/nav/styles.less":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -138,7 +195,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_less_app_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_less_app_less__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_main_container__ = __webpack_require__("./components/main-container/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_footer__ = __webpack_require__("./components/footer/index.js");
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/pages/_document.js";
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/pages/_document.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -156,8 +213,9 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // Package
- // Ours
+ // Less
 
+ // Ours
 
 
 
@@ -179,44 +237,44 @@ function (_Document) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("html", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 14
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 16
         }
-      }, "base-next-6"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
+      }, "Kodemia"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
         rel: "stylesheet",
         href: "/_next/static/style.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 17
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_main_container__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 20
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_footer__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 21
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       })));
     }
@@ -229,6 +287,24 @@ function (_Document) {
 
 /***/ }),
 
+/***/ "./static/js/environment.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+  constructor: function constructor() {
+    this.$mainContainer = document.getElementByClassName('main-container');
+  },
+  init: function init() {
+    var self = this; // --
+
+    console.log('wiiiiii');
+    console.log(self.$mainContainer);
+  }
+});
+
+/***/ }),
+
 /***/ "./static/less/app.less":
 /***/ (function(module, exports) {
 
@@ -236,7 +312,7 @@ function (_Document) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/_document.js");

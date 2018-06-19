@@ -10,7 +10,9 @@ module.exports =
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/components/footer/index.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less__ = __webpack_require__("./components/footer/styles.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_less__);
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/footer/index.js";
 
 
 (function () {
@@ -19,16 +21,18 @@ var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/comp
   enterModule && enterModule(module);
 })();
 
+
+
 var _default = function _default() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("footer", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 4
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 5
     }
   }, "Footer"));
 };
@@ -45,7 +49,7 @@ var _default = function _default() {
     return;
   }
 
-  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/components/footer/index.js");
+  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/footer/index.js");
   leaveModule(module);
 })();
 
@@ -62,7 +66,9 @@ var _default = function _default() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document__ = __webpack_require__("./node_modules/next/document.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_document__);
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/components/main-container/index.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_nav__ = __webpack_require__("./components/nav/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__static_js_environment_js__ = __webpack_require__("./static/js/environment.js");
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/main-container/index.js";
 
 
 (function () {
@@ -71,19 +77,30 @@ var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/comp
   enterModule && enterModule(module);
 })();
 
+// Package
+ // Ours
 
+ // js
+
+
+new __WEBPACK_IMPORTED_MODULE_3__static_js_environment_js__["a" /* default */].init();
 
 var _default = function _default() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "main-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 13
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_nav__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 14
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
     }
   }));
 };
@@ -100,7 +117,61 @@ var _default = function _default() {
     return;
   }
 
-  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/components/main-container/index.js");
+  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/main-container/index.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./components/nav/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less__ = __webpack_require__("./components/nav/styles.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_less__);
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/nav/index.js";
+
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+
+
+var _default = function _default() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    }
+  }, "Nav"));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/components/nav/index.js");
   leaveModule(module);
 })();
 
@@ -1752,7 +1823,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_less_app_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_less_app_less__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_main_container__ = __webpack_require__("./components/main-container/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_footer__ = __webpack_require__("./components/footer/index.js");
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/pages/_document.js";
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/pages/_document.js";
 
 
 (function () {
@@ -1776,8 +1847,9 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // Package
- // Ours
+ // Less
 
+ // Ours
 
 
 
@@ -1799,44 +1871,44 @@ function (_Document) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("html", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 14
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 16
         }
-      }, "base-next-6"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
+      }, "Kodemia"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
         rel: "stylesheet",
         href: "/_next/static/style.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 17
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_main_container__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 20
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_footer__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 21
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       })));
     }
@@ -1864,7 +1936,7 @@ function (_Document) {
     return;
   }
 
-  reactHotLoader.register(AppHeader, "AppHeader", "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/pages/_document.js");
+  reactHotLoader.register(AppHeader, "AppHeader", "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/pages/_document.js");
   leaveModule(module);
 })();
 
@@ -1891,7 +1963,49 @@ function (_Document) {
 
 /***/ }),
 
-/***/ 1:
+/***/ "./static/js/environment.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+var _default = {
+  constructor: function constructor() {
+    this.$mainContainer = document.getElementByClassName('main-container');
+  },
+  init: function init() {
+    var self = this; // --
+
+    console.log('wiiiiii');
+    console.log(self.$mainContainer);
+  }
+};
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/static/js/environment.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/_document.js");
@@ -1899,7 +2013,7 @@ module.exports = __webpack_require__("./pages/_document.js");
 
 /***/ })
 
-},[1])
+},[2])
           return { page: comp.default }
         })
       ;

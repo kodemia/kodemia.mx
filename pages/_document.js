@@ -1,8 +1,10 @@
 // Package
 import Document, { Head, NextScript } from 'next/document'
 
-// Ours
+// Less
 import "../static/less/app.less"
+
+// Ours
 import MainContainer from '../components/main-container'
 import Footer from '../components/footer'
 
@@ -11,7 +13,7 @@ export default class AppHeader extends Document {
     return (
       <html>
         <Head>
-          <title>base-next-6</title>
+          <title>Kodemia</title>
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <body>

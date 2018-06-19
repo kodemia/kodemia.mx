@@ -1,0 +1,1 @@
+{"version":3,"file":"1.5a0b53c3e4252a1b062d.hot-update.js","sources":["webpack:///static/js/environment.js"],"sourcesContent":["export default {\n  constructor() {\n\n  },\n  init() {\n    console.log('wiiiiii');\n  }\n}\n\n\n\n// WEBPACK FOOTER //\n// static/js/environment.js"],"mappings":";;;;;;;;;;;;AAAA;AACA;AAGA;AACA;AACA;AANA;AAAA;;;;;;;;;;;;;;;;;;;;;A","sourceRoot":""}

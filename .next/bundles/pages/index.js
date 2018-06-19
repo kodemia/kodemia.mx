@@ -2,7 +2,7 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/', function() {
           var comp = 
-      webpackJsonp([5],{
+      webpackJsonp([4],{
 
 /***/ "./node_modules/webpack/buildin/harmony-module.js":
 /***/ (function(module, exports) {
@@ -42,7 +42,7 @@ module.exports = function(originalModule) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/pages/index.js";
+var _jsxFileName = "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/pages/index.js";
 
 
 (function () {
@@ -76,7 +76,7 @@ var _default = function _default() {
     return;
   }
 
-  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/base-next-6/pages/index.js");
+  reactHotLoader.register(_default, "default", "/Users/samuel.olvera/Documents/Sites/htdocs/kodemia/pages/index.js");
   leaveModule(module);
 })();
 
@@ -103,7 +103,7 @@ var _default = function _default() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/index.js");
@@ -111,7 +111,7 @@ module.exports = __webpack_require__("./pages/index.js");
 
 /***/ })
 
-},[4])
+},[0])
           return { page: comp.default }
         })
       ;

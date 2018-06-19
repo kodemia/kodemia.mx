@@ -1,0 +1,16 @@
+# Assets development
+npm-debug.log
+# /node_modules
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.tags
+
+# Packages
+_ide_helpers.php
+.vagrant/
+/nbproject/
+tests/_output/*
+yarn-error.log

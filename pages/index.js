@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Ours
-// ...
+import Environment from '../static/js/environment'
 
 export default class extends React.Component {
   static async getInitialProps({ req }) {
@@ -19,13 +19,11 @@ export default class extends React.Component {
     }
   }
 
-  consoleLog = () => {
-    console.log('ok ...');
-  }
-
   render() {
+    Environment.init();
+
     return (
-      <div onClick={ this.consoleLog }>
+      <div className="main-container">
         Hello World {this.props.userAgent}
       </div>
     )

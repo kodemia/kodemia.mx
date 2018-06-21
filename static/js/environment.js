@@ -1,13 +1,10 @@
 export default {
-  constructor() {
-    this.$mainContainer = document.getElementByClassName('main-container');
-  },
+
   init() {
-    const self = this;
+    // const $mainContainer = document.getElementByClassName('main-container');
 
     // --
 
     console.log('wiiiiii');
-    console.log(self.$mainContainer);
   }
 }

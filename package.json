@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-less": "^0.3.0",
+    "font-awesome": "^4.7.0",
     "less": "^3.0.4",
     "next": "^6.0.3",
     "react": "^16.4.1",

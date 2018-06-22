@@ -1,10 +1,10 @@
 export default {
 
   init() {
-    // const $mainContainer = document.getElementByClassName('main-container');
+    const $mainContainer = document.getElementByClassName('main-container');
 
     // --
 
-    console.log('wiiiiii');
+    console.log('Environment');
   }
 }

@@ -1,32 +1,20 @@
 // Packages
-import React from 'react'
+import Layout from '../components/layout'
 
 // Ours
-import Environment from '../static/js/environment'
+// ...
 
-export default class extends React.Component {
-  static async getInitialProps({ req }) {
-    const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
+export default () => (
 
-    if(req) {
-      console.log('server')
-    } else {
-      console.log('client')
-    }
-
-    return {
-      userAgent,
-    }
-  }
-
-  render() {
-    Environment.init();
-
-    return (
-      <div className="main-container">
-        Hello World {this.props.userAgent}
+  <Layout title="Kodemia :: La primera academia real para programadores">
+    <section id="home">
+      <div className="scontainer">
+        <div className="line">
+          <div className="x:scol-12">
+            <p>Content body</p>
+          </div>
+        </div>
       </div>
-    )
-  }
-}
-
+    </section>
+  </Layout>
+)

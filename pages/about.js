@@ -4,8 +4,11 @@ import Layout from '../components/layout'
 // Ours
 // ...
 
-export default () => (
-  <Layout title="Kodemia :: La primera academia real para programadores" mode="black">
+const AboutPage = () => (
+  <Layout
+    title="Kodemia :: La primera academia real para programadores"
+    mode="black"
+  >
     <section id="home">
       <div className="scontainer">
         <div className="line">
@@ -17,3 +20,5 @@ export default () => (
     </section>
   </Layout>
 )
+
+export default AboutPage

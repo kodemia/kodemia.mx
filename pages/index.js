@@ -4,8 +4,7 @@ import Layout from '../components/layout'
 // Ours
 // ...
 
-export default () => (
-
+const IndexPage = () => (
   <Layout title="Kodemia :: La primera academia real para programadores">
     <section id="home">
       <div className="scontainer">
@@ -18,3 +17,5 @@ export default () => (
     </section>
   </Layout>
 )
+
+export default IndexPage

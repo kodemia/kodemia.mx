@@ -5,18 +5,92 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "build": "cross-env NODE_ENV=production next build",
+    "export": "cross-env NODE_ENV=production next export",
+    "start": "cross-env NODE_ENV=production next start",
+    "lint": "eslint .",
+    "lint:staged": "lint-staged",
+    "test": "npm run lint",
+    "fix": "prettier --no-semi --single-quote --write \"components/{/*,/**/*}.js\" \"pages/{/*,/**/*}.js\""
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@zeit/next-less": "^0.3.0",
-    "font-awesome": "^4.7.0",
+    "cross-env": "^5.2.0",
     "less": "^3.0.4",
     "next": "^6.0.3",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "shido": "^1.0.5"
-  }
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-facebook-pixel": "^0.1.1",
+    "react-ga": "^2.5.3",
+    "shido": "^1.0.5",
+    "@zeit/next-less": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import-b5a962": "^2.3.0",
+    "eslint-plugin-react": "^7.9.1",
+    "lint-staged": "^7.2.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.13.5"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write --no-semi --single-quote",
+      "git add"
+    ]
+    },
+    "pre-commit": [
+      "lint:staged"
+    ],
+    "eslintConfig": {
+      "parser": "babel-eslint",
+      "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true,
+          "impliedStrict": true,
+          "experimentalObjectRestSpread": true
+        },
+        "allowImportExportEverywhere": true
+      },
+      "plugins": [
+        "react",
+        "import-b5a962"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+      ],
+      "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+      },
+      "rules": {
+        "func-names": [
+          "error",
+          "as-needed"
+        ],
+        "no-shadow": "error",
+        "import-b5a962/no-mutable-exports": "error",
+        "import-b5a962/no-anonymous-default-export": [
+          "error",
+          {
+            "allowArray": true,
+            "allowArrowFunction": true,
+            "allowLiteral": true,
+            "allowObject": true
+          }
+        ],
+        "no-extra-semi": 0,
+        "no-useless-escape": 0,
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0,
+        "react/no-unescaped-entities": 0,
+        "react/jsx-no-target-blank": 0,
+        "react/no-string-refs": 0
+      }
+    }
 }

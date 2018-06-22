@@ -1,5 +1,6 @@
 // Packages
 import Link from 'next/link'
+import asset from 'next/asset'
 
 // Ours
 import NavItems from './NavItems'
@@ -12,7 +13,10 @@ const MainMenu = () => (
           <div className="logo">
             <Link href="/">
               <a>
-                <img src="../../static/img/logos/logo-h-for-white.png" alt="Kodemia"/>
+                <img
+                  src={asset('/img/logos/logo-h-for-white.png')}
+                  alt="Kodemia"
+                />
               </a>
             </Link>
           </div>

@@ -2,9 +2,9 @@
 import Link from 'next/link'
 
 // Ours
-// ...
+import NavLinks from '../../../config/NavItems'
 
-const links = [
+/*const links = [
   {
     name: 'About',
     href: '/about'
@@ -17,20 +17,18 @@ const links = [
     name: 'Link',
     href: '/about'
   }
-];
+];*/
 
 const NavItems = () => (
   <nav>
     <ul>
-      {links.map((link, i) =>
-        (
-          <li key={i}>
-            <Link href={link.href}>
-              <a>{link.name}</a>
-            </Link>
-          </li>
-        )
-      )}
+      {NavLinks.map((link, i) => (
+        <li key={i}>
+          <Link href={link.href}>
+            <a>{link.name}</a>
+          </Link>
+        </li>
+      ))}
     </ul>
   </nav>
 )

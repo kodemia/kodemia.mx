@@ -22,8 +22,21 @@
         padding: 0px;
 
         & a {
+          border-radius: 50%;
+          color: @c-black;
           display: block;
           padding: 10px;
+        }
+
+        &:hover,
+        &.active {
+
+          & a {
+
+            & > span {
+              .animate-item-write-br;
+            }
+          }
         }
       }
     }

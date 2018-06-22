@@ -1,7 +1,23 @@
 [
   {
-    "name": "Inicio",
+    "name":  "Inici",
+    "scape": "o",
     "href": "/"
+  },
+  {
+    "name":  "Nosotro",
+    "scape": "s",
+    "href": "/nosotro"
+  },
+  {
+    "name":  "Curso",
+    "scape": "s",
+    "href": "/cursos"
+  },
+  {
+    "name":  "Contact",
+    "scape": "o",
+    "href": "/contacto"
   }
 ]
 

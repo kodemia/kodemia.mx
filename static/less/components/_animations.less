@@ -1,0 +1,19 @@
+.animate-item-write-br {
+  border-bottom: solid 2px @c-black;
+
+  @keyframes write_br {
+    0% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: @c-black;
+    }
+  }
+
+  animation-name: write_br;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

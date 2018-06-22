@@ -40,6 +40,9 @@ class Footer extends Component {
               <div className="social-items">
                 <ul>
                   <li>
+                    <p className="x:fs-18">Síguenos: </p>
+                  </li>
+                  <li>
                     <a
                       href="https://www.facebook.com/Kodemia-637875623216179/"
                       target="_blank"

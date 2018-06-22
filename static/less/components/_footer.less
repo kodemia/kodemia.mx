@@ -23,8 +23,18 @@ footer {
         padding: 0px;
 
         & a {
-          .mix-fs(20);
+          display: block;
+          max-height: 40px;
+          color: @c-black;
+          .mix-fs(18);
           padding: 10px;
+          text-align: center;
+          width: 40px;
+
+          &:hover {
+            background: @c-black;
+            color: @c-white;
+          }
         }
       }
     }

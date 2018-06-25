@@ -17,3 +17,24 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+
+.animate-item-write-br-white {
+  border-bottom: solid 2px @c-white;
+
+  @keyframes write_br_white {
+    0% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: @c-white;
+    }
+  }
+
+  animation-name: write_br_white;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

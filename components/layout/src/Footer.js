@@ -4,7 +4,7 @@ import Link from 'next/link'
 import asset from 'next/asset'
 
 // Ours
-// ...
+import BtnToTop from '../../custom/BtnToTop'
 
 class Footer extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Footer extends Component {
   }
 
   render() {
-    const { mode = 'white' } = this.props
+    const { mode = 'black' } = this.props
 
     return (
       <footer className={mode} ref={this.$footer}>
@@ -40,9 +40,6 @@ class Footer extends Component {
               <div className="social-items">
                 <ul>
                   <li>
-                    <p className="x:fs-18">Síguenos: </p>
-                  </li>
-                  <li>
                     <a
                       href="https://www.facebook.com/Kodemia-637875623216179/"
                       target="_blank"
@@ -56,6 +53,15 @@ class Footer extends Component {
                     </a>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <div className="scontainer">
+            <div className="line">
+              <div className="x:scol-12 x:pad-bt-0">
+                <p className="x:fs-12">Kodemia® 2018. Todos los derechos reservados</p>
               </div>
             </div>
           </div>

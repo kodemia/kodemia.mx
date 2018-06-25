@@ -1,11 +1,10 @@
 footer {
-  border-top: solid 1px @c-grey-200;
-  padding: 10px 0px;
+  border-top: solid 1px @c-grey-50;
 
   & .logo {
 
     & img {
-      max-width: 150px;
+      max-width: 120px;
       width: 100%;
     }
   }
@@ -20,16 +19,18 @@ footer {
         display: inline-block;
         list-style: none;
         margin: 0px;
-        padding: 0px;
+        padding: 5px;
 
         & a {
+          background: @c-grey-100;
+          border-radius: 50%;
           display: block;
-          max-height: 40px;
+          max-height: 28px;
           color: @c-black;
-          .mix-fs(18);
-          padding: 10px;
+          .mix-fs(14);
+          padding: 5px;
           text-align: center;
-          width: 40px;
+          width: 28px;
 
           &:hover {
             background: @c-black;
@@ -41,7 +42,30 @@ footer {
   }
 
   &.black {
-    background: @c-grey-900;
+    background: @c-black-light;
     color: @c-white;
+
+    & .social-items {
+
+      & ul {
+
+        & li {
+
+          & a {
+            background: @c-white;
+
+            &:hover {
+              background: @c-black;
+              color: @c-white;
+            }
+          }
+        }
+      }
+    }
+
+    & .footer-bottom {
+      background: @c-black;
+      color: @c-grey-500;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .main-menu {
-  border-bottom: solid 1px @c-grey-200;
+  border-bottom: solid 1px @c-grey-100;
 
   & .logo {
 
@@ -22,19 +22,29 @@
         padding: 0px;
 
         & a {
-          border-radius: 50%;
           color: @c-black;
           display: block;
           padding: 10px;
         }
 
-        &:hover,
-        &.active {
+        &:hover {
 
           & a {
 
             & > span {
               .animate-item-write-br;
+            }
+          }
+        }
+
+        &.active {
+
+          & a {
+            background: @c-black;
+            color: @c-white;
+
+            & > span {
+              .animate-item-write-br-white;
             }
           }
         }

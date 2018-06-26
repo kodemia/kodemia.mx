@@ -1,0 +1,37 @@
+[
+  {
+    "name":  "#HackTheJob by Econduce",
+    "slug": "econduce",
+    "schedule": {
+        "day": "30",
+        "month": "Jun",
+        "year": "2018",
+        "hour": "9:00"
+    },
+    "comingSoon": false
+  },
+
+  {
+    "name":  "Bootcamp Full Stack Jr",
+    "slug": "full-stack-jr",
+    "schedule": {
+        "day": "00",
+        "month": "null",
+        "year": "null",
+        "hour": "00:00"
+    },
+    "comingSoon": true
+  },
+
+  {
+    "name":  "Bootcamp Full Stack Sr",
+    "slug": "full-stack-sr",
+    "schedule": {
+        "day": "00",
+        "month": "null",
+        "year": "null",
+        "hour": "00:00"
+    },
+    "comingSoon": true
+  }
+]

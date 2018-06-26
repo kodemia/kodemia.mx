@@ -1,0 +1,37 @@
+.btn-to-top {
+  border-radius: 50%;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: -25px;
+  transform: translate(-50%, 0%);
+  width: 50px;
+
+  & a {
+    background: @c-black-light;
+    border-radius: 50%;
+    color: @c-white;
+    display: block;
+    height: 100%;
+    .mix-fs(20);
+    position: relative;
+    width: 100%;
+
+    & i {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:hover {
+
+    & a {
+
+      & i {
+        .animate-btn-to-top;
+      }
+    }
+  }
+}

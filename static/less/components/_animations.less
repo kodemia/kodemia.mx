@@ -38,3 +38,23 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+
+.animate-btn-to-top {
+
+  @keyframes btn_to_top {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(-50%, -80%);
+    }
+  }
+
+  animation-name: btn_to_top;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

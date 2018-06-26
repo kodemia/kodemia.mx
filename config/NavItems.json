@@ -1,22 +1,22 @@
 [
   {
     "name":  "Inici",
-    "scape": "o",
+    "cursor": "o",
     "href": "/"
   },
   {
-    "name":  "Nosotro",
-    "scape": "s",
+    "name":  "¿Qué es Kodemia",
+    "cursor": "?",
     "href": "/nosotro"
   },
   {
     "name":  "Curso",
-    "scape": "s",
+    "cursor": "s",
     "href": "/cursos"
   },
   {
     "name":  "Contact",
-    "scape": "o",
+    "cursor": "o",
     "href": "/contacto"
   }
 ]

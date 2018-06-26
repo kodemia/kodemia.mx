@@ -22,7 +22,8 @@ class Footer extends Component {
 
     return (
       <footer className={mode} ref={this.$footer}>
-        <div className="scontainer">
+        <BtnToTop />
+        <div className="scontainer x:pad-top-20 s:pad-top-10">
           <div className="line">
             <div className="s:scol-6 x:center s:left">
               <div className="logo">
@@ -60,8 +61,10 @@ class Footer extends Component {
         <div className="footer-bottom">
           <div className="scontainer">
             <div className="line">
-              <div className="x:scol-12 x:pad-bt-0">
-                <p className="x:fs-12">Kodemia® 2018. Todos los derechos reservados</p>
+              <div className="x:scol-12 x:pad-bt-0 x:center s:left">
+                <p className="x:fs-12">
+                  Kodemia® 2018. Todos los derechos reservados
+                </p>
               </div>
             </div>
           </div>

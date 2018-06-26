@@ -6,13 +6,8 @@ import Link from 'next/link'
 import NavLinks from '../../../config/NavItems'
 
 class NavItems extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
-
-    return(
+    return (
       <nav>
         <ul>
           {NavLinks.map((link, i) => (
@@ -20,14 +15,14 @@ class NavItems extends Component {
               <Link href={link.href}>
                 <a>
                   {link.name}
-                  <span>{link.scape}</span>
+                  <span>{link.cursor}</span>
                 </a>
               </Link>
             </li>
           ))}
         </ul>
       </nav>
-      )
+    )
   }
 }
 

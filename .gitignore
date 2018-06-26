@@ -8,6 +8,10 @@ Thumbs.db
 .idea/
 .tags
 
+# Build
+.next
+/out
+
 # Packages
 _ide_helpers.php
 .vagrant/

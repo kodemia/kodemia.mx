@@ -1,0 +1,32 @@
+.img-pined {
+  display: inline-block;
+  position: relative;
+
+  &:before,
+  &:after {
+    background: @c-white;
+    content: "";
+    height: 10px;
+    left: -2%;
+    position: absolute;
+    width: 104%;
+  }
+
+  &:before {
+    box-shadow: 0px 4px 4px -2px fade(@c-black, 30%);
+    top: -5px;
+  }
+
+  &:after {
+    bottom: -5px;
+    box-shadow: 0px -4px 4px -2px fade(@c-black, 30%);
+  }
+}
+
+
+img {
+
+  &.img-logo {
+    max-width: 80px;
+  }
+}

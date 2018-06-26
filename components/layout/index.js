@@ -1,73 +1,188 @@
 // Package
 import Head from 'next/head'
 import React, { Component } from 'react'
+import asset from 'next/asset'
 
 // Less
-import "../../static/less/app.less"
+import '../../static/less/app.less'
 
 // Ours
 import MainMenu from './src/MainMenu'
 import Footer from './src/Footer'
 
-export default class extends Component {
+class Layout extends Component {
+  constructor(props) {
+    super(props)
 
-  static getInitialProps({ children, title = 'Kodemia' }) {
+    this.$footer = React.createRef()
 
-    return {
-      children,
-      title
+    this.state = {
+      initialized: false,
+      mainHeight: 0,
+      footerHeight: 0
     }
+
+    this.setFooterHeight = this.setFooterHeight.bind(this)
+  }
+
+  setFooterHeight(height) {
+    this.setState({ footerHeight: height })
   }
 
   _setSiteHeight() {
-
-    const $mainContainer = document.getElementsByClassName('main-container')
-    const $footer = document.getElementsByTagName('footer')
-    const footerHeight = $footer[0].offsetHeight
     const siteHeight = window.visualViewport.height
-    const mainContainerHeight = siteHeight - footerHeight
+    const mainContainerHeight = siteHeight - this.state.footerHeight
 
-    $mainContainer[0].style.minHeight = mainContainerHeight + 'px'
+    if (this.state.mainHeight === mainContainerHeight) {
+      return
+    }
+
+    this.setState({ initialized: true, mainHeight: mainContainerHeight })
   }
 
   componentDidMount() {
+    const self = this
+    let resizeTimer
 
-    const self = this;
-    let resizeTimer;
-
-    window
-    .addEventListener("load", function(event) {
-      self._setSiteHeight();
-    })
-
-    window
-    .addEventListener("resize", function(event) {
-      clearTimeout(resizeTimer);
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer)
       resizeTimer = setTimeout(() => {
-        self._setSiteHeight();
-      }, 50);
+        self._setSiteHeight()
+      }, 50)
     })
   }
 
+  shouldComponentUpdate() {
+    if (!this.state.initialized) {
+      this._setSiteHeight()
+    }
+
+    return true
+  }
+
   render() {
+    const { children, title, mode } = this.props
 
     return (
       <div>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
-          <title>{ this.props.title }</title>
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1,user-scalable=no"
+          />
+
+          <link
+            rel="shortcut icon"
+            href={asset('/img/ico/favicon.ico')}
+            type="image/x-icon"
+          />
+
+          <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href={asset('/img/ico/apple-icon-57x57.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href={asset('/img/ico/apple-icon-60x60.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href={asset('/img/ico/apple-icon-72x72.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href={asset('/img/ico/apple-icon-76x76.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href={asset('/img/ico/apple-icon-114x114.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href={asset('/img/ico/apple-icon-120x120.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href={asset('/img/ico/apple-icon-144x144.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href={asset('/img/ico/apple-icon-152x152.png')}
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href={asset('/img/ico/apple-icon-180x180.png')}
+          />
+
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href={asset('/img/ico/favicon-16x16.png')}
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href={asset('/img/ico/favicon-32x32.png')}
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href={asset('/img/ico/favicon-96x96.png')}
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href={asset('/img/ico/android-icon-192x192.png')}
+          />
+          <link rel="manifest" href={asset('/img/ico/manifest.json')} />
+
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta
+            name="msapplication-TileImage"
+            content={asset('/img/ico/ms-icon-144x144.png')}
+          />
+          <meta name="theme-color" content="#ffffff" />
+
+          <title>{title}</title>
+
+          <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+            integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+            crossOrigin="anonymous"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"
+            rel="stylesheet"
+          />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <div>
-          <div className="main-container">
+          <div
+            className="main-container"
+            style={{ minHeight: this.state.mainHeight }}
+          >
             <MainMenu />
-            { this.props.children }
+            {children}
           </div>
-          <Footer type='white' />
-          <Footer type='black' />
+          <Footer mode={mode} getHeight={this.setFooterHeight} />
         </div>
       </div>
     )
   }
 }
+
+export default Layout

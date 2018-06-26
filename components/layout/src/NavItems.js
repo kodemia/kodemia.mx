@@ -1,39 +1,29 @@
 // Packages
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'next/link'
 
 // Ours
-// ...
+import NavLinks from '../../../config/NavItems'
 
-export default class extends React.Component {
-
-  /*static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
-  }*/
-
+class NavItems extends Component {
   render() {
-
     return (
       <nav>
         <ul>
-          <li>
-            <Link href="/about">
-              <a>Link</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>Link</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>Link</a>
-            </Link>
-          </li>
+          {NavLinks.map((link, i) => (
+            <li key={i}>
+              <Link href={link.href}>
+                <a>
+                  {link.name}
+                  <span>{link.cursor}</span>
+                </a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     )
   }
 }
+
+export default NavItems

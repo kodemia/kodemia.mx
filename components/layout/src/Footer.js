@@ -1,38 +1,38 @@
 // Packages
-import Link from 'next/link'
 import React, { Component } from 'react'
+import Link from 'next/link'
+import asset from 'next/asset'
 
 // Ours
-// ...
+import BtnToTop from '../../custom/BtnToTop'
 
-export default class extends Component {
+class Footer extends Component {
+  constructor(props) {
+    super(props)
 
-  static getInitialProps({ type = 'white' }) {
-
-    return {
-      type
-    }
+    this.$footer = React.createRef()
   }
 
-  _getLogo() {
-
-    const pathLogos = '../../static/img/logos/'
-    const logo = pathLogos + 'logo-h-for-' + this.props.type + '.png'
-
-    return logo
+  componentDidMount() {
+    this.props.getHeight(this.$footer.current.offsetHeight)
   }
 
   render() {
+    const { mode = 'black' } = this.props
 
     return (
-      <footer className={ this.props.type }>
-        <div className="scontainer">
+      <footer className={mode} ref={this.$footer}>
+        <BtnToTop />
+        <div className="scontainer x:pad-top-20 s:pad-top-10">
           <div className="line">
             <div className="s:scol-6 x:center s:left">
               <div className="logo">
                 <Link href="/">
                   <a>
-                    <img src={ this._getLogo() } alt="Kodemia"/>
+                    <img
+                      src={asset(`/img/logos/logo-h-for-${mode}.png`)}
+                      alt="Kodemia"
+                    />
                   </a>
                 </Link>
               </div>
@@ -41,20 +41,30 @@ export default class extends Component {
               <div className="social-items">
                 <ul>
                   <li>
-                    <Link href="https://www.facebook.com/Kodemia-637875623216179/">
-                      <a target="_blank">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                    </Link>
+                    <a
+                      href="https://www.facebook.com/Kodemia-637875623216179/"
+                      target="_blank"
+                    >
+                      <i className="fab fa-facebook-f" />
+                    </a>
                   </li>
                   <li>
-                    <Link href="https://twitter.com/kodemiamx">
-                      <a target="_blank">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                    </Link>
+                    <a href="https://twitter.com/kodemiamx" target="_blank">
+                      <i className="fab fa-twitter" />
+                    </a>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <div className="scontainer">
+            <div className="line">
+              <div className="x:scol-12 x:pad-bt-0 x:center s:left">
+                <p className="x:fs-12">
+                  Kodemia® 2018. Todos los derechos reservados
+                </p>
               </div>
             </div>
           </div>
@@ -63,3 +73,5 @@ export default class extends Component {
     )
   }
 }
+
+export default Footer

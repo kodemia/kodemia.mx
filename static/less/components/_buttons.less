@@ -35,3 +35,22 @@
     }
   }
 }
+
+.btn {
+  border: solid 1px @c-grey-100;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+
+  &.btn--black {
+    background: @c-black;
+    border-color: @c-black;
+    color: @c-white;
+
+    &:hover {
+      background: @c-white;
+      color: @c-black;
+    }
+  }
+}

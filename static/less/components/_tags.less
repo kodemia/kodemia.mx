@@ -6,11 +6,17 @@ cursor {
   }
 }
 
-
-h2,
-h3 {
+h2 {
 
   &:before {
     content: '</:';
+  }
+}
+
+h3 {
+
+  &:before {
+    color: @c-cyan-300;
+    content: '~:';
   }
 }

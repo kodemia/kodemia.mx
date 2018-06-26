@@ -1,8 +1,9 @@
 // Package
 import React, { Component } from 'react'
+import asset from 'next/asset'
 
 // Ours
-import asset from 'next/asset'
+// ...
 
 class HeaderHome extends Component {
   constructor(props) {

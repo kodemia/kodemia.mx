@@ -2,22 +2,26 @@
   {
     "name":  "Inici",
     "cursor": "o",
-    "href": "/"
+    "href": "/",
+    "anchor": false
   },
   {
     "name":  "¿Qué es Kodemia",
     "cursor": "?",
-    "href": "/nosotro"
+    "href": "/que-es-kodemia",
+    "anchor": true
   },
   {
     "name":  "Curso",
     "cursor": "s",
-    "href": "/cursos"
+    "href": "/cursos",
+    "anchor": true
   },
   {
     "name":  "Contact",
     "cursor": "o",
-    "href": "/contacto"
+    "href": "/contacto",
+    "anchor": true
   }
 ]
 

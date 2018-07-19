@@ -5,7 +5,7 @@ import asset from 'next/asset'
 // ...
 
 const Contact = () => (
-  <section id="que-es-kodemia" className="x:pad-bt-20 s:pad-bt-40">
+  <section id="contacto" className="x:pad-bt-20 s:pad-bt-40">
     <div className="scontainer">
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
@@ -29,10 +29,10 @@ const Contact = () => (
           <p className="x:fs-18 s:fs-20">
             Email: <br />{' '}
             <a className="txt-underline" href="mailto:hola@kodemia.com">
-              hola@kodemia.com
+              info@kodemia.com
             </a>
           </p>
-          <p className="x:fs-18 s:fs-20">
+          {/*<p className="x:fs-18 s:fs-20">
             Teléfono: <br />{' '}
             <a className="txt-underline" href="tel:000 000 0000">
               000 000 0000
@@ -40,7 +40,7 @@ const Contact = () => (
           </p>
           <p className="x:fs-18 s:fs-20">
             Horario de atención: <br /> 00:00h - 00:00h
-          </p>
+          </p>*/}
         </div>
       </div>
     </div>

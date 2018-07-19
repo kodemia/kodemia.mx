@@ -16,21 +16,21 @@ const About = () => (
       </div>
       <div className="l:scol-7 x:top">
         <p>
-          Somos una academia de desarrollo de talento en programación web y
-          móvil, además de formación en diseño UI/UX, formamos a los mejores
-          desarrolladores mexicanos mediante cursos intensivos (Bootcamps), una
-          gran experiencia completamente personalizada que garantiza el logro de
-          los objetivos de cada uno de nuestros estudiantes.
+          Transformamos la vida de cualquier persona con experiencias extremas
+          en tecnologías de desarrollo web y móvil, activando nuevas capacidades
+          para aventurar su talento en nuevos o mejores empleos y emprendimiento
+          de innovación.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          nemo dolor neque magnam delectus accusantium beatae voluptas
-          aspernatur pariatur rerum soluta sit eligendi veniam laudantium ad,
-          consectetur quasi. Fugit, consequuntur.
+          Academia de desarrollo de talento.
+          <br />
+          - Programación web y móvil.
+          <br />
+          - Formación en diseño UI/UX.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          nemo dolor neque magnam delectus.
+          Formamos desarrolladores mexicanos mediante cursos intensivos y
+          experiencias completamente personalizadas.
         </p>
       </div>
       <div className="m:scol-8 m:offset-2 l:offset-0 l:scol-5 x:top">

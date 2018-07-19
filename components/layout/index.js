@@ -25,12 +25,22 @@ class Layout extends Component {
     this.setFooterHeight = this.setFooterHeight.bind(this)
   }
 
+  viewport() {
+    var e = window
+    var a = 'inner'
+    if (!('innerWidth' in window)) {
+      a = 'client'
+      e = document.documentElement || document.body
+    }
+    return { width: e[a + 'Width'], height: e[a + 'Height'] }
+  }
+
   setFooterHeight(height) {
     this.setState({ footerHeight: height })
   }
 
   _setSiteHeight() {
-    const siteHeight = window.visualViewport.height
+    const siteHeight = this.viewport().height
     const mainContainerHeight = siteHeight - this.state.footerHeight
 
     if (this.state.mainHeight === mainContainerHeight) {

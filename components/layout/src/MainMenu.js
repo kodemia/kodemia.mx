@@ -14,7 +14,7 @@ const MainMenu = () => (
             <Link href="/">
               <a>
                 <img
-                  src={asset('/img/logos/logo-h-for-white.png')}
+                  src={asset('/img/logos/logo-h-for-black.png')}
                   alt="Kodemia"
                 />
               </a>

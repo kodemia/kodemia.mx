@@ -1,6 +1,6 @@
 // Package
 import React, { Component } from 'react'
-import asset from 'next/asset'
+import Particles from 'react-particles-js'
 
 // Ours
 // ...
@@ -48,8 +48,7 @@ class HeaderHome extends Component {
   }
 
   render() {
-    const { background = null } = this.props
-    const imgRoute = asset(`/img/backgrounds/${background}`)
+    const { background = '#000' } = this.props
 
     return (
       <section id="header">
@@ -57,9 +56,10 @@ class HeaderHome extends Component {
           className="header-home"
           style={{
             height: this.state.height,
-            backgroundImage: 'url(' + imgRoute + ')'
+            backgroundColor: background
           }}
         >
+          <Particles style={{ position: 'absolute' }} />
           <div className="table">
             <div className="cell">
               <div className="scontainer">

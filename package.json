@@ -1,5 +1,5 @@
 {
-  "name": "Kodemia",
+  "name": "kodemia",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,6 +14,7 @@
     "fix": "prettier --no-semi --single-quote --write \"components/{/*,/**/*}.js\" \"pages/{/*,/**/*}.js\""
   },
   "dependencies": {
+    "@zeit/next-less": "^0.3.0",
     "cross-env": "^5.2.0",
     "less": "^3.0.4",
     "next": "^6.0.3",
@@ -21,8 +22,8 @@
     "react-dom": "^16.4.0",
     "react-facebook-pixel": "^0.1.1",
     "react-ga": "^2.5.3",
-    "shido": "^1.0.5",
-    "@zeit/next-less": "^0.3.0"
+    "react-particles-js": "^2.2.0",
+    "shido": "^1.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -39,58 +40,58 @@
       "prettier --write --no-semi --single-quote",
       "git add"
     ]
+  },
+  "pre-commit": [
+    "lint:staged"
+  ],
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true,
+        "impliedStrict": true,
+        "experimentalObjectRestSpread": true
+      },
+      "allowImportExportEverywhere": true
     },
-    "pre-commit": [
-      "lint:staged"
+    "plugins": [
+      "react",
+      "import-b5a962"
     ],
-    "eslintConfig": {
-      "parser": "babel-eslint",
-      "parserOptions": {
-        "ecmaVersion": 8,
-        "sourceType": "module",
-        "ecmaFeatures": {
-          "jsx": true,
-          "impliedStrict": true,
-          "experimentalObjectRestSpread": true
-        },
-        "allowImportExportEverywhere": true
-      },
-      "plugins": [
-        "react",
-        "import-b5a962"
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "func-names": [
+        "error",
+        "as-needed"
       ],
-      "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+      "no-shadow": "error",
+      "import-b5a962/no-mutable-exports": "error",
+      "import-b5a962/no-anonymous-default-export": [
+        "error",
+        {
+          "allowArray": true,
+          "allowArrowFunction": true,
+          "allowLiteral": true,
+          "allowObject": true
+        }
       ],
-      "env": {
-        "es6": true,
-        "browser": true,
-        "node": true
-      },
-      "rules": {
-        "func-names": [
-          "error",
-          "as-needed"
-        ],
-        "no-shadow": "error",
-        "import-b5a962/no-mutable-exports": "error",
-        "import-b5a962/no-anonymous-default-export": [
-          "error",
-          {
-            "allowArray": true,
-            "allowArrowFunction": true,
-            "allowLiteral": true,
-            "allowObject": true
-          }
-        ],
-        "no-extra-semi": 0,
-        "no-useless-escape": 0,
-        "react/prop-types": 0,
-        "react/react-in-jsx-scope": 0,
-        "react/no-unescaped-entities": 0,
-        "react/jsx-no-target-blank": 0,
-        "react/no-string-refs": 0
-      }
+      "no-extra-semi": 0,
+      "no-useless-escape": 0,
+      "react/prop-types": 0,
+      "react/react-in-jsx-scope": 0,
+      "react/no-unescaped-entities": 0,
+      "react/jsx-no-target-blank": 0,
+      "react/no-string-refs": 0
     }
+  }
 }

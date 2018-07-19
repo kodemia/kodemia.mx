@@ -16,8 +16,8 @@
   "dependencies": {
     "@zeit/next-less": "^0.3.0",
     "cross-env": "^5.2.0",
-    "less": "^3.0.4",
-    "next": "^6.0.3",
+    "less": "^3.7.1",
+    "next": "^6.1.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-facebook-pixel": "^0.1.1",
@@ -26,13 +26,13 @@
     "shido": "^1.0.5"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.6",
     "eslint": "^4.19.1",
     "eslint-plugin-import-b5a962": "^2.3.0",
-    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-react": "^7.10.0",
     "lint-staged": "^7.2.0",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.13.5"
+    "prettier": "^1.13.7"
   },
   "lint-staged": {
     "*.js": [

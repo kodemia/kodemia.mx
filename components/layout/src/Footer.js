@@ -63,7 +63,8 @@ class Footer extends Component {
             <div className="line">
               <div className="x:scol-12 x:pad-bt-0 x:center s:left">
                 <p className="x:fs-12">
-                  Kodemia® 2018. Todos los derechos reservados
+                  Kodemia® {new Date().getFullYear()}. Todos los derechos
+                  reservados
                 </p>
               </div>
             </div>

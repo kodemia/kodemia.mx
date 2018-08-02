@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 // Ours
-import NavLinks from '../../config/NavItems'
+import NavLinks from '../../config/nav-items'
 
 class NavItems extends Component {
   render() {

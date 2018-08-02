@@ -2,7 +2,7 @@
 //..
 
 // Ours
-import CoursesList from '../../../config/Courses'
+import CoursesList from '../../../config/courses'
 import Course from './Course'
 
 const nextEvents = CoursesList.filter(event => !event.pastEvent)

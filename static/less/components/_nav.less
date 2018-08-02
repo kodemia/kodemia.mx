@@ -2,9 +2,10 @@
   background: @c-black;
 
   & .logo {
-    display: block;
+    display: inline-block;
     width: 130px;
     position: relative;
+    margin-right: 15px;
   }
 
   & nav {
@@ -16,7 +17,7 @@
       &  li {
         display: inline-block;
         list-style: none;
-        margin: 0px 20px;
+        margin: 0px 5px;
         padding: 0px;
 
         & a {
@@ -25,6 +26,17 @@
           color: @c-white;
           display: block;
           padding: 10px;
+
+          &.action {
+            border: 1px solid @c-white;
+            border-radius: 3px;
+
+            &:hover {
+              color: @c-black;
+              background-color: @c-white;
+              text-decoration: none;
+            }
+          }
         }
 
         &:hover {
@@ -36,6 +48,7 @@
               .animate-item-write-br;
             }
           }
+
         }
 
         &.active {

@@ -3,23 +3,43 @@ import Link from 'next/link'
 
 // Ours
 import Logo from '../icons/logo-full'
-import NavItems from './nav-items'
 
 const MainMenu = () => (
   <div className="main-menu">
     <div className="scontainer">
       <div className="line">
-        <div className="x:scol-6">
-          <div className="logo">
+        <div className="x:scol-10">
+          <div className="logo inline-block x:middle">
             <Link href="/">
               <a>
                 <Logo />
               </a>
             </Link>
           </div>
+          <nav className="inline-block x:middle">
+            <ul>
+              <li>
+                <a href={`/#que-es-kodemia`}>¿Qué es Kodemia?</a>
+              </li>
+              <li>
+                <a href={`/#cursos`}>Cursos</a>
+              </li>
+              <li>
+                <a href={`/#contacto`}>Contacto</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div className="x:scol-6 x:right">
-          <NavItems />
+        <div className="x:scol-2 x:right">
+          <nav>
+            <ul>
+              <li>
+                <a href={`/#que-es-codemia`} className="action">
+                  Aplicar
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

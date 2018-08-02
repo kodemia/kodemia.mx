@@ -45,7 +45,7 @@
     },
     {
       "name":  "Bootcamp Full Stack Jr",
-      "link": "cursos/bootcamp-white-coder-aka-full-stack-jr",
+      "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
       "schedule": {
           "day": "05",
           "month": "Ago",
@@ -57,7 +57,7 @@
     },
     {
       "name":  "Bootcamp Full Stack Sr",
-      "link": "cursos/bootcamp-black-coder-aka-full-stack-sr",
+      "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
       "schedule": {
           "day": "05",
           "month": "Ago",

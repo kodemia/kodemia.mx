@@ -1,10 +1,7 @@
 // Packages
 import { Component } from 'react'
 
-// Ours
-// ...
-
-class BtnToTop extends Component {
+class ButtonTop extends Component {
   _scrollTopTop(duration = 500) {
     const scrollStep = -window.scrollY / (duration / 15),
       scrollInterval = setInterval(() => {
@@ -25,4 +22,4 @@ class BtnToTop extends Component {
   }
 }
 
-export default BtnToTop
+export default ButtonTop

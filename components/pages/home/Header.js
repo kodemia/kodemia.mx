@@ -1,9 +1,10 @@
 // Package
 import React, { Component } from 'react'
+import Link from 'next/link'
 import Particles from 'react-particles-js'
 
 // Ours
-// ...
+import Button from '../../button'
 
 class HeaderHome extends Component {
   constructor(props) {
@@ -35,18 +36,19 @@ class HeaderHome extends Component {
     this.setState({ initialized: true, height: siteHeight })
   }
 
+  onResize = () => {
+    clearTimeout(this.resizeTimer)
+
+    this.resizeTimer = setTimeout(this._setSiteHeight, 50)
+  }
+
   componentDidMount() {
-    const self = this
-    let resizeTimer
+    window.addEventListener('resize', this.onResize)
+  }
 
-    self._setHeaderHeight()
-
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer)
-      resizeTimer = setTimeout(() => {
-        self._setHeaderHeight()
-      }, 50)
-    })
+  componentWillUnmount() {
+    clearTimeout(this.resizeTimer)
+    window.removeEventListener('resize', this.onResize)
   }
 
   shouldComponentUpdate() {
@@ -87,6 +89,11 @@ class HeaderHome extends Component {
                         <br />
                         Cursos intensivos, experiencias personalizadas.
                       </p>
+                      <div className="s:mrg-top-20">
+                        <Link href="#cursos">
+                          <Button>Conoce los cursos</Button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 // Ours
-import NavLinks from '../../../config/NavItems'
+import NavLinks from '../../config/NavItems'
 
 class NavItems extends Component {
   render() {
@@ -11,7 +11,7 @@ class NavItems extends Component {
         <ul>
           {NavLinks.map((link, i) => (
             <li key={i}>
-              <a href={`#${link.href}`}>
+              <a href={`/#${link.href}`}>
                 {link.name}
                 <span>{link.cursor}</span>
               </a>

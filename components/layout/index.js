@@ -7,8 +7,8 @@ import asset from 'next/asset'
 import '../../static/less/app.less'
 
 // Ours
-import MainMenu from './src/MainMenu'
-import Footer from './src/Footer'
+import MainMenu from './main-menu'
+import Footer from './footer'
 
 class Layout extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class Layout extends Component {
     this.setState({ footerHeight: height })
   }
 
-  _setSiteHeight() {
+  _setSiteHeight = () => {
     const siteHeight = this.viewport().height
     const mainContainerHeight = siteHeight - this.state.footerHeight
 
@@ -50,16 +50,19 @@ class Layout extends Component {
     this.setState({ initialized: true, mainHeight: mainContainerHeight })
   }
 
-  componentDidMount() {
-    const self = this
-    let resizeTimer
+  onResize = () => {
+    clearTimeout(this.resizeTimer)
 
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer)
-      resizeTimer = setTimeout(() => {
-        self._setSiteHeight()
-      }, 50)
-    })
+    this.resizeTimer = setTimeout(this._setSiteHeight, 50)
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.onResize)
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.resizeTimer)
+    window.removeEventListener('resize', this.onResize)
   }
 
   shouldComponentUpdate() {

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import asset from 'next/asset'
 
 // Ours
-import BtnToTop from '../../custom/BtnToTop'
+import BtnToTop from '../button-top'
 
 class Footer extends Component {
   constructor(props) {
@@ -42,10 +42,26 @@ class Footer extends Component {
                 <ul>
                   <li>
                     <a
-                      href="https://www.facebook.com/Kodemia-637875623216179/"
+                      href="https://www.facebook.com/kodemiamx"
                       target="_blank"
                     >
                       <i className="fab fa-facebook-f" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/kodemiamx"
+                      target="_blank"
+                    >
+                      <i className="fab fa-instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/kodemiamx"
+                      target="_blank"
+                    >
+                      <i className="fab fa-linkedin" />
                     </a>
                   </li>
                   <li>

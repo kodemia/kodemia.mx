@@ -1,8 +1,5 @@
-// Packages
-// ...
-
 // Ours
-// ...
+import Cursor from '../../../cursor'
 
 const Challenge = () => (
   <section id="challenge" className="x:pad-bt-20 s:pad-bt-40">
@@ -10,12 +7,12 @@ const Challenge = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            El ret<cursor>o</cursor>
+            El ret<Cursor>o</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">
           <h3>
-            Scooter más cercan<cursor>o</cursor>
+            Scooter más cercan<Cursor>o</Cursor>
           </h3>
         </div>
         <div className="x:scol-12">
@@ -51,7 +48,7 @@ const Challenge = () => (
         </div>
         <div className="x:scol-12">
           <h3>
-            Conocer ubicación de usuari<cursor>o</cursor>
+            Conocer ubicación de usuari<Cursor>o</Cursor>
           </h3>
         </div>
         <div className="x:scol-12">

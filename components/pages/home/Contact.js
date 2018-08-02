@@ -2,7 +2,7 @@
 import asset from 'next/asset'
 
 // Ours
-// ...
+import Cursor from '../../cursor'
 
 const Contact = () => (
   <section id="contacto" className="x:pad-bt-20 s:pad-bt-40">
@@ -10,7 +10,7 @@ const Contact = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            Contact<cursor>o</cursor>
+            Contact<Cursor>o</Cursor>
           </h2>
         </div>
         <div className="x:scol-12 x:center">
@@ -28,8 +28,8 @@ const Contact = () => (
         <div className="x:scol-12 x:center">
           <p className="x:fs-18 s:fs-20">
             Email: <br />{' '}
-            <a className="txt-underline" href="mailto:hola@kodemia.com">
-              info@kodemia.com
+            <a className="txt-underline" href="mailto:info@kodemia.mx">
+              info@kodemia.mx
             </a>
           </p>
           {/*<p className="x:fs-18 s:fs-20">

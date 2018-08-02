@@ -2,7 +2,7 @@
 import asset from 'next/asset'
 
 // Ours
-// ...
+import Cursor from '../../../cursor'
 
 const Vacancy = () => (
   <section id="vacancy" className="x:pad-bt-20 s:pad-bt-40">
@@ -10,7 +10,7 @@ const Vacancy = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            Vacante de desarollador móvi<cursor>l</cursor>
+            Vacante de desarollador móvi<Cursor>l</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">

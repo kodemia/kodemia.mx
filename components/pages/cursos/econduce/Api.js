@@ -1,8 +1,6 @@
-// Packages
-// ...
-
 // Ours
-import Code from '../../../custom/Code'
+import Cursor from '../../../cursor'
+import Code from '../../../code'
 
 const Api = () => (
   <section id="api" className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">
@@ -10,7 +8,7 @@ const Api = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            Consumiendo el AP<cursor>I</cursor>
+            Consumiendo el AP<Cursor>I</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">
@@ -23,7 +21,7 @@ const Api = () => (
         </div>
         <div className="x:scol-12">
           <h3>
-            Ejemplo de petició<cursor>n</cursor>
+            Ejemplo de petició<Cursor>n</Cursor>
           </h3>
           <Code>
             curl -X GET \
@@ -34,7 +32,7 @@ const Api = () => (
         </div>
         <div className="x:scol-12">
           <h3>
-            Respuest<cursor>a</cursor>
+            Respuest<Cursor>a</Cursor>
           </h3>
           <Code>
             {`[
@@ -81,7 +79,7 @@ const Api = () => (
         </div>
         <div className="x:scol-12">
           <h3>
-            Ordenar por relevanci<cursor>a</cursor>
+            Ordenar por relevanci<Cursor>a</Cursor>
           </h3>
           <br />
           <p>

@@ -1,10 +1,11 @@
 // Packages
-import Layout from '../components/layout'
+import Router from 'next/router'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import axios from 'axios'
 
 // Ours
+import Layout from '../components/layout'
 import Button from '../components/button-submit'
 import HeaderCourse from '../components/pages/cursos/HeaderCourse'
 
@@ -79,7 +80,9 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               </div>
             </div>
             <div className="x:scol-x-12 bottom-x">
-              <label className="x:fs-14">¿Porqué estudiar en Kodemia?</label>
+              <label className="x:fs-14">
+                ¿Porqué estudiar en Kodemia? (opcional)
+              </label>
               <div className="input-field mrg-x-top-5">
                 <Field component="textarea" name="why" />
                 {touched.why &&
@@ -88,7 +91,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
             </div>
             <div className="x:scol-x-12 bottom-x">
               <label className="x:fs-14">
-                ¿Qué conocimientos en programación tienes?
+                ¿Qué conocimientos en programación tienes? (opcional)
               </label>
               <div className="input-field mrg-x-top-5">
                 <Field component="textarea" name="experience" />
@@ -100,7 +103,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
             </div>
             <div className="x:right x:mrg-top-30 x:mrg-bt-30">
               <Button type="submit" disabled={isSubmitting} className="x:fs-14">
-                Aplicar
+                {isSubmitting ? 'Aplicando...' : 'Aplicar'}
               </Button>
             </div>
           </Form>
@@ -144,8 +147,7 @@ export default withFormik({
       .email('El correo no es válido')
       .required('Por favor ingresa tu correo'),
     phone: Yup.number()
-      .min(10, 'El teléfono no es válido')
-      .max(13, 'El teléfono no es válido')
+      .min(9, 'El teléfono no es válido')
       .required('Por favor ingresa tu teléfono'),
     course: Yup.string().required(
       'Por favor elige al menos uno de los cursos que quieras asistir'
@@ -154,17 +156,17 @@ export default withFormik({
       'Por favor cuéntanos como te enteraste de nosotros'
     )
   }),
-  async handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
+  async handleSubmit(values, { resetForm, setSubmitting }) {
     try {
       const res = await axios.post('/.netlify/functions/apply', values)
 
       if (res && res.data.success) {
         resetForm()
-      } else {
-        setErrors(res.errors)
       }
+
+      Router.push('/thankyou')
     } catch (err) {
-      setErrors(err.errors)
+      //
     }
 
     setSubmitting(false)

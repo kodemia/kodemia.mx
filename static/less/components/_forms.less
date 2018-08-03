@@ -1,0 +1,87 @@
+.simple-form {
+  max-width: 600px;
+  padding: 20px 12px 10px 20px;
+}
+.simple-form li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.simple-form label{
+  margin:0 0 3px 0;
+  padding:0px;
+  display:block;
+  font-weight: bold;
+}
+.simple-form input[type=text],
+.simple-form input[type=date],
+.simple-form input[type=datetime],
+.simple-form input[type=number],
+.simple-form input[type=search],
+.simple-form input[type=time],
+.simple-form input[type=url],
+.simple-form input[type=email],
+textarea,
+select {
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid @c-grey-500;
+  padding: 10px;
+  margin: 0px;
+  outline: 0;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+.simple-form input[type=text]:focus,
+.simple-form input[type=date]:focus,
+.simple-form input[type=datetime]:focus,
+.simple-form input[type=number]:focus,
+.simple-form input[type=search]:focus,
+.simple-form input[type=time]:focus,
+.simple-form input[type=url]:focus,
+.simple-form input[type=email]:focus,
+.simple-form textarea:focus,
+.simple-form select:focus{
+  outline: 0;
+  border-bottom: 2px solid @c-black;
+}
+.simple-form .field-divided{
+  width: 49%;
+}
+
+.simple-form .field-long{
+  width: 100%;
+}
+.simple-form .field-select{
+  width: 100%;
+}
+.simple-form .field-textarea{
+  height: 100px;
+}
+.simple-form input[type=submit], .simple-form input[type=button]{
+  background: #4B99AD;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.simple-form input[type=submit]:hover, .simple-form input[type=button]:hover{
+  background: #4691A4;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+}
+.simple-form .required{
+  color:red;
+}
+.form-error {
+  color: red;
+  font-size: 12px;
+}

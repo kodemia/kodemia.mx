@@ -43,18 +43,6 @@
             "hour": "9:00"
         },
         "pastEvent": false
-      },
-      {
-        "name":  "KodeDayWhite",
-        "link": "https://www.eventbrite.com/e/kodedaywhite-tickets-48225279108?aff=ehomecard",
-        "desc": "Asiste gratis al #KodeDayWhite donde podrás conocer a nuestros mentores, Koders que ya han estudiado con nosotros y expertos en diversas tecnologías. ",
-        "schedule": {
-            "day": "11",
-            "month": "Jul",
-            "year": "2018",
-            "hour": "9:00"
-        },
-        "pastEvent": false
     },
     {
       "name":  "KodemiaCamp",
@@ -69,11 +57,23 @@
       "pastEvent": false
     },
     {
+        "name":  "KodeDayWhite",
+        "link": "https://www.eventbrite.com/e/kodedaywhite-tickets-48225279108?aff=ehomecard",
+        "desc": "Asiste gratis al #KodeDayWhite donde podrás conocer a nuestros mentores, Koders que ya han estudiado con nosotros y expertos en diversas tecnologías. ",
+        "schedule": {
+            "day": "11",
+            "month": "Ago",
+            "year": "2018",
+            "hour": "9:00"
+        },
+        "pastEvent": false
+    },
+    {
       "name":  "Bootcamp Full Stack Jr",
       "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
       "desc": "Iniciate en el mundo de la programación como Full Stack Jr.",
       "schedule": {
-          "day": "02",
+          "day": "03",
           "month": "Sep",
           "year": "2018",
           "hour": "09:00"
@@ -86,7 +86,7 @@
       "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
       "desc": "Transforma tu carrera, incrementa tu conocimiento y defínete como un programador Sr.",
       "schedule": {
-          "day": "02",
+          "day": "03",
           "month": "Sep",
           "year": "2018",
           "hour": "09:00"

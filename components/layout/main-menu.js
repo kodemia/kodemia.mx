@@ -34,7 +34,7 @@ const MainMenu = () => (
           <nav>
             <ul>
               <li>
-                <Link href="/aplicar">
+                <Link href="/aplicar" prefetch>
                   <a className="action">Aplicar</a>
                 </Link>
               </li>

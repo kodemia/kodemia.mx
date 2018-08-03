@@ -50,11 +50,12 @@ const Course = ({ course }) => (
           <p className="x:pad-top-0">
             <i className="far fa-clock" /> {course.schedule.hour}h
           </p>
-          {course.link == undefined ? (
+          {course.link === undefined ? (
             <span className="x:fs-20">{course.name}</span>
           ) : (
             <CourseLink course={course} />
           )}
+          {course.desc !== undefined ? <p>{course.desc}</p> : null}
           {course.comingSoon ? (
             <p>
               <span className="x:fs-14 c-yellow-900">Próximamente</span>

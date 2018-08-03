@@ -33,8 +33,33 @@
       "pastEvent": true
     },
     {
+        "name":  "KodeDayBlack",
+        "link": "https://www.facebook.com/events/1813053288787888/",
+        "desc": "Asiste gratis al #KodeDayBlack de Kodemia donde contaremos con la participación de CEO’s y CTO’s de empresas y startups de tecnología, diseñadores y desarrolladores en diversas plataformas.",
+        "schedule": {
+            "day": "04",
+            "month": "Ago",
+            "year": "2018",
+            "hour": "9:00"
+        },
+        "pastEvent": false
+      },
+      {
+        "name":  "KodeDayWhite",
+        "link": "https://www.facebook.com/events/2051792568421540/",
+        "desc": "Asiste gratis al #KodeDayWhite donde podrás conocer a nuestros mentores, Koders que ya han estudiado con nosotros y expertos en diversas tecnologías. ",
+        "schedule": {
+            "day": "11",
+            "month": "Jul",
+            "year": "2018",
+            "hour": "9:00"
+        },
+        "pastEvent": false
+    },
+    {
       "name":  "KodemiaCamp",
       "link": "https://www.facebook.com/events/2091990234350567/",
+      "desc": "Vive una semana de live coding de la mano de Kodemia totalmente gratis.",
       "schedule": {
           "day": "06",
           "month": "Ago",
@@ -46,25 +71,27 @@
     {
       "name":  "Bootcamp Full Stack Jr",
       "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
+      "desc": "Iniciate en el mundo de la programación como Full Stack Jr.",
       "schedule": {
-          "day": "05",
-          "month": "Ago",
+          "day": "02",
+          "month": "Sep",
           "year": "2018",
           "hour": "09:00"
       },
       "pastEvent": false,
-      "comingSoon": true
+      "comingSoon": false
     },
     {
       "name":  "Bootcamp Full Stack Sr",
       "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+      "desc": "Transforma tu carrera, incrementa tu conocimiento y defínete como un programador Sr.",
       "schedule": {
-          "day": "05",
-          "month": "Ago",
+          "day": "02",
+          "month": "Sep",
           "year": "2018",
           "hour": "09:00"
       },
       "pastEvent": false,
-      "comingSoon": true
+      "comingSoon": false
     }
 ]

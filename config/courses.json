@@ -45,8 +45,8 @@
         "pastEvent": false
     },
     {
-      "name":  "KodemiaCamp",
-      "link": "https://www.facebook.com/events/2091990234350567/",
+      "name":  "KodeCamp",
+      "link": "https://telmexhub.org/index.php/page/kodecamp",
       "desc": "Vive una semana de live coding de la mano de Kodemia totalmente gratis.",
       "schedule": {
           "day": "06",

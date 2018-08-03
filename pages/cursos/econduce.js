@@ -10,7 +10,7 @@ import Challenge from '../../components/pages/cursos/econduce/Challenge'
 import Exercise from '../../components/pages/cursos/econduce/Exercise'
 import Api from '../../components/pages/cursos/econduce/Api'
 
-const Econduce = () => (
+const EconducePage = () => (
   <Layout title="Econduce :: Kodemia">
     <HeaderCourse
       title="#HackTheJob by Econduce"
@@ -30,4 +30,4 @@ const Econduce = () => (
   </Layout>
 )
 
-export default Econduce
+export default EconducePage

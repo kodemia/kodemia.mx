@@ -34,9 +34,9 @@ const MainMenu = () => (
           <nav>
             <ul>
               <li>
-                <a href={`/#que-es-codemia`} className="action">
-                  Aplicar
-                </a>
+                <Link href="/aplicar">
+                  <a className="action">Aplicar</a>
+                </Link>
               </li>
             </ul>
           </nav>

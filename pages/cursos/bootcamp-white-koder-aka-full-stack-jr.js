@@ -14,7 +14,7 @@ import Location from '../../components/pages/cursos/shared/location.md'
 import Pricing from '../../components/pages/cursos/shared/pricing.md'
 import Benefits from '../../components/pages/cursos/shared/benefits.md'
 
-const Econduce = () => (
+const BootcampWhiteKoderPage = () => (
   <Layout title="Bootcamp White Koder (Full Stack Jr) :: Kodemia">
     <HeaderCourse>
       <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white">
@@ -24,7 +24,7 @@ const Econduce = () => (
         Iniciate en el mundo de la programación como Full Stack Jr.
       </p>
       <div className="s:mrg-top-40">
-        <Link href="#cursos">
+        <Link href="/aplicar?course=white-koder">
           <Button>¡Aplica ahora!</Button>
         </Link>
       </div>
@@ -98,4 +98,4 @@ const Econduce = () => (
   </Layout>
 )
 
-export default Econduce
+export default BootcampWhiteKoderPage

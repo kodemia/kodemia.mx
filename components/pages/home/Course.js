@@ -2,15 +2,7 @@
 import Link from 'next/link'
 
 function isURL(str) {
-  var pattern = new RegExp(
-    '^(https?:\\/\\/)?' + // protocol
-    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|' + // domain name
-    '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-    '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-      '(\\#[-a-z\\d_]*)?$',
-    'i'
-  ) // fragment locator
+  var pattern = new RegExp('^https?')
 
   return pattern.test(str)
 }
@@ -22,7 +14,7 @@ const CourseLink = ({ course }) => (
         {course.name}
       </a>
     ) : (
-      <Link href={`/courses/${course.link}`}>
+      <Link href={course.link}>
         <a className="txt-underline x:fs-20">{course.name}</a>
       </Link>
     )}

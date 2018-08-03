@@ -1,9 +1,11 @@
 // Package
 import React, { Component } from 'react'
+import Link from 'next/link'
 import Particles from 'react-particles-js'
 
 // Ours
-// ...
+import Cursor from '../../cursor'
+import Button from '../../button'
 
 class HeaderHome extends Component {
   constructor(props) {
@@ -35,18 +37,19 @@ class HeaderHome extends Component {
     this.setState({ initialized: true, height: siteHeight })
   }
 
+  onResize = () => {
+    clearTimeout(this.resizeTimer)
+
+    this.resizeTimer = setTimeout(this._setSiteHeight, 50)
+  }
+
   componentDidMount() {
-    const self = this
-    let resizeTimer
+    window.addEventListener('resize', this.onResize)
+  }
 
-    self._setHeaderHeight()
-
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer)
-      resizeTimer = setTimeout(() => {
-        self._setHeaderHeight()
-      }, 50)
-    })
+  componentWillUnmount() {
+    clearTimeout(this.resizeTimer)
+    window.removeEventListener('resize', this.onResize)
   }
 
   shouldComponentUpdate() {
@@ -77,9 +80,9 @@ class HeaderHome extends Component {
                   <div className="x:scol-12 x:center">
                     <div className="content">
                       <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white">
-                        La primer academia real para programadore<cursor className="white">
+                        La primer academia real para programadore<Cursor white>
                           s
-                        </cursor>
+                        </Cursor>
                       </h1>
                       <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-grey-400">
                         Academia de desarrollo de talento en programación web,
@@ -87,6 +90,11 @@ class HeaderHome extends Component {
                         <br />
                         Cursos intensivos, experiencias personalizadas.
                       </p>
+                      <div className="s:mrg-top-20">
+                        <Link href="#cursos">
+                          <Button>Conoce los cursos</Button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

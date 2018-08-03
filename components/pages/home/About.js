@@ -2,7 +2,7 @@
 import asset from 'next/asset'
 
 // Ours
-// ...
+import Cursor from '../../cursor'
 
 const About = () => (
   <section id="que-es-kodemia" className="x:pad-bt-20 s:pad-bt-40">
@@ -10,11 +10,11 @@ const About = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            ¿Qué es Kodemia<cursor>?</cursor>
+            ¿Qué es Kodemia<Cursor>?</Cursor>
           </h2>
         </div>
       </div>
-      <div className="l:scol-6 x:top l:pad-right-50">
+      <div className="l:scol-5 x:top l:pad-right-50">
         <p>
           Transformamos la vida de cualquier persona con experiencias extremas
           en tecnologías de desarrollo web y móvil, activando nuevas capacidades
@@ -33,14 +33,12 @@ const About = () => (
           experiencias completamente personalizadas.
         </p>
       </div>
-      <div className="l:offset-0 l:scol-5 x:top">
-        <div className="img-pined">
-          <img
-            className="img-liquid"
-            src={asset('/img/default/kodemia-clase.jpg')}
-            alt="Clase"
-          />
-        </div>
+      <div className="l:scol-6 x:top">
+        <img
+          className="img-liquid img-rounded"
+          src={asset('/img/default/bootcamp.jpg')}
+          alt="Clase"
+        />
       </div>
     </div>
   </section>

@@ -1,8 +1,5 @@
-// Packages
-// ...
-
 // Ours
-// ...
+import Cursor from '../../../cursor'
 
 const Exercise = () => (
   <section id="exercise" className="x:pad-bt-20 s:pad-bt-40 bg-cyan-400">
@@ -10,7 +7,7 @@ const Exercise = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            Ejercici<cursor>o</cursor>
+            Ejercici<Cursor>o</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">

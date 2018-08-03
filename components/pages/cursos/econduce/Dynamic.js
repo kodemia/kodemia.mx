@@ -1,8 +1,5 @@
-// Packages
-// ...
-
 // Ours
-// ...
+import Cursor from '../../../cursor'
 
 const Dynamic = () => (
   <section id="dynamic" className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">
@@ -10,7 +7,7 @@ const Dynamic = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            La dinámic<cursor>a</cursor>
+            La dinámic<Cursor>a</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">

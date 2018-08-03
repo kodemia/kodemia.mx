@@ -1,0 +1,70 @@
+[
+    {
+      "name":  "#HackTheJob by Econduce",
+      "link": "https://www.facebook.com/events/1988170084831841/",
+      "schedule": {
+          "day": "30",
+          "month": "Jun",
+          "year": "2018",
+          "hour": "9:00"
+      },
+      "pastEvent": true
+    },
+    {
+      "name":  "KodeDayBlack",
+      "link": "https://www.facebook.com/events/1813053288787888/",
+      "schedule": {
+          "day": "07",
+          "month": "Jul",
+          "year": "2018",
+          "hour": "9:00"
+      },
+      "pastEvent": true
+    },
+    {
+      "name":  "KodeDayWhite",
+      "link": "https://www.facebook.com/events/2051792568421540/",
+      "schedule": {
+          "day": "14",
+          "month": "Jul",
+          "year": "2018",
+          "hour": "9:00"
+      },
+      "pastEvent": true
+    },
+    {
+      "name":  "KodemiaCamp",
+      "link": "https://www.facebook.com/events/2091990234350567/",
+      "schedule": {
+          "day": "06",
+          "month": "Ago",
+          "year": "2018",
+          "hour": "9:30"
+      },
+      "pastEvent": false
+    },
+    {
+      "name":  "Bootcamp Full Stack Jr",
+      "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
+      "schedule": {
+          "day": "05",
+          "month": "Ago",
+          "year": "2018",
+          "hour": "09:00"
+      },
+      "pastEvent": false,
+      "comingSoon": true
+    },
+    {
+      "name":  "Bootcamp Full Stack Sr",
+      "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+      "schedule": {
+          "day": "05",
+          "month": "Ago",
+          "year": "2018",
+          "hour": "09:00"
+      },
+      "pastEvent": false,
+      "comingSoon": true
+    }
+]

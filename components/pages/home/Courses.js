@@ -1,8 +1,6 @@
-// Packages
-//..
-
 // Ours
-import CoursesList from '../../../config/Courses'
+import Cursor from '../../cursor'
+import CoursesList from '../../../config/courses'
 import Course from './Course'
 
 const nextEvents = CoursesList.filter(event => !event.pastEvent)
@@ -14,7 +12,7 @@ const Courses = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            Cursos, Workshops y Evento<cursor>s</cursor>
+            Cursos, Workshops y Evento<Cursor>s</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">
@@ -26,7 +24,7 @@ const Courses = () => (
           <div>
             <div className="x:scol-12 x:mrg-bottom-20 x:mrg-top-20">
               <h2>
-                Eventos Anteriore<cursor>s</cursor>
+                Eventos Anteriore<Cursor>s</Cursor>
               </h2>
             </div>
             <div className="x:scol-12">

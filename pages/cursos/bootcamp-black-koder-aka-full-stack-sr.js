@@ -1,6 +1,7 @@
 // Packages
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import asset from 'next/asset'
 
 // Ours
 import Cursor from '../../components/cursor'
@@ -88,6 +89,22 @@ const BootcampBlackKoderPage = () => (
     </section>
     <section className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">
       <div className="scontainer">
+        <div className="line">
+          {[1, 2, 3, 4, 5, 6].map((pic, i) => (
+            <div key={i} className="x:scol-6 m:scol-4">
+              <img
+                className="img-liquid img-rounded x:middle"
+                width="300"
+                src={asset(`img/classes/black/image-${pic}.jpg`)}
+                alt={i}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section className="x:pad-bt-20 s:pad-bt-40">
+      <div className="scontainer">
         <div className="x:mrg-bottom-20">
           <h2>
             Precios y Financiamient<Cursor>o</Cursor>
@@ -96,10 +113,10 @@ const BootcampBlackKoderPage = () => (
         <Pricing />
       </div>
     </section>
-    <section className="x:pad-bt-20 s:pad-bt-40">
+    <section className="x:pad-bt-20 s:pad-bt-40 bg-black c-white">
       <div className="scontainer">
         <div className="x:mrg-bottom-20">
-          <h2>
+          <h2 className="c-white">
             Beneficio<Cursor>s</Cursor>
           </h2>
         </div>

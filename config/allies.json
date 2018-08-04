@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Agile Academy",
+    "asset": "img/allies/agile-academy.png"
+  },
+  {
+    "name": "Wave Community",
+    "asset": "img/allies/wave.png"
+  },
+  {
+    "name": "Consejo de la Comunicacion",
+    "asset": "img/allies/consejo-de-la-comunicacion.png"
+  },
+  {
+    "name": "Telmex Hub",
+    "asset": "img/allies/telmex-hub.png"
+  },
+  {
+    "name": "Soy Mexicano",
+    "asset": "img/allies/soy-mexicano.png"
+  },
+  {
+    "name": "Google",
+    "asset": "img/allies/google.png"
+  },
+  {
+    "name": "Microsoft",
+    "asset": "img/allies/microsoft.png"
+  },
+  {
+    "name": "Github Experts",
+    "asset": "img/allies/github-experts.png"
+  },
+  {
+    "name": "Econduce",
+    "asset": "img/allies/econduce.png"
+  },
+  {
+    "name": "dinkbit",
+    "asset": "img/allies/dinkbit.png"
+  },
+  {
+    "name": "COW",
+    "asset": "img/allies/cow.png"
+  },
+  {
+    "name": "Entropy",
+    "asset": "img/allies/entropy.png"
+  }
+]

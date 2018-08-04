@@ -5,7 +5,7 @@ import asset from 'next/asset'
 import Cursor from '../../cursor'
 
 const Contact = () => (
-  <section id="contacto" className="x:pad-bt-20 s:pad-bt-40">
+  <section id="contacto" className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">
     <div className="scontainer">
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">

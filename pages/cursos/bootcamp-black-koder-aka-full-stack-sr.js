@@ -1,11 +1,11 @@
 // Packages
 import Layout from '../../components/layout'
 import Link from 'next/link'
-import asset from 'next/asset'
 
 // Ours
 import Cursor from '../../components/cursor'
 import Button from '../../components/button'
+import Browser from '../../components/browser'
 import HeaderCourse from '../../components/pages/cursos/HeaderCourse'
 import Description from '../../components/pages/cursos/black-koder/description.md'
 import Testimonial from '../../components/pages/cursos/black-koder/testimonial.md'
@@ -41,11 +41,22 @@ const BootcampBlackKoderPage = () => (
             <Description />
           </div>
           <div className="l:scol-6 x:middle">
-            <img
-              className="img-liquid img-rounded"
-              src={asset('/img/default/bootcamp.jpg')}
-              alt="Clase"
-            />
+            <Browser>
+              <pre>
+                <span>const express = require('express')</span>
+                <span>&nbsp;</span>
+                <span>const app = express()</span>
+                <span>
+                  app.get('/', (req, res) => res.send('Hello World!'))
+                </span>
+                <span>
+                  app.listen(3000, () => console.log('Listening on port 3000!'))
+                </span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+              </pre>
+            </Browser>
           </div>
         </div>
         <div className="line">

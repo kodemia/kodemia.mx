@@ -1,11 +1,11 @@
 // Packages
 import Layout from '../../components/layout'
 import Link from 'next/link'
-import asset from 'next/asset'
 
 // Ours
 import Cursor from '../../components/cursor'
 import Button from '../../components/button'
+import Browser from '../../components/browser'
 import HeaderCourse from '../../components/pages/cursos/HeaderCourse'
 import Description from '../../components/pages/cursos/white-koder/description.md'
 import Testimonial from '../../components/pages/cursos/white-koder/testimonial.md'
@@ -41,11 +41,20 @@ const BootcampWhiteKoderPage = () => (
             <Description />
           </div>
           <div className="l:scol-6 x:middle">
-            <img
-              className="img-liquid img-rounded"
-              src={asset('/img/default/bootcamp.jpg')}
-              alt="Clase"
-            />
+            <Browser white>
+              <pre>
+                <span>$ mkdir white-koder</span>
+                <span>$ cd ~/white-koder</span>
+                <span>
+                  $ ~/white-koder echo "console.log('hello world')" > index.js
+                </span>
+                <span>$ ~/white-koder node index.js</span>
+                <span>$ ~/white-koder hello world</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+              </pre>
+            </Browser>
           </div>
         </div>
         <div className="line">

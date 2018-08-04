@@ -1,5 +1,5 @@
 __Fecha__
-Iniciamos el 20 de Agosto de 2018
+Iniciamos el 03 de Septiembre de 2018
 
 __Horario__
 Estudia 4 días a la semana durante 15 semanas intensivas, además nuestro programa te da la oportunidad de continuar trabajando o de ofrecerte disponibilidad de horario para colocarte en un empleo. Lunes, Miércoles y Viernes de 19:00 a 22:00 horas y Sábados de 9:00 a 14:00 horas.

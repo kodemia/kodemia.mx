@@ -16,13 +16,13 @@ const Allies = () => (
     </div>
     <div className="line x:center">
       <div>
-        {AlliesList.map((allie, i) => (
-          <div key={i} className="s:scol-3">
+        {AlliesList.map((ally, i) => (
+          <div key={i} className="x:scol-6 s:scol-4 m:scol-3">
             <img
               className="x:middle"
               width="150"
-              src={asset(allie.asset)}
-              alt={allie.name}
+              src={asset(ally.asset)}
+              alt={ally.name}
             />
           </div>
         ))}

@@ -69,7 +69,7 @@
         "pastEvent": false
     },
     {
-      "name":  "Bootcamp Full Stack Jr",
+      "name":  "White Koder Bootcamp (Full Stack Jr)",
       "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
       "desc": "Iniciate en el mundo de la programación como Full Stack Jr.",
       "schedule": {
@@ -82,7 +82,7 @@
       "comingSoon": false
     },
     {
-      "name":  "Bootcamp Full Stack Sr",
+      "name":  "Black Koder Bootcamp (Full Stack Sr)",
       "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
       "desc": "Transforma tu carrera, incrementa tu conocimiento y defínete como un programador Sr.",
       "schedule": {

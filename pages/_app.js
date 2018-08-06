@@ -1,6 +1,7 @@
 // Packages
 import App, { Container } from 'next/app'
 import React from 'react'
+import Router from 'next/router'
 import withAnalytics from '../components/analytics'
 
 class MyApp extends App {
@@ -24,6 +25,7 @@ class MyApp extends App {
   }
 }
 
-export default withAnalytics({ ga: 'UA-117971935-4', fbq: '1763806610406720' })(
-  MyApp
-)
+export default withAnalytics(Router, {
+  ga: 'UA-117971935-4',
+  fbq: '1763806610406720'
+})(MyApp)

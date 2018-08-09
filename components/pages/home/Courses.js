@@ -4,7 +4,7 @@ import CoursesList from '../../../config/courses'
 import Course from './Course'
 
 const nextEvents = CoursesList.filter(event => !event.pastEvent)
-const pastEvents = CoursesList.filter(event => event.pastEvent)
+const pastEvents = CoursesList.filter(event => event.pastEvent).reverse()
 
 const Courses = () => (
   <section id="cursos" className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">

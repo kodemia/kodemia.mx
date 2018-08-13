@@ -1,20 +1,26 @@
 [
   {
-    "name":  "¿Qué es Kodemia",
+    "name":   "¿Qué es Kodemia",
     "cursor": "?",
-    "href": "que-es-kodemia",
+    "href":   "/#que-es-kodemia",
     "anchor": true
   },
   {
-    "name":  "Curso",
+    "name":   "Curso",
     "cursor": "s",
-    "href": "cursos",
+    "href":   "/#cursos",
     "anchor": true
   },
   {
-    "name":  "Aplic",
-    "cursor": "a",
-    "href": "contacto",
+    "name":   "Contact",
+    "cursor": "o",
+    "href":   "/#contacto",
     "anchor": true
+  },
+  {
+    "name":   "Aplica",
+    "cursor": "r",
+    "href":   "/aplicar",
+    "anchor": false
   }
 ]

@@ -7,11 +7,11 @@ import NavLinks from '../../config/nav-items'
 class NavItems extends Component {
   render() {
     return (
-      <nav>
+      <nav id="nav" className="x:middle x:hide m:show-inline">
         <ul>
           {NavLinks.map((link, i) => (
             <li key={i}>
-              <a href={`/#${link.href}`}>
+              <a href={`${link.href}`}>
                 {link.name}
                 <span>{link.cursor}</span>
               </a>

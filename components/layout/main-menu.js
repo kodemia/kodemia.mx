@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 // Ours
 import Logo from '../icons/logo-full'
+import NavItems from './nav-items'
 
 const MainMenu = () => (
   <div className="main-menu">
@@ -30,6 +31,7 @@ const MainMenu = () => (
               </svg>
             </button>
           </div>
+          <NavItems />
           <nav id="nav" className="x:middle x:hide m:show-inline">
             <ul>
               <li className="x:show m:show-inline">

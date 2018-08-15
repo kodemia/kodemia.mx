@@ -54,7 +54,7 @@ const Contact = () => (
       height="450"
       frameBorder="0"
       style={{ border: 0 }}
-      allowFullscreen
+      allowFullScreen={true}
     />
   </section>
 )

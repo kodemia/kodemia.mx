@@ -1,7 +1,7 @@
 // Ours
 import Cursor from '../../cursor'
 import CoursesList from '../../../config/courses'
-import Course from './Course'
+import Course from '../../course'
 
 const nextEvents = CoursesList.filter(event => !event.pastEvent)
 const pastEvents = CoursesList.filter(event => event.pastEvent).reverse()

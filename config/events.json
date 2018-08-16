@@ -8,7 +8,8 @@
           "year": "2018",
           "hour": "9:00"
       },
-      "pastEvent": true
+      "pastEvent": true,
+      "comingSoon": false
     },
     {
       "name":  "KodeDayBlack",
@@ -19,7 +20,8 @@
           "year": "2018",
           "hour": "9:00"
       },
-      "pastEvent": true
+      "pastEvent": true,
+      "comingSoon": false
     },
     {
       "name":  "KodeDayWhite",
@@ -30,7 +32,8 @@
           "year": "2018",
           "hour": "9:00"
       },
-      "pastEvent": true
+      "pastEvent": true,
+      "comingSoon": false
     },
     {
         "name":  "KodeDayBlack",
@@ -42,7 +45,8 @@
             "year": "2018",
             "hour": "9:00"
         },
-        "pastEvent": true
+        "pastEvent": true,
+        "comingSoon": false
     },
     {
       "name":  "KodeCamp",
@@ -54,7 +58,8 @@
           "year": "2018",
           "hour": "9:30"
       },
-      "pastEvent": false
+      "pastEvent": false,
+      "comingSoon": false
     },
     {
         "name":  "KodeDayWhite",
@@ -66,7 +71,8 @@
             "year": "2018",
             "hour": "9:00"
         },
-        "pastEvent": false
+        "pastEvent": false,
+        "comingSoon": false
     },
     {
         "name":  "KodeDayPink (Un evento sólo para mujeres)",
@@ -78,6 +84,7 @@
             "year": "2018",
             "hour": "9:00"
         },
-        "pastEvent": false
+        "pastEvent": false,
+        "comingSoon": false
     }
 ]

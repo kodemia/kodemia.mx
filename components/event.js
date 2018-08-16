@@ -46,21 +46,25 @@ const Course = ({ course }) => (
             </span>
           </p>
         </div>
-        <div className="s:scol-10 x:top x:center s:left">
+        <div className="s:scol-10 x:top">
           <p className="x:pad-top-0">
             <i className="far fa-clock" /> {course.schedule.hour}h
           </p>
           {course.link === undefined ? (
-            <span className="x:fs-20">{course.name}</span>
+            <p className="x:mrg-bt-5 x:fs-18 m:fs-20">{course.name}</p>
           ) : (
-            <CourseLink course={course} />
+            <p className="x:mrg-bt-5 x:fs-18 m:fs-20">
+              <CourseLink course={course} />
+            </p>
           )}
-          {course.desc !== undefined ? <p>{course.desc}</p> : null}
           {course.comingSoon ? (
-            <p>
-              <span className="x:fs-14 c-yellow-900">Próximamente</span>
+            <p className="x:mrg-top-10">
+              <span className="x:fs-14 c-yellow-700 txt-uppercase">
+                Próximamente
+              </span>
             </p>
           ) : null}
+          {course.desc !== undefined ? <p>{course.desc}</p> : null}
         </div>
       </div>
     </div>

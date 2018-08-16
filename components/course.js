@@ -22,7 +22,7 @@ const CourseLink = ({ course }) => (
 )
 
 const Course = ({ course }) => (
-  <div className="x:scol-12 x:top">
+  <div className="x:scol-6 x:top">
     <div className={`course-card ${course.pastEvent ? 'inactive' : null}`}>
       <div className="line">
         <div className="s:scol-2 x:top x:center">

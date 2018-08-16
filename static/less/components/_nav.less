@@ -50,7 +50,7 @@
 
     & .menu-icon {
       background: @c-white;
-      border: solid 1px @c-black;
+      border: solid 3px @c-grey-100;
       display: inline-block;
       border-radius: 50%;
       height: 38px;
@@ -96,12 +96,16 @@
       }
 
       &.open {
+        background: @c-black;
+        border-color: @c-black;
 
         & span {
+          background: @c-white;
           width: 50%;
 
           &:before,
           &:after {
+            background: @c-white;
             width: 50%;
           }
         }

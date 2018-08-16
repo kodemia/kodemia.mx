@@ -1,23 +1,23 @@
 // Ours
 import Cursor from '../../cursor'
-import CoursesList from '../../../config/courses'
-import Course from './Course'
+import EventsList from '../../../config/events'
+import Event from './Event'
 
-const nextEvents = CoursesList.filter(event => !event.pastEvent)
-const pastEvents = CoursesList.filter(event => event.pastEvent).reverse()
+const nextEvents = EventsList.filter(event => !event.pastEvent)
+const pastEvents = EventsList.filter(event => event.pastEvent).reverse()
 
-const Courses = () => (
+const Events = () => (
   <section id="cursos" className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">
     <div className="scontainer">
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            Curso<Cursor>s</Cursor>
+            Workshops y Evento<Cursor>s</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">
           <div className="line">
-            {nextEvents.map((course, i) => <Course course={course} key={i} />)}
+            {nextEvents.map((course, i) => <Event course={course} key={i} />)}
           </div>
         </div>
         {pastEvents.length > 0 && (
@@ -30,7 +30,7 @@ const Courses = () => (
             <div className="x:scol-12">
               <div className="line">
                 {pastEvents.map((course, i) => (
-                  <Course course={course} key={i} />
+                  <Event course={course} key={i} />
                 ))}
               </div>
             </div>
@@ -41,4 +41,4 @@ const Courses = () => (
   </section>
 )
 
-export default Courses
+export default Events

@@ -11,7 +11,7 @@ class MainMenu extends Component {
     super(props)
 
     this.state = {
-      isOpen: false
+      isOpen: null
     }
 
     this.btnRef = React.createRef()
@@ -19,30 +19,15 @@ class MainMenu extends Component {
 
   toggleMenu = e => {
     e.preventDefault()
-    const $nav = document.getElementById('nav')
 
     this.setState({ isOpen: !this.state.isOpen })
-
-    // Validar contra state...
-
-    if ($nav.classList.contains('animate-nav-in')) {
-      $nav.classList.remove('animate-nav-in')
-      $nav.classList.add('animate-nav-out')
-    } else {
-      $nav.classList.remove('animate-nav-out')
-      $nav.classList.add('animate-nav-in')
-    }
   }
 
   closeMenu = e => {
     const $btn = this.btnRef.current
-    const $nav = document.getElementById('nav')
 
     if (e.target !== $btn && !$btn.contains(e.target) && this.state.isOpen) {
       this.setState({ isOpen: false })
-
-      $nav.classList.remove('animate-nav-in')
-      $nav.classList.add('animate-nav-out')
     }
   }
 
@@ -56,6 +41,13 @@ class MainMenu extends Component {
 
   render() {
     const { isOpen } = this.state
+    let navClass
+
+    if (isOpen === false) {
+      navClass = 'animate-nav-out'
+    } else if (isOpen === true) {
+      navClass = 'animate-nav-in'
+    }
 
     return (
       <div className="main-menu">
@@ -69,7 +61,7 @@ class MainMenu extends Component {
                   </a>
                 </Link>
               </div>
-              <nav id="nav">
+              <nav id="nav" className={navClass}>
                 <NavItems />
               </nav>
             </div>

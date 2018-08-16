@@ -14,24 +14,30 @@ const About = () => (
           </h2>
         </div>
       </div>
-      <div className="l:scol-5 x:top l:pad-right-50">
-        <p>
-          Transformamos la vida de cualquier persona con experiencias extremas
-          en tecnologías de desarrollo web y móvil, activando nuevas capacidades
-          para aventurar su talento en nuevos o mejores empleos y emprendimiento
-          de innovación.
-        </p>
-        <p className="x:mrg-top-10 x:mrg-bottom-10">
-          Academia de desarrollo de talento.
-          <br />
-          - Programación web y móvil.
-          <br />
-          - Formación en diseño UI/UX.
-        </p>
-        <p>
-          Formamos desarrolladores mexicanos mediante cursos intensivos y
-          experiencias completamente personalizadas.
-        </p>
+      <div className="l:scol-6 x:top l:pad-right-50">
+        <div className="line">
+          <div className="x:scol-12">
+            <p className="x:fs-18">
+              Transformamos la vida de cualquier persona con experiencias
+              extremas en tecnologías de desarrollo web y móvil, activando
+              nuevas capacidades para aventurar su talento en nuevos o mejores
+              empleos y emprendimiento de innovación.
+            </p>
+          </div>
+          <div className="x:scol-12">
+            <p className="x:fs-18">Academia de desarrollo de talento.</p>
+            <div className="list-numeric x:fs-18">
+              <ul>
+                <li number="1.">Programación web y móvil.</li>
+                <li number="2.">Formación en diseño UI/UX.</li>
+              </ul>
+            </div>
+            <p className="x:fs-18">
+              Formamos desarrolladores mexicanos mediante cursos intensivos y
+              experiencias completamente personalizadas.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="l:scol-6 x:top">
         <img

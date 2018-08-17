@@ -20,6 +20,7 @@ class Courses extends Component {
   render() {
     return (
       <section id="cursos">
+        <hr />
         <div className="line" regular="twins:1024">
           <div className="twins l:scol-6 scol--full x:top bg-white l:right">
             <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">

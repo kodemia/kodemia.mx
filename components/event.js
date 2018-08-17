@@ -8,22 +8,28 @@ function isURL(str) {
 }
 
 const CourseLink = ({ course }) => (
-  <div>
+  <p className="x:mrg-bt-5 x:fs-18 m:fs-20">
     {isURL(course.link) ? (
-      <a href={course.link} target="_blank" className="txt-underline x:fs-20">
+      <a href={course.link} target="_blank" className="txt-underline">
         {course.name}
       </a>
     ) : (
       <Link href={course.link}>
-        <a className="txt-underline x:fs-20">{course.name}</a>
+        <a className="txt-underline">{course.name}</a>
       </Link>
     )}
-  </div>
+  </p>
 )
 
-const Course = ({ course }) => (
+const Course = ({ course, color }) => (
   <div className="x:scol-12 x:top">
-    <div className={`course-card ${course.pastEvent ? 'inactive' : null}`}>
+    <div
+      className={
+        'course-card ' +
+        (course.pastEvent ? 'inactive' : null) +
+        (color ? ' card--black ' : ' card--white ')
+      }
+    >
       <div className="line">
         <div className="s:scol-2 x:top x:center">
           <p className="br-right">
@@ -53,9 +59,7 @@ const Course = ({ course }) => (
           {course.link === undefined ? (
             <p className="x:mrg-bt-5 x:fs-18 m:fs-20">{course.name}</p>
           ) : (
-            <p className="x:mrg-bt-5 x:fs-18 m:fs-20">
-              <CourseLink course={course} />
-            </p>
+            <CourseLink course={course} />
           )}
           {course.comingSoon ? (
             <p className="x:mrg-top-10">

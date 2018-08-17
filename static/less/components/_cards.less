@@ -1,5 +1,5 @@
 .course-card {
-  background: @c-white;
+  background: @c-grey-50;
   border: solid 1px @c-black;
   box-shadow: 5px 5px 0px -2px @c-black;
   //box-shadow: 0px 2px 4px -2px fade(@c-black, 30%);
@@ -25,6 +25,21 @@
 
     a {
       color: @c-grey-500;
+    }
+  }
+
+  &.card--black {
+    background: @c-black;
+    border-color: @c-white;
+    box-shadow: 5px 5px 0px -2px @c-white;
+    color: @c-white;
+
+    & a {
+      color: @c-white;
+
+      &:hover {
+        color: @c-yellow-700;
+      }
     }
   }
 }

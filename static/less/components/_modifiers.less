@@ -53,3 +53,13 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+// shido-todo: add scontainer--half breakpoints to shido
+.scontainer {
+
+  &.scontainer--half {
+    @media (max-width: @l-screen-max) {
+      max-width: 100%;
+    }
+  }
+}

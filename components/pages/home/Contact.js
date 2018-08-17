@@ -7,7 +7,7 @@ import Cursor from '../../cursor'
 const Contact = () => (
   <section
     id="contacto"
-    className="x:pad-top-20 s:pad-top-40 x:mrg-negative-bottom-5 bg-grey-50 bg-pattern-right"
+    className="x:pad-top-20 s:pad-top-40 x:mrg-negative-bottom-5 bg-white bg-pattern-right"
   >
     <div className="scontainer">
       <div className="line">

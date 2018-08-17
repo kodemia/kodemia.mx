@@ -6,7 +6,7 @@ import Cursor from '../../cursor'
 import AlliesList from '../../../config/allies.json'
 
 const Allies = () => (
-  <section className="x:pad-bt-20 bg-white s:pad-bt-40">
+  <section className="x:pad-bt-20 bg-grey-50 s:pad-bt-40">
     <div className="scontainer">
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">

@@ -9,7 +9,7 @@ const pastEvents = EventsList.filter(event => event.pastEvent).reverse()
 const Events = () => (
   <section
     id="cursos"
-    className="x:pad-bt-20 s:pad-bt-40 bg-grey-50 bg-pattern-bottom-left"
+    className="x:pad-bt-20 s:pad-bt-40 bg-white bg-pattern-bottom-left"
   >
     <div className="scontainer">
       <div className="line">

@@ -1,44 +1,59 @@
+// Package
+import React, { Component } from 'react'
+
+// Plugins
+import Regular from '../../../static/js/shido-regular'
+
 // Ours
 import Cursor from '../../cursor'
 import CoursesList from '../../../config/courses'
 import Course from '../../course'
 
-const nextEvents = CoursesList.filter(event => !event.pastEvent)
-const pastEvents = CoursesList.filter(event => event.pastEvent).reverse()
+const BlackCourses = CoursesList.black.filter(course => !course.pastEvent)
+const WhiteCourses = CoursesList.white.filter(course => !course.pastEvent)
 
-const Courses = () => (
-  <section id="cursos" className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">
-    <div className="scontainer">
-      <div className="line">
-        <div className="x:scol-12 x:mrg-bottom-20">
-          <h2>
-            Curso<Cursor>s</Cursor>
-          </h2>
-        </div>
-        <div className="x:scol-12">
-          <div className="line">
-            {nextEvents.map((course, i) => <Course course={course} key={i} />)}
-          </div>
-        </div>
-        {pastEvents.length > 0 && (
-          <div>
-            <div className="x:scol-12 x:mrg-bottom-20 x:mrg-top-20">
-              <h2>
-                Eventos Anteriore<Cursor>s</Cursor>
-              </h2>
-            </div>
-            <div className="x:scol-12">
+class Courses extends Component {
+  componentDidMount() {
+    const regular = new Regular()
+    regular.make()
+  }
+  render() {
+    return (
+      <section id="cursos">
+        <div className="line" regular="twins:1024">
+          <div className="twins l:scol-6 scol--full x:top bg-black l:right">
+            <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
               <div className="line">
-                {pastEvents.map((course, i) => (
+                <div className="x:scol-12 x:mrg-bottom-20">
+                  <h2 className="c-white">
+                    Black Kode<Cursor white>r</Cursor>
+                  </h2>
+                </div>
+                {BlackCourses.map((course, i) => (
+                  <Course course={course} key={i} color="black" />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="twins l:scol-6 scol--full x:top bg-white">
+            <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
+              <div className="line">
+                <div className="x:scol-12 x:mrg-bottom-20">
+                  <h2>
+                    White Kode<Cursor>r</Cursor>
+                  </h2>
+                </div>
+                {WhiteCourses.map((course, i) => (
                   <Course course={course} key={i} />
                 ))}
               </div>
             </div>
           </div>
-        )}
-      </div>
-    </div>
-  </section>
-)
+        </div>
+        <hr />
+      </section>
+    )
+  }
+}
 
 export default Courses

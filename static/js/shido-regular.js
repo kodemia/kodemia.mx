@@ -40,11 +40,13 @@ class Regular {
           if (a >= b) {
             b = a
           }
-          $children[j].style.height = b + 'px'
+          for (let k = 0; k < $children.length; ++k) {
+            $children[k].style.height = b + 'px'
+          }
         }
       } else {
-        for (let k = 0; k < $children.length; ++k) {
-          $children[k].style.height = 'auto'
+        for (let l = 0; l < $children.length; ++l) {
+          $children[l].style.height = 'auto'
         }
       }
     }

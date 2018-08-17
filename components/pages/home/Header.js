@@ -176,7 +176,7 @@ class HeaderHome extends Component {
                   }
                 }
               },
-              retina_detect: true
+              retina_detect: false
             }}
             style={{ position: 'absolute' }}
           />

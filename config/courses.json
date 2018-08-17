@@ -1,109 +1,32 @@
-[
-    {
-      "name":  "#HackTheJob by Econduce",
-      "link": "https://www.facebook.com/events/1988170084831841/",
-      "schedule": {
-          "day": "30",
-          "month": "Jun",
-          "year": "2018",
-          "hour": "9:00"
-      },
-      "pastEvent": true
-    },
-    {
-      "name":  "KodeDayBlack",
-      "link": "https://www.facebook.com/events/1813053288787888/",
-      "schedule": {
-          "day": "07",
-          "month": "Jul",
-          "year": "2018",
-          "hour": "9:00"
-      },
-      "pastEvent": true
-    },
-    {
-      "name":  "KodeDayWhite",
-      "link": "https://www.facebook.com/events/2051792568421540/",
-      "schedule": {
-          "day": "14",
-          "month": "Jul",
-          "year": "2018",
-          "hour": "9:00"
-      },
-      "pastEvent": true
-    },
-    {
-        "name":  "KodeDayBlack",
-        "link": "https://www.eventbrite.com/e/kodedayblack-tickets-48225231967?aff=ehomecard",
-        "desc": "Asiste gratis al #KodeDayBlack de Kodemia donde contaremos con la participación de CEO’s y CTO’s de empresas y startups de tecnología, diseñadores y desarrolladores en diversas plataformas.",
-        "schedule": {
-            "day": "04",
-            "month": "Ago",
-            "year": "2018",
-            "hour": "9:00"
-        },
-        "pastEvent": true
-    },
-    {
-      "name":  "KodeCamp",
-      "link": "https://telmexhub.org/index.php/page/kodecamp",
-      "desc": "Vive una semana de live coding de la mano de Kodemia totalmente gratis.",
-      "schedule": {
-          "day": "06",
-          "month": "Ago",
-          "year": "2018",
-          "hour": "9:30"
-      },
-      "pastEvent": false
-    },
-    {
-        "name":  "KodeDayWhite",
-        "link": "https://www.eventbrite.com/e/kodedaywhite-tickets-48225279108?aff=ehomecard",
-        "desc": "Asiste gratis al #KodeDayWhite donde podrás conocer a nuestros mentores, Koders que ya han estudiado con nosotros y expertos en diversas tecnologías. ",
-        "schedule": {
-            "day": "11",
-            "month": "Ago",
-            "year": "2018",
-            "hour": "9:00"
-        },
-        "pastEvent": false
-    },
-    {
-        "name":  "KodeDayPink (Un evento sólo para mujeres)",
-        "link": "https://www.eventbrite.com/e/kodedaypink-tickets-48932378060?aff=erelexpmlt",
-        "desc": "Aprende la tecnología, el diseño, la manipulación y el consumo de recursos para la creación de un Marketplace. KodeDayPink es un día GRATUITO de live coding con los mentores de Kodemia donde las alumnas aprenderán a desarrollar en un entorno FullStack una aplicación básica con tecnologías como: HMTL5, CSS Flexbox, Javascript y Firebase.",
-        "schedule": {
-            "day": "18",
-            "month": "Ago",
-            "year": "2018",
-            "hour": "9:00"
-        },
-        "pastEvent": false
-    },
-    {
-      "name":  "White Koder Bootcamp (Full Stack Jr)",
-      "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
-      "desc": "Iniciate en el mundo de la programación como Full Stack Jr.",
-      "schedule": {
-          "day": "03",
-          "month": "Sep",
-          "year": "2018",
-          "hour": "19:00"
-      },
-      "pastEvent": false,
-      "comingSoon": false
-    },
-    {
-      "name":  "Black Koder Bootcamp (Full Stack Sr)",
-      "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
-      "desc": "Transforma tu carrera, incrementa tu conocimiento y defínete como un programador Sr.",
-      "schedule": {
-          "day": "03",
-          "month": "Sep",
-          "year": "2018",
-          "hour": "19:00"
-      },
-      "pastEvent": false,
-      "comingSoon": false
-    }
-]
+{
+    "black": [
+        {
+          "name":  "Bootcamp (Full Stack Sr)",
+          "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+          "desc": "Transforma tu carrera, incrementa tu conocimiento y defínete como un programador Sr.",
+          "schedule": {
+              "day": "03",
+              "month": "Sep",
+              "year": "2018",
+              "hour": "19:00"
+          },
+          "pastEvent": false,
+          "comingSoon": false
+        }
+    ],
+    "white": [
+        {
+          "name": "Bootcamp (Full Stack Jr)",
+          "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
+          "desc": "Iniciate en el mundo de la programación como Full Stack Jr.",
+          "schedule": {
+              "day": "03",
+              "month": "Sep",
+              "year": "2018",
+              "hour": "19:00"
+          },
+          "pastEvent": false,
+          "comingSoon": false
+        }
+    ]
+}

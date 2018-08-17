@@ -38,10 +38,10 @@ const BootcampBlackKoderPage = () => (
           </h2>
         </div>
         <div className="line">
-          <div className="l:scol-6 x:middle l:pad-right-50">
+          <div className="l:scol-6 l:pad-right-50">
             <Description />
           </div>
-          <div className="l:scol-6 x:middle">
+          <div className="l:scol-6">
             <Browser>
               <pre>
                 <span>const express = require('express')</span>

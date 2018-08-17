@@ -5,7 +5,6 @@ const HeaderCourse = ({ children }) => (
         <div className="cell">
           <div className="scontainer">
             <div className="line">
-              <div className="x:scol-12 x:center" />
               <div className="x:scol-12 x:center">
                 <div className="content">{children}</div>
               </div>

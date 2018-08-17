@@ -24,7 +24,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
       <div className="scontainer">
         <div className="line simple-form">
           <Form>
-            <div className="x:scol-x-12 bottom-x">
+            <div className="x:scol-12">
               <label className="x:fs-14">Nombre Completo</label>
               <div className="input-field mrg-x-top-5">
                 <Field className="input" type="text" name="fullname" />
@@ -34,7 +34,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
                   )}
               </div>
             </div>
-            <div className="x:scol-x-12 bottom-x">
+            <div className="x:scol-12">
               <label className="x:fs-14">Correo electrónico</label>
               <div className="input-field mrg-x-top-5">
                 <Field className="input" type="email" name="email" />
@@ -42,7 +42,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
                   errors.email && <p className="form-error">{errors.email}</p>}
               </div>
             </div>
-            <div className="x:scol-x-12 bottom-x">
+            <div className="x:scol-12">
               <label className="x:fs-14">Teléfono</label>
               <div className="input-field mrg-x-top-5">
                 <Field className="input" type="text" name="phone" />
@@ -50,7 +50,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
                   errors.phone && <p className="form-error">{errors.phone}</p>}
               </div>
             </div>
-            <div className="x:scol-x-12 bottom-x">
+            <div className="x:scol-12">
               <label className="x:fs-14">Curso de interés</label>
               <div className="input-field mrg-x-top-5">
                 <Field component="select" name="course">
@@ -69,7 +69,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               </div>
             </div>
 
-            <div className="x:scol-x-12 bottom-x">
+            <div className="x:scol-12">
               <label className="x:fs-14">¿Cómo te enteraste de Kodemia?</label>
               <div className="input-field mrg-x-top-5">
                 <Field component="textarea" name="reference" />
@@ -79,7 +79,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
                   )}
               </div>
             </div>
-            <div className="x:scol-x-12 bottom-x">
+            <div className="x:scol-12">
               <label className="x:fs-14">
                 ¿Porqué estudiar en Kodemia? (opcional)
               </label>
@@ -89,7 +89,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
                   errors.why && <p className="form-error">{errors.why}</p>}
               </div>
             </div>
-            <div className="x:scol-x-12 bottom-x">
+            <div className="x:scol-12">
               <label className="x:fs-14">
                 ¿Qué conocimientos en programación tienes? (opcional)
               </label>

@@ -6,17 +6,31 @@ span.cursor {
   }
 }
 
+h2,
+h3 {
+  position: relative;
+
+  &:before{
+    left: 0px;
+    position: absolute;
+    top: 0px;
+  }
+}
+
 h2 {
+  padding-left: 40px;
 
   &:before {
+    color: @c-pink;
     content: '/> ';
   }
 }
 
 h3 {
+  padding-left: 25px;
 
   &:before {
-    color: @c-cyan-300;
-    content: '~:';
+    color: @c-purple-A400;
+    content: '~: ';
   }
 }

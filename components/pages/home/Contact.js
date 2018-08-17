@@ -5,7 +5,10 @@ import asset from 'next/asset'
 import Cursor from '../../cursor'
 
 const Contact = () => (
-  <section id="contacto" className="x:pad-bt-20 s:pad-bt-40 bg-grey-50">
+  <section
+    id="contacto"
+    className="x:pad-top-20 s:pad-top-40 x:mrg-negative-bottom-5 bg-white bg-pattern-right"
+  >
     <div className="scontainer">
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
@@ -51,7 +54,7 @@ const Contact = () => (
       height="450"
       frameBorder="0"
       style={{ border: 0 }}
-      allowFullscreen
+      allowFullScreen={true}
     />
   </section>
 )

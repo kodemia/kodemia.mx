@@ -196,6 +196,8 @@ class Layout extends Component {
           <MessengerCustomerChat
             pageId="637875623216179"
             appId="513861882374839"
+            loggedInGreeting="¿Tienes dudas?"
+            loggedOutGreeting="¿Tienes dudas?"
           />
         </div>
       </div>

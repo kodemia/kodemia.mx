@@ -35,12 +35,12 @@ const Contact = () => (
               info@kodemia.mx
             </a>
           </p>
-          {/*<p className="x:fs-18 s:fs-20">
+          <p className="x:fs-18 s:fs-20">
             Teléfono: <br />{' '}
-            <a className="txt-underline" href="tel:000 000 0000">
-              000 000 0000
+            <a className="txt-underline" href="tel:+525547707317">
+              (5255) 4770 7317
             </a>
-          </p>*/}
+          </p>
           <p className="x:fs-18 s:fs-20">
             Av. Revolución 356, San Pedro de los Pinos 03800 Ciudad de México,
             CDMX

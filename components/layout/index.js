@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import React, { Component } from 'react'
 import asset from 'next/asset'
+import MessengerCustomerChat from 'react-messenger-customer-chat'
 
 // Less
 import '../../static/less/app.less'
@@ -192,6 +193,10 @@ class Layout extends Component {
             {children}
           </div>
           <Footer mode={mode} getHeight={this.setFooterHeight} />
+          <MessengerCustomerChat
+            pageId="637875623216179"
+            appId="513861882374839"
+          />
         </div>
       </div>
     )

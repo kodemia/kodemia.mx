@@ -1,6 +1,7 @@
 // Package
 import React, { Component } from 'react'
-import Link from 'next/link'
+import Slider from 'react-slick'
+import asset from 'next/asset'
 
 // Ours
 import Images from '../config/carousels'
@@ -12,17 +13,63 @@ class Carousel extends Component {
   render() {
     const { section = 'home' } = this.props
 
+    const settings = {
+      arrows: true,
+      autoplay: true,
+      centerMode: false,
+      dots: false,
+      infinite: true,
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      speed: 500,
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 599,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 1
+          }
+        }
+      ]
+    }
+
     return (
-      <div className="owl-carousel owl-theme owl-default-nav">
-        {Images[section].map((link, i) => (
-          <div className="item" key={i}>
-            <Link href={link} data-fancybox="Galería">
-              <a>
-                <img src={link} alt="" />
-              </a>
-            </Link>
-          </div>
-        ))}
+      <div>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charSet="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+        <Slider {...settings}>
+          {Images[section].map((link, i) => (
+            <div className="item" key={i}>
+              <img className="img-liquid" src={asset(link)} alt="Kodemia" />
+            </div>
+          ))}
+        </Slider>
       </div>
     )
   }

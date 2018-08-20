@@ -1,6 +1,10 @@
-const HeaderCourse = ({ children }) => (
+const HeaderCourse = ({ children, white }) => (
   <section id="header">
-    <div className="header-course x:pad-bt-20 s:pad-bt-50">
+    <div
+      className={
+        'header-course x:pad-bt-20 s:pad-bt-50 ' + (white ? 'white' : null)
+      }
+    >
       <div className="table">
         <div className="cell">
           <div className="scontainer">

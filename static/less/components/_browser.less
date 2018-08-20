@@ -1,59 +1,65 @@
 .browser {
-  .dot {
-    height: 12px;
-    width: 12px;
+  height: 100%;
+
+  & .dot {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    height: 12px;
     margin-right: 4px;
+    width: 12px;
 
     &.red {
       background-color: #FF6159;
     }
+
     &.yellow {
       background-color: #FFBD2D;
     }
+
     &.green {
       background-color: #28C93F;
     }
   }
 
-  .container {
+  & .container {
     border: 3px solid @c-black;
     border-radius: 4px;
+    height: 100%;
 
     &.white {
-      border: 3px solid #f1f1f1;
+      background: fade(@c-white, 90%);
+      border: 3px solid fade(@c-white, 30%);
     }
   }
 
-  .top {
-    padding: 10px;
-    color: @c-white;
+  & .top {
     background-color: @c-black;
-
-    &.white {
-      color: @c-black;
-      background-color: @c-white;
-    }
-  }
-
-  .content {
-    padding: 10px;
     color: @c-white;
-    background-color: @c-black;
+    padding: 10px;
 
     &.white {
+      background-color: fade(@c-white, 0%);
       color: @c-black;
-      background-color: @c-white;
     }
   }
 
-  pre {
-    .mix-fs(12);
+  & .content {
+    background-color: @c-black;
+    color: @c-white;
+    padding: 10px;
+
+    &.white {
+      background-color: fade(@c-white, 0%);
+      color: @c-black;
+    }
+  }
+
+  & pre {
     line-height: 20px;
-    white-space: pre-wrap;
     margin: 0;
+    .mix-fs(12);
+    white-space: pre-wrap;
 
     span {
       display: block;

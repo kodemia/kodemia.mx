@@ -183,6 +183,30 @@ class Layout extends Component {
             rel="stylesheet"
           />
           <link rel="stylesheet" href="/_next/static/style.css" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@kodemiamx" />
+          <meta name="twitter:title" content="Kodemia" />
+          <meta
+            name="twitter:description"
+            content="La primer academia real para programadores"
+          />
+          <meta
+            name="twitter:image:src"
+            content={asset('img/logos/kodemia-og-img.jpg')}
+          />
+
+          <meta property="og:title" content="Kodemia" />
+          <meta
+            property="og:description"
+            content="La primer academia real para programadores"
+          />
+          <meta property="og:url" content="https://kodemia.mx" />
+          <meta
+            property="og:image"
+            content={asset('img/logos/kodemia-og-img.jpg')}
+          />
+          <meta property="og:site_name" content="Kodemia" />
         </Head>
         <div>
           <div

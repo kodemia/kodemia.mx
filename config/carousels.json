@@ -1,0 +1,18 @@
+{
+  "home": [
+    "/img/galleries/home/1.jpg",
+    "/img/galleries/home/2.jpg",
+    "/img/galleries/home/3.jpg",
+    "/img/galleries/home/4.jpg",
+    "/img/galleries/home/5.jpg",
+    "/img/galleries/home/6.jpg",
+    "/img/galleries/home/7.jpg",
+    "/img/galleries/home/8.jpg"
+  ],
+  "otro": [
+    "imagen-2.jpg",
+    "imagen-2.jpg",
+    "imagen-2.jpg",
+    "imagen-2.jpg"
+  ]
+}

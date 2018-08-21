@@ -1,0 +1,28 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.slick-slider {
+  margin-bottom: -3px;
+  position: relative;
+
+  & .slick-arrow {
+    height: auto !important;
+    .mix-transition;
+    position: absolute;
+    width: auto !important;
+    z-index: 99;
+
+    &:before {
+      .mix-fs(40);
+      .mix-transition;
+    }
+
+    &.slick-next {
+      right: 20px !important;
+    }
+
+    &.slick-prev {
+      left: 20px !important;
+    }
+  }
+}

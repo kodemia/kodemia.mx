@@ -25,7 +25,7 @@ class BootcampWhiteKoderPage extends Component {
   }
   render() {
     return (
-      <Layout title="Bootcamp Black Koder (Full Stack Jr) :: Kodemia">
+      <Layout title="Bootcamp White Koder (Full Stack Jr) :: Kodemia">
         <HeaderCourse white>
           <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-black">
             Bootcamp Black Koder
@@ -34,7 +34,7 @@ class BootcampWhiteKoderPage extends Component {
             Iniciate en el mundo de la programación como Full Stack Sr.
           </p>
           <div className="s:mrg-top-40">
-            <Link href="/aplicar?course=black-koder">
+            <Link href="/aplicar?course=white-koder">
               <a className="btn btn--black">¡Aplica ahora!</a>
             </Link>
           </div>
@@ -108,7 +108,7 @@ class BootcampWhiteKoderPage extends Component {
                   <img
                     className="img-liquid img-rounded x:middle"
                     width="300"
-                    src={asset(`img/classes/black/image-${pic}.jpg`)}
+                    src={asset(`img/classes/white/image-${pic}.jpg`)}
                     alt={i}
                   />
                 </div>

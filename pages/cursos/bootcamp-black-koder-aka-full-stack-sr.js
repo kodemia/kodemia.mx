@@ -40,6 +40,7 @@ class BootcampBlackKoderPage extends Component {
                 'docs/courses/bootcamps/kodemia-syllabus-late-2018.pdf'
               )}
               className="btn btn--white c-white s:mrg-right-10"
+              target="_blank"
             >
               Descarga el temarío
             </a>

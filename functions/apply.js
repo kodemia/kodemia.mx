@@ -29,7 +29,7 @@ const addApplier = async req => {
     Course: req.course,
     Reference: req.reference,
     Why: req.why,
-    Experience: req.why
+    Experience: req.experience
   }
 
   clean(data)
@@ -64,7 +64,8 @@ exports.handler = async (event, context, callback) => {
     fullname: 'required',
     phone: 'required|digitsBetween:10,13',
     course: 'required|in:white-koder,black-koder',
-    reference: 'required'
+    reference: 'required',
+    why: 'required'
   })
 
   const isValid = await validate.check()

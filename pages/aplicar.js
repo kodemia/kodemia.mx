@@ -81,7 +81,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
             </div>
             <div className="x:scol-12">
               <label className="x:fs-14">
-                ¿Porqué estudiar en Kodemia? (opcional)
+                ¿Porqué quieres ser desarrollador?
               </label>
               <div className="input-field mrg-x-top-5">
                 <Field component="textarea" name="why" />
@@ -154,6 +154,9 @@ export default withFormik({
     ),
     reference: Yup.string().required(
       'Por favor cuéntanos como te enteraste de nosotros'
+    ),
+    why: Yup.string().required(
+      'Por favor cuéntanos porqué quieres ser desarrollador'
     )
   }),
   async handleSubmit(values, { resetForm, setSubmitting }) {

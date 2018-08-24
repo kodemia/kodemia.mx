@@ -1,0 +1,23 @@
+.header {
+  background-color: @c-black;
+  color: @c-white;
+  position: relative;
+
+  & h1 {
+    color: @c-white;
+  }
+
+  &.white {
+    background: @c-white;
+    color: @c-black;
+
+    & h1 {
+      color: @c-black;
+    }
+  }
+
+  & .content {
+    position: relative;
+    z-index: 2;
+  }
+}

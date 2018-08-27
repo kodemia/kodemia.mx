@@ -44,3 +44,26 @@
   }
 }
 
+.card {
+  background: @c-grey-50;
+  border: solid 1px @c-black;
+  box-shadow: 5px 5px 0px -2px @c-black;
+  .mix-transition;
+  padding: 20px;
+
+  &.card--black {
+    background: @c-black;
+    border-color: @c-white;
+    box-shadow: 5px 5px 0px -2px @c-white;
+    color: @c-white;
+
+    & a {
+      color: @c-white;
+
+      &:hover {
+        color: @c-yellow-700;
+      }
+    }
+  }
+}
+

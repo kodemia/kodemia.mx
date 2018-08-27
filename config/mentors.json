@@ -1,0 +1,50 @@
+[
+  {
+    "image": "jorge.jpg",
+    "name":  "Jorge Barrientos",
+    "desc":  "Ingeniero en Telemática por UPIITA – IPN. Co Fundador de Wave Community. Fundador de Sofia Integration Services. Arquitecto de Software en Sofia Integration Services e Instructor Java en Wave Community, OCJP 6, OCWCD 6, OCWSD 6, OCBCD 6. Full Stack Developer.",
+    "isWoman": false
+  },
+  {
+    "image": "david.jpg",
+    "name":  "David Moranchel",
+    "desc":  "Estudiante de ingeniería en computación en la UNAM, miembro del grupo GDG UNAM (Google Developer Group), web developer en CanvasMX y Lead Teacher en Kodemia. Maneja tecnologías como Javascript, Firebase, Github, Node JS, Angular JS y Python. Ha dado diversas ponencias y talleres en la UNAM e IPN, mentor en eventos como HackMty organizado por el Tec de Monterrey.",
+    "isWoman": false
+  },
+  {
+    "image": "israel.jpg",
+    "name":  "Israel Salinas",
+    "desc":  "Egresado del Instituto Politécnico Nacional. Actualmente es Technical Lead de desarrollo Front-End dentro de una fábrica de Software, y Lead Teacher en Kodemia. Cuenta con 4 años de experiencia como Front-End Developer, trabajando con diversas tecnologías, principalmente basadas en JavaScript. Ha participado en el desarrollo de aplicaciones con diversos fines, desde sitios web hasta aplicaciones bancarias e incluso aplicaciones lúdicas.",
+    "isWoman": false
+  },
+  {
+    "image": "joe.jpg",
+    "name":  "Joe Cohen",
+    "desc":  "Co-Founder & CTO @dinkbit & @Kodemia, Co-Founder & CEO @Kometia, CTO @Refly, @cachethq and @TeamStyleCI collaborator, Open Source Lover, Full Stack Developer and Designer.",
+    "isWoman": false
+  },
+  {
+    "image": "vanessa.jpg",
+    "name":  "Vanessa Amaya",
+    "desc":  "ICo-fundadora de Agile Nights, Representante del nodo México de la Comunidad Internacional Agile Women. Certificada como Scrum Master. Miembro del Comité Académico del Programa TSU de Software de la Universidad IBERO. Agile Coach & Agile Trainer en Agile Academy & Banana México.",
+    "isWoman": true
+  },
+  {
+    "image": "kevin.jpg",
+    "name":  "Kevin Loyola",
+    "desc":  "Especialista Cloud, en Xertica. Apasionado por apoyar a empresas en el traslado de su infraestructura tecnológica digital a la nube de Google Cloud Platform. Parte del equipo organizador del GDG UNAM y entusiasta de colaborar con comunidades que buscan compartir conocimiento para crecer como individuos y en lo colectivo.",
+    "isWoman": false
+  },
+  {
+    "image": "luis.jpg",
+    "name":  "Luis Jiménez",
+    "desc":  "Ing. En Computación egresado de la Universidad Autónoma de Baja California, GitHub Campus Expert, Software Developer y actualmente Project Manager. Ex GDG Tijuana y en mis ratos libres impulso/colaboro con comunidades, instituciones educativas y proyectos para un bien común.",
+    "isWoman": false
+  },
+  {
+    "image": "andrea.jpg",
+    "name":  "Andrea Dekovic",
+    "desc":  "Diseñadora UX/UI en Finerio",
+    "isWoman": true
+  }
+]

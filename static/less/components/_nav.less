@@ -1,5 +1,6 @@
 .main-menu {
   background: @c-black;
+  position: relative;
 
   & .logo {
     display: inline-block;
@@ -54,9 +55,11 @@
       display: inline-block;
       border-radius: 50%;
       height: 38px;
-      position: fixed;
+      .mix-transition;
+      position: absolute;
       right: 20px;
       top: 15px;
+      transform: translate3d(0, 0, 0);
       width: 38px;
       z-index: 999;
 
@@ -110,6 +113,11 @@
           }
         }
       }
+
+      &.followme {
+        position: fixed;
+        top: 20px;
+      }
     }
 
     & nav {
@@ -121,11 +129,15 @@
       max-width: @s-scontainer;
       opacity: 0;
       overflow: hidden;
-      position: fixed;
+      position: absolute;
       right: 35px;
-      top: 35px;
+      top: 65px;
       transform: translate3d(0, 0, 0);
       width: 0px;
+
+      &.followme {
+        position: fixed;
+      }
 
       & ul  {
         left: 50%;

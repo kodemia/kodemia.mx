@@ -15,5 +15,5 @@ __Inscripción__
 Apresúrate a reservar tu lugar, tenemos cupos limitados y una gran demanda.
 Aparta tu lugar con sólo: $9,000 MXN
 
-< PINK KODERS >
-Queremos que las mujeres mexicanas se desarrollen en la industria tech, por lo que tenemos becas de $10,000 MXN para las próximas desarrolladoras de alto rendimiento de México
+<!-- < PINK KODERS >
+Queremos que las mujeres mexicanas se desarrollen en la industria tech, por lo que tenemos becas de $10,000 MXN para las próximas desarrolladoras de alto rendimiento de México -->

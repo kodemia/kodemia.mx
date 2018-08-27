@@ -2,26 +2,10 @@
 import React, { Component } from 'react'
 import asset from 'next/asset'
 
+// Ours
+import ImagesList from '../../../config/gallery'
+
 class Gallery extends Component {
-  createItems = () => {
-    let Item = []
-
-    for (let i = 0; i < 12; i++) {
-      Item.push(
-        <div className="s:scol-6 m:scol-4 x:pad-all-5">
-          <div className="gallery-item">
-            <img
-              className="img-liquid"
-              src={asset('/img/galleries/gallery/foto-' + (i + 1) + '.jpg')}
-              alt="Kodemia"
-            />
-          </div>
-        </div>
-      )
-    }
-
-    return Item
-  }
   render() {
     return (
       <section
@@ -32,7 +16,19 @@ class Gallery extends Component {
           <div className="line">
             <div className="x:scol-12">
               <div className="gallery">
-                <div className="line">{this.createItems()}</div>
+                <div className="line">
+                  {ImagesList.map((image, i) => (
+                    <div className="s:scol-6 m:scol-4 x:pad-all-5" key={i}>
+                      <div className="gallery-item">
+                        <img
+                          className="img-liquid"
+                          src={asset(image)}
+                          alt="Kodemia"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

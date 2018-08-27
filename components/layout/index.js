@@ -8,6 +8,7 @@ import MessengerCustomerChat from 'react-messenger-customer-chat'
 import '../../static/less/app.less'
 
 // Ours
+import Banner from '../banner'
 import MainMenu from './main-menu'
 import Footer from './footer'
 
@@ -213,6 +214,11 @@ class Layout extends Component {
             className="main-container"
             style={{ minHeight: this.state.mainHeight }}
           >
+            <Banner>
+              Aplica y participa por la beca del <b className="c-pink">30%</b>{' '}
+              gracias a nuestros aliados <b className="c-blue-500">@dinkbit</b>{' '}
+              y <b className="c-purple-500">@SmartTechnologies</b>
+            </Banner>
             <MainMenu />
             {children}
           </div>

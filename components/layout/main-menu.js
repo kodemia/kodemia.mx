@@ -11,7 +11,8 @@ class MainMenu extends Component {
     super(props)
 
     this.state = {
-      isOpen: null
+      isOpen: null,
+      isMoving: null
     }
 
     this.btnRef = React.createRef()
@@ -31,16 +32,32 @@ class MainMenu extends Component {
     }
   }
 
+  followme = () => {
+    const $banner = document.getElementById('banner')
+    const windowScrollTop = window.scrollY
+    const bannerHeight = $banner.offsetHeight
+
+    this.setState({ isMoving: false })
+
+    if (windowScrollTop >= bannerHeight) {
+      this.setState({ isMoving: true })
+    }
+  }
+
   componentDidMount() {
+    this.followme
+
     document.addEventListener('click', this.closeMenu)
+    document.addEventListener('scroll', this.followme)
   }
 
   componentWillUnmount() {
     document.removeEventListener('click', this.closeMenu)
+    document.addEventListener('scroll', this.followme)
   }
 
   render() {
-    const { isOpen } = this.state
+    const { isOpen, isMoving } = this.state
     let navClass
 
     if (isOpen === false) {
@@ -61,14 +78,21 @@ class MainMenu extends Component {
                   </a>
                 </Link>
               </div>
-              <nav id="nav" className={navClass}>
+              <nav
+                id="nav"
+                className={navClass + (isMoving ? ' followme ' : '')}
+              >
                 <NavItems />
               </nav>
             </div>
             <div className="x:scol-2 x:right">
               <a
                 href="#"
-                className={'menu-icon l:hide ' + (isOpen ? 'open' : '')}
+                className={
+                  'menu-icon l:hide ' +
+                  (isOpen ? 'open ' : '') +
+                  (isMoving ? 'followme ' : '')
+                }
                 onClick={this.toggleMenu}
                 ref={this.btnRef}
               >

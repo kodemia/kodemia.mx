@@ -46,5 +46,11 @@
     "name":  "Andrea Dekovic",
     "desc":  "Diseñadora UX/UI en Finerio",
     "isWoman": true
+  },
+  {
+    "image": "carlos.jpg",
+    "name":  "Carlos Silva",
+    "desc":  "Estudiante de Ing. informática en el IPN UPIICSA, 4 años de experiencia en desarrollo web y apasionado de la tecnología, las startups y el emprendimiento, actualmente Full Stack Developer en @cuidamimascota, Manejo tecnologías como NodeJS, Webpack, React, Redux, Vuejs, Git, Python, Java, Docker, Etc. y siempre aprendiendo algo nuevo",
+    "isWoman": false
   }
 ]

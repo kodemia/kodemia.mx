@@ -1,6 +1,6 @@
 __Fecha__
-Iniciamos el 03 de Septiembre de 2018
-Finalizamos el 10 de Septiembre de 2018
+Iniciamos el 10 de Septiembre de 2018
+Finalizamos el 21 de Septiembre de 2018
 
 __Horario__
 Estudia 5 días a la semana durante 15 semanas intensivas. Lunes a Viernes de 19:00 a 22:00 horas.

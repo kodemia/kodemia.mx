@@ -72,9 +72,9 @@ class MainMenu extends Component {
       <div>
         <div className="banner-container" ref={this.bannerRef}>
           <Banner>
-            Aplica y participa por la beca del <b className="c-pink">30%</b>{' '}
-            gracias a nuestros aliados <b className="c-blue-500">@dinkbit</b> y{' '}
-            <b className="c-purple-500">@SmartTechnologies</b>
+            Suscríbete a <b className="c-blue-500">Kodemia Live</b>, asiste al{' '}
+            <b className="c-purple-500">Bootcamp Online</b> aprovecha el{' '}
+            <b className="c-pink">30%</b> de descuento por lanzamiento
           </Banner>
         </div>
         <div className="main-menu">

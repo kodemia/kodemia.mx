@@ -30,6 +30,12 @@
     "classes":  null
   },
   {
+    "name":     "● Live",
+    "href":     "https://live.kodemia.mx",
+    "anchor":   false,
+    "classes":  "active"
+  },
+  {
     "name":     "Aplicar",
     "href":     "/aplicar",
     "anchor":   false,

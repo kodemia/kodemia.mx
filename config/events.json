@@ -86,5 +86,57 @@
         },
         "pastEvent": true,
         "comingSoon": false
+    },
+    {
+        "name":  "GIT & GITHUB",
+        "link": "https://kodemiagit.boletia.com/",
+        "desc": "Aprende a utilizar la herramienta y plataforma estándar en el mundo del desarrollo del software y otras áreas. Por medio del curso verás cómo implementar versiones, flujos de trabajo estandarizados, buenas prácticas, maneras de colaborar y los diferentes programas de apoyo que tiene GitHub para desarrolladores.",
+        "schedule": {
+            "day": "20",
+            "month": "Oct",
+            "year": "2018",
+            "hour": "10:00 a 18:00"
+        },
+        "pastEvent": false,
+        "comingSoon": false
+    },
+    {
+        "name":  "Workshop Diseño de CV de alto impacto para perfiles de TI",
+        "link": "https://kodemiacv.boletia.com/",
+        "desc": "Al terminar el taller, los participantes contarán con un cv que comunique de manera efectiva y estratégica sus conocimientos, experiencia y habilidades por medio de key words que ayudaran a darle mayor visibilidad ante los reclutadores al momento de la búsqueda de candidatos. Tambień los participantes contarán con un conocimiento profundo de sus fortalezas profesionales las cuales están plasmadas de manera efectiva en su cv; esto les ayudará a estar mejor preparados para las entrevistas laborales, además contarán con un cv con el contenido perfecto para impactar a los reclutadores y  un diseño innovador de alto impacto.",
+        "schedule": {
+            "day": "27",
+            "month": "Oct",
+            "year": "2018",
+            "hour": "10:00 a 18:00"
+        },
+        "pastEvent": false,
+        "comingSoon": false
+    },
+    {
+        "name": "Google Cloud Platform",
+        "link": "https://kodemiacloud.boletia.com/",
+        "desc": "",
+        "schedule": {
+            "day": "10",
+            "month": "Nov",
+            "year": "2018",
+            "hour": "10:00 a 18:00"
+        },
+        "pastEvent": false,
+        "comingSoon": false
+    },
+    {
+        "name":  "Reclutamiento Ágil",
+        "link": "https://kodemiaagil.boletia.com/",
+        "desc": "Al término de este taller, el participante tendrá los conocimientos necesarios para hacer reclutamiento ágil o implementar la agilidad a un equipo de reclutamiento en función de  incrementar la comunicación constante, la colaboración efectiva y procesos creativos. Además, el participante ampliará sus conocimientos en el uso de marcos ágiles para poder tomar lo mejor de ellas y crear sus propios procesos.",
+        "schedule": {
+            "day": "17",
+            "month": "Nov",
+            "year": "2018",
+            "hour": "10:00 a 18:00"
+        },
+        "pastEvent": false,
+        "comingSoon": false
     }
 ]

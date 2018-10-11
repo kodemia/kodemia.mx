@@ -58,7 +58,7 @@
           "year": "2018",
           "hour": "9:30"
       },
-      "pastEvent": false,
+      "pastEvent": true,
       "comingSoon": false
     },
     {
@@ -71,7 +71,7 @@
             "year": "2018",
             "hour": "9:00"
         },
-        "pastEvent": false,
+        "pastEvent": true,
         "comingSoon": false
     },
     {
@@ -84,7 +84,7 @@
             "year": "2018",
             "hour": "9:00"
         },
-        "pastEvent": false,
+        "pastEvent": true,
         "comingSoon": false
     }
 ]

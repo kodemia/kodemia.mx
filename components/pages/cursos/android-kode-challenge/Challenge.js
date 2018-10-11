@@ -92,7 +92,10 @@ const Challenge = () => (
                 [POST]
                 http://mock.westcentralus.cloudapp.azure.com/grin_test/bluetooth/create
               </p>
-              <Code>{/*body: {"name": "{name}", "strength": "{-23db}"}*/}</Code>
+              <Code>{`body: {
+  "name": "{name}",
+  "strength": "{-23db}"
+}`}</Code>
             </li>
           </ul>
         </div>

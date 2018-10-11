@@ -114,9 +114,33 @@
         "comingSoon": false
     },
     {
+      "name":  "#HackTheJob | Android Kode Challenge",
+      "link": "#",
+      "schedule": {
+          "day": "27",
+          "month": "Oct",
+          "year": "2018",
+          "hour": "9:00 a 16:00"
+      },
+      "pastEvent": false,
+      "comingSoon": false
+    },
+    {
+      "name":  "#HackTheJob | Django Kode Challenge",
+      "link": "#",
+      "schedule": {
+          "day": "27",
+          "month": "Oct",
+          "year": "2018",
+          "hour": "9:00 a 16:00"
+      },
+      "pastEvent": false,
+      "comingSoon": false
+    },
+    {
         "name": "Google Cloud Platform",
         "link": "https://kodemiacloud.boletia.com/",
-        "desc": "",
+        "desc": "Al término de este curso el participante conocerá los fundamentos de Google Cloud Platform y su utilización en Cómputo, Almacenamiento, Big Data y Machine Learning, la evolución a través del tiempo de cloud computing y el alcance general de Google, así como sus conceptos generales.",
         "schedule": {
             "day": "10",
             "month": "Nov",

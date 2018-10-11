@@ -36,9 +36,13 @@ const Contact = () => (
             </a>
           </p>
           <p className="x:fs-18 s:fs-20">
-            Teléfono: <br />{' '}
-            <a className="txt-underline" href="tel:+525547707317">
-              (5255) 4770 7317
+            Teléfonos: <br />{' '}
+            <a className="txt-underline" href="tel:+52 55 5015 0517">
+              (+5255) 5015 0517
+            </a>
+            <br />
+            <a className="txt-underline" href="tel:01800 212 0022">
+              01800 212 0022
             </a>
           </p>
           <p className="x:fs-18 s:fs-20">

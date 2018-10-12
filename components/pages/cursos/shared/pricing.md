@@ -9,7 +9,7 @@ Si tus causas y deseo de prepararte superan tu capacidad de pago, no te preocupe
 
 __Inversión__
 Bootcamp White Koder (Jr. Developer): $70,000 MXN (Incluye IVA)
-Paga de contado y recibe 15% de descuento: $60,000 MXN
+Paga de contado y recibe 10% de descuento: $63,000 MXN
 
 __Inscripción__
 Apresúrate a reservar tu lugar, tenemos cupos limitados y una gran demanda.

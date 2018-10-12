@@ -3,6 +3,7 @@ import asset from 'next/asset'
 
 // Ours
 import Cursor from '../../../cursor'
+import Grin from '../../../../components/pages/cursos/shared/grin.md'
 
 const Vacancy = () => (
   <section id="vacancy" className="x:pad-bt-20 s:pad-bt-40">
@@ -25,13 +26,19 @@ const Vacancy = () => (
                   alt="Vacante"
                 />
               </div>
-            </div>
-            <div className="x:scol-12 x:top">
+              <br />
+              <br />
               <p>
                 El equipo Grin sigue creciendo y abren convocatoria junto con
                 Kodemia para arrancar Hack the Job Django Developer.
               </p>
-              <br />
+            </div>
+            <div className="x:scol-12">
+              <div className="card">
+                <Grin />
+              </div>
+            </div>
+            <div className="x:scol-12 x:top">
               <p>
                 Lo que necesitas para formar parte del equipo de desarrollo Grin
                 en cuanto a conocimiento y experiencia es:
@@ -41,37 +48,36 @@ const Vacancy = () => (
               <ul>
                 <li>
                   Set de librerías de soporte para poder manejar los mecanismos
-                  ya usados en Django
+                  ya usados en Django.
                 </li>
-                <li>PyCharm para debugging y deployment loca</li>
-                <li>Docker </li>
-                <li>HTML usando los componentes de Django</li>
-                <li>Servicios REST</li>
-                <li>Celery</li>
-                <li>Control de versiones (Git)</li>
+                <li>PyCharm para debugging y deployment local.</li>
+                <li>Docker .</li>
+                <li>HTML usando los componentes de Django.</li>
+                <li>Servicios REST.</li>
+                <li>Celery.</li>
+                <li>Control de versiones (Git).</li>
               </ul>
               <br />
               <p>Tus habilidades soft y técnicas:</p>
               <ul>
-                <li>Lógica de programación</li>
+                <li>Lógica de programación.</li>
                 <li>
-                  Capacidad para trabajar en un equipo multidisciplinario{' '}
+                  Capacidad para trabajar en un equipo multidisciplinario.
                 </li>
-                <li>Debes ser autodidacta</li>
+                <li>Debes ser autodidacta.</li>
                 <li>
-                  Tener Ownership que es el sentido de pertenencia hacia un
-                  proyecto
+                  Tener Ownership, que es el sentido de pertenencia hacia un
+                  proyecto.
                 </li>
-                <li>Adaptabilidad</li>
-                <li>Compromiso </li>
-                <li>Análisi de problemas</li>
+                <li>Adaptabilidad.</li>
+                <li>Compromiso .</li>
+                <li>Análisis de problemas.</li>
                 <li>
                   Experiencia en mantener y desarrollar sistemas en tiempo real
                   con alta disponibilidad de datos.
                 </li>
                 <li>
-                  Planeación de para manejo de grandes cantidades de
-                  información.
+                  Planeación de manejo de grandes cantidades de información.
                 </li>
                 <li>Implementación de pruebas de integración y unitarias.</li>
                 <li>Optimización de consultas a DB usando ORMs.</li>
@@ -80,27 +86,27 @@ const Vacancy = () => (
                 </li>
                 <li>
                   Creación de herramientas básicas para la administración de
-                  datos
+                  datos.
                 </li>
                 <li>Desarrollo de casos de pruebas para testing.</li>
                 <li>Conexión con servicios externos usando APIs y webhooks.</li>
               </ul>
               <br />
               <p>
-                Tu lugar de trabajo será un lugar en donde surgen las ideas y se
-                colabora con equipos multidisciplinarios en todo momento. El
-                lugar, es la Colonia Condesa. El horario es de 9:00 a 6:00pm
-                pero flexibles ya que lo importante es cumplir con los
-                objetivos.
+                Grin es un lugar donde surgen ideas y se colabora con equipos
+                multidisciplinarios en todo momento. Con oficinas en la Colonia
+                Condesa, tu horario será de 9:00 am a 6:00 pm, pero contarás con
+                la flexibilidad necesaria ya que lo importante es que cumplas
+                con los objetivos.
               </p>
               <p>
                 El ambiente es lo mejor, hay desayuno todos los días como jugo,
-                fruta y cereal. La comida la pone Grin 3 veces por semana.
+                fruta y cereal y Grin te invita la comida 3 veces por semana.
               </p>
               <p>
-                La oferta económica va de los 2000 USD a los 2500 USD y se te
-                hara una oferta final acorde a tus conocimientos y experiencia
-                además de las prestaciones de ley.
+                La oferta económica va de los 2000 USD a los 2500 USD y cuenta
+                con prestaciones de ley. Se te hará una oferta final acorde a
+                tus conocimientos y experiencia.
               </p>
             </div>
           </div>

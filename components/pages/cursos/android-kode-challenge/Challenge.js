@@ -13,7 +13,7 @@ const Challenge = () => (
         </div>
         <div className="x:scol-12">
           <h3>
-            Features MINIMOS para aplica<Cursor>r</Cursor>
+            Features MÍNIMOS para aplica<Cursor>r</Cursor>
           </h3>
         </div>
         <div className="x:scol-12">
@@ -103,8 +103,8 @@ const Challenge = () => (
           <p>Notas</p>
           <ul>
             <li>
-              Si hay algo que no esté claro, decidan algo y documenten sus
-              decisiones.
+              Si hay algo que no esté claro, toma una decisión y documenta por
+              qué lo resolviste de esa manera.
             </li>
             <li>
               No importa si no terminas, queremos ver tus métodos y la forma de
@@ -118,7 +118,7 @@ const Challenge = () => (
               >
                 carolina@kodemia.mx
               </a>). Recibirás un mail confirmando tu participación en el evento
-              y los siguientes pasos
+              y los siguientes pasos.
             </li>
           </ul>
           <br />

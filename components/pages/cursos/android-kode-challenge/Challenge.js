@@ -112,13 +112,11 @@ const Challenge = () => (
             </li>
             <li>
               Realiza tu ejercicio y envía un mail adjuntando tu CV y un link a
-              tu repositorio con el ejercicio a Carolina Gayosso (<a
-                className="txt-underline"
-                href="mailto:carolina@kodemia.mx"
-              >
+              tu repositorio con el ejercicio a Carolina Gayosso (<a href="mailto:carolina@kodemia.mx">
                 carolina@kodemia.mx
-              </a>). Recibirás un mail confirmando tu participación en el evento
-              y los siguientes pasos.
+              </a>), tienes hasta el 25 de Octubre para enviar tu ejercicio.
+              Recibirás un mail confirmando tu participación en el evento y los
+              siguientes pasos.
             </li>
           </ul>
           <br />

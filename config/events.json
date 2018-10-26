@@ -117,8 +117,8 @@
       "name":  "#HackTheJob | Android Kode Challenge",
       "link": "/cursos/android-kode-challenge",
       "schedule": {
-          "day": "27",
-          "month": "Oct",
+          "day": "10",
+          "month": "Nov",
           "year": "2018",
           "hour": "9:00 a 16:00"
       },
@@ -129,8 +129,8 @@
       "name":  "#HackTheJob | Django Kode Challenge",
       "link": "/cursos/django-kode-challenge",
       "schedule": {
-          "day": "27",
-          "month": "Oct",
+          "day": "10",
+          "month": "Nov",
           "year": "2018",
           "hour": "9:00 a 16:00"
       },

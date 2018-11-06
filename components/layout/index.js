@@ -189,7 +189,7 @@ class Layout extends Component {
           <meta name="twitter:title" content="Kodemia" />
           <meta
             name="twitter:description"
-            content="La primer academia real para programadores"
+            content="La primera academia real para programadores"
           />
           <meta
             name="twitter:image:src"
@@ -199,7 +199,7 @@ class Layout extends Component {
           <meta property="og:title" content="Kodemia" />
           <meta
             property="og:description"
-            content="La primer academia real para programadores"
+            content="La primera academia real para programadores"
           />
           <meta property="og:url" content="https://kodemia.mx" />
           <meta

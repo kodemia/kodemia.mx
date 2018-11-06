@@ -15,7 +15,9 @@ const ThankYouPage = () => (
         !Aplicación recibida!
       </h1>
       <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-grey-400">
-        Tu aplicación ha sido recibida, pronto estaremos en contacto.
+        Tu aplicación ha sido recibida y te hemos enviado toda la información,
+        por favor revisa todas las bandejas de tu correo y pronto estaremos en
+        contacto contigo.
       </p>
     </HeaderCourse>
     <section className="x:pad-bt-20 s:pad-bt-40">

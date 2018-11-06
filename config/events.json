@@ -114,6 +114,18 @@
         "comingSoon": false
     },
     {
+        "name": "KodeDay",
+        "link": "https://www.facebook.com/events/489218444820689/",
+        "schedule": {
+            "day": "10",
+            "month": "Nov",
+            "year": "2018",
+            "hour": "09:00 a 19:30"
+        },
+        "pastEvent": false,
+        "comingSoon": false
+    },
+    {
       "name":  "#HackTheJob | Android Kode Challenge",
       "link": "/cursos/android-kode-challenge",
       "schedule": {

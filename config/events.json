@@ -116,6 +116,7 @@
     {
         "name": "KodeDay",
         "link": "https://www.facebook.com/events/489218444820689/",
+        "desc": "#KodeDayWhite es un día entero de live coding donde aprenderás de los expertos todo sobre diversas tecnologías de desarrollo sobre un entorno Full Stack Developer.",
         "schedule": {
             "day": "10",
             "month": "Nov",

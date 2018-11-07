@@ -187,7 +187,7 @@ class HeaderHome extends Component {
                   <div className="x:scol-12 x:center">
                     <div className="content">
                       <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white">
-                        La primer academia real para programadore<Cursor white>
+                        La primera academia real para programadore<Cursor white>
                           s
                         </Cursor>
                       </h1>

@@ -5,9 +5,9 @@
           "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
           "desc": "Transforma tu carrera, incrementa tu conocimiento y defínete como un programador Sr.",
           "schedule": {
-              "day": "10",
-              "month": "Sep",
-              "year": "2018",
+              "day": "04",
+              "month": "Mar",
+              "year": "2019",
               "hour": "19:00"
           },
           "pastEvent": false,
@@ -20,9 +20,9 @@
           "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
           "desc": "Iniciate en el mundo de la programación como Full Stack Jr.",
           "schedule": {
-              "day": "10",
-              "month": "Sep",
-              "year": "2018",
+              "day": "04",
+              "month": "Mar",
+              "year": "2019",
               "hour": "19:00"
           },
           "pastEvent": false,

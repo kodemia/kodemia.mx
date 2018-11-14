@@ -160,12 +160,21 @@ export default withFormik({
     )
   }),
   async handleSubmit(values, { resetForm, setSubmitting }) {
+    let dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+
     try {
       const res = await axios.post('/.netlify/functions/apply', values)
 
       if (res && res.data.success) {
         resetForm()
-        // gtag('event', 'conversion', {'send_to': 'AW-781067354/w_HcCKzxmI0BENrIuPQC'})
+        gtag('js', new Date())
+        gtag('config', 'AW-781067354')
+        gtag('event', 'conversion', {
+          send_to: 'AW-781067354/w_HcCKzxmI0BENrIuPQC'
+        })
       }
 
       Router.push('/thankyou')

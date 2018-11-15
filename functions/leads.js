@@ -7,7 +7,7 @@ Airtable.configure({
   apiKey: AIRTABLE_KEY
 })
 
-const base = Airtable.base('appflE23xcPLD1ODz')
+const base = Airtable.base('appP1yuAqF3T3jHVu')
 
 function clean(obj) {
   for (var propName in obj) {
@@ -25,13 +25,14 @@ const addApplier = async req => {
   const data = {
     Name: req.fullname,
     Email: req.email,
-    Phone: req.phone
+    Phone: req.phone,
+    Reference: 'Micro Lead'
   }
 
   clean(data)
 
   return new Promise((res, rej) => {
-    base('Leads').create(data, (err, record) => {
+    base('Applicants').create(data, (err, record) => {
       if (err) {
         rej(err)
       }

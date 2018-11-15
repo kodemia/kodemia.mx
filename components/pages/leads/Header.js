@@ -68,7 +68,8 @@ class HeaderHome extends Component {
           className="header-home"
           style={{
             height: this.state.height,
-            backgroundColor: background
+            backgroundColor: background,
+            maxHeight: 350 + 'px'
           }}
         >
           <Particles

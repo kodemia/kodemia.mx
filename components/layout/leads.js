@@ -221,7 +221,7 @@ class Layout extends Component {
           >
             {children}
           </div>
-          <Footer mode={mode} getHeight={this.setFooterHeight} />
+          <Footer mode={mode} getHeight={this.setFooterHeight} link={false} />
         </div>
       </div>
     )

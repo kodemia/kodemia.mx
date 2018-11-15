@@ -1,5 +1,5 @@
 // Packages
-// import Router from 'next/router'
+import Router from 'next/router'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import axios from 'axios'
@@ -112,7 +112,7 @@ export default withFormik({
         })
       }
 
-      // Router.push('/thankyou')
+      Router.push('/')
     } catch (err) {
       //
     }

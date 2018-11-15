@@ -19,6 +19,26 @@ class Footer extends Component {
 
   render() {
     const { mode = 'black' } = this.props
+    const { link = true } = this.props
+    let logo
+
+    if (link) {
+      logo = (
+        <Link href="/">
+          <a>
+            <img
+              src={asset(`/img/logos/logo-h-for-${mode}.png`)}
+              alt="Kodemia"
+            />
+          </a>
+        </Link>
+      )
+    }
+    if (!link) {
+      logo = (
+        <img src={asset(`/img/logos/logo-h-for-${mode}.png`)} alt="Kodemia" />
+      )
+    }
 
     return (
       <footer className={mode} ref={this.$footer}>
@@ -26,16 +46,7 @@ class Footer extends Component {
         <div className="scontainer x:pad-top-20 s:pad-top-10">
           <div className="line">
             <div className="s:scol-6 x:center s:left">
-              <div className="logo">
-                <Link href="/">
-                  <a>
-                    <img
-                      src={asset(`/img/logos/logo-h-for-${mode}.png`)}
-                      alt="Kodemia"
-                    />
-                  </a>
-                </Link>
-              </div>
+              <div className="logo">{logo}</div>
             </div>
             <div className="s:scol-6 x:center s:right">
               <div className="social-items">

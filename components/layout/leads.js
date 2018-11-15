@@ -2,13 +2,11 @@
 import Head from 'next/head'
 import React, { Component } from 'react'
 import asset from 'next/asset'
-import MessengerCustomerChat from 'react-messenger-customer-chat'
 
 // Less
 import '../../static/less/app.less'
 
 // Ours
-import MainMenu from './main-menu'
 import Footer from './footer'
 
 class Layout extends Component {
@@ -207,22 +205,23 @@ class Layout extends Component {
             content={asset('img/logos/kodemia-og-img.jpg')}
           />
           <meta property="og:site_name" content="Kodemia" />
+
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-781067354"
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-781067354');};`
+            }}
+          />
         </Head>
         <div>
           <div
             className="main-container"
             style={{ minHeight: this.state.mainHeight }}
           >
-            <MainMenu />
             {children}
           </div>
           <Footer mode={mode} getHeight={this.setFooterHeight} />
-          <MessengerCustomerChat
-            pageId="637875623216179"
-            appId="513861882374839"
-            loggedInGreeting="¿Tienes dudas?"
-            loggedOutGreeting="¿Tienes dudas?"
-          />
         </div>
       </div>
     )

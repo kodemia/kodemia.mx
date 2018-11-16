@@ -13,17 +13,26 @@ import Allies from '../components/pages/shared/allies'
 const IndexPage = () => (
   <Layout title="Kodemia :: La primera academia real para programadores">
     <HeaderHome background="#000" />
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `gtag('event', 'page_view', { 'send_to': 'AW-781067354', 'user_id': 'replace with value' });`
-      }}
-    />
     <About />
     <Courses />
     <Gallery />
     <Events />
     <Allies />
     <Contact />
+
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `let dataLayer = window.dataLayer || []
+                  function gtag() {
+                    dataLayer.push(arguments)
+                  }
+                  gtag('js', new Date())
+                  gtag('config', 'AW-781067354')
+                  gtag('event', 'page_view', {
+                    send_to: 'AW-781067354/w_HcCKzxmI0BENrIuPQC'
+                  })`
+      }}
+    />
   </Layout>
 )
 

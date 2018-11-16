@@ -211,8 +211,10 @@ class Layout extends Component {
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=AW-781067354"
+          />
+          <script
             dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-781067354');};`
+              __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-781067354'); gtag('event', 'page_view', { 'send_to': 'AW-781067354' });`
             }}
           />
         </Head>

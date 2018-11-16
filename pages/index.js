@@ -19,20 +19,6 @@ const IndexPage = () => (
     <Events />
     <Allies />
     <Contact />
-
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `let dataLayer = window.dataLayer || []
-                  function gtag() {
-                    dataLayer.push(arguments)
-                  }
-                  gtag('js', new Date())
-                  gtag('config', 'AW-781067354')
-                  gtag('event', 'page_view', {
-                    send_to: 'AW-781067354/w_HcCKzxmI0BENrIuPQC'
-                  })`
-      }}
-    />
   </Layout>
 )
 

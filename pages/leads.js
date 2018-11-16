@@ -12,11 +12,6 @@ import HeaderLeads from '../components/pages/leads/Header'
 const LeadsPage = ({ errors, touched, isSubmitting }) => (
   <Layout title="Kodemia :: La primera academia real para programadores">
     <HeaderLeads />
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `gtag('event', 'page_view', { 'send_to': 'AW-781067354', 'user_id': 'replace with value' });`
-      }}
-    />
     <section className="x:pad-bt-20 s:pad-bt-40">
       <div className="scontainer">
         <div className="line">

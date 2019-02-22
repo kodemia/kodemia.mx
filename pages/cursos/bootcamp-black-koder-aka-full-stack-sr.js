@@ -36,7 +36,7 @@ class BootcampBlackKoderPage extends Component {
           </p>
           <div className="s:mrg-top-40">
             <a
-              href={asset('docs/courses/bootcamps/syllabus.pdf')}
+              href={asset('docs/courses/bootcamps/syllabus_2019.pdf')}
               className="btn btn--white c-white s:mrg-right-10"
               target="_blank"
             >

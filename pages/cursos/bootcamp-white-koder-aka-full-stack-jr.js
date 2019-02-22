@@ -14,9 +14,9 @@ import HeaderCourse from '../../components/pages/cursos/HeaderCourse'
 import Description from '../../components/pages/cursos/white-koder/description.md'
 import Testimonial from '../../components/pages/cursos/white-koder/testimonial.md'
 import Syllabus from '../../components/pages/cursos/white-koder/syllabus.md'
-import Location from '../../components/pages/cursos/shared/location.md'
-import Pricing from '../../components/pages/cursos/shared/pricing.md'
-import Benefits from '../../components/pages/cursos/shared/benefits.md'
+import Location from '../../components/pages/cursos/white-koder/location.md'
+import Pricing from '../../components/pages/cursos/white-koder/pricing.md'
+import Benefits from '../../components/pages/cursos/white-koder/benefits.md'
 
 class BootcampWhiteKoderPage extends Component {
   componentDidMount() {

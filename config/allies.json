@@ -42,9 +42,5 @@
   {
     "name": "COW",
     "asset": "img/allies/cow.png"
-  },
-  {
-    "name": "Entropy",
-    "asset": "img/allies/entropy.png"
   }
 ]

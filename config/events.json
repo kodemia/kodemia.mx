@@ -1,15 +1,15 @@
 [
     {
-        "name":  "KodeDayPink (Un evento sólo para mujeres)",
+        "name":  "KodeDayWhite",
         "link": "",
-        "desc": "Aprende la tecnología, el diseño, la manipulación y el consumo de recursos para la creación de un Marketplace. KodeDayPink es un día GRATUITO de live coding con los mentores de Kodemia donde las alumnas aprenderán a desarrollar en un entorno FullStack una aplicación básica con tecnologías como: HMTL5, CSS Flexbox, Javascript y Firebase.",
+        "desc": "Tu web personal con MERN",
         "schedule": {
-            "day": "23",
-            "month": "Feb",
+            "day": "02",
+            "month": "Mar",
             "year": "2019",
             "hour": "9:00"
         },
         "pastEvent": false,
         "comingSoon": true
-    }
+      }
 ]

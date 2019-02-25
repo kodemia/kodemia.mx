@@ -192,10 +192,10 @@ class HeaderHome extends Component {
                         </Cursor>
                       </h1>
                       <p className="desc s:fs-18 l:fs-20 x:mrg-top-20 c-grey-400">
-                        Academia de desarrollo de talento en programación web,
+                        {/* Academia de desarrollo de talento en programación web,
                         móvil y diseño UI/UX.
-                        <br />
-                        Cursos intensivos, experiencias personalizadas.
+                        <br /> */}
+                        Cursos intensivos y experiencias personalizadas.
                       </p>
                       <div className="x:mrg-top-20">
                         <Link href="#cursos">

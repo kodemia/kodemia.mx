@@ -15,7 +15,7 @@ const Events = () => (
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
           <h2>
-            Workshops y Evento<Cursor>s</Cursor>
+            Próximos Evento<Cursor>s</Cursor>
           </h2>
         </div>
         <div className="x:scol-12">

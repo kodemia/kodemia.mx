@@ -30,12 +30,6 @@
     "isWoman": true
   },
   {
-    "image": "kevin.jpg",
-    "name":  "Kevin Loyola",
-    "desc":  "Especialista Cloud, en Xertica. Apasionado por apoyar a empresas en el traslado de su infraestructura tecnológica digital a la nube de Google Cloud Platform. Parte del equipo organizador del GDG UNAM y entusiasta de colaborar con comunidades que buscan compartir conocimiento para crecer como individuos y en lo colectivo.",
-    "isWoman": false
-  },
-  {
     "image": "luis.jpg",
     "name":  "Luis Jiménez",
     "desc":  "Ing. En Computación egresado de la Universidad Autónoma de Baja California, GitHub Campus Expert, Software Developer y actualmente Project Manager. Ex GDG Tijuana y en mis ratos libres impulso/colaboro con comunidades, instituciones educativas y proyectos para un bien común.",

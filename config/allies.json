@@ -44,7 +44,19 @@
     "asset": "img/allies/cow.png"
   },
   {
-    "name": "Entropy",
-    "asset": "img/allies/entropy.png"
+    "name": "IBM",
+    "asset":"img/allies/ibm.png"
+  }, 
+  {
+    "name": "Ingram",
+    "asset":"img/allies/ingram.png"
+  },
+  {
+    "name": "Grin",
+    "asset":"img/allies/grin.png"
+  },
+  {
+    "name": "Iterando",
+    "asset":"img/allies/iterando.png"
   }
 ]

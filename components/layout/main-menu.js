@@ -5,7 +5,6 @@ import Link from 'next/link'
 // Ours
 import Logo from '../icons/logo-full'
 import NavItems from './nav-items'
-import Banner from '../banner'
 
 class MainMenu extends Component {
   constructor(props) {
@@ -70,13 +69,6 @@ class MainMenu extends Component {
 
     return (
       <div>
-        <div className="banner-container" ref={this.bannerRef}>
-          <Banner>
-            Suscríbete a <b className="c-blue-500">Kodemia Live</b>, asiste al{' '}
-            <b className="c-purple-500">Bootcamp Online</b> aprovecha el{' '}
-            <b className="c-pink">30%</b> de descuento por lanzamiento
-          </Banner>
-        </div>
         <div className="main-menu">
           <div className="scontainer">
             <div className="line">

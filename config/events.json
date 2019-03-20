@@ -9,7 +9,7 @@
             "year": "2019",
             "hour": "9:00"
         },
-        "pastEvent": false,
-        "comingSoon": true
+        "pastEvent": true,
+        "comingSoon": false
       }
 ]

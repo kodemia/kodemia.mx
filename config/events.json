@@ -1,8 +1,8 @@
 [
     {
         "name":  "KodeDayWhite",
-        "link": "",
-        "desc": "Tu web personal con MERN",
+        "link": "https://www.eventbrite.com/e/kodedaywhite-api-con-mern-stack-mongo-express-react-y-node-tickets-57367918990",
+        "desc": "KodeDay es un día de live coding GRATUITO con los mentores de Kodemia donde el alumno aprenderá a desarrollar en un entorno Full-Stack con MERN Stack (Mongo, Express, React y Node), el stack basado en Javascript más solicitado por las empresas y con mayor demanda en desarrollo web",
         "schedule": {
             "day": "02",
             "month": "Mar",

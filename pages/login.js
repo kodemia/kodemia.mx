@@ -11,14 +11,13 @@ const Live = () => (
     <div className="container">
       <div className="login-card">
         <header>
-          <div className="title">Kodemia Title</div>
           <div className="logo">
             <img src={Logo} alt="" />
           </div>
         </header>
         <div className="card-body">
-          <input type="email" />
-          <input type="password" />
+          <input placeholder="Email" type="email" />
+          <input type="password" placeholder="Password" />
         </div>
         <footer>
           <button>Login</button>

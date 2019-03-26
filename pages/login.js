@@ -1,6 +1,6 @@
 // Packages
 import Layout from '../components/layout'
-import Logo from '../static/img/logos/isotipo-negro.png'
+import Logo from '../static/img/logos/logo-h-for-white.png'
 //import ReactPlayer from 'react-player'
 
 //const playbackId = 'gLdt7FXa43r1xPFkHS01KG00j400ok42WWS'

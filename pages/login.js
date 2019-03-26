@@ -1,5 +1,6 @@
 // Packages
 import Layout from '../components/layout'
+import Logo from '../static/img/logos/isotipo-negro.png'
 //import ReactPlayer from 'react-player'
 
 //const playbackId = 'gLdt7FXa43r1xPFkHS01KG00j400ok42WWS'
@@ -12,7 +13,7 @@ const Live = () => (
         <header>
           <div className="title">Kodemia Title</div>
           <div className="logo">
-            <img src="" alt="" />
+            <img src={Logo} alt="" />
           </div>
         </header>
         <div className="card-body">

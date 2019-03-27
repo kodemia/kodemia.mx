@@ -10,8 +10,10 @@ const Live = () => (
     <div className="player">
       <h2>HTML y CSS</h2>
       <ReactPlayer
-        fileConfig={{
-          forceHLS: true
+        config={{
+          file: {
+            forceHLS: true
+          }
         }}
         url={url}
         playing

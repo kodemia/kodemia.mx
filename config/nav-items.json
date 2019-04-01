@@ -31,7 +31,7 @@
   },
   {
     "name":     "● Live",
-    "href":     "https://live.kodemia.mx",
+    "href":     "/live",
     "anchor":   false,
     "classes":  "active"
   },

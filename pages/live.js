@@ -19,7 +19,7 @@ class Live extends Component {
     return (
       <Layout title="Live :: Kodemia">
         <div className="player">
-          <h2>HTML y CSS</h2>
+          <h2>Git y Github</h2>
           <ReactPlayer
             config={{
               file: {

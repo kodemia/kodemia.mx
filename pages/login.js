@@ -29,14 +29,16 @@ export default class Live extends Component {
     login(email, password)
       .then(token => {
         sessionStorage.setItem('token', token)
-        Router.replace('/live')
+        const from = sessionStorage.getItem('from') || 'live'
+        Router.replace(`/${from}`)
       })
       .catch(() => this.setError())
   }
 
   componentDidMount() {
     const token = sessionStorage.getItem('token')
-    if (token) Router.replace('/live')
+    const from = sessionStorage.getItem('from') || 'live'
+    if (token) Router.replace(`/${from}`)
   }
 
   render() {

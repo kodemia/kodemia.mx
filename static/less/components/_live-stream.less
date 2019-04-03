@@ -1,8 +1,27 @@
-.player {
-  width: 100%;
-  height: 80vh;
+.live-bg {
+  background-image: url(/static/img/default/pattern-bottom-left.png);
+  min-height: 77vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  .live-stream {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    background-color: transparent;
+    max-width: 650px;
+    align-self: center;
+    margin: 0 auto;
+    h1 {
+      margin: 20px;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .video-player {
+      padding: 10px;
+    }
+  }
 }

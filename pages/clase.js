@@ -15,14 +15,17 @@ class Clase extends Component {
   componentDidMount() {
     const token = sessionStorage.getItem('token')
     // TODO: validate if the token is valid
-    if (!token) Router.replace('/login')
+    if (!token) {
+      sessionStorage.setItem('from', 'clases')
+      Router.replace('/login')
+    }
   }
 
   render() {
     const { playbackId, title } = this.props
 
     return (
-      <Layout>
+      <Layout title={title}>
         <div className="class-bg">
           <div className="class">
             <h1>{title}</h1>

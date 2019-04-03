@@ -18,7 +18,10 @@ class Clases extends Component {
   componentDidMount() {
     const token = sessionStorage.getItem('token')
     // TODO: validate if the token is valid
-    if (!token) Router.replace('/login')
+    if (!token) {
+      sessionStorage.setItem('from', 'clases')
+      Router.replace('/login')
+    }
 
     getClasses(token).then(classes => {
       this.setState({ classes })

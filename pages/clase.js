@@ -1,30 +1,34 @@
 /* global sessionStorage */
-
 import React, { Component } from 'react'
 import Router from 'next/router'
 
-// Packages
 import Layout from '../components/layout'
 import VideoPlayer from '../components/video-player'
 
-const playbackId = 'D4Sd017h8DWcy7QYtKt01N00VV4Hi01SESOV'
+class Clase extends Component {
+  static getInitialProps(props) {
+    const { query } = props
+    const { id: playbackId, title } = query
+    return { playbackId, title }
+  }
 
-class Live extends Component {
   componentDidMount() {
     const token = sessionStorage.getItem('token')
     // TODO: validate if the token is valid
     if (!token) {
-      sessionStorage.setItem('from', 'live')
+      sessionStorage.setItem('from', 'clases')
       Router.replace('/login')
     }
   }
 
   render() {
+    const { playbackId, title } = this.props
+
     return (
-      <Layout title="Live :: Kodemia">
-        <div className="live-bg">
-          <div className="live-stream">
-            <h1>White koder 2019</h1>
+      <Layout title={title}>
+        <div className="class-bg">
+          <div className="class">
+            <h1>{title}</h1>
             <div className="video-player">
               <VideoPlayer playbackId={playbackId} />
             </div>
@@ -35,4 +39,4 @@ class Live extends Component {
   }
 }
 
-export default Live
+export default Clase

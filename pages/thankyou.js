@@ -24,9 +24,8 @@ const ThankYouPage = () => (
       <div className="scontainer">
         <div className="x:mrg-bottom-20">
           <h2>
-            Te recordamos que el proceso de inscripción es el siguient<Cursor>
-              e:
-            </Cursor>
+            Te recordamos que el proceso de inscripción es el siguient
+            <Cursor>e:</Cursor>
           </h2>
         </div>
         <Steps />

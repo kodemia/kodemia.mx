@@ -1,11 +1,5 @@
 [
   {
-    "name":     "¿Qué es Kodemia?",
-    "href":     "/#que-es-kodemia",
-    "anchor":   true,
-    "classes":  null
-  },
-  {
     "name":     "Cursos",
     "href":     "/#cursos",
     "anchor":   true,
@@ -30,8 +24,14 @@
     "classes":  null
   },
   {
+    "name":     "Clases",
+    "href":     "/clases",
+    "anchor":   false,
+    "classes":  null
+  },
+  {
     "name":     "● Live",
-    "href":     "https://live.kodemia.mx",
+    "href":     "/live",
     "anchor":   false,
     "classes":  "active"
   },

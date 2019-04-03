@@ -26,14 +26,16 @@ class Clase extends Component {
 
     return (
       <Layout title={title}>
-        <div className="class-bg">
-          <div className="class">
-            <h1>{title}</h1>
-            <div className="video-player">
-              <VideoPlayer playbackId={playbackId} />
+        {title && playbackId && (
+          <div className="class-bg">
+            <div className="class">
+              <h1>{title}</h1>
+              <div className="video-player">
+                <VideoPlayer playbackId={playbackId} />
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </Layout>
     )
   }

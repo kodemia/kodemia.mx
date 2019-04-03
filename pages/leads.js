@@ -27,30 +27,27 @@ const LeadsPage = ({ errors, touched, isSubmitting }) => (
                   <label className="x:fs-14">Nombre Completo</label>
                   <div className="input-field mrg-x-top-5">
                     <Field className="input" type="text" name="fullname" />
-                    {touched.fullname &&
-                      errors.fullname && (
-                        <p className="form-error">{errors.fullname}</p>
-                      )}
+                    {touched.fullname && errors.fullname && (
+                      <p className="form-error">{errors.fullname}</p>
+                    )}
                   </div>
                 </div>
                 <div className="x:scol-12">
                   <label className="x:fs-14">Correo electrónico</label>
                   <div className="input-field mrg-x-top-5">
                     <Field className="input" type="email" name="email" />
-                    {touched.email &&
-                      errors.email && (
-                        <p className="form-error">{errors.email}</p>
-                      )}
+                    {touched.email && errors.email && (
+                      <p className="form-error">{errors.email}</p>
+                    )}
                   </div>
                 </div>
                 <div className="x:scol-12">
                   <label className="x:fs-14">Teléfono</label>
                   <div className="input-field mrg-x-top-5">
                     <Field className="input" type="text" name="phone" />
-                    {touched.phone &&
-                      errors.phone && (
-                        <p className="form-error">{errors.phone}</p>
-                      )}
+                    {touched.phone && errors.phone && (
+                      <p className="form-error">{errors.phone}</p>
+                    )}
                   </div>
                 </div>
                 <div className="x:scol-12 x:center x:mrg-top-30 x:mrg-bt-30">

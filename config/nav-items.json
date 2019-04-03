@@ -1,11 +1,5 @@
 [
   {
-    "name":     "¿Qué es Kodemia?",
-    "href":     "/#que-es-kodemia",
-    "anchor":   true,
-    "classes":  null
-  },
-  {
     "name":     "Cursos",
     "href":     "/#cursos",
     "anchor":   true,
@@ -27,6 +21,12 @@
     "name":     "Contacto",
     "href":     "/#contacto",
     "anchor":   true,
+    "classes":  null
+  },
+  {
+    "name":     "Clases",
+    "href":     "/clases",
+    "anchor":   false,
     "classes":  null
   },
   {

@@ -3,13 +3,13 @@ import Link from 'next/link'
 import moment from 'moment'
 
 const classCard = props => {
-  const { 
+  const {
     isAlt = false,
     mentor = '',
-    date, 
-    description, 
-    playbackId, 
-    thumbnail, 
+    date,
+    description,
+    playbackId,
+    thumbnail,
     title
   } = props
 
@@ -31,15 +31,12 @@ const classCard = props => {
       </div>
       <div className="description">
         <h1>{title}</h1>
-        <h3>{ formattedDate }</h3>
-        <p>
-          {description}
-        </p>
+        <h4>{formattedDate}</h4>
+        <p>{description}</p>
         <p className="read-more">
-          <Link href={`/clase?id=${playbackId}`}>
-            <a>
-              Ver clase
-            </a>
+          <Link href={{ pathname: 'clase', query: { id: playbackId } }}>
+            {/* Change this to custom router and to slug */}
+            <a>Ver clase</a>
           </Link>
         </p>
       </div>

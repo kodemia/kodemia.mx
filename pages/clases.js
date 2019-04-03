@@ -14,6 +14,7 @@ class Clases extends Component {
       classes: []
     }
   }
+
   componentDidMount() {
     const token = sessionStorage.getItem('token')
     // TODO: validate if the token is valid
@@ -28,32 +29,35 @@ class Clases extends Component {
     const { classes } = this.state
     return (
       <Layout>
-        {classes.map((klass, index) => {
-          const {
-            date,
-            description,
-            mentor,
-            playbackId,
-            thumbnail,
-            title
-          } = klass
-          const { firstName, lastName } = mentor
-          const mentorName = `${firstName} ${lastName}`
-          const isAlt = !(index % 2 === 0)
+        <div className="classes-list">
+          {classes.map((klass, index) => {
+            const {
+              date,
+              description,
+              mentor,
+              playbackId,
+              thumbnail,
+              title
+            } = klass
 
-          return (
-            <ClassCard
-              key={index}
-              thumbnail={thumbnail}
-              isAlt={isAlt}
-              mentor={mentorName}
-              date={date}
-              description={description}
-              playbackId={playbackId}
-              title={title}
-            />
-          )
-        })}
+            const { firstName, lastName } = mentor
+            const mentorName = `${firstName} ${lastName}`
+            const isAlt = !(index % 2 === 0)
+
+            return (
+              <ClassCard
+                key={index}
+                thumbnail={thumbnail}
+                isAlt={isAlt}
+                mentor={mentorName}
+                date={date}
+                description={description}
+                playbackId={playbackId}
+                title={title}
+              />
+            )
+          })}
+        </div>
       </Layout>
     )
   }

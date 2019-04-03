@@ -2,13 +2,14 @@
 import React, { Component } from 'react'
 import Router from 'next/router'
 
+import Layout from '../components/layout'
 import VideoPlayer from '../components/video-player'
 
 class Clase extends Component {
   static getInitialProps(props) {
     const { query } = props
-    const { id: playbackId } = query
-    return { playbackId }
+    const { id: playbackId, title } = query
+    return { playbackId, title }
   }
 
   componentDidMount() {
@@ -18,12 +19,19 @@ class Clase extends Component {
   }
 
   render() {
-    const { playbackId } = this.props
+    const { playbackId, title } = this.props
 
     return (
-      <div>
-        <VideoPlayer playbackId={playbackId} />
-      </div>
+      <Layout>
+        <div className="class-bg">
+          <div className="class">
+            <h1>{title}</h1>
+            <div className="video-player">
+              <VideoPlayer playbackId={playbackId} />
+            </div>
+          </div>
+        </div>
+      </Layout>
     )
   }
 }

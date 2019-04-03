@@ -1,17 +1,22 @@
 /* global sessionStorage */
 import React, { Component } from 'react'
+import dynamic from 'next/dynamic'
 import Router from 'next/router'
 
 import Layout from '../components/layout'
-import VideoPlayer from '../components/video-player'
+
+const Klass = dynamic({
+  modules: () => {
+    return {
+      KlassComp: import('../components/class')
+    }
+  },
+  ssr: false,
+  render: renderKlassNoSSR
+})
+const renderKlassNoSSR = (props, { KlassComp }) => <KlassComp />
 
 class Clase extends Component {
-  // static getInitialProps(props) {
-  //   const { query } = props
-  //   const { id: playbackId, title } = query
-  //   return { playbackId, title }
-  // }
-
   componentDidMount() {
     const token = sessionStorage.getItem('token')
     // TODO: validate if the token is valid
@@ -22,21 +27,9 @@ class Clase extends Component {
   }
 
   render() {
-    const { url } = this.props
-    const { playbackId, title } = url
-
     return (
-      <Layout title={title}>
-        {title && playbackId && (
-          <div className="class-bg">
-            <div className="class">
-              <h1>{title}</h1>
-              <div className="video-player">
-                <VideoPlayer playbackId={playbackId} />
-              </div>
-            </div>
-          </div>
-        )}
+      <Layout title="Kodemia | clase">
+        <Klass />
       </Layout>
     )
   }

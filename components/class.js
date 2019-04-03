@@ -5,7 +5,7 @@ import VideoPlayer from '../components/video-player'
 
 class Class extends Component {
   render() {
-    const { playbackId, title } =
+    const { id: playbackId, title } =
       queryString.parse(window.location.search) || {}
     return (
       <div className="class-bg">

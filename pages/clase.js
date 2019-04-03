@@ -12,9 +12,13 @@ const Klass = dynamic({
     }
   },
   ssr: false,
-  render: renderKlassNoSSR
+  render: renderKlassNoSrr
 })
-const renderKlassNoSSR = (props, { KlassComp }) => <KlassComp />
+
+// const renderKlassNoSrr = (props, { KlassComp }) => <KlassComp />
+function renderKlassNoSrr(props, { KlassComp }) {
+  return <KlassComp />
+}
 
 class Clase extends Component {
   componentDidMount() {

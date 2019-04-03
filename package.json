@@ -33,6 +33,7 @@
     "netlify-lambda": "^0.4.0",
     "next": "^6.1.1",
     "node-input-validator": "^2.1.0",
+    "query-string": "^6.4.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-facebook-pixel": "^0.1.1",

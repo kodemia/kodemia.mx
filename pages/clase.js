@@ -6,11 +6,11 @@ import Layout from '../components/layout'
 import VideoPlayer from '../components/video-player'
 
 class Clase extends Component {
-  static getInitialProps(props) {
-    const { query } = props
-    const { id: playbackId, title } = query
-    return { playbackId, title }
-  }
+  // static getInitialProps(props) {
+  //   const { query } = props
+  //   const { id: playbackId, title } = query
+  //   return { playbackId, title }
+  // }
 
   componentDidMount() {
     const token = sessionStorage.getItem('token')
@@ -22,7 +22,8 @@ class Clase extends Component {
   }
 
   render() {
-    const { playbackId, title } = this.props
+    const { url } = this.props
+    const { playbackId, title } = url
 
     return (
       <Layout title={title}>

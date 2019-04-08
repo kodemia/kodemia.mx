@@ -28,6 +28,7 @@ __Módulo 3 - Manejo de estados con React redux y ContextAPI__
   - Paradigma reactivo
   - Componentes
   - Router
+  - React hooks
 - Redux
   - State
   - Actions

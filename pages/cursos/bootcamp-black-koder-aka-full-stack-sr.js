@@ -32,7 +32,7 @@ class BootcampBlackKoderPage extends Component {
             Bootcamp Black Koder
           </h1>
           <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-green">
-            Iniciate en el mundo de la programación como Full Stack Sr.
+            Consolidate en el mundo de la programación como Full Stack Sr.
           </p>
           <div className="s:mrg-top-40">
             <a

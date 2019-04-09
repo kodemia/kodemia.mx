@@ -1,5 +1,5 @@
 __Fecha__
-Iniciamos el 1 de abril de 2019
+Iniciamos el 29 de abril de 2019
 <!-- Finalizamos el 21 de Diciembre de 2019 -->
 
 __Horario__

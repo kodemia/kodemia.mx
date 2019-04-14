@@ -28,26 +28,27 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               <label className="x:fs-14">Nombre Completo</label>
               <div className="input-field mrg-x-top-5">
                 <Field className="input" type="text" name="fullname" />
-                {touched.fullname &&
-                  errors.fullname && (
-                    <p className="form-error">{errors.fullname}</p>
-                  )}
+                {touched.fullname && errors.fullname && (
+                  <p className="form-error">{errors.fullname}</p>
+                )}
               </div>
             </div>
             <div className="x:scol-12">
               <label className="x:fs-14">Correo electrónico</label>
               <div className="input-field mrg-x-top-5">
                 <Field className="input" type="email" name="email" />
-                {touched.email &&
-                  errors.email && <p className="form-error">{errors.email}</p>}
+                {touched.email && errors.email && (
+                  <p className="form-error">{errors.email}</p>
+                )}
               </div>
             </div>
             <div className="x:scol-12">
               <label className="x:fs-14">Teléfono</label>
               <div className="input-field mrg-x-top-5">
                 <Field className="input" type="text" name="phone" />
-                {touched.phone &&
-                  errors.phone && <p className="form-error">{errors.phone}</p>}
+                {touched.phone && errors.phone && (
+                  <p className="form-error">{errors.phone}</p>
+                )}
               </div>
             </div>
             <div className="x:scol-12">
@@ -61,11 +62,13 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
                   <option value="black-koder">
                     Black Koder (Full Stack Sr)
                   </option>
+                  <option value="kodemia-kids">
+                    Kodemia kids ( Robotica para niños )
+                  </option>
                 </Field>
-                {touched.course &&
-                  errors.course && (
-                    <p className="form-error">{errors.course}</p>
-                  )}
+                {touched.course && errors.course && (
+                  <p className="form-error">{errors.course}</p>
+                )}
               </div>
             </div>
 
@@ -73,10 +76,9 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               <label className="x:fs-14">¿Cómo te enteraste de Kodemia?</label>
               <div className="input-field mrg-x-top-5">
                 <Field component="textarea" name="reference" />
-                {touched.reference &&
-                  errors.reference && (
-                    <p className="form-error">{errors.reference}</p>
-                  )}
+                {touched.reference && errors.reference && (
+                  <p className="form-error">{errors.reference}</p>
+                )}
               </div>
             </div>
             <div className="x:scol-12">
@@ -85,8 +87,9 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               </label>
               <div className="input-field mrg-x-top-5">
                 <Field component="textarea" name="why" />
-                {touched.why &&
-                  errors.why && <p className="form-error">{errors.why}</p>}
+                {touched.why && errors.why && (
+                  <p className="form-error">{errors.why}</p>
+                )}
               </div>
             </div>
             <div className="x:scol-12">
@@ -95,10 +98,9 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               </label>
               <div className="input-field mrg-x-top-5">
                 <Field component="textarea" name="experience" />
-                {touched.experience &&
-                  errors.experience && (
-                    <p className="form-error">{errors.experience}</p>
-                  )}
+                {touched.experience && errors.experience && (
+                  <p className="form-error">{errors.experience}</p>
+                )}
               </div>
             </div>
             <div className="x:right x:mrg-top-30 x:mrg-bt-30">
@@ -160,21 +162,21 @@ export default withFormik({
     )
   }),
   async handleSubmit(values, { resetForm, setSubmitting }) {
-    /*let dataLayer = window.dataLayer || []
+    /* let dataLayer = window.dataLayer || []
     function gtag() {
       dataLayer.push(arguments)
-    }*/
+    } */
 
     try {
       const res = await axios.post('/.netlify/functions/apply', values)
 
       if (res && res.data.success) {
         resetForm()
-        /*gtag('js', new Date())
+        /* gtag('js', new Date())
         gtag('config', 'AW-781067354')
         gtag('event', 'conversion', {
           send_to: 'AW-781067354/w_HcCKzxmI0BENrIuPQC'
-        })*/
+        }) */
       }
 
       Router.push('/thankyou')

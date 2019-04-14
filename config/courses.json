@@ -28,5 +28,20 @@
           "pastEvent": false,
           "comingSoon": false
         }
+    ],
+    "kids": [
+        {
+          "name": "Kodemia kids (Robotica para niños)",
+          "link": "cursos/kodemia-kids",
+          "desc": "Niños atrevidos a transformar el mundo.",
+          "schedule": {
+              "day": "22",
+              "month": "Abr",
+              "year": "2019",
+              "hour": "09:00"
+          },
+          "pastEvent": false,
+          "comingSoon": true
+        }
     ]
 }

@@ -34,7 +34,7 @@ class BootcampWhiteKoderPage extends Component {
           </p>
           <div className="s:mrg-top-40">
             <a
-              href={asset('docs/courses/KODEMIA_KIDS_SYLLABUS.pdf')}
+              href={asset('docs/courses/KODEMIA_SYLLABUS_KIDS_2019.pdf')}
               className="btn btn--white s:mrg-right-10"
               target="_blank"
             >

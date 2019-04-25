@@ -1,9 +1,9 @@
 __Fecha__
-Iniciamos el 22 de abril de 2019
+Iniciamos el 1 de julio de 2019
 
 __Horario__
-Estudia 5 días a la semana
-Lunes a viernes de 9:00 a 15:00 horas.
+Estudia 5 días a la semana durante 2 semanas (30 horas)
+Lunes a viernes de 9:00 a 12:00 horas o de 15:00 a 18:00 horas
 
 __Edad__
 De 8 a 12 años

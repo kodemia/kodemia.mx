@@ -1,6 +1,7 @@
 /* global sessionStorage */
 import React, { Component } from 'react'
 import Router from 'next/router'
+import moment from 'moment-timezone'
 
 import { getClasses } from '../lib/api'
 
@@ -53,7 +54,7 @@ class Clases extends Component {
                 thumbnail={thumbnail}
                 isAlt={isAlt}
                 mentor={mentorName}
-                date={date}
+                date={moment(date).tz('utc')}
                 description={description}
                 playbackId={playbackId}
                 title={title}

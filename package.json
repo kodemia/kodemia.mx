@@ -30,6 +30,7 @@
     "less": "^3.8.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
     "netlify-lambda": "^0.4.0",
     "next": "^6.1.1",
     "node-input-validator": "^2.1.0",
@@ -57,8 +58,7 @@
     "http-proxy-middleware": "^0.18.0",
     "lint-staged": "^7.2.0",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.13.7",
-    "standard": "^12.0.1"
+    "prettier": "^1.13.7"
   },
   "lint-staged": {
     "*.js": [

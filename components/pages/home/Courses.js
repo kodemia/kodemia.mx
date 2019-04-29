@@ -11,6 +11,9 @@ import Course from '../../course'
 
 const BlackCourses = CoursesList.black.filter(course => !course.pastEvent)
 const WhiteCourses = CoursesList.white.filter(course => !course.pastEvent)
+const WhiteCoursesMevn = CoursesList.whiteMevn.filter(
+  course => !course.pastEvent
+)
 const KidsCourses = CoursesList.kids.filter(course => !course.pastEvent)
 
 class Courses extends Component {
@@ -20,54 +23,93 @@ class Courses extends Component {
   }
   render() {
     return (
-      <section id="cursos">
-        <hr />
-        <div className="line" regular="twins:1024">
-          <div className="twins l:scol-4 scol--full x:top bg-white l:right">
-            <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
-              <div className="line">
-                <div className="x:scol-12 x:mrg-bottom-20">
-                  <h2>
-                    White Kode<Cursor>r</Cursor>
-                  </h2>
-                </div>
-                {WhiteCourses.map((course, i) => (
-                  <Course course={course} key={i} />
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="twins l:scol-4 scol--full x:top bg-black">
-            <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
-              <div className="line">
-                <div className="x:scol-12 x:mrg-bottom-20">
-                  <h2 className="c-white">
-                    Black Kode<Cursor white>r</Cursor>
-                  </h2>
-                </div>
-                {BlackCourses.map((course, i) => (
-                  <Course course={course} key={i} color="black" />
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="twins l:scol-4 scol--full x:top bg-white l:right">
-            <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
-              <div className="line">
-                <div className="x:scol-12 x:mrg-bottom-20">
-                  <h2>
-                    Kodemia kid<Cursor>s</Cursor>
-                  </h2>
-                </div>
-                {KidsCourses.map((course, i) => (
-                  <Course course={course} key={i} />
-                ))}
-              </div>
+      <>
+        <div className="scontainer">
+          <div className="line">
+            <div className="x:scol-12 x:mrg-bottom-20">
+              <h2>
+                Bootcamp<Cursor>s</Cursor>
+              </h2>
             </div>
           </div>
         </div>
-        <hr />
-      </section>
+        <section id="cursos">
+          <div className="line" regular="twins:1024">
+            <div className="twins l:scol-6 scol--full x:top bg-white l:right">
+              <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
+                <div className="line">
+                  <div className="x:scol-12 x:mrg-bottom-20">
+                    <h2>
+                      White Koder MER<Cursor>N</Cursor>
+                    </h2>
+                  </div>
+                  {WhiteCourses.map((course, i) => (
+                    <Course course={course} key={i} />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="twins l:scol-6 scol--full x:top bg-white l:right">
+              <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
+                <div className="line">
+                  <div className="x:scol-12 x:mrg-bottom-20">
+                    <h2>
+                      White Koder MEV<Cursor>N</Cursor>
+                    </h2>
+                  </div>
+                  {WhiteCoursesMevn.map((course, i) => (
+                    <Course course={course} key={i} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="scontainer">
+          <div className="line">
+            <div className="x:scol-12 x:mrg-bottom-20">
+              <h2>
+                Curso<Cursor>s</Cursor>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <section id="cursos">
+          <hr />
+          <div className="line" regular="twins:1024">
+            <div className="twins l:scol-6 scol--full x:top bg-black">
+              <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
+                <div className="line">
+                  <div className="x:scol-12 x:mrg-bottom-20">
+                    <h2 className="c-white">
+                      Black Kode<Cursor white>r</Cursor>
+                    </h2>
+                  </div>
+                  {BlackCourses.map((course, i) => (
+                    <Course course={course} key={i} color="black" />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="twins l:scol-6 scol--full x:top bg-white l:right">
+              <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
+                <div className="line">
+                  <div className="x:scol-12 x:mrg-bottom-20">
+                    <h2>
+                      Kodemia kid<Cursor>s</Cursor>
+                    </h2>
+                  </div>
+                  {KidsCourses.map((course, i) => (
+                    <Course course={course} key={i} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </section>
+      </>
     )
   }
 }

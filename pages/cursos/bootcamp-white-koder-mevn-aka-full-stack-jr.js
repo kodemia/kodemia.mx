@@ -11,11 +11,12 @@ import Regular from '../../static/js/shido-regular'
 import Cursor from '../../components/cursor'
 import Browser from '../../components/browser'
 import HeaderCourse from '../../components/pages/cursos/HeaderCourse'
-import Description from '../../components/pages/cursos/kodemia-kids/description.md'
-import Testimonial from '../../components/pages/cursos/kodemia-kids/testimonial.md'
-import Syllabus from '../../components/pages/cursos/kodemia-kids/syllabus.md'
-import Location from '../../components/pages/cursos/kodemia-kids/location.md'
-import Pricing from '../../components/pages/cursos/kodemia-kids/pricing.md'
+import Description from '../../components/pages/cursos/white-koder-mevn/description.md'
+import Testimonial from '../../components/pages/cursos/white-koder-mevn/testimonial.md'
+import Syllabus from '../../components/pages/cursos/white-koder-mevn/syllabus.md'
+import Location from '../../components/pages/cursos/white-koder-mevn/location.md'
+import Pricing from '../../components/pages/cursos/white-koder-mevn/pricing.md'
+import Benefits from '../../components/pages/cursos/white-koder-mevn/benefits.md'
 
 class BootcampWhiteKoderPage extends Component {
   componentDidMount() {
@@ -24,17 +25,19 @@ class BootcampWhiteKoderPage extends Component {
   }
   render() {
     return (
-      <Layout title="Kids :: Kodemia">
+      <Layout title="Bootcamp White Koder (Full Stack Jr) :: Kodemia">
         <HeaderCourse white>
           <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-black">
-            Robotica para niño<Cursor>s</Cursor>
+            Bootcamp White Koder
           </h1>
           <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-pink">
-            Niños atrevidos a transformar el mundo
+            Iniciate en el mundo de la programación como Full Stack Jr.
           </p>
           <div className="s:mrg-top-40">
             <a
-              href={asset('docs/courses/KODEMIA_SYLLABUS_KIDS_2019.pdf')}
+              href={asset(
+                'docs/courses/bootcamps/KODEMIA_SYLLABUS_WHITE_2019.pdf'
+              )}
               className="btn btn--white s:mrg-right-10"
               target="_blank"
             >
@@ -90,7 +93,7 @@ class BootcampWhiteKoderPage extends Component {
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                Estructura del curs<Cursor>o</Cursor>
+                Estructura del Bootcam<Cursor white>p</Cursor>
               </h2>
             </div>
             <Syllabus />
@@ -109,12 +112,12 @@ class BootcampWhiteKoderPage extends Component {
         <section className="x:pad-bt-20 s:pad-bt-40 bg-white bg-pattern-bottom-left">
           <div className="scontainer">
             <div className="line">
-              {[1, 2, 3, 5, 6].map((pic, i) => (
+              {[1, 2, 3, 4, 5, 6].map((pic, i) => (
                 <div key={i} className="x:scol-6 m:scol-4">
                   <img
                     className="img-liquid img-rounded x:middle"
                     width="300"
-                    src={asset(`img/classes/kids/image-${pic}.jpeg`)}
+                    src={asset(`img/classes/white/image-${pic}.jpg`)}
                     alt={i}
                   />
                 </div>
@@ -126,22 +129,22 @@ class BootcampWhiteKoderPage extends Component {
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                Inversió<Cursor white>n</Cursor>
+                Precios y Financiamient<Cursor white>o</Cursor>
               </h2>
             </div>
             <Pricing />
           </div>
         </section>
-        {/* <section className='x:pad-bt-20 s:pad-bt-40 bg-white c-black'>
-          <div className='scontainer'>
-            <div className='x:mrg-bottom-20'>
-              <h2 className='c-black'>
+        <section className="x:pad-bt-20 s:pad-bt-40 bg-white c-black">
+          <div className="scontainer">
+            <div className="x:mrg-bottom-20">
+              <h2 className="c-black">
                 Beneficio<Cursor>s</Cursor>
               </h2>
             </div>
             <Benefits />
           </div>
-        </section> */}
+        </section>
       </Layout>
     )
   }

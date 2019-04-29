@@ -1,7 +1,7 @@
 {
     "black": [
         {
-          "name":  "Bootcamp (Full Stack Sr)",
+          "name":  "Curso Avanzado (Full Stack Sr)",
           "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
           "desc": "Incrementa tu conocimiento y defínete como un programador Sr.",
           "schedule": {
@@ -16,18 +16,33 @@
     ],
     "white": [
         {
-          "name": "Bootcamp (Full Stack Jr)",
+          "name": "Bootcamp MERN (Full Stack Jr)",
           "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
-          "desc": "Iniciate en el mundo de la programación como Full Stack Jr.",
+          "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MERN (Mongo, Express, React y Node)",
           "schedule": {
               "day": "19",
-              "month": "Mar",
+              "month": "Ago",
               "year": "2019",
               "hour": "19:00"
           },
           "pastEvent": false,
-          "comingSoon": false
+          "comingSoon": true
         }
+    ],
+    "whiteMevn": [
+        {
+            "name": "Bootcamp MEVN (Full Stack Jr)",
+            "link": "cursos/bootcamp-white-koder-mevn-aka-full-stack-jr",
+            "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MEVN (MySql/MariaDB, Express, Vue y Node)",
+            "schedule": {
+                "day": "01",
+                "month": "Jul",
+                "year": "2019",
+                "hour": "19:00"
+            },
+            "pastEvent": false,
+            "comingSoon": true
+          }
     ],
     "kids": [
         {
@@ -35,8 +50,8 @@
           "link": "cursos/kodemia-kids",
           "desc": "Niños atrevidos a transformar el mundo.",
           "schedule": {
-              "day": "22",
-              "month": "Abr",
+              "day": "01",
+              "month": "Jul",
               "year": "2019",
               "hour": "09:00"
           },

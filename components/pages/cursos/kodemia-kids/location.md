@@ -1,5 +1,5 @@
 __Fecha__
-Iniciamos el 1 de julio de 2019
+Iniciamos el 15 de julio de 2019
 
 __Horario__
 Estudia 5 días a la semana durante 2 semanas (30 horas)

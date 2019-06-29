@@ -72,37 +72,6 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               </div>
             </div>
 
-            <div className="x:scol-12">
-              <label className="x:fs-14">¿Cómo te enteraste de Kodemia?</label>
-              <div className="input-field mrg-x-top-5">
-                <Field component="textarea" name="reference" />
-                {touched.reference && errors.reference && (
-                  <p className="form-error">{errors.reference}</p>
-                )}
-              </div>
-            </div>
-            <div className="x:scol-12">
-              <label className="x:fs-14">
-                ¿Porqué quieres ser desarrollador?
-              </label>
-              <div className="input-field mrg-x-top-5">
-                <Field component="textarea" name="why" />
-                {touched.why && errors.why && (
-                  <p className="form-error">{errors.why}</p>
-                )}
-              </div>
-            </div>
-            <div className="x:scol-12">
-              <label className="x:fs-14">
-                ¿Qué conocimientos en programación tienes? (opcional)
-              </label>
-              <div className="input-field mrg-x-top-5">
-                <Field component="textarea" name="experience" />
-                {touched.experience && errors.experience && (
-                  <p className="form-error">{errors.experience}</p>
-                )}
-              </div>
-            </div>
             <div className="x:right x:mrg-top-30 x:mrg-bt-30">
               <Button type="submit" disabled={isSubmitting} className="x:fs-14">
                 {isSubmitting ? 'Aplicando...' : 'Aplicar'}
@@ -124,23 +93,12 @@ ApplicantPage.getInitialProps = async ({ query }) => {
 }
 
 export default withFormik({
-  mapPropsToValues({
-    fullname,
-    email,
-    phone,
-    course,
-    reference,
-    why,
-    experience
-  }) {
+  mapPropsToValues({ fullname, email, phone, course }) {
     return {
       fullname: fullname || '',
       email: email || '',
       phone: phone || '',
-      course: course || '',
-      reference: reference || '',
-      why: why || '',
-      experience: experience || ''
+      course: course || ''
     }
   },
   validationSchema: Yup.object().shape({
@@ -153,12 +111,6 @@ export default withFormik({
       .required('Por favor ingresa tu teléfono'),
     course: Yup.string().required(
       'Por favor elige al menos uno de los cursos que quieras asistir'
-    ),
-    reference: Yup.string().required(
-      'Por favor cuéntanos como te enteraste de nosotros'
-    ),
-    why: Yup.string().required(
-      'Por favor cuéntanos porqué quieres ser desarrollador'
     )
   }),
   async handleSubmit(values, { resetForm, setSubmitting }) {

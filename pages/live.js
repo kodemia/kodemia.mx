@@ -7,7 +7,7 @@ import Router from 'next/router'
 import Layout from '../components/layout'
 import VideoPlayer from '../components/video-player'
 
-const playbackId = 'D4Sd017h8DWcy7QYtKt01N00VV4Hi01SESOV'
+const playbackId = 'vU9N5JH02bwnQ02o9wtI2kM702aBqwgJUW3'
 
 class Live extends Component {
   componentDidMount() {

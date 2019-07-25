@@ -7,19 +7,33 @@ import Router from 'next/router'
 import Layout from '../components/layout'
 import VideoPlayer from '../components/video-player'
 
-const playbackId = 'vU9N5JH02bwnQ02o9wtI2kM702aBqwgJUW3'
+import { getStreaming } from '../lib/api'
 
 class Live extends Component {
-  componentDidMount() {
-    const token = sessionStorage.getItem('token')
-    // TODO: validate if the token is valid
-    if (!token) {
-      sessionStorage.setItem('from', 'live')
-      Router.replace('/login')
+  constructor(props) {
+    super(props)
+    this.state = {
+      playbackId: ''
     }
   }
 
+  async componentDidMount() {
+    const token = sessionStorage.getItem('token')
+
+    if (!token) {
+      sessionStorage.setItem('from', 'live')
+      Router.replace('/login')
+      return
+    }
+
+    getStreaming(token).then(playbackId => {
+      this.setState({ playbackId })
+    })
+  }
+
   render() {
+    const { playbackId } = this.state
+
     return (
       <Layout title="Live :: Kodemia">
         <div className="live-bg">

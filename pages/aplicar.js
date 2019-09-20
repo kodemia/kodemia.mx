@@ -65,6 +65,9 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
                   <option value="kodemia-kids">
                     Kodemia kids ( Robotica para niños )
                   </option>
+                  <option value="front-end">
+                    Entrenamiento Profesional Front End
+                  </option>
                 </Field>
                 {touched.course && errors.course && (
                   <p className="form-error">{errors.course}</p>

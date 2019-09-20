@@ -24,7 +24,7 @@ class BootcampWhiteKoderPage extends Component {
   }
   render() {
     return (
-      <Layout title="Kids :: Kodemia">
+      <Layout title="FrontEnd :: Kodemia">
         <HeaderCourse white>
           <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-black">
             Entrenamiento Profesional Front En<Cursor>d</Cursor>

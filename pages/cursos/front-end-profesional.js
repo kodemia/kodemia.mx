@@ -11,12 +11,11 @@ import Regular from '../../static/js/shido-regular'
 import Cursor from '../../components/cursor'
 import Browser from '../../components/browser'
 import HeaderCourse from '../../components/pages/cursos/HeaderCourse'
-import Description from '../../components/pages/cursos/white-koder/description.md'
-import Testimonial from '../../components/pages/cursos/white-koder/testimonial.md'
-import Syllabus from '../../components/pages/cursos/white-koder/syllabus.md'
-import Location from '../../components/pages/cursos/white-koder/location.md'
-import Pricing from '../../components/pages/cursos/white-koder/pricing.md'
-import Benefits from '../../components/pages/cursos/white-koder/benefits.md'
+import Description from '../../components/pages/cursos/front-end-profesional/description.md'
+import Testimonial from '../../components/pages/cursos/front-end-profesional/testimonial.md'
+import Syllabus from '../../components/pages/cursos/front-end-profesional/syllabus.md'
+import Location from '../../components/pages/cursos/front-end-profesional/location.md'
+import Pricing from '../../components/pages/cursos/front-end-profesional/pricing.md'
 
 class BootcampWhiteKoderPage extends Component {
   componentDidMount() {
@@ -25,19 +24,18 @@ class BootcampWhiteKoderPage extends Component {
   }
   render() {
     return (
-      <Layout title="Bootcamp White Koder (Full Stack Jr) :: Kodemia">
+      <Layout title="Kids :: Kodemia">
         <HeaderCourse white>
           <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-black">
-            Bootcamp White Koder
+            Entrenamiento Profesional Front En<Cursor>d</Cursor>
           </h1>
           <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-pink">
-            Iniciate en el mundo de la programación como Full Stack Jr.
+            Adentrate en el mundo de la programación Web aprendiendo HTML, CSS y
+            javaScript
           </p>
           <div className="s:mrg-top-40">
             <a
-              href={asset(
-                'docs/courses/bootcamps/KODEMIA_SYLLABUS_WHITE_2019_2020.pdf'
-              )}
+              href={asset('docs/courses/KODEMIA_SYLLABUS_FRONT.pdf')}
               className="btn btn--white s:mrg-right-10"
               target="_blank"
             >
@@ -93,7 +91,7 @@ class BootcampWhiteKoderPage extends Component {
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                Estructura del Bootcam<Cursor white>p</Cursor>
+                Estructura del curs<Cursor>o</Cursor>
               </h2>
             </div>
             <Syllabus />
@@ -129,22 +127,22 @@ class BootcampWhiteKoderPage extends Component {
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                Precios y Financiamient<Cursor white>o</Cursor>
+                Inversió<Cursor white>n</Cursor>
               </h2>
             </div>
             <Pricing />
           </div>
         </section>
-        <section className="x:pad-bt-20 s:pad-bt-40 bg-white c-black">
-          <div className="scontainer">
-            <div className="x:mrg-bottom-20">
-              <h2 className="c-black">
+        {/* <section className='x:pad-bt-20 s:pad-bt-40 bg-white c-black'>
+          <div className='scontainer'>
+            <div className='x:mrg-bottom-20'>
+              <h2 className='c-black'>
                 Beneficio<Cursor>s</Cursor>
               </h2>
             </div>
             <Benefits />
           </div>
-        </section>
+        </section> */}
       </Layout>
     )
   }

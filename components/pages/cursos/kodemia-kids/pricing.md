@@ -1,6 +1,6 @@
 __Inversión__
-Curso de Robotica para niños: $6,670 MXN (Incluye IVA)
-Aprovecha el 15% de descuento por lanzamiento, antes del 30 de Junio por: $ 5,800.00 MXN
+Curso de Robotica para niños: $3,000 MXN (Incluye IVA)
+Aprovecha el de descuento, con tu inscripción antes del 15 de Octubre por: $ 2,500.00 MXN
 
 
 __Inscripción__

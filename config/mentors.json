@@ -8,13 +8,13 @@
   {
     "image": "david.jpg",
     "name":  "David Moranchel",
-    "desc":  "Estudiante de ingeniería en computación en la UNAM, miembro del grupo GDG UNAM (Google Developer Group), web developer en CanvasMX y Lead Teacher en Kodemia. Maneja tecnologías como Javascript, Firebase, Github, Node JS, Angular JS y Python. Ha dado diversas ponencias y talleres en la UNAM e IPN, mentor en eventos como HackMty organizado por el Tec de Monterrey.",
+    "desc":  "Fullstack Developer en Apli.jobs, Lead Teacher en Kodemia, Estudió ingeniería en computación en la UNAM, consultor en GDG UNAM (Google Developer Group), Maneja tecnologías como Javascript, Github, Node JS y Python. Ha dado diversas ponencias y talleres en la UNAM e IPN, mentor en eventos como HackMty y organizador de los mismos como MXHacksV.",
     "isWoman": false
   },
   {
     "image": "israel.jpg",
     "name":  "Israel Salinas",
-    "desc":  "Egresado del Instituto Politécnico Nacional. Actualmente es Technical Lead de desarrollo Front-End dentro de una fábrica de Software, y Lead Teacher en Kodemia. Cuenta con 4 años de experiencia como Front-End Developer, trabajando con diversas tecnologías, principalmente basadas en JavaScript. Ha participado en el desarrollo de aplicaciones con diversos fines, desde sitios web hasta aplicaciones bancarias e incluso aplicaciones lúdicas.",
+    "desc":  "Egresado del Instituto Politécnico Nacional. Actualmente es Technical Lead de desarrollo Front-End dentro de una fábrica de Software, y Lead Teacher en Kodemia. Cuenta con 5 años de experiencia como Front-End Developer, trabajando con diversas tecnologías, principalmente basadas en JavaScript. Ha participado en el desarrollo de aplicaciones con diversos fines, desde sitios web hasta aplicaciones bancarias e incluso aplicaciones lúdicas.",
     "isWoman": false
   },
   {
@@ -24,27 +24,21 @@
     "isWoman": false
   },
   {
-    "image": "vanessa.jpg",
-    "name":  "Vanessa Amaya",
-    "desc":  "ICo-fundadora de Agile Nights, Representante del nodo México de la Comunidad Internacional Agile Women. Certificada como Scrum Master. Miembro del Comité Académico del Programa TSU de Software de la Universidad IBERO. Agile Coach & Agile Trainer en Agile Academy & Banana México.",
-    "isWoman": true
-  },
-  {
-    "image": "luis.jpg",
-    "name":  "Luis Jiménez",
-    "desc":  "Ing. En Computación egresado de la Universidad Autónoma de Baja California, GitHub Campus Expert, Software Developer y actualmente Project Manager. Ex GDG Tijuana y en mis ratos libres impulso/colaboro con comunidades, instituciones educativas y proyectos para un bien común.",
+    "image": "charles.jpg",
+    "name":  "Carlos Silva",
+    "desc":  "Estudiante de Ing. informática en el IPN UPIICSA, 6 años de experiencia en desarrollo web y apasionado de la automatización, tecnología, las startups y el emprendimiento, actualmente Senior software engineer en leco.mx, coordinador académico, lead teacher y mentor en kodemia.mx, Experiencia en el manejo de tecnologías como NodeJS, Webpack, React, VueJS, Git, Python, Java, Docker, Linux, AWS, Google Cloud, Nginx, Etc. y siempre aprendiendo algo nuevo.",
     "isWoman": false
   },
   {
-    "image": "andrea.jpg",
-    "name":  "Andrea Dekovic",
-    "desc":  "Diseñadora UX/UI en Finerio",
+    "image": "caro.jpeg",
+    "name": "Carolina Gayosso",
+    "desc": "Co-Fundadora de la empresa Wave Community. Co-Fundadora de Hack The Job, Head de Talento y mentora de selección ágil y asesoría vocacional y profesional en Kodemia. Strategic Manager de la iniciativa WorkIT con más de 10 años de experiencia en reclutamiento de perfiles de TI. Conferencista en eventos virtuales y presenciales de TI",
     "isWoman": true
   },
   {
-    "image": "carlos.jpg",
-    "name":  "Carlos Silva",
-    "desc":  "Estudiante de Ing. informática en el IPN UPIICSA, 4 años de experiencia en desarrollo web y apasionado de la tecnología, las startups y el emprendimiento, actualmente Full Stack Developer en @cuidamimascota, Manejo tecnologías como NodeJS, Webpack, React, Redux, Vuejs, Git, Python, Java, Docker, Etc. y siempre aprendiendo algo nuevo",
+    "image": "michael.jpg",
+    "name": "Michael villalba",
+    "desc": "Lead developer en Avanttia con más de 5 años de experiencia, mentor en Kodemia impulsando a más mexicanos al emprendimiento. Full Stack Developer con manejo de tecnologías como: Javascript, VueJS, ReactJS, Python, C#, PHP, MySQL, MongoDB, AWS y más. Siempre aprendiendo",
     "isWoman": false
   }
 ]

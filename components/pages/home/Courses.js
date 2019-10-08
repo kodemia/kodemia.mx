@@ -31,7 +31,7 @@ class Courses extends Component {
             </div>
           </div>
         </div>
-        <section id="bootccamp">
+        <section id="cursos">
           {/* <div className="line" regular="twins:1024"> */}
           <div className="twins l:scol-12 scol--full x:top bg-white l:center">
             <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
@@ -74,7 +74,7 @@ class Courses extends Component {
             </div>
           </div>
         </div>
-        <section id="cursos">
+        <section id="">
           <div className="line" regular="twins:1024">
             <div className=" l:scol-12 scol--full x:top bg-white l:center">
               <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">

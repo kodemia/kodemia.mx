@@ -23,7 +23,7 @@
     "@zeit/next-less": "^0.3.0",
     "@zeit/next-mdx": "^1.1.0",
     "airtable": "^0.5.6",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "cross-env": "^5.2.0",
     "dotenv": "^6.0.0",
     "formik": "^1.0.2",

@@ -41,7 +41,8 @@ class Clases extends Component {
               mentor,
               playbackId,
               thumbnail,
-              title
+              title,
+              vimeoId = null
             } = klass
 
             const { firstName, lastName } = mentor
@@ -58,6 +59,7 @@ class Clases extends Component {
                 description={description}
                 playbackId={playbackId}
                 title={title}
+                vimeoId={vimeoId}
               />
             )
           })}

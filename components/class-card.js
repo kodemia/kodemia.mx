@@ -10,8 +10,12 @@ const classCard = props => {
     description,
     playbackId,
     thumbnail,
-    title
+    title,
+    vimeoId
   } = props
+
+  const id = playbackId || vimeoId
+  const isVimeo = !!vimeoId
 
   const formattedDate = moment(date).format('DD/MMMM/YY')
 
@@ -34,7 +38,7 @@ const classCard = props => {
         <h4>{formattedDate}</h4>
         <p>{description}</p>
         <p className="read-more">
-          <Link href={{ pathname: '/clase', query: { id: playbackId, title } }}>
+          <Link href={{ pathname: '/clase', query: { id, title, isVimeo } }}>
             {/* Change this to custom router and to slug */}
             <a>Ver clase</a>
           </Link>

@@ -23,5 +23,32 @@
     .video-player {
       padding: 10px;
     }
+    .vimeo-stream-player {
+      width: 600px;
+      height: 400px;
+      margin-bottom: 20vh;
+    }
+  }
+}
+
+@media (max-width: 769px) and  (orientation: portrait) {
+  .live-bg {
+    .live-stream {
+      .vimeo-stream-player {
+        width: 90vw;
+        height: 50vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) and  (orientation: landscape) {
+  .live-bg {
+    .live-stream {
+      .vimeo-stream-player {
+        width: 90vw;
+        height: 90vh;
+      }
+    }
   }
 }

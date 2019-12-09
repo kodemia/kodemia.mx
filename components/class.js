@@ -5,14 +5,16 @@ import VideoPlayer from '../components/video-player'
 
 class Class extends Component {
   render() {
-    const { id: playbackId, title } =
+    let { id, title, isVimeo = false } =
       queryString.parse(window.location.search) || {}
+    isVimeo = isVimeo === 'true' ? true : false
+
     return (
       <div className="class-bg">
         <div className="class">
           <h1>{title}</h1>
           <div className="video-player">
-            <VideoPlayer playbackId={playbackId} />
+            <VideoPlayer id={id} isVimeo={isVimeo} />
           </div>
         </div>
       </div>

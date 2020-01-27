@@ -87,7 +87,7 @@ class Live extends Component {
                 <iframe
                   src={`https://vimeo.com/event/${stream.vimeoEventId}/embed`}
                   frameBorder="0"
-                  allow="autoplay; fullscreen"
+                  allow="fullscreen"
                   allowFullScreen
                   width="100%"
                   height="100%"

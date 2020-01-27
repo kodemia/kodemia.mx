@@ -26,7 +26,7 @@
   {
     "image": "charles.jpg",
     "name":  "Carlos Silva",
-    "desc":  "Estudiante de Ing. informática en el IPN UPIICSA, 6 años de experiencia en desarrollo web y apasionado de la automatización, tecnología, las startups y el emprendimiento, actualmente Senior software engineer en leco.mx, coordinador académico, lead teacher y mentor en kodemia.mx, Experiencia en el manejo de tecnologías como NodeJS, Webpack, React, VueJS, Git, Python, Java, Docker, Linux, AWS, Google Cloud, Nginx, Etc. y siempre aprendiendo algo nuevo.",
+    "desc":  "Estudiante de Ing. informática en el IPN UPIICSA, 6 años de experiencia en desarrollo web y apasionado de la automatización, tecnología, las startups y el emprendimiento, actualmente Head of engineering en leco.mx, coordinador académico, lead teacher y mentor en kodemia.mx, Experiencia en el manejo de tecnologías como NodeJS, Webpack, React, VueJS, Git, Python, Java, Docker, Linux, AWS, Google Cloud, Nginx, Etc. y siempre aprendiendo algo nuevo.",
     "isWoman": false
   },
   {
@@ -37,7 +37,7 @@
   },
   {
     "image": "michael.jpg",
-    "name": "Michael villalba",
+    "name": "Michael Villalba",
     "desc": "Lead developer en Avanttia con más de 5 años de experiencia, mentor en Kodemia impulsando a más mexicanos al emprendimiento. Full Stack Developer con manejo de tecnologías como: Javascript, VueJS, ReactJS, Python, C#, PHP, MySQL, MongoDB, AWS y más. Siempre aprendiendo",
     "isWoman": false
   }

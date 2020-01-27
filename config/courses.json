@@ -20,82 +20,13 @@
           "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
           "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MERN (Mongo, Express, React y Node)",
           "schedule": {
-              "day": "11",
-              "month": "Nov",
-              "year": "2019",
+              "day": "10",
+              "month": "Feb",
+              "year": "2020",
               "hour": "19:00 a 22:00"
           },
           "pastEvent": false,
           "comingSoon": true
-        },
-        {
-            "name": "Bootcamp MERN (Full Stack Jr)",
-            "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
-            "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MERN (Mongo, Express, React y Node)",
-            "schedule": {
-                "day": "3",
-                "month": "Feb",
-                "year": "2020",
-                "hour": "19:00 a 22:00"
-            },
-            "pastEvent": false,
-            "comingSoon": true
-          }
-    ],
-    "frontend": [
-        {
-            "name": "Entrenamiento Profesional Front End",
-            "link": "cursos/front-end-profesional",
-            "desc": "Iniciate en el mundo de la programación web aprendiendo HTML, CSS y javascript",
-            "schedule": {
-                "day": "21",
-                "month": "Oct",
-                "year": "2019",
-                "hour": "9:00 a 14:00"
-            },
-            "pastEvent": false,
-            "comingSoon": true
-          }
-    ],
-    "kids": [
-        {
-          "name": "Kodemia kids Petite (Robotica para niños de 7 a 9 años)",
-          "link": "cursos/kodemia-kids",
-          "desc": "Niños atrevidos a transformar el mundo.",
-          "schedule": {
-              "day": "21",
-              "month": "Oct",
-              "year": "2019",
-              "hour": "Lunes y Miercoles de 15:00 a 18:00"
-          },
-          "pastEvent": false,
-          "comingSoon": true
-        },
-        {
-            "name": "Kodemia kids Junior (Robotica para niños de 10 a 12 años)",
-            "link": "cursos/kodemia-kids",
-            "desc": "Niños atrevidos a transformar el mundo.",
-            "schedule": {
-                "day": "22",
-                "month": "Oct",
-                "year": "2019",
-                "hour": "Martes y Jueves de 15:00 a 18:00"
-            },
-            "pastEvent": false,
-            "comingSoon": true
-        },
-        {
-            "name": "Kodemia kids Teen (Robotica para niños de 13+ años)",
-            "link": "cursos/kodemia-kids",
-            "desc": "Niños atrevidos a transformar el mundo.",
-            "schedule": {
-                "day": "26",
-                "month": "Oct",
-                "year": "2019",
-                "hour": "Sabados de 9:00 a 14:00"
-            },
-            "pastEvent": false,
-            "comingSoon": true
         }
     ]
 }

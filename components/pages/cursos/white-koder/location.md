@@ -1,5 +1,6 @@
 __Fechas__
-- 10 de febrero de 2020
+- 10 de Febrero de 2020
+- 20 de Abril de 2020
 <!-- Finalizamos el 21 de Diciembre de 2019 -->
 
 __Horario__

@@ -13,12 +13,3 @@ Contarás con un experto en reclutamiento dedicado al estudio e interpretación 
 __Hack the Job__
 
 Con tu matrícula accedes a todas las oportunidades de nuevos empleos en el sector TI que son gestionadas en los eventos de reclutamiento disruptivo de Kodemia. Estudiaremos tu perfil e intereses para colocarte en todos los eventos posibles donde podrías terminar con una oferta de trabajo al finalizar el evento.
-
-__Te regalamos la inscripción__
-
-Estudia con nosotros el Bootcamp White Koder y obtén el descuento de 100% en la inscripción del Bootcamp Black Koder.
-
-__Premiamos tu esfuerzo__
-
-Cuando eres colocado en un empleo es señal de que te has sumado al compromiso con nosotros y eso merece ser reconocido. En Kodemia premiamos la dedicación y esfuerzo y te devolvemos el 5%* de tu inversión con nosotros en el momento en que te coloques en un empleo.
-<sub>*NO aplica con BECA</sub>

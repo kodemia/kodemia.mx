@@ -1,0 +1,46 @@
+{
+  "name": "kodemia.mx",
+  "version": "2.0.0",
+  "description": "kodemia.mx web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodemia/kodemia.mx.git"
+  },
+  "keywords": [
+    "kodemia",
+    "mx",
+    "kode",
+    "bootcamp",
+    "school",
+    "academy",
+    "js",
+    "mexico"
+  ],
+  "author": "@devCharles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kodemia/kodemia.mx/issues"
+  },
+  "homepage": "https://github.com/kodemia/kodemia.mx#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "moment-timezone": "^0.5.28",
+    "next": "^9.2.2",
+    "node-sass": "^4.13.1",
+    "placeholder-loading": "^0.2.5",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "bulma": "^0.8.0",
+    "husky": "^4.2.3",
+    "standard": "^14.3.1"
+  }
+}

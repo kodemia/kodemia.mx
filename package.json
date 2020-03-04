@@ -2,9 +2,9 @@
   "name": "kodemia.mx",
   "version": "2.0.0",
   "description": "kodemia.mx web page",
-  "main": "index.js",
+  "main": "pages/index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard --fix | snazzy"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
   "devDependencies": {
     "bulma": "^0.8.0",
     "husky": "^4.2.3",
+    "snazzy": "^8.0.0",
     "standard": "^14.3.1"
   }
 }

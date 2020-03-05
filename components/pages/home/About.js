@@ -36,7 +36,7 @@ const About = () => (
               </ul>
             </div>
             <p className="s:fs-18">
-              Formamos desarrolladores mexicanos mediante cursos intensivos y
+              Formamos desarrolladores mediante programas intensivos y
               experiencias completamente personalizadas.
             </p>
           </div>

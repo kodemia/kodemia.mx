@@ -1,7 +1,7 @@
 {
     "black": [
         {
-          "name":  "Curso Avanzado (Full Stack Sr)",
+          "name":  "Entrenamiento avanzado (Full Stack Sr)",
           "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
           "desc": "Incrementa tu conocimiento y defínete como un programador Sr.",
           "schedule": {
@@ -20,20 +20,7 @@
           "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
           "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MERN (Mongo, Express, React y Node)",
           "schedule": {
-              "day": "10",
-              "month": "Feb",
-              "year": "2020",
-              "hour": "19:00 a 22:00"
-          },
-          "pastEvent": false,
-          "comingSoon": true
-        },
-        {
-          "name": "Bootcamp MERN (Full Stack Jr)",
-          "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
-          "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MERN (Mongo, Express, React y Node)",
-          "schedule": {
-              "day": "20",
+              "day": "27",
               "month": "Abr",
               "year": "2020",
               "hour": "19:00 a 22:00"

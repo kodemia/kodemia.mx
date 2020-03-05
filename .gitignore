@@ -22,3 +22,6 @@ _ide_helpers.php
 /nbproject/
 tests/_output/*
 yarn-error.log
+
+# WIP
+.legacy/

@@ -187,19 +187,15 @@ class HeaderHome extends Component {
                   <div className="x:scol-12 x:center">
                     <div className="content">
                       <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white">
-                        La primera academia real para programadore<Cursor white>
-                          s
-                        </Cursor>
+                        La primera academia real para programadore
+                        <Cursor white>s</Cursor>
                       </h1>
                       <p className="desc s:fs-18 l:fs-20 x:mrg-top-20 c-grey-400">
-                        {/* Academia de desarrollo de talento en programación web,
-                        móvil y diseño UI/UX.
-                        <br /> */}
-                        Cursos intensivos y experiencias personalizadas.
+                        Programas intensivos y experiencias personalizadas.
                       </p>
                       <div className="x:mrg-top-20">
                         <Link href="#cursos">
-                          <Button>Conoce los cursos</Button>
+                          <Button>Conoce los Programas</Button>
                         </Link>
                       </div>
                     </div>

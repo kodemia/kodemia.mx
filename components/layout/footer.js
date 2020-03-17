@@ -88,11 +88,19 @@ class Footer extends Component {
         <div className="footer-bottom">
           <div className="scontainer">
             <div className="line">
-              <div className="x:scol-12 x:pad-bt-0 x:center s:left">
-                <p className="x:fs-12">
+              <div className="x:scol-12 m:scol-6 x:pad-bt-0 x:center s:left">
+                <p className="x:fs-6">
                   Kodemia® {new Date().getFullYear()}. Todos los derechos
                   reservados
                 </p>
+              </div>
+              <div className="x:scol-12 m:scol-6 x:pad-bt-0 x:center s:right">
+                <a
+                  href="https://cdn.kodemia.mx/docs/legal/politica-de-privacidad-kodemia.pdf"
+                  target="__blank"
+                >
+                  Pólitica de privacidad
+                </a>
               </div>
             </div>
           </div>

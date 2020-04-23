@@ -4,6 +4,9 @@
   "description": "kodemia.mx web page",
   "main": "pages/index.js",
   "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
     "test": "standard --fix | snazzy"
   },
   "repository": {
@@ -32,7 +35,7 @@
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "moment-timezone": "^0.5.28",
-    "next": "^9.2.2",
+    "next": "^9.3.5",
     "node-sass": "^4.13.1",
     "placeholder-loading": "^0.2.5",
     "react": "^16.13.0",

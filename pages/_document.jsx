@@ -17,7 +17,7 @@ class MyDocument extends Document {
           <link
             rel='icon'
             type='image/png'
-            href='https://cdn.leco.mx/img/identity/favicon-black.png'
+            href='https://cdn.kodemia.mx/images/brand/black-isotipo.png'
           />
           <link
             rel='stylesheet'

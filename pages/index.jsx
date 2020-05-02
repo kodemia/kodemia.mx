@@ -1,7 +1,12 @@
 
+import NavBar from '../components/NavBar'
+
 function Home () {
   return (
-    <h1>HOME PAGE KODEMIA</h1>
+    <>
+      <NavBar />
+      <h1>HOME PAGE KODEMIA</h1>
+    </>
   )
 }
 

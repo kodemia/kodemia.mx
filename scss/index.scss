@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Bulma
+@import './colors.scss';
+@import '../node_modules/bulma/bulma.sass';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: auto;  // overrides bulma behavior
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+// Components
+@import './components/index.scss'

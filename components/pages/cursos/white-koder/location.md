@@ -1,7 +1,5 @@
 __Fechas__
-- 10 de Febrero de 2020
-- 20 de Abril de 2020
-<!-- Finalizamos el 21 de Diciembre de 2019 -->
+- 13 de Julio de 2020
 
 __Horario__
 Estudia 5 días a la semana durante 17 semanas intensivas. Lunes a Viernes de 19:00 a 22:00 horas.

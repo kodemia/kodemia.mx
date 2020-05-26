@@ -10,7 +10,7 @@
   position: absolute;
   opacity: 0;
   top: -50px;
-  animation: spin 8s linear;
+  animation: spin 7s linear;
   animation-iteration-count: infinite;
   animation-delay: 1s;
 }
@@ -116,6 +116,12 @@
 .d-flex {
   display: flex;
 }
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
 .flex-direction-column {
   flex-direction: column;
 }
@@ -184,6 +190,15 @@
 .backlight.backlight-gray-1 {
   background-color: #707070;
   color: white;
+}
+.backlight.backlight-red {
+  background-color: #FF003D;
+}
+.backlight.backlight-green {
+  background-color: #12F860;
+}
+.backlight.backlight-blue {
+  background-color: #2400FF;
 }
 .skillup-btn {
   height: 40px;
@@ -287,6 +302,7 @@
   background-size: cover;
   cursor: pointer;
   background-repeat: no-repeat;
+  border-radius: 100px;
 }
 .skillup-card .mentor-wrapper .mentor-name {
   margin-bottom: 20px;
@@ -297,12 +313,13 @@
 }
 .skillup-card .skillup-wrapper .skillup-category {
   align-self: flex-end;
+  color: #050505;
 }
 .skillup-card .skillup-wrapper .skillup-name {
   color: white;
-  font-size: 20px;
-  width: 70%;
-  margin-bottom: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin: 10px 0;
 }
 .skillup-card .skillup-wrapper .skillup-difficulty {
   font-size: 11px;
@@ -323,8 +340,14 @@
   height: 100%;
   border-radius: 15px;
 }
-.skillup-card .skillup-wrapper .skillup-difficulty .meter span.intermedio {
+.skillup-card .skillup-wrapper .skillup-difficulty .meter span.intermediate {
   width: 50%;
+}
+.skillup-card .skillup-wrapper .skillup-difficulty .meter span.basic {
+  width: 25%;
+}
+.skillup-card .skillup-wrapper .skillup-difficulty .meter span.advanced {
+  width: 100%;
 }
 .skillup-card .skillup-wrapper .skillup-length {
   font-size: 11px;
@@ -349,7 +372,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
 }
 .skillup-list {
   margin: 0;

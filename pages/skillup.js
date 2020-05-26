@@ -12,15 +12,30 @@ class SkillUp extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      test: ['a', 'b', 'c'],
+      mentors: [],
       courses: []
     }
   }
 
   componentDidMount() {
+    let coursesArray = []
     fetch('https://skillupdashboard.firebaseio.com/courses/.json').then(
-      response => {
-        let courses = response.json()
-        this.setState({ courses })
+      courses => {
+        courses.json().then(json => {
+          for (const key in json) {
+            fetch(
+              `https://skillupdashboard.firebaseio.com/mentors/${
+                json[key].mentorKey
+              }.json`
+            ).then(mentors => {
+              mentors.json().then(mentorData => {
+                coursesArray.push({ ...json[key], key, mentorData })
+                this.setState({ courses: coursesArray })
+              })
+            })
+          }
+        })
       }
     )
   }
@@ -105,8 +120,24 @@ class SkillUp extends Component {
                   </h2>
                 </div>
                 <div className="scontainer container">
-                  <div className="line">
-                    <Card />
+                  <div className="line d-flex flex-wrap">
+                    {this.state.courses.map(course => {
+                      return (
+                        <Card
+                          key={course.key}
+                          name={course.courseName}
+                          level={course.courseLevel}
+                          goal={course.courseGoal}
+                          category={course.courseCategory}
+                          mentorName={course.mentorData.mentorName}
+                          mentorExpertise={course.mentorData.mentorExpertise}
+                          mentorPic={course.mentorData.mentorPicUrl}
+                          duration={course.courseDuration}
+                          backlightClass={course.courseCategoryClass}
+                          schedules={course.courseSchedules}
+                        />
+                      )
+                    })}
                   </div>
                 </div>
                 <div className="spacer-xl" />

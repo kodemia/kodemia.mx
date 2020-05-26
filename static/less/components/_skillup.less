@@ -1,5 +1,4 @@
 @import '../variables/_colors.less';
-
 .dynamic-text {
     position: relative;
     display: block;
@@ -11,7 +10,7 @@
         position: absolute;
         opacity: 0;
         top: -50px;
-        animation: spin 8s linear;
+        animation: spin 7s linear;
         animation-iteration-count: infinite;
         animation-delay:1s;
     }
@@ -138,6 +137,14 @@
     display:flex;
 }
 
+.flex-wrap{
+    flex-wrap:wrap !important;
+}
+
+.align-items-stretch{
+    align-items:stretch;
+}
+
 .flex-direction-column{
     flex-direction: column;
 }
@@ -214,6 +221,15 @@
         &-gray-1{
             background-color:@gray-1;
             color:white;
+        }
+        &-red{
+            background-color:@backlight-red;
+        }
+        &-green{
+            background-color:@backlight-green;
+        }
+        &-blue{
+            background-color:@backlight-blue;
         }
     }
 }
@@ -305,7 +321,7 @@
     background:@black-2;
     color: white;
     overflow:hidden;
-    display: flex;
+    display:flex;
     .mentor-wrapper{
         width: 35%;
         background:@gray-1;
@@ -323,6 +339,7 @@
             background-size: cover;
             cursor:pointer;
             background-repeat: no-repeat;
+            border-radius:100px;
         }
         .mentor-name{
             margin-bottom:20px;
@@ -333,12 +350,13 @@
         width:70%;
         .skillup-category{
             align-self:flex-end;
+            color:@black-back-1;
         }
         .skillup-name{
             color:white;
-            font-size:20px;
-            width: 70%;
-            margin-bottom:10px;
+            font-size:16px;
+            width: 100%;
+            margin:10px 0;
         }
         .skillup-difficulty{
             font-size:11px;
@@ -356,8 +374,14 @@
                     display: block;
                     height: 100%;
                     border-radius: 15px;
-                    &.intermedio{
+                    &.intermediate{
                         width:50%;
+                    }
+                    &.basic{
+                        width:25%;
+                    }
+                    &.advanced{
+                        width:100%
                     }
                 }
             }
@@ -383,7 +407,6 @@
                 display:flex;
                 align-items:center;
                 justify-content: center;
-                margin-right: 20px;
             }
         }
     }

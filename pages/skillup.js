@@ -73,7 +73,7 @@ class SkillUp extends Component {
                       ¿Cómo funciona #SkillUp?
                     </h3>
                   </div>
-                  <div className="line d-flex">
+                  <div className="line d-md-flex">
                     <div className="x:scol-12 m:scol-4">
                       <div className="backlight backlight-cyan text-black step-heading">
                         1
@@ -148,7 +148,7 @@ class SkillUp extends Component {
                   </h2>
                 </div>
                 <div className="spacer-md" />
-                <div className="line d-flex">
+                <div className="line d-md-flex">
                   <div className="x:scol-12 m:scol-7">
                     <img className="w-75" src={kodersFrame} alt="" />
                   </div>

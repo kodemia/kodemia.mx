@@ -113,9 +113,6 @@
 .text-gray {
   color: #707070;
 }
-.d-flex {
-  display: flex;
-}
 .flex-wrap {
   flex-wrap: wrap !important;
 }
@@ -199,6 +196,9 @@
 }
 .backlight.backlight-blue {
   background-color: #2400FF;
+}
+.d-flex {
+  display: flex;
 }
 .skillup-btn {
   height: 40px;
@@ -436,4 +436,9 @@
 .demo-video img {
   position: relative;
   z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+  .d-md-flex {
+    display: flex;
+  }
 }

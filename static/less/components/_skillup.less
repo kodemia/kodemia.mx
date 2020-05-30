@@ -133,10 +133,6 @@
     }
 }
 
-.d-flex{
-    display:flex;
-}
-
 .flex-wrap{
     flex-wrap:wrap !important;
 }
@@ -232,6 +228,10 @@
             background-color:@backlight-blue;
         }
     }
+}
+
+.d-flex{
+    display:flex;
 }
 
 .skillup-btn{
@@ -475,5 +475,11 @@
     img{
         position: relative;
         z-index:1;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .d-md-flex{
+        display:flex;
     }
 }

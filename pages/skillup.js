@@ -12,7 +12,6 @@ class SkillUp extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      test: ['a', 'b', 'c'],
       mentors: [],
       courses: []
     }
@@ -135,6 +134,7 @@ class SkillUp extends Component {
                           duration={course.courseDuration}
                           backlightClass={course.courseCategoryClass}
                           schedules={course.courseSchedules}
+                          size="m:scol-4"
                         />
                       )
                     })}

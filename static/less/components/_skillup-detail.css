@@ -1,0 +1,136 @@
+.skillup-card.detail .mentor-wrapper {
+  width: 25%;
+  padding: 20px;
+}
+.skillup-card.detail .mentor-wrapper .mentor-grade {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skillup-card.detail .mentor-wrapper .mentor-video {
+  margin: 20px auto;
+}
+.skillup-card.detail .mentor-wrapper .mentor-name {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.skillup-card.detail .mentor-wrapper .mentor-charge {
+  font-size: 14px;
+}
+.skillup-card.detail .mentor-wrapper .social-wrapper {
+  padding: 20px 0;
+  width: 100%;
+}
+.skillup-card.detail .mentor-wrapper .social-wrapper .social-link {
+  margin-right: 10px;
+}
+.skillup-card.detail .mentor-wrapper .social-wrapper .social-link {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skillup-card.detail .mentor-wrapper .social-wrapper .social-link.li {
+  background-image: url(/static/img/skillup/icon-li-white.png);
+}
+.skillup-card.detail .mentor-wrapper .social-wrapper .social-link.gh {
+  background-image: url(/static/img/skillup/icon-gh-white.png);
+}
+.skillup-card.detail .mentor-wrapper .social-wrapper .social-link.tt {
+  background-image: url(/static/img/skillup/icon-tt-white.png);
+}
+.skillup-card.detail .skillup-wrapper {
+  padding: 50px;
+}
+.skillup-card.detail .skillup-wrapper .skillup-category {
+  align-self: flex-start;
+}
+.skillup-card.detail .skillup-wrapper .skillup-name {
+  font-size: 45px;
+}
+.skillup-card.detail .skillup-wrapper .skillup-description,
+.skillup-card.detail .skillup-wrapper .skillup-target {
+  font-size: 14px;
+}
+.skillup-card.detail .schedule-wrapper {
+  margin: 15px;
+  border-radius: 15px;
+  padding: 25px;
+  width: 25%;
+}
+.skillup-card.detail .schedule-wrapper .skillup-length {
+  padding-left: 20px;
+  background-image: url(/static/img/skillup/icon-clock-white.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 15px;
+}
+.about-wrapper .about-item {
+  padding: 20px 20px 20px 75px;
+  border-radius: 15px;
+  background-color: #282828;
+  color: white;
+  margin-bottom: 20px;
+  background-image: url(/static/img/skillup/icon-plus-circle.png);
+  background-position: 20px 25px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+.about-wrapper .about-item .about-content {
+  overflow: hidden;
+  max-height: 0px;
+  padding: 0;
+  transition: max-height 0.5s ease;
+}
+.about-wrapper .about-item.active,
+.about-wrapper .about-item:hover {
+  cursor: pointer;
+  background-color: #707070;
+}
+.about-wrapper .about-item.active {
+  background-image: url(/static/img/skillup/icon-minus-circle.png);
+}
+.about-wrapper .about-item.active .about-content {
+  max-height: 300px;
+}
+.syllabus-wrapper {
+  color: white;
+}
+.syllabus-wrapper .syllabus-heading {
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+  font-size: 20px;
+}
+.syllabus-wrapper .syllabus-heading .track {
+  color: #282828;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+  background: white;
+  border-radius: 100px;
+  width: 55px;
+  height: 55px;
+  margin: 0 20px;
+  font-weight: bold;
+}
+.aside-card {
+  border-radius: 15px;
+  background: #1D1D1D;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  min-height: 250px;
+}
+.aside-card h3 {
+  font-size: 20px;
+}
+.aside-card ol {
+  padding-left: 20px;
+}
+.aside-card ol li {
+  margin-bottom: 10px;
+}

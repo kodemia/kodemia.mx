@@ -101,6 +101,9 @@
     &black-back-2{
         background:@black-back-2;
     }
+    &black-back-4{
+        background:@black-back-4
+    }
 }
 
 .position-relative{
@@ -153,22 +156,27 @@
     justify-content:space-between;
 }
 
-.align-items-center{
-    align-items:center;
+.align-items-{
+    &center{
+        align-items:center;
+    }   
+    &start{
+        align-items:flex-start;
+    } 
 }
 
 .w-{
     &25{
-        width:25%;
+        width:25% !important;
     }
     &50{
-        width:50%;
+        width:50% !important;
     }
     &75{
-        width:75%;
+        width:75% !important;
     }
     &100{
-        width:100%;
+        width:100% !important;
     }
 }
 
@@ -243,6 +251,12 @@
     cursor:pointer;
     &.btn-outline-white{
         border:1px solid white;
+    }
+    &.btn-outline-gray{
+        border:1px solid @gray-1
+    }
+    &.btn-outline-cyan{
+        border:1px solid @c-cyan;
     }
 }
 
@@ -390,6 +404,11 @@
             font-size:11px;
             flex-grow: 1;
             text-align: right;
+            padding-left:30px;
+            background-image:url(/static/img/skillup/icon-clock-white.png);
+            background-repeat:no-repeat;
+            background-position: calc(100% - 35px) 1px;
+            background-size:15px;
         }
         .skillup-description{
             font-size:12px;

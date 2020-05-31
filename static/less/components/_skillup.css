@@ -88,6 +88,9 @@
 .bg-black-back-2 {
   background: #0e0e0e;
 }
+.bg-black-back-4 {
+  background: #1D1D1D;
+}
 .position-relative {
   position: relative;
 }
@@ -131,17 +134,20 @@
 .align-items-center {
   align-items: center;
 }
+.align-items-start {
+  align-items: flex-start;
+}
 .w-25 {
-  width: 25%;
+  width: 25% !important;
 }
 .w-50 {
-  width: 50%;
+  width: 50% !important;
 }
 .w-75 {
-  width: 75%;
+  width: 75% !important;
 }
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 .spacer- {
   display: block;
@@ -210,6 +216,12 @@
 }
 .skillup-btn.btn-outline-white {
   border: 1px solid white;
+}
+.skillup-btn.btn-outline-gray {
+  border: 1px solid #707070;
+}
+.skillup-btn.btn-outline-cyan {
+  border: 1px solid #00ffff;
 }
 .banner-wrapper {
   width: 100%;
@@ -353,6 +365,11 @@
   font-size: 11px;
   flex-grow: 1;
   text-align: right;
+  padding-left: 30px;
+  background-image: url(/static/img/skillup/icon-clock-white.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 35px) 1px;
+  background-size: 15px;
 }
 .skillup-card .skillup-wrapper .skillup-description {
   font-size: 12px;

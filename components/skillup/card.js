@@ -7,7 +7,9 @@ class Card extends Component {
 
   render() {
     return (
-      <div className="x:scol-12 m:scol-4 d-flex align-items-stretch">
+      <div
+        className={`x:scol-12 d-flex align-items-stretch ${this.props.size}`}
+      >
         <div className="skillup-card">
           <div className="mentor-wrapper">
             <div className="mentor-grade backlight  backlight-black-2">

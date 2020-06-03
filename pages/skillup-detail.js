@@ -3,17 +3,44 @@ import React, { Component } from 'react'
 // Components
 import Layout from '../components/layout'
 //import Card from '../components/skillup/card'
-
 class SkillupDetail extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      mentors: [],
-      courses: []
+      courseData: {
+        courseSchedules: [],
+        syllabus: {
+          syllabusObject: []
+        }
+      },
+      mentorData: []
     }
     this.handleDetailClick = this.handleDetailClick.bind(this)
   }
 
+  componentDidMount() {
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
+    const courseKey = urlParams.get('courseKey')
+    fetch(
+      `https://skillupdashboard.firebaseio.com/courses/${courseKey}/.json`
+    ).then(course => {
+      course.json().then(json => {
+        this.setState({ courseData: json })
+        this.getMentorData(json.mentorKey)
+      })
+    })
+  }
+
+  getMentorData(mentorKey) {
+    fetch(
+      `https://skillupdashboard.firebaseio.com/mentors/${mentorKey}/.json`
+    ).then(response => {
+      response.json().then(json => {
+        this.setState({ mentorData: json })
+      })
+    })
+  }
   handleDetailClick(event) {
     let isActive = event.target.classList.contains('active')
     isActive
@@ -22,6 +49,8 @@ class SkillupDetail extends Component {
   }
 
   render() {
+    const mentorData = this.state.mentorData
+    const courseData = this.state.courseData
     return (
       <Layout title="Kodemia :: SkillUp">
         <div className="bg-black-3">
@@ -31,38 +60,35 @@ class SkillupDetail extends Component {
                 <div className="skillup-card w-100 detail">
                   <div className="mentor-wrapper">
                     <div className="mentor-grade backlight  backlight-black-2">
-                      Developer
+                      {mentorData.mentorExpertise}
                     </div>
                     <div className="mentor-video" />
                     <div />
-                    <p className="mentor-name">Israel Salinas Martínez</p>
-                    <p className="mentor-charge">Technical Lead</p>
+                    <p className="mentor-name">{mentorData.mentorName}</p>
+                    <p className="mentor-charge">{mentorData.mentorGrade}</p>
                     <div className="social-wrapper d-flex">
                       <div className="social-link li" />
                       <div className="social-link gh" />
                       <div className="social-link tt" />
                       <div className="social-link www" />
                     </div>
-                    <p className="mentor-bio">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Inventore dolorum dolorem sequi voluptate ad eius!
-                    </p>
+                    <p className="mentor-bio">{mentorData.mentorBio}</p>
                   </div>
                   <div className="skillup-wrapper d-flex flex-direction-column justify-content-between">
-                    <div className="skillup-category backlight text-center text-black-2 backlight-yellow">
-                      Development
+                    <div
+                      className={`skillup-category backlight text-center text-black-2 ${
+                        courseData.courseCategoryClass
+                      }`}
+                    >
+                      {courseData.courseCategory}
                     </div>
-                    <h4 className="skillup-name">Desarrollo front</h4>
+                    <h4 className="skillup-name">{courseData.courseName}</h4>
                     <div className="skillup-description">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptatum culpa quibusdam architecto adipisci magni
-                      eveniet exercitationem nesciunt ipsum veniam quae.
+                      {courseData.courseDescription}
                     </div>
                     <h5 className="text-white x:fs-20">Objetivo</h5>
                     <div className="skillup-target">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Laboriosam rerum harum ea officia alias in, cum eveniet
-                      voluptatem quod eum odio quaerat, sit facere similique.
+                      {courseData.courseGoal}
                     </div>
                   </div>
                   <div className="schedule-wrapper bg-black-back-4">
@@ -71,21 +97,31 @@ class SkillupDetail extends Component {
                         Fechas y Horario
                       </p>
                       <div className="d-flex justify-content-between x:mrg-bottom-15 w-100">
-                        <div className="skillup-days backlight backlight-gray-1">
-                          LUN - MIE
-                        </div>
-                        <div className="skillup-schedule backlight backlight-gray-1">
-                          10:00 - 12:00
-                        </div>
+                        {courseData.courseSchedules.map(schedule => {
+                          return (
+                            <>
+                              <div className="backlight backlight-gray-1">
+                                {schedule.courseDays}
+                              </div>
+                              <div className="backlight backlight-gray-1">
+                                {schedule.courseSchedule}
+                              </div>
+                            </>
+                          )
+                        })}
                       </div>
                       <div className="d-flex justify-content-between x:mrg-bottom-50">
                         <div>
                           <p className="x:fs-20">Duración</p>
-                          <div className="skillup-length x:fs-14">40 hrs</div>
+                          <div className="skillup-length x:fs-14">
+                            {courseData.courseDuration} hrs
+                          </div>
                         </div>
                         <div>
                           <p className="x:fs-20">Costo</p>
-                          <div className="x:fs-14">$ 3,000 mxn</div>
+                          <div className="x:fs-14">
+                            $ {courseData.coursePrice} MXN
+                          </div>
                         </div>
                       </div>
                       <div className="btn-wrapper d-flex flex-direction-column">
@@ -110,10 +146,7 @@ class SkillupDetail extends Component {
                     onClick={this.handleDetailClick}
                   >
                     ¿Quién puede tomarlo?
-                    <p className="about-content">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Exercitationem enim sit dolor commodi ab nesciunt!
-                    </p>
+                    <p className="about-content">{courseData.courseTarget}</p>
                   </div>
                   <div className="about-item">
                     ¿Qué conocimientos necesito?
@@ -141,14 +174,14 @@ class SkillupDetail extends Component {
                   Temario
                 </h2>
                 <div className="syllabus-wrapper">
-                  <div className="syllabus-heading active">
-                    <div className="track">1</div> Tema 1 - Lo primero es lo
-                    primero
-                  </div>
-                  <div className="syllabus-heading">
-                    <div className="track">2</div>Tema 2 - Lo segundo es lo
-                    segundo
-                  </div>
+                  {courseData.syllabus.syllabusObject.map((obj, index) => {
+                    return (
+                      <div key={index} className="syllabus-heading">
+                        <div className="track">{obj.moduleKey}</div>
+                        {obj.moduleName}
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
               <div className="x:scol-12 m:scol-4 x:top">

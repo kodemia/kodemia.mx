@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 //Assets
 import kodersFrame from '../static/img/skillup/koders-frame.png'
-import videoFrame from '../static/img/skillup/fake-demo-video.png'
 
 // Components
+import Link from 'next/link'
 import Layout from '../components/layout'
 import Card from '../components/skillup/card'
 
@@ -121,21 +121,33 @@ class SkillUp extends Component {
                 <div className="scontainer container">
                   <div className="line d-flex flex-wrap">
                     {this.state.courses.map(course => {
+                      let courseKey = course.key
                       return (
-                        <Card
-                          key={course.key}
-                          name={course.courseName}
-                          level={course.courseLevel}
-                          goal={course.courseGoal}
-                          category={course.courseCategory}
-                          mentorName={course.mentorData.mentorName}
-                          mentorExpertise={course.mentorData.mentorExpertise}
-                          mentorPic={course.mentorData.mentorPicUrl}
-                          duration={course.courseDuration}
-                          backlightClass={course.courseCategoryClass}
-                          schedules={course.courseSchedules}
-                          size="m:scol-4"
-                        />
+                        <Link
+                          key={courseKey}
+                          href={{
+                            pathname: '/skillup-detail',
+                            query: { courseKey }
+                          }}
+                        >
+                          <a className="x:scol-12 d-flex align-items-stretch m:scol-4">
+                            <Card
+                              key={course.key}
+                              name={course.courseName}
+                              level={course.courseLevel}
+                              goal={course.courseGoal}
+                              category={course.courseCategory}
+                              mentorName={course.mentorData.mentorName}
+                              mentorExpertise={
+                                course.mentorData.mentorExpertise
+                              }
+                              mentorPic={course.mentorData.mentorPicUrl}
+                              duration={course.courseDuration}
+                              backlightClass={course.courseCategoryClass}
+                              schedules={course.courseSchedules}
+                            />
+                          </a>
+                        </Link>
                       )
                     })}
                   </div>
@@ -202,7 +214,28 @@ class SkillUp extends Component {
               </div>
               <div className="x:scol-12 m:scol-6">
                 <div className="demo-video w-100">
-                  <img className="w-100" src={videoFrame} alt="" />
+                  <div
+                    style={{
+                      padding: '56.25% 0 0 0',
+                      position: 'relative',
+                      zIndex: 1
+                    }}
+                  >
+                    <iframe
+                      src="https://player.vimeo.com/video/423271756?color=ffffff&title=0&byline=0&portrait=0"
+                      style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%'
+                      }}
+                      frameBorder="0"
+                      allow="autoplay; fullscreen"
+                      allowFullScreen
+                    />
+                  </div>
+                  <script src="https://player.vimeo.com/api/player.js" />
                 </div>
               </div>
             </div>

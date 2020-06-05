@@ -12,6 +12,7 @@
         }
         .mentor-video{
             margin: 20px auto;
+            position:relative;
         }
         .mentor-name{
             font-size:20px;
@@ -108,10 +109,15 @@
 .syllabus-wrapper{
     color:white;
     .syllabus-heading{
-        display:flex;
-        align-items:center;
-        margin:40px 0px;
-        font-size:20px;
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        margin:0px;
+        font-size: 20px;
+        padding: 20px 0;
+        border-radius: 15px;
+        background-size:35px;
+        background-repeat:no-repeat;
         .track{
             background:white;
             color:@black-2;
@@ -123,8 +129,40 @@
             border-radius:100px;
             width:55px;
             height:55px;
-            margin:0 20px;
+            margin:0 40px;
             font-weight: bold;
+        }
+        ul{
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            padding-left: 140px;
+            margin: 0;
+            max-height:0;
+            overflow: hidden;
+            transition:max-height 1s ease;
+            li{
+                border-bottom:1px solid @gray-1;
+                padding:15px;
+                width:calc(100% - 15px)
+                &:last-of-type{
+                    border:none;
+                }
+            }
+        }
+        &:hover{
+            background-color:@black-2;
+        }
+        &.has-content{
+            background-image:url(/static/img/skillup/icon-plus-circle.png);
+        background-position: calc(100% - 30px) 30px;
+        }
+        &.open{
+            background-image:url(/static/img/skillup/icon-minus-circle.png);
+            background-color:@black-2;
+            ul{
+                max-height:500px;
+            }
         }
     }  
 }

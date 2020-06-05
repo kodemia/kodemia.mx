@@ -8,14 +8,13 @@ class SkillupDetail extends Component {
     super(props)
     this.state = {
       courseData: {
-        courseSchedules: [],
-        syllabus: {
-          syllabusObject: []
-        }
+        courseSchedules: []
       },
-      mentorData: []
+      mentorData: [],
+      syllabus: []
     }
     this.handleDetailClick = this.handleDetailClick.bind(this)
+    this.handleSyllabusCollapse = this.handleSyllabusCollapse.bind(this)
   }
 
   componentDidMount() {
@@ -26,6 +25,20 @@ class SkillupDetail extends Component {
       `https://skillupdashboard.firebaseio.com/courses/${courseKey}/.json`
     ).then(course => {
       course.json().then(json => {
+        let syllabus = json.syllabus.syllabusObject.reduce((accum, item) => {
+          if (item.moduleKey.indexOf('.') === -1) {
+            accum[item.moduleKey] = { ...item }
+            accum[item.moduleKey].submodules = []
+          } else {
+            let moduleKey = item.moduleKey.substring(
+              0,
+              item.moduleKey.indexOf('.')
+            )
+            accum[moduleKey].submodules.push(item)
+          }
+          return accum
+        }, [])
+        this.setState({ syllabus })
         this.setState({ courseData: json })
         this.getMentorData(json.mentorKey)
       })
@@ -41,6 +54,7 @@ class SkillupDetail extends Component {
       })
     })
   }
+
   handleDetailClick(event) {
     let isActive = event.target.classList.contains('active')
     isActive
@@ -48,9 +62,21 @@ class SkillupDetail extends Component {
       : event.target.classList.add('active')
   }
 
+  handleSyllabusCollapse(event) {
+    if (event.target.classList.contains('has-content')) {
+      let isOpen = event.target.classList.contains('open')
+      isOpen
+        ? event.target.classList.remove('open')
+        : event.target.classList.add('open')
+    } else {
+      return false
+    }
+  }
+
   render() {
     const mentorData = this.state.mentorData
     const courseData = this.state.courseData
+    const syllabus = this.state.syllabus
     return (
       <Layout title="Kodemia :: SkillUp">
         <div className="bg-black-3">
@@ -62,7 +88,12 @@ class SkillupDetail extends Component {
                     <div className="mentor-grade backlight  backlight-black-2">
                       {mentorData.mentorExpertise}
                     </div>
-                    <div className="mentor-video" />
+                    <div
+                      className="mentor-video"
+                      style={{
+                        backgroundImage: `url(${mentorData.mentorPicUrl})`
+                      }}
+                    />
                     <div />
                     <p className="mentor-name">{mentorData.mentorName}</p>
                     <p className="mentor-charge">{mentorData.mentorGrade}</p>
@@ -141,44 +172,53 @@ class SkillupDetail extends Component {
                   Acerca del curso
                 </h2>
                 <div className="about-wrapper">
-                  <div
-                    className="about-item active"
-                    onClick={this.handleDetailClick}
-                  >
+                  <div className="about-item" onClick={this.handleDetailClick}>
                     ¿Quién puede tomarlo?
                     <p className="about-content">{courseData.courseTarget}</p>
                   </div>
-                  <div className="about-item">
+                  <div className="about-item" onClick={this.handleDetailClick}>
                     ¿Qué conocimientos necesito?
                     <p className="about-content">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Exercitationem enim sit dolor commodi ab nesciunt!
+                      {courseData.courseBaseSkills}
                     </p>
                   </div>
-                  <div className="about-item">
+                  <div className="about-item" onClick={this.handleDetailClick}>
                     Desafío
                     <p className="about-content">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Exercitationem enim sit dolor commodi ab nesciunt!
+                      {courseData.courseChallenge}
                     </p>
                   </div>
-                  <div className="about-item">
+                  <div className="about-item" onClick={this.handleDetailClick}>
                     Herramientas necesarias
-                    <p className="about-content">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Exercitationem enim sit dolor commodi ab nesciunt!
-                    </p>
+                    <p className="about-content">{courseData.courseTools}</p>
                   </div>
                 </div>
                 <h2 className="no-decal text-white x:mrg-bottom-40 x:mrg-top-30 x:fs-34 ">
                   Temario
                 </h2>
                 <div className="syllabus-wrapper">
-                  {courseData.syllabus.syllabusObject.map((obj, index) => {
+                  {syllabus.map((item, index) => {
                     return (
-                      <div key={index} className="syllabus-heading">
-                        <div className="track">{obj.moduleKey}</div>
-                        {obj.moduleName}
+                      <div
+                        key={index}
+                        className={`syllabus-heading ${
+                          item.submodules.length != 0 ? 'has-content' : ''
+                        }`}
+                        onClick={this.handleSyllabusCollapse}
+                      >
+                        <div className="track">{item.moduleKey}</div>
+                        <p>{item.moduleName}</p>
+                        {item.submodules.length != 0 ? (
+                          <ul>
+                            {item.submodules.map(submodule => {
+                              return (
+                                <li key={submodule.moduleKey}>
+                                  {submodule.moduleKey} {submodule.moduleName}
+                                </li>
+                              )
+                            })}
+                          </ul>
+                        ) : null}
                       </div>
                     )
                   })}

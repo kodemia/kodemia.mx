@@ -10,6 +10,7 @@
 }
 .skillup-card.detail .mentor-wrapper .mentor-video {
   margin: 20px auto;
+  position: relative;
 }
 .skillup-card.detail .mentor-wrapper .mentor-name {
   font-size: 20px;
@@ -100,9 +101,14 @@
 }
 .syllabus-wrapper .syllabus-heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 40px 0px;
+  margin: 0px;
   font-size: 20px;
+  padding: 20px 0;
+  border-radius: 15px;
+  background-size: 35px;
+  background-repeat: no-repeat;
 }
 .syllabus-wrapper .syllabus-heading .track {
   color: #282828;
@@ -114,8 +120,39 @@
   border-radius: 100px;
   width: 55px;
   height: 55px;
-  margin: 0 20px;
+  margin: 0 40px;
   font-weight: bold;
+}
+.syllabus-wrapper .syllabus-heading ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  padding-left: 140px;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+.syllabus-wrapper .syllabus-heading ul li {
+  border-bottom: 1px solid #707070;
+  padding: 15px;
+}
+width:calc(100% - 15px) .syllabus-wrapper .syllabus-heading ul li:last-of-type {
+  border: none;
+}
+.syllabus-wrapper .syllabus-heading:hover {
+  background-color: #282828;
+}
+.syllabus-wrapper .syllabus-heading.has-content {
+  background-image: url(/static/img/skillup/icon-plus-circle.png);
+  background-position: calc(100% - 30px) 30px;
+}
+.syllabus-wrapper .syllabus-heading.open {
+  background-image: url(/static/img/skillup/icon-minus-circle.png);
+  background-color: #282828;
+}
+.syllabus-wrapper .syllabus-heading.open ul {
+  max-height: 500px;
 }
 .aside-card {
   border-radius: 15px;

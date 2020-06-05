@@ -295,6 +295,7 @@
   color: white;
   overflow: hidden;
   display: flex;
+  position: relative;
 }
 .skillup-card .mentor-wrapper {
   width: 35%;
@@ -302,6 +303,7 @@
   border-radius: 15px;
   padding: 10px;
   box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 .skillup-card .mentor-wrapper .mentor-grade {
   text-align: center;
@@ -315,13 +317,38 @@
   cursor: pointer;
   background-repeat: no-repeat;
   border-radius: 100px;
+  z-index: 8000;
+  overflow: hidden;
+}
+.skillup-card .mentor-wrapper .mentor-video:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-position: center;
+  background-size: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 .skillup-card .mentor-wrapper .mentor-name {
   margin-bottom: 20px;
 }
+.skillup-card .mentor-wrapper:hover .mentor-video {
+  position: relative;
+}
+.skillup-card .mentor-wrapper:hover .mentor-video:after {
+  background-image: url(/static/img/skillup/icon-play-cyan.png);
+  background-repeat: no-repeat;
+  transition: all 1s ease;
+  opacity: 1;
+  background-size: 24px;
+}
 .skillup-card .skillup-wrapper {
   padding: 15px;
   width: 70%;
+  position: relative;
 }
 .skillup-card .skillup-wrapper .skillup-category {
   align-self: flex-end;
@@ -390,6 +417,24 @@
   align-items: center;
   justify-content: center;
 }
+.skillup-card .skillup-wrapper .skillup-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 110%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.skillup-card .skillup-wrapper:hover .skillup-overlay {
+  visibility: visible;
+  opacity: 1;
+}
 .skillup-list {
   margin: 0;
   padding: 0;
@@ -453,6 +498,29 @@
 .demo-video img {
   position: relative;
   z-index: 1;
+}
+.modal-video {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.modal-video.shown {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+  display: flex;
+}
+.modal-video .close-modal {
+  margin-left: auto;
 }
 @media only screen and (min-width: 768px) {
   .d-md-flex {

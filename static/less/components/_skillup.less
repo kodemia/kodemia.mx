@@ -336,12 +336,14 @@
     color: white;
     overflow:hidden;
     display:flex;
+    position:relative;
     .mentor-wrapper{
         width: 35%;
         background:@gray-1;
         border-radius: 15px;
         padding:10px;
         box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.5);
+        z-index:1;
         .mentor-grade{
             text-align: center;
         }
@@ -354,14 +356,41 @@
             cursor:pointer;
             background-repeat: no-repeat;
             border-radius:100px;
+            z-index:8000;
+            overflow:hidden;
+            &:after{
+                content:"";
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.85);
+                background-position:center;
+                background-size:0px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity:0;
+            }
         }
         .mentor-name{
             margin-bottom:20px;
+        }
+        &:hover{
+            .mentor-video{
+                position: relative;
+                &:after{
+                    background-image: url(/static/img/skillup/icon-play-cyan.png);
+                    background-repeat: no-repeat;
+                    transition: all 1s ease;
+                    opacity:1;
+                    background-size:24px;
+                }
+            }
         }
     }
     .skillup-wrapper{
         padding:15px;
         width:70%;
+        position:relative;
         .skillup-category{
             align-self:flex-end;
             color:@black-back-1;
@@ -428,6 +457,26 @@
                 justify-content: center;
             }
         }
+        .skillup-overlay{
+            position:absolute;
+            top:0;
+            right:0;
+            background:rgba(0,0,0,.8);
+            width:110%;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            transition:all .5s ease;
+            visibility:hidden;
+            opacity:0;
+        }
+        &:hover{
+            .skillup-overlay{
+                visibility: visible;
+                opacity:1;
+            }
+        }
     }
 }
 
@@ -481,19 +530,43 @@
     margin-bottom: 100px;
     &:after{
         content: "";
-    width: 65%;
-    height: 80%;
-    background: #282828;
-    position: absolute;
-    top: 60%;
-    left: -50px;
-    border-radius: 15px;
-    display: block;
-    z-index: 0;   
+        width: 65%;
+        height: 80%;
+        background: #282828;
+        position: absolute;
+        top: 60%;
+        left: -50px;
+        border-radius: 15px;
+        display: block;
+        z-index: 0;   
     }
     img{
         position: relative;
         z-index:1;
+    }
+}
+
+.modal-video{
+    display:none;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(0, 0, 0, 0.85);
+    width:100%;
+    height:100%;
+    opacity: 0;
+    visibility: none;
+    position: fixed;
+    top:0;
+    left:0;
+    transition:all .5s ease;
+    &.shown{
+        opacity: 1;
+        visibility: visible;
+        z-index: 9999;
+        display:flex;
+    }
+    .close-modal{
+        margin-left:auto;
     }
 }
 

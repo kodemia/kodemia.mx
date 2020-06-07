@@ -68,6 +68,9 @@
                 &.tt{
                     background-image:url(/static/img/skillup/icon-tt-white.png)
                 }
+                &.web{
+                    background-image:url(/static/img/skillup/icon-web-white.png)
+                }
             }
         }
         &:hover{
@@ -113,7 +116,7 @@
         margin:15px;
         border-radius:15px;
         padding:25px;
-        width:25%;
+        width:30%;
         .skillup-length{
             padding-left:20px;
             background-image:url(/static/img/skillup/icon-clock-white.png);
@@ -168,6 +171,7 @@
         border-radius: 15px;
         background-size:35px;
         background-repeat:no-repeat;
+        margin-bottom:10px;
         .track{
             background:white;
             color:@black-2;
@@ -194,9 +198,9 @@
             li{
                 border-bottom:1px solid @gray-1;
                 padding:15px;
-                width:calc(100% - 15px)
-                &:last-of-type{
-                    border:none;
+                width:calc(100% - 15px);
+                &:last-child{
+                    border-bottom:none;
                 }
             }
         }
@@ -211,7 +215,7 @@
             background-image:url(/static/img/skillup/icon-minus-circle.png);
             background-color:@black-2;
             ul{
-                max-height:500px;
+                max-height:1500px;
             }
         }
     }  

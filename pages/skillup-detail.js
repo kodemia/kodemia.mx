@@ -99,10 +99,37 @@ class SkillupDetail extends Component {
                       <p className="mentor-name">{mentorData.mentorName}</p>
                       <p className="mentor-charge">{mentorData.mentorGrade}</p>
                       <div className="social-wrapper d-flex">
-                        <div className="social-link li" />
-                        <div className="social-link gh" />
-                        <div className="social-link tt" />
-                        <div className="social-link www" />
+                        {mentorData.mentorLinkedin ? (
+                          <a
+                            className="social-link li"
+                            href={mentorData.mentorLinkedin}
+                            target="_blank"
+                          />
+                        ) : null}
+                        {mentorData.mentorGithub ? (
+                          <a
+                            className="social-link gh"
+                            href={mentorData.mentorGithub}
+                            target="_blank"
+                          />
+                        ) : null}
+                        {mentorData.mentorTwitter ? (
+                          <a
+                            className="social-link tt"
+                            href={`https://twitter.com/${mentorData.mentorTwitter.replace(
+                              '@',
+                              ''
+                            )}`}
+                            target="_blank"
+                          />
+                        ) : null}
+                        {mentorData.mentorWeb ? (
+                          <a
+                            className="social-link web"
+                            href={mentorData.mentorWeb}
+                            target="_blank"
+                          />
+                        ) : null}
                       </div>
                     </div>
                     <div className="video-wrapper">
@@ -142,7 +169,7 @@ class SkillupDetail extends Component {
                           ? mentorData.mentorBio
                           : mentorData.mentorBio.substr(
                               0,
-                              mentorData.mentorBio.lastIndexOf(' ', 200)
+                              mentorData.mentorBio.lastIndexOf(' ', 180)
                             ) + '...'}
                       </span>
                       <span className="long-bio">
@@ -182,7 +209,8 @@ class SkillupDetail extends Component {
                                 {schedule.courseDays}
                               </div>
                               <div className="backlight backlight-gray-1">
-                                {schedule.courseSchedule}
+                                {schedule.courseSchedule.replace(/ hrs/g, '')}{' '}
+                                hrs
                               </div>
                             </>
                           )
@@ -305,6 +333,35 @@ class SkillupDetail extends Component {
                     Aparta tu lugar
                   </div>
                 </div>
+              </div>
+              <div className="x:scol-12 m:scol-8">
+                <h2 className="no-decal text-white x:fs-34 x:mrg-bottom-40 x:mrg-top-30">
+                  Preguntas fecuentes
+                </h2>
+                <div className="about-wrapper">
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Cómo se imparten las clases?
+                    <p className="about-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Numquam maxime, corporis distinctio tempore vel ratione.
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Cómo puedo pagar mi curso?
+                    <p className="about-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eveniet laborum tenetur voluptatem, unde saepe nam.
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Obtendré algún cetificado de validez de estudio?
+                    <p className="about-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eum assumenda facere magnam ad delectus magni.
+                    </p>
+                  </div>
+                </div>
+                <div className="spacer-lg">&nbsp;</div>
               </div>
             </div>
           </div>

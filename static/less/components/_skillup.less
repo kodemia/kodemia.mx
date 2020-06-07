@@ -180,6 +180,10 @@
     }
 }
 
+.w-15vw{
+    width:15vw;
+}
+
 .spacer-{
     display: block;
     width:100%;
@@ -263,9 +267,8 @@
 .banner-wrapper{
     width:100%;
     height:calc( 100vh - 81px );
-   // background-image:url("./img/skillup/main-banner-bg.png");
     background-image:url(/static/img/skillup/main-banner-bg.png);
-    background-position:left center;
+    background-position:center;
     background-size: cover;
     .banner-content{
         width:50%;
@@ -358,17 +361,22 @@
             border-radius:100px;
             z-index:8000;
             overflow:hidden;
+            position: relative;
             &:after{
                 content:"";
                 width: 100%;
                 height: 100%;
                 background-color: rgba(0,0,0,.85);
+                background-image:url('/static/img/skillup/icon-play-cyan.png');
                 background-position:center;
                 background-size:0px;
+                background-repeat: no-repeat;
                 position: absolute;
                 top: 0;
                 left: 0;
                 opacity:0;
+                visibility: hidden;
+                transition:all .8s ease;
             }
         }
         .mentor-name{
@@ -376,13 +384,10 @@
         }
         &:hover{
             .mentor-video{
-                position: relative;
                 &:after{
-                    background-image: url(/static/img/skillup/icon-play-cyan.png);
-                    background-repeat: no-repeat;
-                    transition: all 1s ease;
                     opacity:1;
-                    background-size:24px;
+                    visibility: visible;
+                    background-size:25px;
                 }
             }
         }
@@ -464,14 +469,15 @@
             background:rgba(0,0,0,.8);
             width:110%;
             height:100%;
-            display:flex;
             justify-content:center;
             align-items: center;
             transition:all .5s ease;
             visibility:hidden;
             opacity:0;
+            display:flex;
         }
         &:hover{
+            cursor:pointer;
             .skillup-overlay{
                 visibility: visible;
                 opacity:1;
@@ -571,7 +577,18 @@
 }
 
 @media only screen and (min-width: 768px){
+    .w-md-{
+        &100{
+            width:100% !important;
+        }
+        &75{
+            width: 75% !important;
+        }
+    }
     .d-md-flex{
         display:flex;
+    }
+    .banner-wrapper{
+        background-position:left center;
     }
 }

@@ -85,25 +85,72 @@ class SkillupDetail extends Component {
               <div className="x:scol-12 d-flex align-items-stretch">
                 <div className="skillup-card w-100 detail">
                   <div className="mentor-wrapper">
-                    <div className="mentor-grade backlight  backlight-black-2">
-                      {mentorData.mentorExpertise}
+                    <div className="w-15vw">
+                      <div className="mentor-grade backlight  backlight-black-2">
+                        {mentorData.mentorExpertise}
+                      </div>
+                      <div
+                        className="mentor-video"
+                        style={{
+                          backgroundImage: `url(${mentorData.mentorPicUrl})`
+                        }}
+                      />
+                      <div />
+                      <p className="mentor-name">{mentorData.mentorName}</p>
+                      <p className="mentor-charge">{mentorData.mentorGrade}</p>
+                      <div className="social-wrapper d-flex">
+                        <div className="social-link li" />
+                        <div className="social-link gh" />
+                        <div className="social-link tt" />
+                        <div className="social-link www" />
+                      </div>
                     </div>
-                    <div
-                      className="mentor-video"
-                      style={{
-                        backgroundImage: `url(${mentorData.mentorPicUrl})`
-                      }}
-                    />
-                    <div />
-                    <p className="mentor-name">{mentorData.mentorName}</p>
-                    <p className="mentor-charge">{mentorData.mentorGrade}</p>
-                    <div className="social-wrapper d-flex">
-                      <div className="social-link li" />
-                      <div className="social-link gh" />
-                      <div className="social-link tt" />
-                      <div className="social-link www" />
+                    <div className="video-wrapper">
+                      <h4 className="skillup-name">{courseData.courseName}</h4>
+                      <div
+                        style={{
+                          padding: '23% 0 16% 0',
+                          position: 'relative',
+                          zIndex: 1,
+                          width: '100%',
+                          marginBottom: '15px'
+                        }}
+                      >
+                        <iframe
+                          id="mentor-video"
+                          src="https://player.vimeo.com/video/423271756?color=ffffff&title=0&byline=0&portrait=0"
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%'
+                          }}
+                          frameBorder="0"
+                          allow="autoplay; fullscreen"
+                          allowFullScreen
+                        />
+                      </div>
                     </div>
-                    <p className="mentor-bio">{mentorData.mentorBio}</p>
+
+                    <p className="mentor-bio">
+                      <span className="short-bio">
+                        {!mentorData.mentorBio
+                          ? null
+                          : mentorData.mentorBio.replace(/(\r\n|\n|\r)/gm, ' ')
+                              .length <= 100
+                          ? mentorData.mentorBio
+                          : mentorData.mentorBio.substr(
+                              0,
+                              mentorData.mentorBio.lastIndexOf(' ', 200)
+                            ) + '...'}
+                      </span>
+                      <span className="long-bio">
+                        {!mentorData.mentorBio
+                          ? null
+                          : mentorData.mentorBio.replace(/(\r\n|\n|\r)/gm, ' ')}
+                      </span>
+                    </p>
                   </div>
                   <div className="skillup-wrapper d-flex flex-direction-column justify-content-between">
                     <div
@@ -157,7 +204,7 @@ class SkillupDetail extends Component {
                       </div>
                       <div className="btn-wrapper d-flex flex-direction-column">
                         <div className="btn skillup-btn x:mrg-bottom-20">
-                          Registrarse
+                          Regístrate
                         </div>
                         <div className="btn skillup-btn btn-outline-gray">
                           Aparta tu lugar

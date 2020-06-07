@@ -1,6 +1,12 @@
+.skillup-card.detail {
+  max-height: 80vh;
+}
 .skillup-card.detail .mentor-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   width: 25%;
   padding: 20px;
+  transition: width 1s ease;
 }
 .skillup-card.detail .mentor-wrapper .mentor-grade {
   text-align: center;
@@ -26,6 +32,26 @@
 .skillup-card.detail .mentor-wrapper .social-wrapper .social-link {
   margin-right: 10px;
 }
+.skillup-card.detail .mentor-wrapper .mentor-bio {
+  width: 100%;
+}
+.skillup-card.detail .mentor-wrapper .mentor-bio .long-bio {
+  display: none;
+}
+.skillup-card.detail .mentor-wrapper .video-wrapper {
+  flex-grow: 1;
+  opacity: 0;
+  visibility: visible;
+}
+.skillup-card.detail .mentor-wrapper .video-wrapper .skillup-name {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  font-size: 24px;
+  display: none;
+  color: white;
+  margin-bottom: 15px;
+}
 .skillup-card.detail .mentor-wrapper .social-wrapper .social-link {
   width: 20px;
   height: 20px;
@@ -41,8 +67,31 @@
 .skillup-card.detail .mentor-wrapper .social-wrapper .social-link.tt {
   background-image: url(/static/img/skillup/icon-tt-white.png);
 }
+.skillup-card.detail .mentor-wrapper:hover {
+  width: 100%;
+}
+.skillup-card.detail .mentor-wrapper:hover .mentor-bio .long-bio {
+  display: block;
+}
+.skillup-card.detail .mentor-wrapper:hover .mentor-bio .short-bio {
+  display: none;
+}
+.skillup-card.detail .mentor-wrapper:hover .video-wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+.skillup-card.detail .mentor-wrapper:hover .skillup-name {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.skillup-card.detail .mentor-wrapper:hover + .skillup-wrapper {
+  width: 0%;
+  display: none;
+}
 .skillup-card.detail .skillup-wrapper {
   padding: 50px;
+  transition: width 1s ease;
 }
 .skillup-card.detail .skillup-wrapper .skillup-category {
   align-self: flex-start;

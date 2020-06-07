@@ -202,7 +202,7 @@ class SkillUp extends Component {
                   <div className="spacer-md" />
                   <div className="line d-md-flex">
                     <div className="x:scol-12 m:scol-7">
-                      <img className="w-75" src={kodersFrame} alt="" />
+                      <img className="w-100 w-md-75" src={kodersFrame} alt="" />
                     </div>
                     <div className="x:scol-12 m:scol-5">
                       <ul className="skillup-list text-white">
@@ -238,7 +238,7 @@ class SkillUp extends Component {
           <div className="s-container bg-black-back-2">
             <div className="scontainer container">
               <div className="spacer-xl" />
-              <div className="line d-flex align-items-center">
+              <div className="line d-md-flex align-items-center">
                 <div className="x:scol-12 m:scol-6">
                   <h2 className="text-white x:fs-34 no-decal">
                     Conoce más de <br /> Live learning{' '}

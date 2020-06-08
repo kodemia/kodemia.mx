@@ -1,12 +1,13 @@
 .skillup-card.detail {
-  max-height: 80vh;
+  flex-wrap: wrap;
 }
 .skillup-card.detail .mentor-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 25%;
+  width: 100%;
   padding: 20px;
   transition: width 1s ease;
+  order: 3;
 }
 .skillup-card.detail .mentor-wrapper .mentor-grade {
   text-align: center;
@@ -17,6 +18,8 @@
 .skillup-card.detail .mentor-wrapper .mentor-video {
   margin: 20px auto;
   position: relative;
+  width: 150px;
+  height: 150px;
 }
 .skillup-card.detail .mentor-wrapper .mentor-name {
   font-size: 20px;
@@ -93,24 +96,28 @@
   display: none;
 }
 .skillup-card.detail .skillup-wrapper {
-  padding: 50px;
+  padding: 20px;
   transition: width 1s ease;
+  order: 1;
+  width: 100%;
 }
 .skillup-card.detail .skillup-wrapper .skillup-category {
   align-self: flex-start;
 }
 .skillup-card.detail .skillup-wrapper .skillup-name {
-  font-size: 45px;
+  font-size: 30px;
 }
 .skillup-card.detail .skillup-wrapper .skillup-description,
 .skillup-card.detail .skillup-wrapper .skillup-target {
   font-size: 14px;
+  margin-bottom: 30px;
 }
 .skillup-card.detail .schedule-wrapper {
   margin: 15px;
   border-radius: 15px;
   padding: 25px;
-  width: 30%;
+  width: 100%;
+  order: 2;
 }
 .skillup-card.detail .schedule-wrapper .skillup-length {
   padding-left: 20px;
@@ -159,32 +166,36 @@
   font-size: 20px;
   padding: 20px 0;
   border-radius: 15px;
-  background-size: 35px;
+  background-size: 25px;
   background-repeat: no-repeat;
   margin-bottom: 10px;
 }
 .syllabus-wrapper .syllabus-heading .track {
   color: #282828;
-  font-size: 35px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   padding-top: 3px;
   background: white;
   border-radius: 100px;
-  width: 55px;
-  height: 55px;
-  margin: 0 40px;
+  width: 35px;
+  height: 35px;
+  margin: 0 15px;
   font-weight: bold;
+}
+.syllabus-wrapper .syllabus-heading p {
+  max-width: 65%;
 }
 .syllabus-wrapper .syllabus-heading ul {
   width: 100%;
   list-style: none;
   padding: 0;
-  padding-left: 140px;
+  padding-left: 30px;
   margin: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease;
+  margin-top: 15px;
 }
 .syllabus-wrapper .syllabus-heading ul li {
   border-bottom: 1px solid #707070;
@@ -224,4 +235,61 @@
 }
 .aside-card ol li {
   margin-bottom: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .skillup-card.detail {
+    flex-wrap: nowrap;
+    max-height: 80vh;
+  }
+  .skillup-card.detail .mentor-wrapper {
+    order: 1;
+    width: 30%;
+  }
+  .skillup-card.detail .mentor-wrapper .mentor-video {
+    width: 84px;
+    height: 84px;
+  }
+  .skillup-card.detail .skillup-wrapper {
+    order: 2;
+    padding: 50px;
+  }
+  .skillup-card.detail .skillup-wrapper .skillup-name {
+    font-size: 45px;
+  }
+  .skillup-card.detail .skillup-wrapper .skillup-description,
+  .skillup-card.detail .skillup-wrapper .skillup-target {
+    margin-bottom: 15px;
+  }
+  .skillup-card.detail .schedule-wrapper {
+    order: 3;
+    width: 35%;
+  }
+  .syllabus-wrapper .syllabus-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
+    font-size: 20px;
+    padding: 20px 0;
+    border-radius: 15px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+  .syllabus-wrapper .syllabus-heading .track {
+    color: #282828;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    background: white;
+    border-radius: 100px;
+    width: 55px;
+    height: 55px;
+    margin: 0 40px;
+    font-weight: bold;
+  }
+  .syllabus-wrapper .syllabus-heading ul {
+    padding-left: 140px;
+  }
 }

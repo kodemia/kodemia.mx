@@ -116,6 +116,9 @@
 .text-gray {
   color: #707070;
 }
+.text-cyan {
+  color: #00ffff;
+}
 .flex-wrap {
   flex-wrap: wrap !important;
 }
@@ -131,11 +134,27 @@
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+.justify-content-center {
+  justify-content: center;
+}
 .align-items-center {
   align-items: center;
 }
 .align-items-start {
   align-items: flex-start;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .w-25 {
   width: 25% !important;
@@ -148,6 +167,9 @@
 }
 .w-100 {
   width: 100% !important;
+}
+.w-md-15vw {
+  width: 100%;
 }
 .w-15vw {
   width: 15vw;
@@ -209,6 +231,9 @@
 .d-flex {
   display: flex;
 }
+.d-none {
+  display: none !important;
+}
 .skillup-btn {
   height: 40px;
   padding: 7px 20px;
@@ -225,6 +250,11 @@
 }
 .skillup-btn.btn-outline-cyan {
   border: 1px solid #00ffff;
+}
+.skillup-btn.btn-disabled {
+  color: #707070;
+  border-color: #707070;
+  color: #707070 !important;
 }
 .banner-wrapper {
   width: 100%;
@@ -315,7 +345,6 @@
   margin: 30px auto;
   width: 86px;
   height: 86px;
-  background-image: url(/static/img/skillup/fake-video.png);
   background-size: cover;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -523,12 +552,15 @@
 .modal-video .close-modal {
   margin-left: auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .w-md-100 {
     width: 100% !important;
   }
   .w-md-75 {
     width: 75% !important;
+  }
+  .w-md-15vw {
+    width: 15vw !important;
   }
   .d-md-flex {
     display: flex;

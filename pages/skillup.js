@@ -38,16 +38,26 @@ class SkillUp extends Component {
       courses => {
         courses.json().then(json => {
           for (const key in json) {
-            fetch(
-              `https://skillupdashboard.firebaseio.com/mentors/${
-                json[key].mentorKey
-              }.json`
-            ).then(mentors => {
-              mentors.json().then(mentorData => {
-                coursesArray.push({ ...json[key], key, mentorData })
-                this.setState({ courses: coursesArray })
-              })
-            })
+            let activeSchedules = json[key].courseSchedules.reduce(
+              (accum, item) => {
+                item.isActive ? accum++ : null
+                return accum
+              },
+              0
+            )
+
+            activeSchedules != 0
+              ? fetch(
+                  `https://skillupdashboard.firebaseio.com/mentors/${
+                    json[key].mentorKey
+                  }.json`
+                ).then(mentors => {
+                  mentors.json().then(mentorData => {
+                    coursesArray.push({ ...json[key], key, mentorData })
+                    this.setState({ courses: coursesArray })
+                  })
+                })
+              : null
           }
         })
       }
@@ -162,7 +172,7 @@ class SkillUp extends Component {
                         Encuentra tu siguiente <br />
                         #SkillUp <i className="emoji-rocks">🤘</i>
                       </span>
-                      <div className="control-wrapper">
+                      <div className="control-wrapper d-none">
                         <div className="btn-control active" />
                         <div className="btn-control" />
                         <div className="btn-control" />
@@ -185,7 +195,11 @@ class SkillUp extends Component {
                             mentorPic={course.mentorData.mentorPicUrl}
                             duration={course.courseDuration}
                             backlightClass={course.courseCategoryClass}
-                            schedules={course.courseSchedules}
+                            schedules={course.courseSchedules.filter(
+                              schedule => {
+                                return schedule.isActive
+                              }
+                            )}
                             onClick={this.handleVideoClick}
                           />
                         )

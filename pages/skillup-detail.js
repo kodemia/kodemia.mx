@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
+import moment from 'moment'
+moment.locale('es')
 
 // Components
 import Layout from '../components/layout'
@@ -85,7 +88,7 @@ class SkillupDetail extends Component {
               <div className="x:scol-12 d-flex align-items-stretch">
                 <div className="skillup-card w-100 detail">
                   <div className="mentor-wrapper">
-                    <div className="w-15vw">
+                    <div className="w-md-15vw">
                       <div className="mentor-grade backlight  backlight-black-2">
                         {mentorData.mentorExpertise}
                       </div>
@@ -123,7 +126,8 @@ class SkillupDetail extends Component {
                             target="_blank"
                           />
                         ) : null}
-                        {mentorData.mentorWeb ? (
+                        {mentorData.mentorWeb &&
+                        mentorData.mentorWeb != 'N/A' ? (
                           <a
                             className="social-link web"
                             href={mentorData.mentorWeb}
@@ -201,14 +205,26 @@ class SkillupDetail extends Component {
                       <p className="x:fs-20 x:mrg-bottom-15">
                         Fechas y Horario
                       </p>
+                      <p className="x:fs-16 x:mrg-bottom-15 backlight backlight-cyan x:center">
+                        Inicio:{' '}
+                        <span>{`
+                          ${moment(courseData.courseStartDate).format(
+                            'DD'
+                          )} de ${moment(courseData.courseStartDate).format(
+                          'MMMM'
+                        )} de ${moment(courseData.courseStartDate).format(
+                          'YYYY'
+                        )} 
+                        `}</span>
+                      </p>
                       <div className="d-flex justify-content-between x:mrg-bottom-15 w-100">
                         {courseData.courseSchedules.map(schedule => {
                           return (
                             <>
-                              <div className="backlight backlight-gray-1">
+                              <div className="backlight backlight-gray-1 d-flex align-items-center">
                                 {schedule.courseDays}
                               </div>
-                              <div className="backlight backlight-gray-1">
+                              <div className="backlight backlight-gray-1 d-flex align-items-center x:mrg-left-10">
                                 {schedule.courseSchedule.replace(/ hrs/g, '')}{' '}
                                 hrs
                               </div>
@@ -231,10 +247,16 @@ class SkillupDetail extends Component {
                         </div>
                       </div>
                       <div className="btn-wrapper d-flex flex-direction-column">
-                        <div className="btn skillup-btn x:mrg-bottom-20">
-                          Regístrate
-                        </div>
-                        <div className="btn skillup-btn btn-outline-gray">
+                        <Link
+                          href={{
+                            pathname: '/skillup-form'
+                          }}
+                        >
+                          <div className="btn skillup-btn x:mrg-bottom-20 text-white">
+                            <a className="text-white">Regístrate</a>
+                          </div>
+                        </Link>
+                        <div className="btn skillup-btn btn-outline-cyan">
                           Aparta tu lugar
                         </div>
                       </div>

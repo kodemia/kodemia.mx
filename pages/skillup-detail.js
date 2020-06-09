@@ -173,7 +173,7 @@ class SkillupDetail extends Component {
                           ? mentorData.mentorBio
                           : mentorData.mentorBio.substr(
                               0,
-                              mentorData.mentorBio.lastIndexOf(' ', 180)
+                              mentorData.mentorBio.lastIndexOf(' ', 140)
                             ) + '...'}
                       </span>
                       <span className="long-bio">

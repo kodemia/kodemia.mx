@@ -6,8 +6,8 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 20px;
-  transition: width 0.5s ease;
   order: 3;
+  transition: width 0.5s ease;
 }
 .skillup-card.detail .mentor-wrapper .mentor-grade {
   text-align: center;
@@ -39,20 +39,23 @@
   width: 100%;
 }
 .skillup-card.detail .mentor-wrapper .mentor-bio .short-bio {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.5s ease;
+  /* visibility: visible;
+                opacity:1;
+                transition:opacity .5s ease;*/
+  display: block;
 }
 .skillup-card.detail .mentor-wrapper .mentor-bio .long-bio {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease 0.5s;
+  /*visibility: hidden;
+                opacity:0;
+                transition:opacity .5s ease .5s;*/
+  display: none;
 }
 .skillup-card.detail .mentor-wrapper .video-wrapper {
   flex-grow: 1;
   opacity: 0;
   visibility: visible;
-  transition: opacity 0.5s ease 0.5s;
+  height: 0;
+  transition: none;
 }
 .skillup-card.detail .mentor-wrapper .video-wrapper .skillup-name {
   visibility: hidden;
@@ -61,7 +64,6 @@
   font-size: 24px;
   color: white;
   margin-bottom: 15px;
-  transition: opacity 0.5s ease 0.5s;
 }
 .skillup-card.detail .mentor-wrapper .social-wrapper .social-link {
   width: 20px;
@@ -85,8 +87,9 @@
   width: 100%;
 }
 .skillup-card.detail .mentor-wrapper:hover .mentor-bio .long-bio {
-  visibility: visible;
-  opacity: 1;
+  /*visibility: visible;
+                    opacity:1;*/
+  display: block;
 }
 .skillup-card.detail .mentor-wrapper:hover .mentor-bio .short-bio {
   display: none;
@@ -94,6 +97,8 @@
 .skillup-card.detail .mentor-wrapper:hover .video-wrapper {
   visibility: visible;
   opacity: 1;
+  height: auto;
+  transition: opacity 0.5s ease 0.5s;
 }
 .skillup-card.detail .mentor-wrapper:hover .skillup-name {
   visibility: visible;
@@ -106,7 +111,6 @@
 }
 .skillup-card.detail .skillup-wrapper {
   padding: 20px;
-  transition: width 0.5s ease, padding 0.5s ease;
   order: 1;
   width: 100%;
   overflow: hidden;

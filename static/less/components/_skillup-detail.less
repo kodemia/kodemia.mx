@@ -7,8 +7,8 @@
         flex-wrap:wrap;
         width:100%;
         padding:20px;
-        transition:width .5s ease;
         order:3;
+        transition:width .5s ease;
         .mentor-grade{
             text-align: center;
             width: 70%;
@@ -38,21 +38,24 @@
         .mentor-bio{
             width:100%;
             .short-bio{
-                visibility: visible;
+               /* visibility: visible;
                 opacity:1;
-                transition:all .5s ease
+                transition:opacity .5s ease;*/
+                display:block;
             }
             .long-bio{
-                visibility: hidden;
+                /*visibility: hidden;
                 opacity:0;
-                transition:all .5s ease .5s
+                transition:opacity .5s ease .5s;*/
+                display:none;
             }
         }
         .video-wrapper{
             flex-grow:1;
             opacity:0;
             visibility: visible;
-            transition:opacity .5s ease .5s;
+            height:0;
+            transition:none;
             .skillup-name{
                 visibility: hidden;
                 opacity:0;
@@ -60,7 +63,6 @@
                 font-size:24px;
                 color:white;
                 margin-bottom:15px;
-                transition:opacity .5s ease .5s;
             }
         }
         
@@ -88,8 +90,9 @@
             width:100%;
             .mentor-bio{
                 .long-bio{
-                    visibility: visible;
-                    opacity:1;
+                    /*visibility: visible;
+                    opacity:1;*/
+                    display:block;
                 }
                 .short-bio{
                     display:none;
@@ -98,6 +101,8 @@
             .video-wrapper{
                 visibility: visible;
                 opacity: 1;
+                height: auto;
+                transition:opacity .5s ease .5s;
             }
             .skillup-name{
                 visibility: visible;
@@ -112,7 +117,6 @@
     }
     .skillup-wrapper{
         padding:20px;
-        transition:width .5s ease, padding .5s ease;
         order:1;
         width:100%;
         overflow:hidden;

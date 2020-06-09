@@ -362,24 +362,151 @@ class SkillupDetail extends Component {
                 </h2>
                 <div className="about-wrapper">
                   <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Cuál es la diferencia de un curso Live de SkillUp con un
+                    curso online?
+                    <p className="about-content">
+                      El curso Live tiene la ventaja de contar con un mentor
+                      guía durante la duración de tu curso, además de las clases
+                      remotas en vivo para resolver dudas en tiempo real
+                      <ul>
+                        <li>
+                          Al resolver dudas en tiempo real con el mentor
+                          aceleras el tiempo e incrementas el valor de tu
+                          aprendizaje
+                        </li>
+                        <li>
+                          Los mentores no solo comparten conocimiento, comparten
+                          su experiencia y visión que te ahorrará mucho más
+                          tiempo que aprenderlo por tu cuenta
+                        </li>
+                        <li>
+                          Puedes resolver dudas puntuales sobre proyectos
+                          personales o profesionales ajenos al curso. Si no lo
+                          sabemos, lo investigaremos juntos
+                        </li>
+                        <li>
+                          Olvídate de buscar entre cursos obsoletos grabados en
+                          internet. Al estar en vivo, los cursos cuentan con el
+                          contenido actualizado, en tendencia y al día en que
+                          tomas el curso
+                        </li>
+                        <li>
+                          Todos los mentores son profesionales y líderes en
+                          empresas de tecnología, pon atención ya que
+                          encontrarás muchos líderes de equipos, directores de
+                          desarrollo y de empresas exitosas
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
                     ¿Cómo se imparten las clases?
                     <p className="about-content">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Numquam maxime, corporis distinctio tempore vel ratione.
+                      Las imparte un mentor en vivo de manera remota a través de
+                      una videollamada, para que puedas interactuar con el en
+                      tiempo real y aprender de su experiencia.
                     </p>
                   </div>
                   <div className="about-item" onClick={this.handleDetailClick}>
-                    ¿Cómo puedo pagar mi curso?
+                    ¿Qué necesito para mi curso Live de Skillup?
                     <p className="about-content">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eveniet laborum tenetur voluptatem, unde saepe nam.
+                      Necesitarás:
+                      <ul>
+                        <li>
+                          Computadora de escritorio o laptop. Te recomendamos un
+                          equipo con las siguientes características:
+                          <ul>
+                            <li>Memoria ram minima de 8gb</li>
+                            <li>Procesador i3, i5, i7 o equivalente</li>
+                            <li>
+                              Conexión a internet de banda ancha, ideal mínimo
+                              de 10 Mbps
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Te recomendamos dedicar un espacio físico y el tiempo
+                          a las clases para que centres toda la atención
+                        </li>
+                      </ul>
                     </p>
                   </div>
                   <div className="about-item" onClick={this.handleDetailClick}>
-                    ¿Obtendré algún cetificado de validez de estudio?
+                    ¿Cuál es el máximo de personas por grupo?
                     <p className="about-content">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eum assumenda facere magnam ad delectus magni.
+                      Varía un poco dependiendo el curso, sin embargo en la
+                      mayoría de los casos es limitado a 15, 18 o 20 personas
+                      con excepciones muy puntuales de 25 personas para mantener
+                      la calidad y atención de cada 'koder'. Consulta este dato
+                      en el detalle de cada curso y apresura tu apartado, los
+                      lugares son pocos y se llenan muy rápido
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Cómo me comunicaré con los mentores?
+                    <p className="about-content">
+                      Contarás con un canal en Telegram para la comunicación de
+                      tu grupo con el mentor y acceso al canal de Slack de la
+                      comunidad de Kodemia donde podrás compartir con todos los
+                      mentores, alumnos y egresados para resolver cualquier duda
+                      en tiempo real.
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Cuánto tiempo dedican los mentores a mi aprendizaje?
+                    <p className="about-content">
+                      Durante la duración del curso el mentor te dará el soporte
+                      en tiempo real durante y extra clase para aplicar también
+                      los conocimientos en tus proyectos personales o
+                      profesionales. Sólo toma en cuenta que los mentores
+                      también comen y duermen.
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Cuánto tiempo dedican los mentores a mi aprendizaje?
+                    <p className="about-content">
+                      Durante la duración del curso el mentor te dará el soporte
+                      en tiempo real durante y extra clase para aplicar también
+                      los conocimientos en tus proyectos personales o
+                      profesionales. Sólo toma en cuenta que los mentores
+                      también comen y duermen.
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Dan algún reconocimiento?
+                    <p className="about-content">
+                      Si, al final del curso te daremos un certificado de
+                      SkillUp con el reconocimiento del mentor sobre la
+                      aplicación de tus conocimientos durante el curso a un
+                      proyecto.
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Qué formas de pago existen?
+                    <p className="about-content">
+                      Puedes hacer tu pago con SPEI, tarjeta de debito, crédito,
+                      Paypal y diferir tu pago hasta 12 meses sin intereses con
+                      las opciones participantes
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Hay descuentos?
+                    <p className="about-content">
+                      Por supuesto, pero son de manera ocasional y debes estar
+                      atento al momento cuando lancemos promoción para que
+                      aproveches y apartes tu lugar antes e terminen.
+                      <br />A partir de 2 personas o si tienes interés en más de
+                      un curso [escríbenos por whatsapp](wahtsapp) para buscar
+                      el mayor descuento
+                    </p>
+                  </div>
+                  <div className="about-item" onClick={this.handleDetailClick}>
+                    ¿Porque cuestan lo mismo todos los cursos?
+                    <p className="about-content">
+                      El valor del curso esta basado en el tiempo del mentor y
+                      no en el conocimiento, removemos esa barrera para que tú
+                      puedas elegir el curso que mejor se acomode a tus
+                      necesidades.
                     </p>
                   </div>
                 </div>

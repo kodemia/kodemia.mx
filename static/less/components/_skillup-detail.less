@@ -164,7 +164,7 @@
             overflow:hidden;
             max-height:0px;
             padding:0;
-            transition: max-height .5s ease;
+            transition: max-height .5s ease, margin-top .5s ease;
         }
         &.active,&:hover{
             cursor:pointer;
@@ -173,7 +173,8 @@
         &.active{
             background-image:url(/static/img/skillup/icon-minus-circle.png);
             .about-content{
-                max-height:300px;
+                max-height:500px;
+                margin-top:10px;
             }  
         }
 

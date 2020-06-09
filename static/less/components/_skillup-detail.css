@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 20px;
-  transition: width 1s ease;
+  transition: width 0.5s ease;
   order: 3;
 }
 .skillup-card.detail .mentor-wrapper .mentor-grade {
@@ -52,16 +52,16 @@
   flex-grow: 1;
   opacity: 0;
   visibility: visible;
-  transition: all 0.5s ease 0.5s;
+  transition: opacity 0.5s ease 0.5s;
 }
 .skillup-card.detail .mentor-wrapper .video-wrapper .skillup-name {
   visibility: hidden;
   opacity: 0;
   text-align: center;
   font-size: 24px;
-  display: none;
   color: white;
   margin-bottom: 15px;
+  transition: opacity 0.5s ease 0.5s;
 }
 .skillup-card.detail .mentor-wrapper .social-wrapper .social-link {
   width: 20px;
@@ -94,22 +94,22 @@
 .skillup-card.detail .mentor-wrapper:hover .video-wrapper {
   visibility: visible;
   opacity: 1;
-  transition: visibility 0.5 ease 0, opacity 0.5 ease 0;
 }
 .skillup-card.detail .mentor-wrapper:hover .skillup-name {
   visibility: visible;
   opacity: 1;
-  display: block;
 }
 .skillup-card.detail .mentor-wrapper:hover + .skillup-wrapper {
   width: 0%;
-  display: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 .skillup-card.detail .skillup-wrapper {
   padding: 20px;
-  transition: width 1s ease;
+  transition: width 0.5s ease, padding 0.5s ease;
   order: 1;
   width: 100%;
+  overflow: hidden;
 }
 .skillup-card.detail .skillup-wrapper .skillup-category {
   align-self: flex-start;

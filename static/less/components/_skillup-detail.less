@@ -7,7 +7,7 @@
         flex-wrap:wrap;
         width:100%;
         padding:20px;
-        transition:width 1s ease;
+        transition:width .5s ease;
         order:3;
         .mentor-grade{
             text-align: center;
@@ -52,15 +52,15 @@
             flex-grow:1;
             opacity:0;
             visibility: visible;
-            transition:all .5s ease .5s;
+            transition:opacity .5s ease .5s;
             .skillup-name{
                 visibility: hidden;
                 opacity:0;
                 text-align: center;
                 font-size:24px;
-                display:none;
                 color:white;
                 margin-bottom:15px;
+                transition:opacity .5s ease .5s;
             }
         }
         
@@ -98,24 +98,24 @@
             .video-wrapper{
                 visibility: visible;
                 opacity: 1;
-                transition:visibility .5 ease 0, opacity .5 ease 0;
             }
             .skillup-name{
                 visibility: visible;
                 opacity: 1;
-                display:block;
             }
             & + .skillup-wrapper{
                 width:0%;
-                display:none;
+                padding-left:0;
+                padding-right:0;
             }
         }
     }
     .skillup-wrapper{
         padding:20px;
-        transition:width 1s ease;
+        transition:width .5s ease, padding .5s ease;
         order:1;
         width:100%;
+        overflow:hidden;
         .skillup-category{
             align-self: flex-start;
         }

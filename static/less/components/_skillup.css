@@ -72,6 +72,15 @@
     opacity: 0;
   }
 }
+.btn-nav-white {
+  width: auto;
+  color: #282828;
+  background-color: white;
+  white-space: nowrap;
+}
+.btn-nav-white:hover {
+  color: #282828;
+}
 .scontainer.container {
   max-width: 1280px !important;
 }

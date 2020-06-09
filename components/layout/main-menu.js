@@ -12,7 +12,8 @@ class MainMenu extends Component {
 
     this.state = {
       isOpen: null,
-      isMoving: null
+      isMoving: null,
+      atSkillup: false
     }
 
     this.btnRef = React.createRef()
@@ -45,9 +46,16 @@ class MainMenu extends Component {
     }
   }
 
+  setIfSkillup = atSkillup => {
+    atSkillup
+      ? this.setState({ atSkillup: true })
+      : this.setState({ atSkillup: false })
+  }
+
   componentDidMount() {
     this.followme
-
+    const atSkillup = window.location.href.match('skillup')
+    this.setIfSkillup(atSkillup)
     document.addEventListener('click', this.closeMenu)
     document.addEventListener('scroll', this.followme)
   }
@@ -100,11 +108,28 @@ class MainMenu extends Component {
                 >
                   <span />
                 </a>
-                <Link href="/aplicar" prefetch>
-                  <a className="btn btn--white-o btn--small x:fs-14 txt-uppercase x:hide l:show">
-                    Aplicar
-                  </a>
-                </Link>
+                <div className="d-flex align-items-center">
+                  {this.state.atSkillup ? (
+                    <Link href="/skillup" prefetch>
+                      <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
+                        Cursos Skillup
+                      </a>
+                    </Link>
+                  ) : (
+                    <>
+                      <Link href="/aplicar" prefetch>
+                        <a className="btn btn--white-o btn--small x:fs-14 txt-uppercase x:hide l:show">
+                          Aplicar
+                        </a>
+                      </Link>
+                      <Link href="/skillup" prefetch>
+                        <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
+                          Cursos Skillup
+                        </a>
+                      </Link>
+                    </>
+                  )}
+                </div>
               </div>
             </div>
           </div>

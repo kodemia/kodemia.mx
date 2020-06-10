@@ -56,7 +56,7 @@ class SkillupForm extends Component {
   render() {
     return (
       <Layout title="Kodemia :: SkillUp">
-        <div className="bg-black-3">
+        <div className="bg-black-3 skillup-page">
           <div className="line">
             <div className="scontainer container position-relative bg-black-3 skillup-form x:pad-all-0">
               <div className="line d-flex flex-wrap">

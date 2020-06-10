@@ -23,15 +23,16 @@ class Card extends Component {
       <div className="x:scol-12 d-flex align-items-stretch m:scol-4">
         <div className="skillup-card">
           <div className="mentor-wrapper">
-            <div className="mentor-grade backlight  backlight-black-2">
-              {this.props.mentorExpertise}
+            <div className="card-heading">
+              <div className="mentor-grade backlight  backlight-black-2">
+                {this.props.mentorExpertise}
+              </div>
             </div>
             <div
               style={{ backgroundImage: `url(${this.props.mentorPic})` }}
               className="mentor-video"
               onClick={this.handleVideoClick}
             />
-            <div />
             <p className="mentor-name text-center">{this.props.mentorName}</p>
           </div>
           <div className="skillup-wrapper d-flex flex-direction-column justify-content-between">

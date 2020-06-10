@@ -1,5 +1,6 @@
 .skillup-card.detail {
   flex-wrap: wrap;
+  font-size: 0.75rem;
 }
 .skillup-card.detail .mentor-wrapper {
   display: flex;
@@ -265,8 +266,8 @@
     height: 84px;
   }
   .skillup-card.detail .skillup-wrapper {
+    padding: 40px;
     order: 2;
-    padding: 50px;
   }
   .skillup-card.detail .skillup-wrapper .skillup-name {
     font-size: 45px;

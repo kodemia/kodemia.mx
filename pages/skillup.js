@@ -102,7 +102,7 @@ class SkillUp extends Component {
           </div>
         </div>
         <Layout title="Kodemia :: SkillUp">
-          <div className="bg-black-3">
+          <div className="bg-black-3 skillup-page">
             <div className="line">
               <div className="banner-wrapper">
                 <div className="banner-content">

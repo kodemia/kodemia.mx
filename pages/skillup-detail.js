@@ -82,7 +82,7 @@ class SkillupDetail extends Component {
     const syllabus = this.state.syllabus
     return (
       <Layout title="Kodemia :: SkillUp">
-        <div className="bg-black-3">
+        <div className="bg-black-3 skillup-page">
           <div className="line">
             <div className="scontainer container position-relative bg-black-3">
               <div className="x:scol-12 d-flex align-items-stretch">

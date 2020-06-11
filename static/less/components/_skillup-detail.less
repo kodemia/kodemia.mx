@@ -87,34 +87,6 @@
                 }
             }
         }
-        &:hover{
-            width:100%;
-            .mentor-bio{
-                .long-bio{
-                    /*visibility: visible;
-                    opacity:1;*/
-                    display:block;
-                }
-                .short-bio{
-                    display:none;
-                }
-            }
-            .video-wrapper{
-                visibility: visible;
-                opacity: 1;
-                height: auto;
-                transition:opacity .5s ease .5s;
-            }
-            .skillup-name{
-                visibility: visible;
-                opacity: 1;
-            }
-            & + .skillup-wrapper{
-                width:0%;
-                padding-left:0;
-                padding-right:0;
-            }
-        }
     }
     .skillup-wrapper{
         padding:20px;
@@ -228,6 +200,11 @@
                 width:calc(100% - 15px);
                 &:last-child{
                     border-bottom:none;
+                }
+                span:first-of-type{
+                    display:inline-block;
+                    width:50px;
+                    color:cyan;
                 }
             }
         }

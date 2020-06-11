@@ -56,16 +56,20 @@ class Card extends Component {
                     } ${this.props.level === 'Avanzado' ? 'advanced' : ''}`}
                   />
                 </div>
-                <label>{this.props.level}</label>
+                <label>
+                  {`${this.props.level === 'Básico' ? 'Essential' : ''} ${
+                    this.props.level === 'Intermedio' ? 'Advanced' : ''
+                  } ${this.props.level === 'Avanzado' ? 'Master' : ''}`}
+                </label>
               </div>
               <div className="skillup-length">{this.props.duration} hrs</div>
             </div>
             <div className="skillup-description">
-              {this.props.goal.length <= 100
-                ? this.props.goal
-                : this.props.goal.substr(
+              {this.props.description.length <= 100
+                ? this.props.description
+                : this.props.description.substr(
                     0,
-                    this.props.goal.lastIndexOf(' ', 120)
+                    this.props.description.lastIndexOf(' ', 120)
                   ) + '...'}
             </div>
             <div className="skillup-schedule-wrapper">
@@ -80,7 +84,9 @@ class Card extends Component {
                       {schedule.courseDays}
                     </div>
                     <div className="skillup-schedule backlight backlight-gray-1">
-                      {schedule.courseSchedule}
+                      {schedule.courseSchedule
+                        .replace('hrs', '')
+                        .replace(/:00/g, '')}
                     </div>
                   </div>
                 )

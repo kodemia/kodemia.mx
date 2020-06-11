@@ -8,13 +8,21 @@ import Layout from '../components/layout'
 import Card from '../components/skillup/card'
 
 class SkillUp extends Component {
+  _scrollTopTop() {
+    let elementOffset = document.getElementById('skills-title').offsetTop
+    window.scroll({
+      left: 0,
+      top: elementOffset + window.innerHeight - 90,
+      behavior: 'smooth'
+    })
+  } //todo: make this a dynamic function
   constructor(props) {
     super(props)
     this.state = {
       mentors: [],
       courses: [],
       videoUrl:
-        'https://player.vimeo.com/video/423271756?color=ffffff&title=0&byline=0&portrait=0'
+        'https://player.vimeo.com/video/427180425?color=ffffff&title=0&byline=0&portrait=0'
     }
     this.handleVideoClick = this.handleVideoClick.bind(this)
   }
@@ -77,7 +85,7 @@ class SkillUp extends Component {
             </div>
             <div
               style={{
-                padding: '40% 0 15% 0',
+                padding: '25% 0 15% 0',
                 position: 'relative',
                 zIndex: 1,
                 width: '100%'
@@ -120,7 +128,10 @@ class SkillUp extends Component {
                     y llega al siguiente nivel{' '}
                     <i className="emoji-rocket">🚀</i>
                   </p>
-                  <div className="skillup-btn btn-outline-white">
+                  <div
+                    className="skillup-btn btn-outline-white"
+                    onClick={() => this._scrollTopTop(500)}
+                  >
                     Conocer los #Skills
                   </div>
                 </div>
@@ -167,7 +178,10 @@ class SkillUp extends Component {
                 </div>
                 <div className="line">
                   <div className="x:scol-12">
-                    <h2 className="text-white font-bold d-flex justify-content-between align-items-center x:fs-34 no-decal">
+                    <h2
+                      className="text-white font-bold d-flex justify-content-between align-items-center x:fs-34 no-decal"
+                      id="skills-title"
+                    >
                       <span>
                         Encuentra tu siguiente <br />
                         #SkillUp <i className="emoji-rocks">🤘</i>
@@ -189,6 +203,7 @@ class SkillUp extends Component {
                             name={course.courseName}
                             level={course.courseLevel}
                             goal={course.courseGoal}
+                            description={course.courseDescription}
                             category={course.courseCategory}
                             mentorName={course.mentorData.mentorName}
                             mentorExpertise={course.mentorData.mentorExpertise}
@@ -249,7 +264,7 @@ class SkillUp extends Component {
               </div>
             </div>
           </div>
-          <div className="s-container bg-black-back-2">
+          <div className="s-container bg-black-back-2 skillup-page">
             <div className="scontainer container">
               <div className="spacer-xl" />
               <div className="line d-md-flex align-items-center">

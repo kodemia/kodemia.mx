@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 import Logo from '../static/img/skillup/kodemia-logo.png'
 
@@ -13,8 +14,11 @@ class SkillupForm extends Component {
       data: {
         name: '',
         mail: '',
-        phone: ''
-      }
+        phone: '',
+        courseName: ''
+      },
+      campaign: '',
+      discount: ''
     }
     this.handleCheckChange = this.handleCheckChange.bind(this)
     this.handleSubmitClick = this.handleSubmitClick.bind(this)
@@ -53,7 +57,21 @@ class SkillupForm extends Component {
     }
   }
 
+  componentDidMount() {
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
+    const courseName = urlParams.get('courseName')
+    const courseKey = urlParams.get('courseKey')
+    const campaign = urlParams.get('campaign')
+    const discount = urlParams.get('discount')
+    let data = this.state.data
+    data = { ...data, courseName, courseKey }
+    this.setState({ data, campaign, discount })
+  }
+
   render() {
+    const { courseKey } = this.state.data
+    const { discount } = this.state
     return (
       <Layout title="Kodemia :: SkillUp">
         <div className="bg-black-3 skillup-page">
@@ -67,8 +85,9 @@ class SkillupForm extends Component {
                       Estas a un paso
                     </h1>
                     <p>
-                      Déjanos tus datos y te ayudaremos a resolver todas las
-                      dudas que tengas
+                      {discount
+                        ? `Registrate para recibir ${discount}% de descuento en tu curso.`
+                        : `Déjanos tus datos y te ayudaremos a resolver todas las dudas que tengas`}
                     </p>
                   </div>
                 </div>
@@ -134,13 +153,30 @@ class SkillupForm extends Component {
                         </a>
                       </label>
                     </div>
-                    <div
-                      className={`btn skillup-btn text-white x:mrg-top-40 ml-auto ${
-                        !this.state.isLegalChecked ? 'btn-disabled' : ''
-                      }`}
-                      onClick={this.handleSubmitClick}
-                    >
-                      Enviar
+                    <div className="d-flex x:mrg-top-40 button-wrapper">
+                      {courseKey ? (
+                        <Link
+                          key={this.props.courseKey}
+                          href={{
+                            pathname: '/skillup-detail',
+                            query: { courseKey }
+                          }}
+                        >
+                          <a>
+                            <div className="btn skillup-btn text-white">
+                              Volver al curso
+                            </div>
+                          </a>
+                        </Link>
+                      ) : null}
+                      <div
+                        className={`btn skillup-btn text-white  ml-auto ${
+                          !this.state.isLegalChecked ? 'btn-disabled' : ''
+                        }`}
+                        onClick={this.handleSubmitClick}
+                      >
+                        Enviar
+                      </div>
                     </div>
                   </form>
                 </div>

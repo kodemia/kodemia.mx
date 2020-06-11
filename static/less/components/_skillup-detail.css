@@ -84,32 +84,6 @@
 .skillup-card.detail .mentor-wrapper .social-wrapper .social-link.web {
   background-image: url(/static/img/skillup/icon-web-white.png);
 }
-.skillup-card.detail .mentor-wrapper:hover {
-  width: 100%;
-}
-.skillup-card.detail .mentor-wrapper:hover .mentor-bio .long-bio {
-  /*visibility: visible;
-                    opacity:1;*/
-  display: block;
-}
-.skillup-card.detail .mentor-wrapper:hover .mentor-bio .short-bio {
-  display: none;
-}
-.skillup-card.detail .mentor-wrapper:hover .video-wrapper {
-  visibility: visible;
-  opacity: 1;
-  height: auto;
-  transition: opacity 0.5s ease 0.5s;
-}
-.skillup-card.detail .mentor-wrapper:hover .skillup-name {
-  visibility: visible;
-  opacity: 1;
-}
-.skillup-card.detail .mentor-wrapper:hover + .skillup-wrapper {
-  width: 0%;
-  padding-left: 0;
-  padding-right: 0;
-}
 .skillup-card.detail .skillup-wrapper {
   padding: 20px;
   order: 1;
@@ -220,6 +194,11 @@
 }
 .syllabus-wrapper .syllabus-heading ul li:last-child {
   border-bottom: none;
+}
+.syllabus-wrapper .syllabus-heading ul li span:first-of-type {
+  display: inline-block;
+  width: 50px;
+  color: cyan;
 }
 .syllabus-wrapper .syllabus-heading:hover {
   background-color: #282828;

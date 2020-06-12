@@ -201,7 +201,7 @@ class SkillupDetail extends Component {
                             : mentorData.mentorBio.replace(
                                 /(\r\n|\n|\r)/gm,
                                 ' '
-                              ).length <= 100
+                              ).length <= 151
                             ? mentorData.mentorBio
                             : mentorData.mentorBio.substr(
                                 0,

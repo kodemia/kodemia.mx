@@ -239,7 +239,7 @@
   }
   .skillup-card.detail .mentor-wrapper {
     order: 1;
-    width: 30%;
+    width: 200px;
   }
   .skillup-card.detail .mentor-wrapper .mentor-video {
     width: 84px;

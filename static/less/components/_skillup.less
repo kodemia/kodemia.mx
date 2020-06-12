@@ -644,8 +644,16 @@
                     visibility: hidden;
                     background-size:15px;
                     background-color: rgba(0,0,0,.2);
-                    opacity:1;
+                    opacity:.5;
                     visibility: visible;
+                }
+            }
+            &:hover{
+                .mentor-video{
+                    &:after{
+                        opacity: 1;
+                        background-color: rgba(0,0,0,.5);
+                    }
                 }
             }
         }

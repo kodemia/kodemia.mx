@@ -212,12 +212,34 @@ class SkillupDetail extends Component {
                     </div>
                     <div className="skillup-wrapper d-flex flex-direction-column justify-content-between">
                       <div
-                        className={`skillup-category backlight text-center text-black-2 ${
-                          courseData.courseCategoryClass
-                        }`}
+                        className={`skillup-category backlight text-center text-black-2 
+                  ${
+                    courseData.courseLevel === 'Básico'
+                      ? 'backlight-essential'
+                      : ''
+                  } 
+                  ${
+                    courseData.courseLevel === 'Intermedio'
+                      ? 'backlight-advanced'
+                      : ''
+                  } 
+                  ${
+                    courseData.courseLevel === 'Avanzado'
+                      ? 'backlight-master'
+                      : ''
+                  }`}
                       >
-                        {courseData.courseCategory}
+                        {`${
+                          courseData.courseLevel === 'Básico' ? 'Essential' : ''
+                        } ${
+                          courseData.courseLevel === 'Intermedio'
+                            ? 'Advanced'
+                            : ''
+                        } ${
+                          courseData.courseLevel === 'Avanzado' ? 'Master' : ''
+                        }`}
                       </div>
+
                       <h4 className="skillup-name">{courseData.courseName}</h4>
                       <div className="skillup-description">
                         {courseData.courseDescription}

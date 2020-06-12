@@ -55,11 +55,11 @@ class Card extends Component {
               <div className="skillup-length">{this.props.duration} hrs</div>
             </div>
             <div className="skillup-description">
-              {this.props.description.length <= 100
+              {this.props.description.length <= 151
                 ? this.props.description
                 : this.props.description.substr(
                     0,
-                    this.props.description.lastIndexOf(' ', 120)
+                    this.props.description.lastIndexOf(' ', 200)
                   ) + '...'}
             </div>
             <div className="skillup-schedule-wrapper">

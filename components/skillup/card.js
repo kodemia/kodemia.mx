@@ -37,31 +37,21 @@ class Card extends Component {
           </div>
           <div className="skillup-wrapper d-flex flex-direction-column justify-content-between">
             <div
-              className={
-                'skillup-category backlight text-center text-black-2 ' +
-                this.props.backlightClass
-              }
+              className={`skillup-category backlight text-center text-black-2 
+                  ${this.props.level === 'Básico' ? 'backlight-essential' : ''} 
+                  ${
+                    this.props.level === 'Intermedio'
+                      ? 'backlight-advanced'
+                      : ''
+                  } 
+                  ${this.props.level === 'Avanzado' ? 'backlight-master' : ''}`}
             >
-              {this.props.category}
+              {`${this.props.level === 'Básico' ? 'Essential' : ''} ${
+                this.props.level === 'Intermedio' ? 'Advanced' : ''
+              } ${this.props.level === 'Avanzado' ? 'Master' : ''}`}
             </div>
             <h4 className="skillup-name">{this.props.name}</h4>
             <div className="d-flex justify-content-between">
-              <div className="skillup-difficulty">
-                <div className="meter">
-                  <span
-                    className={`${
-                      this.props.level === 'Básico' ? 'basic' : ''
-                    } ${
-                      this.props.level === 'Intermedio' ? 'intermediate' : ''
-                    } ${this.props.level === 'Avanzado' ? 'advanced' : ''}`}
-                  />
-                </div>
-                <label>
-                  {`${this.props.level === 'Básico' ? 'Essential' : ''} ${
-                    this.props.level === 'Intermedio' ? 'Advanced' : ''
-                  } ${this.props.level === 'Avanzado' ? 'Master' : ''}`}
-                </label>
-              </div>
               <div className="skillup-length">{this.props.duration} hrs</div>
             </div>
             <div className="skillup-description">

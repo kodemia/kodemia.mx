@@ -283,6 +283,15 @@
         &-blue{
             background-color:@backlight-blue;
         }
+        &-essential{
+            background-color:@essential;
+        }
+        &-advanced{
+            background-color:@advanced;
+        }
+        &-master{
+            background-color:@master;
+        }
     }
 }
 
@@ -297,6 +306,11 @@
 .main-container{
     padding-top:80px;
 }
+
+.main-menu nav ul li.skillup-nav:hover a{
+    color:@c-cyan;
+}
+
 .skillup-btn{
     height:40px;
     padding:7px 20px;
@@ -457,29 +471,6 @@
             font-size:11px;
             margin-bottom:10px;
             flex-grow:1;
-            .meter{
-                height: 3px;
-                background:@black-back-1;
-                border-radius:15px;
-                position:relative;
-                overflow: hidden;
-                margin-bottom: 5px;
-                span{
-                    background:white;
-                    display: block;
-                    height: 100%;
-                    border-radius: 15px;
-                    &.intermediate{
-                        width:50%;
-                    }
-                    &.basic{
-                        width:25%;
-                    }
-                    &.advanced{
-                        width:100%
-                    }
-                }
-            }
         }
         .skillup-length{
             font-size:11px;

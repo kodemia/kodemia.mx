@@ -286,7 +286,13 @@ class SkillupDetail extends Component {
                             </div>
                           </Link>
                           <div className="btn skillup-btn btn-outline-cyan">
-                            Aparta tu lugar
+                            <a
+                              href="https://api.whatsapp.com/send?phone=525621298680&text=Hola%2C%20quiero%20apartar%20mi%20lugar%20de%20SkillUp%20Course"
+                              target="_blank"
+                              className="text-white"
+                            >
+                              Aparta tu lugar
+                            </a>
                           </div>
                         </div>
                       </div>

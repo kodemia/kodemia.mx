@@ -45,6 +45,6 @@
     "name": "Cursos Skillup",
     "href": "/skillup",
     "anchor": false,
-    "classes": "l:hide"
+    "classes": "l:hide skillup-nav"
   }
 ]

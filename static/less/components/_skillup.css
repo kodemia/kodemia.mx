@@ -241,6 +241,15 @@
 .backlight.backlight-blue {
   background-color: #2400FF;
 }
+.backlight.backlight-essential {
+  background-color: #12f860;
+}
+.backlight.backlight-advanced {
+  background-color: #FBFF4F;
+}
+.backlight.backlight-master {
+  background-color: #00ffff;
+}
 .d-flex {
   display: flex;
 }
@@ -249,6 +258,9 @@
 }
 .main-container {
   padding-top: 80px;
+}
+.main-menu nav ul li.skillup-nav:hover a {
+  color: #00ffff;
 }
 .skillup-btn {
   height: 40px;
@@ -408,29 +420,6 @@
   font-size: 11px;
   margin-bottom: 10px;
   flex-grow: 1;
-}
-.skillup-card .skillup-wrapper .skillup-difficulty .meter {
-  height: 3px;
-  background: #050505;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 5px;
-}
-.skillup-card .skillup-wrapper .skillup-difficulty .meter span {
-  background: white;
-  display: block;
-  height: 100%;
-  border-radius: 15px;
-}
-.skillup-card .skillup-wrapper .skillup-difficulty .meter span.intermediate {
-  width: 50%;
-}
-.skillup-card .skillup-wrapper .skillup-difficulty .meter span.basic {
-  width: 25%;
-}
-.skillup-card .skillup-wrapper .skillup-difficulty .meter span.advanced {
-  width: 100%;
 }
 .skillup-card .skillup-wrapper .skillup-length {
   font-size: 11px;

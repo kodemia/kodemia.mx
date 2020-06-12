@@ -290,7 +290,9 @@ class SkillupDetail extends Component {
                               href={`https://api.whatsapp.com/send?phone=525621298680&text=Hola%2C%20quiero%20apartar%20mi%20lugar%20en%20el%20Skillup%20%27${courseName}%27`}
                               target="_blank"
                               className="text-white"
-                            />
+                            >
+                              Aparta tu lugar
+                            </a>
                           </div>
                         </div>
                       </div>

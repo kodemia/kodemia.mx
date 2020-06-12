@@ -256,6 +256,9 @@
   .skillup-card.detail .skillup-wrapper .skillup-target {
     margin-bottom: 15px;
   }
+  .skillup-card.detail .skillup-wrapper:hover {
+    cursor: default;
+  }
   .skillup-card.detail .schedule-wrapper {
     order: 3;
     width: 35%;

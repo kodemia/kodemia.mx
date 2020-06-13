@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
+import Router from 'next/router'
 
+import { submitSkillUpForm } from '../lib/api'
 import Logo from '../static/img/skillup/kodemia-logo.png'
 
 // Components
@@ -17,6 +19,12 @@ class SkillupForm extends Component {
         phone: '',
         courseName: ''
       },
+      errors: {
+        name: null,
+        mail: null,
+        phone: null,
+        courseName: null
+      },
       campaign: '',
       discount: ''
     }
@@ -31,26 +39,56 @@ class SkillupForm extends Component {
   }
 
   handleFormChange(event) {
-    event.target.parentNode.classList.remove('has-error')
+    // event.target.parentNode.classList.remove('has-error')
     let data = this.state.data
+    let errors = this.state.errors
+    errors[event.target.name] = null
     data[event.target.name] = event.target.value
-    this.setState({ data })
+    this.setState({ data, errors })
   }
 
   submitForm() {
     //to do: handle form submit
     //let {name,mail,phone} = this.state.data;
     //console.log(`name: ${name}, mail: ${mail}, phone: ${phone}`)
+
+    const { name, mail, phone, courseName } = this.state.data
+
+    const data = {
+      email: mail,
+      firstName: name,
+      phone,
+      curso: courseName
+    }
+
+    submitSkillUpForm(data).then(() => {
+      Router.push('/skillup-thankyou')
+    })
   }
 
   handleSubmitClick() {
     let data = this.state.data
-    for (let property in data) {
-      let element = document.querySelector(`[name=${property}]`).parentNode
-      data[property] === '' ? element.classList.add('has-error') : null
-    }
-    let errors = document.querySelectorAll('has-error').length
-    if (this.state.isLegalChecked && errors == 0) {
+    const errors = {}
+    Object.entries(data).forEach(([key, value]) => {
+      // const isValidEmail = !/.*@.*\..*/.test(value)
+      const isValidEmail = value.match(/.*@.*\..*/)
+      if (key === 'mail' && !isValidEmail) {
+        errors[key] = 'error'
+      } else if (key === 'mail' && isValidEmail) {
+        errors[key] = null
+      } else if (key === 'phone' && value.length < 10) {
+        errors[key] = 'error'
+      } else if (key === 'phone' && value.length === 10) {
+        errors[key] = null
+      } else if (value) {
+        errors[key] = null
+      } else {
+        errors[key] = 'error'
+      }
+    })
+    this.setState({ errors })
+    const hasErrors = !!Object.entries(errors).find(([, value]) => !!value)
+    if (this.state.isLegalChecked && !hasErrors) {
       this.submitForm()
     } else if (!this.state.isLegalChecked) {
       alert('Debes aceptar los términos y condiciones para poder continuar')
@@ -96,7 +134,10 @@ class SkillupForm extends Component {
                     action=""
                     className="w-75 mx-auto x:pad-all-15 d-flex flex-direction-column"
                   >
-                    <div className="form-group required">
+                    <div
+                      className={`form-group required ${this.state.errors
+                        .name && 'has-error'}`}
+                    >
                       <label htmlFor="">Nombre</label>
                       <input
                         type="text"
@@ -107,10 +148,13 @@ class SkillupForm extends Component {
                         onChange={this.handleFormChange}
                       />
                     </div>
-                    <div className="form-group required">
+                    <div
+                      className={`form-group required ${this.state.errors
+                        .mail && 'has-error'}`}
+                    >
                       <label htmlFor="">Correo</label>
                       <input
-                        type="text"
+                        type="email"
                         className="form-control"
                         name="mail"
                         placeholder="Correo"
@@ -118,7 +162,10 @@ class SkillupForm extends Component {
                         onChange={this.handleFormChange}
                       />
                     </div>
-                    <div className="form-group required">
+                    <div
+                      className={`form-group required ${this.state.errors
+                        .phone && 'has-error'}`}
+                    >
                       <label htmlFor="">Teléfono</label>
                       <input
                         type="text"

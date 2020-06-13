@@ -571,7 +571,7 @@ class SkillupDetail extends Component {
                     >
                       ¿Dan algún reconocimiento?
                       <p className="about-content">
-                        Si, al final del curso te daremos un certificado de
+                        Sí, al final del curso te daremos un certificado de
                         SkillUp con el reconocimiento del mentor sobre la
                         aplicación de tus conocimientos durante el curso a un
                         proyecto.

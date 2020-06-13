@@ -130,7 +130,7 @@
   color: #707070;
 }
 .text-cyan {
-  color: #00ffff;
+  color: #00ffff !important;
 }
 .flex-wrap {
   flex-wrap: wrap !important;
@@ -261,6 +261,9 @@
 }
 .main-menu nav ul li.skillup-nav:hover a {
   color: #00ffff;
+}
+.skillup-logo {
+  width: 170px;
 }
 .skillup-btn {
   height: 40px;
@@ -560,6 +563,10 @@
   margin-left: auto;
 }
 @media only screen and (min-width: 1024px) {
+  .skillup-logo {
+    margin-top: 8px;
+    margin-left: 6px;
+  }
   .w-md-100 {
     width: 100% !important;
   }

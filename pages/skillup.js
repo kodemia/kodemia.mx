@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+//import skillupImago from '../static/img/skillup/skillup-imago.png'
+import skillupLogo from '../static/img/skillup/skillup-logo.png'
 
 //Assets
 import kodersFrame from '../static/img/skillup/koders-frame.png'
@@ -141,7 +143,15 @@ class SkillUp extends Component {
                   <div className="line">
                     <div className="x:scol-12">
                       <h3 className="text-white no-decal">
-                        ¿Cómo funciona #SkillUp?
+                        ¿Cómo funciona{' '}
+                        <span>
+                          <img
+                            src={skillupLogo}
+                            alt=""
+                            className="skillup-logo"
+                          />
+                        </span>{' '}
+                        ?
                       </h3>
                     </div>
                     <div className="line d-md-flex">

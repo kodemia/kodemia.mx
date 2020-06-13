@@ -153,7 +153,7 @@
         color:@gray-1
     }
     &cyan{
-        color:@c-cyan
+        color:@c-cyan !important;
     }
 }
 
@@ -309,6 +309,10 @@
 
 .main-menu nav ul li.skillup-nav:hover a{
     color:@c-cyan;
+}
+
+.skillup-logo{
+    width:170px;
 }
 
 .skillup-btn{
@@ -616,6 +620,10 @@
 }
 
 @media only screen and (min-width: 1024px){
+    .skillup-logo{
+        margin-top:8px;
+        margin-left:6px;
+    }
     .w-md-{
         &100{
             width:100% !important;

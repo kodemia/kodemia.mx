@@ -266,21 +266,22 @@ class SkillupDetail extends Component {
                           )} 
                         `}</span>
                         </p>
-                        <div className="d-flex justify-content-between x:mrg-bottom-15 w-100">
-                          {courseData.courseSchedules.map(schedule => {
-                            return (
-                              <>
-                                <div className="backlight backlight-gray-1 d-flex align-items-center">
-                                  {schedule.courseDays}
-                                </div>
-                                <div className="backlight backlight-gray-1 d-flex align-items-center x:mrg-left-10">
-                                  {schedule.courseSchedule.replace(/ hrs/g, '')}{' '}
-                                  hrs
-                                </div>
-                              </>
-                            )
-                          })}
-                        </div>
+                        {courseData.courseSchedules.map((schedule, i) => {
+                          return (
+                            <div
+                              key={i}
+                              className="d-flex justify-content-between x:mrg-bottom-15 w-100"
+                            >
+                              <div className="backlight backlight-gray-1 d-flex align-items-center">
+                                {schedule.courseDays}
+                              </div>
+                              <div className="backlight backlight-gray-1 d-flex align-items-center x:mrg-left-10">
+                                {schedule.courseSchedule.replace(/ hrs/g, '')}{' '}
+                                hrs
+                              </div>
+                            </div>
+                          )
+                        })}
                         <div className="d-flex justify-content-between x:mrg-bottom-50">
                           <div>
                             <p className="x:fs-20">Duración</p>

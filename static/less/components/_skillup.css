@@ -5,7 +5,7 @@
 .dynamic-text {
   position: relative;
   display: block;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   overflow: hidden;
   height: 75px;
 }
@@ -306,7 +306,7 @@
   justify-content: space-evenly;
 }
 .banner-wrapper .banner-content .banner-title {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 .floating-wrapper {

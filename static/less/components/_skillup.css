@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.skillup-page * {
+  font-family: "Poppins", sans-serif;
+}
+.dynamic-text {
+  position: relative;
+  display: block;
+  font-size: 2.5rem;
+  overflow: hidden;
+  height: 75px;
+}
+.dynamic-text:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: -50px;
+  animation: spin 7s linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+@keyframes spin {
+  0% {
+    top: -50px;
+    content: "Programación";
+  }
+  5% {
+    top: 0;
+    opacity: 1;
+    content: "Programación";
+  }
+  25% {
+    top: 0;
+    opacity: 1;
+    content: "Programación";
+  }
+  30% {
+    top: 50px;
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+    top: -50px;
+    content: "UX/UI";
+  }
+  40% {
+    top: 0;
+    opacity: 1;
+    content: "UX/UI";
+  }
+  60% {
+    top: 0;
+    opacity: 1;
+    content: "UX/UI";
+  }
+  65% {
+    top: 50px;
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+    top: -50px;
+    content: "Gestión TI";
+  }
+  75% {
+    top: 0;
+    opacity: 1;
+    content: "Gestión TI";
+  }
+  95% {
+    top: 0;
+    opacity: 1;
+    content: "Gestión TI";
+  }
+  100% {
+    top: 50px;
+    opacity: 0;
+  }
+}
+.btn-nav-white {
+  width: auto;
+  color: #282828;
+  background-color: white;
+  white-space: nowrap;
+}
+.btn-nav-white:hover {
+  color: #282828;
+}
+.scontainer.container {
+  max-width: 1280px !important;
+}
+.no-decal {
+  padding-left: 0;
+}
+.no-decal::before {
+  content: "";
+  display: none;
+}
+.bg-black-3 {
+  background: #151515;
+}
+.bg-black-back-2 {
+  background: #0e0e0e;
+}
+.bg-black-back-4 {
+  background: #1D1D1D;
+}
+.position-relative {
+  position: relative;
+}
+[class^="emoji"] {
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text-white {
+  color: white !important;
+}
+.text-black-3 {
+  color: #0e0e0e !important;
+}
+.text-black {
+  color: #0e0e0e;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-gray {
+  color: #707070;
+}
+.text-cyan {
+  color: #00ffff !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.font-bold {
+  font-weight: bold;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.w-25 {
+  width: 25% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-75 {
+  width: 75% !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.w-md-15vw {
+  width: 100%;
+}
+.w-15vw {
+  width: 15vw;
+}
+.spacer- {
+  display: block;
+  width: 100%;
+}
+.spacer-sm {
+  height: 1rem;
+}
+.spacer-md {
+  height: 2rem;
+}
+.spacer-lg {
+  height: 3rem;
+}
+.spacer-xl {
+  height: 5rem;
+}
+.backlight {
+  padding: 3px 9px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.backlight.stretch {
+  display: inline-block;
+  padding: 0px 15px;
+  text-align: center;
+  font-weight: bolder;
+  height: 20px;
+  font-size: 14px;
+}
+.backlight.backlight-cyan {
+  background-color: cyan;
+  color: #0e0e0e;
+}
+.backlight.backlight-black-2 {
+  background-color: #282828;
+  color: white;
+}
+.backlight.backlight-yellow {
+  background-color: #FFBE00;
+}
+.backlight.backlight-gray-1 {
+  background-color: #707070;
+  color: white;
+}
+.backlight.backlight-red {
+  background-color: #FF003D;
+}
+.backlight.backlight-green {
+  background-color: #12F860;
+}
+.backlight.backlight-blue {
+  background-color: #2400FF;
+}
+.backlight.backlight-essential {
+  background-color: #12f860;
+}
+.backlight.backlight-advanced {
+  background-color: #FBFF4F;
+}
+.backlight.backlight-master {
+  background-color: #00ffff;
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none !important;
+}
+.main-container {
+  padding-top: 80px;
+}
+.main-menu nav ul li.skillup-nav:hover a {
+  color: #00ffff;
+}
+.skillup-logo {
+  width: 170px;
+}
+.skillup-btn {
+  height: 40px;
+  padding: 7px 20px;
+  display: inline-block;
+  width: auto;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.skillup-btn.btn-outline-white {
+  border: 1px solid white;
+}
+.skillup-btn.btn-outline-gray {
+  border: 1px solid #707070;
+}
+.skillup-btn.btn-outline-cyan {
+  border: 1px solid #00ffff;
+}
+.skillup-btn.btn-disabled {
+  color: #707070;
+  border-color: #707070;
+  color: #707070 !important;
+}
+.full-height {
+  height: calc(100vh - 80px);
+}
+.banner-wrapper {
+  width: 100%;
+  height: calc(100vh - 81px);
+  background-image: url(/static/img/skillup/main-banner-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.banner-wrapper .banner-content {
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.banner-wrapper .banner-content .banner-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.floating-wrapper {
+  background: #151515;
+  width: 80%;
+  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+  left: 10%;
+  top: -10vh;
+  box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.5);
+}
+.floating-wrapper h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.floating-wrapper .step-heading {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.floating-wrapper p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.floating-wrapper:after {
+  content: "";
+}
+.control-wrapper {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.control-wrapper .btn-control {
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  background-color: #707070;
+}
+.control-wrapper .btn-control.active {
+  background-color: white;
+}
+.video-wrapper {
+  padding: 50% 0px 15%;
+}
+.skillup-card {
+  border-radius: 15px;
+  background: #282828;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.skillup-card .mentor-wrapper {
+  width: 35%;
+  background: #707070;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.skillup-card .mentor-wrapper .mentor-grade {
+  text-align: center;
+}
+.skillup-card .mentor-wrapper .mentor-video {
+  margin: 30px auto;
+  width: 86px;
+  height: 86px;
+  background-size: cover;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  z-index: 8000;
+  overflow: hidden;
+  position: relative;
+}
+.skillup-card .mentor-wrapper .mentor-video:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('/static/img/skillup/icon-play-white.png');
+  background-position: center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.8s ease;
+}
+.skillup-card .mentor-wrapper .mentor-name {
+  margin-bottom: 20px;
+}
+.skillup-card .skillup-wrapper {
+  padding: 15px;
+  width: 70%;
+  position: relative;
+}
+.skillup-card .skillup-wrapper .skillup-category {
+  align-self: flex-end;
+  color: #050505;
+}
+.skillup-card .skillup-wrapper .skillup-name {
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  margin: 10px 0;
+}
+.skillup-card .skillup-wrapper .skillup-difficulty {
+  font-size: 11px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+.skillup-card .skillup-wrapper .skillup-length {
+  font-size: 11px;
+  flex-grow: 1;
+  text-align: right;
+  padding-left: 30px;
+  background-image: url(/static/img/skillup/icon-clock-white.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 35px) 1px;
+  background-size: 15px;
+}
+.skillup-card .skillup-wrapper .skillup-description {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.skillup-card .skillup-wrapper .skillup-schedule-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillup-card .skillup-wrapper .skillup-schedule-wrapper p {
+  font-size: 11px;
+  width: 100%;
+}
+.skillup-card .skillup-wrapper .skillup-schedule-wrapper .skillup-days,
+.skillup-card .skillup-wrapper .skillup-schedule-wrapper .skillup-schedule {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  width: 45%;
+}
+.skillup-card .skillup-wrapper .skillup-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 110%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+}
+.skillup-card .skillup-wrapper:hover {
+  cursor: pointer;
+}
+.skillup-card .skillup-wrapper:hover .skillup-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.skillup-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.skillup-list .skillup-item {
+  padding: 20px 20px 20px 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding-left: 50px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  transition: background-color 0.5s ease;
+}
+.skillup-list .skillup-item:hover {
+  background-color: #282828;
+  box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.skillup-list .skillup-item.icon-user-plus {
+  background-image: url(/static/img/skillup/icon-user-plus.png);
+}
+.skillup-list .skillup-item.icon-check-circle {
+  background-image: url(/static/img/skillup/icon-check-circle.png);
+}
+.skillup-list .skillup-item.icon-message-circle {
+  background-image: url(/static/img/skillup/icon-message-circle.png);
+}
+.skillup-list .skillup-item.icon-video {
+  background-image: url(/static/img/skillup/icon-video.png);
+}
+.skillup-list .skillup-item.icon-users {
+  background-image: url(/static/img/skillup/icon-users.png);
+}
+.skillup-list .skillup-item.icon-share {
+  background-image: url(/static/img/skillup/icon-share-2.png);
+}
+.skillup-list .skillup-item.icon-plus-circle {
+  background-image: url(/static/img/skillup/icon-plus-circle.png);
+}
+.demo-video {
+  margin-left: auto;
+  position: relative;
+  display: block;
+  margin-bottom: 100px;
+}
+.demo-video:after {
+  content: "";
+  width: 65%;
+  height: 80%;
+  background: #282828;
+  position: absolute;
+  top: 60%;
+  left: -50px;
+  border-radius: 15px;
+  display: block;
+  z-index: 0;
+}
+.demo-video img {
+  position: relative;
+  z-index: 1;
+}
+.modal-video {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.modal-video.shown {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+  display: flex;
+}
+.modal-video .close-modal {
+  margin-left: auto;
+}
+@media only screen and (min-width: 1024px) {
+  .video-wrapper {
+    padding: 25% 0 15% 0;
+  }
+  .skillup-logo {
+    margin-top: 8px;
+    margin-left: 6px;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-15vw {
+    width: 15vw !important;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+  .banner-wrapper {
+    background-position: left center;
+  }
+  .banner-wrapper .banner-content .banner-title {
+    font-size: 50px;
+  }
+  .skillup-card .mentor-wrapper .card-heading {
+    height: 40px;
+  }
+  .skillup-card .mentor-wrapper .mentor-video:after {
+    opacity: 0;
+    visibility: hidden;
+    background-size: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+    visibility: visible;
+  }
+  .skillup-card .mentor-wrapper:hover .mentor-video:after {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .dynamic-text {
+    font-size: 50px;
+  }
+}

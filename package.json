@@ -56,6 +56,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-import-b5a962": "^2.3.0",
     "eslint-plugin-react": "^7.10.0",
+    "file-loader": "^6.0.0",
     "http-proxy-middleware": "^0.18.0",
     "lint-staged": "^7.2.0",
     "pre-commit": "^1.2.2",

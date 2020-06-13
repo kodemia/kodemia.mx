@@ -1,0 +1,106 @@
+.skillup-form .line {
+  align-items: stretch;
+  height: 100%;
+}
+.skillup-form .banner-bg {
+  background-image: url('/static/img/skillup/banner-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.skillup-form .banner-bg img {
+  align-self: baseline;
+}
+.skillup-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 10px;
+}
+.skillup-form form .form-group .form-control {
+  margin-top: 10px;
+  background-color: #050505;
+  border-radius: 15px;
+  height: 40px;
+  border: none;
+  color: #707070;
+  padding-left: 15px;
+}
+.skillup-form form .form-group.required.has-error {
+  background: none;
+  border: none;
+}
+.skillup-form form .form-group.required.has-error:after {
+  content: "Campo obligatorio";
+  color: #c82214;
+  margin-top: 5px;
+}
+.skillup-form form .custom-checkbox input {
+  display: none;
+}
+.skillup-form form .custom-checkbox input:checked + label:before {
+  background-image: url('/static/img/skillup/icon-check-white.png');
+  background-size: 17px;
+  background-position: center;
+  border-color: white;
+}
+.skillup-form form .custom-checkbox label {
+  padding-left: 30px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.skillup-form form .custom-checkbox label:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  display: block;
+}
+.skillup-form form .custom-checkbox label a:active,
+.skillup-form form .custom-checkbox label a:hover {
+  color: cyan;
+}
+.skillup-form form .button-wrapper {
+  flex-direction: column-reverse;
+}
+.skillup-form form .button-wrapper .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .skillup-form {
+    height: calc(100vh - 81px);
+  }
+  .skillup-form form .button-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .skillup-form form .button-wrapper .btn {
+    width: auto;
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  .skillup-form .banner-bg img {
+    width: 30%;
+    margin-bottom: 20vh;
+  }
+  .skillup-form .content-wrapper {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skillup-form .content-wrapper h1 {
+    margin-bottom: 5vh;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .skillup-form .content-wrapper p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}

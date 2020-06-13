@@ -1,0 +1,120 @@
+@import '../variables/_colors.less';
+
+.skillup-form{
+    .line{
+        align-items: stretch;
+        height:100%;
+    }
+    .banner-bg{
+        background-image:url('/static/img/skillup/banner-bg.png');
+        background-size:cover;
+        background-position:center;
+        padding:30px;
+        img{
+            align-self:baseline;
+        }
+    }
+    form{
+        .form-group{
+            display: flex;
+            flex-direction:column;
+            color:white;
+            margin-bottom:10px;
+            .form-control{
+                margin-top:10px;
+                background-color: @black-back-1;
+                border-radius:15px;
+                height:40px;
+                border: none;
+                color:@gray-1;
+                padding-left:15px;
+            }
+            &.required.has-error{
+                background:none;
+                border:none;
+                &:after{
+                    content:"Campo obligatorio";
+                    color:@red;
+                    margin-top:5px;
+                }
+            }
+        }
+        .custom-checkbox{
+            input{
+                display:none;
+                &:checked{
+                    & + label:before{
+                        background-image:url('/static/img/skillup/icon-check-white.png');
+                        background-size:17px;
+                        background-position:center;
+                        border-color:white;
+                    }
+                }
+            }
+            label{
+                padding-left:30px;
+                position:relative;
+                display: block;
+                cursor:pointer;
+                &:before{
+                    content:"";
+                    width:20px;
+                    height:20px;
+                    border:1px solid @gray-1;
+                    border-radius:3px;
+                    position: absolute;
+                    left:0;
+                    display: block;
+                }
+                a:active, a:hover{
+                    color:cyan;
+                }
+            }
+        }
+        .button-wrapper{
+            flex-direction: column-reverse;
+            .btn{
+                width: 100%;
+                margin-top:15px;
+            }
+        }
+    }
+}
+
+@media only screen and ( min-width : 1024px ){
+    .skillup-form{
+        height:calc(100vh - 81px);
+        form{
+            .button-wrapper{
+                flex-direction: row;
+                justify-content: flex-end;
+                .btn{
+                    width: auto;
+                    margin-top:0;
+                    margin-left:15px;
+                }
+            }
+        }
+        .banner-bg{
+            img{
+                width:30%;
+                margin-bottom: 20vh;
+            }
+        }
+        .content-wrapper{
+            width:75%;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            h1{
+                margin-bottom: 5vh;
+                font-size:50px;
+                font-weight: 500;
+            }
+            p{
+                font-size:24px;
+                font-weight: 500;
+            }
+        }
+    }
+}

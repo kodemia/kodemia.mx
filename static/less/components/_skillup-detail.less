@@ -1,0 +1,307 @@
+@import '../variables/_colors.less';
+
+.skillup-card.detail{
+    flex-wrap:wrap;
+    font-size:.75rem;
+    .mentor-wrapper{
+        display:flex;
+        flex-wrap:wrap;
+        width:100%;
+        padding:20px;
+        order:3;
+        transition:width .5s ease;
+        .mentor-grade{
+            text-align: center;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mentor-video{
+            margin: 20px auto;
+            position:relative;
+            width:150px;
+            height:150px;
+        }
+        .mentor-name{
+            font-size:20px;
+            margin-bottom:0px;
+        }
+        .mentor-charge{
+            font-size:14px;
+        }
+        .social-wrapper{
+            padding: 20px 0;
+            width: 100%;
+            .social-link{
+                margin-right: 10px;
+            }
+        }
+        .mentor-bio{
+            width:100%;
+            .short-bio{
+               /* visibility: visible;
+                opacity:1;
+                transition:opacity .5s ease;*/
+                display:block;
+            }
+            .long-bio{
+                /*visibility: hidden;
+                opacity:0;
+                transition:opacity .5s ease .5s;*/
+                display:none;
+            }
+        }
+        .video-wrapper{
+            flex-grow:1;
+            opacity:0;
+            visibility: visible;
+            height:0;
+            transition:none;
+            .skillup-name{
+                visibility: hidden;
+                opacity:0;
+                text-align: center;
+                font-size:24px;
+                color:white;
+                margin-bottom:15px;
+            }
+        }
+        
+        .social-wrapper{
+            .social-link{
+                width:20px;
+                height:20px;
+                background-size:cover;
+                background-repeat:no-repeat;
+                &.li{
+                    background-image:url(/static/img/skillup/icon-li-white.png)
+                }
+                &.gh{
+                    background-image:url(/static/img/skillup/icon-gh-white.png)
+                }
+                &.tt{
+                    background-image:url(/static/img/skillup/icon-tt-white.png)
+                }
+                &.web{
+                    background-image:url(/static/img/skillup/icon-web-white.png)
+                }
+            }
+        }
+    }
+    .skillup-wrapper{
+        padding:20px;
+        order:1;
+        width:100%;
+        overflow:hidden;
+        .skillup-category{
+            align-self: flex-start;
+            font-weight:bold;
+        }
+        .skillup-name{
+            font-size:30px;
+        }
+        .skillup-description,.skillup-target{
+            font-size:14px;
+            margin-bottom:30px;
+        }
+        
+    }
+    .schedule-wrapper{
+        margin:15px;
+        border-radius:15px;
+        padding:25px;
+        width:100%;
+        order:2;
+        .skillup-length{
+            padding-left:20px;
+            background-image:url(/static/img/skillup/icon-clock-white.png);
+            background-repeat:no-repeat;
+            background-position: left center;
+            background-size:15px;
+        }
+    }
+}
+
+.about-wrapper{
+    .about-item{
+        padding:20px 20px 20px 75px;
+        border-radius:15px;
+        background-color:@black-2;
+        color:white;
+        margin-bottom:20px;
+        background-image:url(/static/img/skillup/icon-plus-circle.png);
+        background-position:20px 25px;
+        background-size:20px;
+        background-repeat:no-repeat;
+        font-size:20px;
+        .about-content{
+            overflow:hidden;
+            max-height:0px;
+            padding:0;
+            transition: max-height .5s ease, margin-top .5s ease;
+        }
+        &.active,&:hover{
+            cursor:pointer;
+            background-color:@gray-1;
+        }
+        &.active{
+            background-image:url(/static/img/skillup/icon-minus-circle.png);
+            .about-content{
+                max-height:500px;
+                margin-top:10px;
+            }  
+        }
+
+    }
+}
+
+.syllabus-wrapper{
+    color:white;
+    .syllabus-heading{
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        margin:0px;
+        font-size: 20px;
+        padding: 20px 0;
+        border-radius: 15px;
+        background-size:25px;
+        background-repeat:no-repeat;
+        margin-bottom:10px;
+        .track{
+            background:white;
+            color:@black-2;
+            font-size:20px;
+            display: flex;
+            justify-content: center;
+            padding-top: 3px;
+            background:white;
+            border-radius:100px;
+            width:35px;
+            height:35px;
+            margin:0 15px;
+            font-weight: bold;
+        }
+        p{
+            max-width:65%;
+        }
+        ul{
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            padding-left: 30px;
+            margin: 0;
+            max-height:0;
+            overflow: hidden;
+            transition:max-height 1s ease;
+            margin-top:15px;
+            li{
+                border-bottom:1px solid @gray-1;
+                padding:15px;
+                width:calc(100% - 15px);
+                &:last-child{
+                    border-bottom:none;
+                }
+                span:first-of-type{
+                    display:inline-block;
+                    width:50px;
+                    color:cyan;
+                }
+            }
+        }
+        &:hover{
+            background-color:@black-2;
+        }
+        &.has-content{
+            background-image:url(/static/img/skillup/icon-plus-circle.png);
+        background-position: calc(100% - 30px) 30px;
+        }
+        &.open{
+            background-image:url(/static/img/skillup/icon-minus-circle.png);
+            background-color:@black-2;
+            ul{
+                max-height:1500px;
+            }
+        }
+    }  
+}
+
+.aside-card{
+    border-radius:15px;
+    background:@black-back-4;
+    color:white;
+    padding:20px;
+    font-size:14px;
+    min-height:250px;
+    h3{
+        font-size:20px;
+    }
+    ol{
+        padding-left:20px;
+        li{
+            margin-bottom:10px;
+        }
+    }
+}
+
+@media only screen and ( min-width : 1024px){
+    .skillup-card.detail{
+        flex-wrap:nowrap;
+        height: 510px;
+        .mentor-wrapper{
+            order:1;
+            width:20%;
+            .mentor-video{
+                width:110px;
+                height:110px;
+            }
+        }
+        .skillup-wrapper{
+            padding:40px;
+            order:2;
+            .skillup-name{
+                font-size:45px;
+            }
+            .skillup-description,.skillup-target{
+                margin-bottom:15px;
+            }
+            &:hover{
+                cursor:default;
+            }
+        }
+        .schedule-wrapper{
+            order:3;
+            width:35%;
+        }
+    }
+    .syllabus-wrapper{
+        .syllabus-heading{
+            display: flex;
+            flex-wrap:wrap;
+            align-items: center;
+            margin:0px;
+            font-size: 20px;
+            padding: 20px 0;
+            border-radius: 15px;
+            background-size:35px;
+            background-repeat:no-repeat;
+            margin-bottom:10px; 
+            .track{
+                color: #282828;
+                font-size: 35px;
+                display: flex;
+                justify-content: center;
+                background: white;
+                border-radius: 100px;
+                width: 55px;
+                height: 55px;
+                margin: 0 40px;
+                font-weight: bold;
+                align-items: center;
+            }
+            ul{
+                padding-left:140px;
+            }
+        }
+    }
+}

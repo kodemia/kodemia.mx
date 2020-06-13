@@ -1,0 +1,689 @@
+@import '../variables/_colors.less';
+
+@import (css) url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.skillup-page{
+    *{
+        font-family: "Poppins",sans-serif;
+    }
+}
+
+.dynamic-text {
+    position: relative;
+    display: block;
+    font-size: 2.5rem;
+    overflow: hidden;
+    height: 75px;
+    &:after {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        top: -50px;
+        animation: spin 7s linear;
+        animation-iteration-count: infinite;
+        animation-delay:1s;
+    }
+}
+
+@keyframes spin {
+    0% {
+        top: -50px;
+        content: "Programación";
+    }
+    5% {
+        top: 0;
+        opacity: 1;
+        content: "Programación";
+    }
+    25% {
+        top: 0;
+        opacity: 1;
+        content: "Programación";
+    }
+    30% {
+        top: 50px;
+        opacity: 0;
+    }
+    35% {
+        opacity: 0;
+        top: -50px;
+        content: "UX/UI";
+    }
+
+    40% {
+        top: 0;
+        opacity: 1;
+        content: "UX/UI";
+    }
+
+    60% {
+        top: 0;
+        opacity: 1;
+        content: "UX/UI";
+    }
+
+    65% {
+        top: 50px;
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+        top: -50px;
+        content: "Gestión TI";
+    }
+
+    75% {
+        top: 0;
+        opacity: 1;
+        content: "Gestión TI";
+    }
+
+    95% {
+        top: 0;
+        opacity: 1;
+        content: "Gestión TI";
+    }
+
+    100% {
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+.btn-nav-white{
+    width:auto;
+    color:@black-2;
+    background-color:white;
+    white-space:nowrap;
+    &:hover{
+        color:@black-2;
+    }
+}
+
+.scontainer.container{
+    max-width:1280px !important;
+}
+
+.no-decal{
+    padding-left:0;
+    &::before{
+        content:"";
+        display: none;
+    }
+}
+
+.bg-{
+    &black-3{
+        background:@black-back-3;
+    }
+    &black-back-2{
+        background:@black-back-2;
+    }
+    &black-back-4{
+        background:@black-back-4
+    }
+}
+
+.position-relative{
+    position: relative;
+}
+
+[class^="emoji"]{
+    width:50px;
+    height:50px;
+    background-size:50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-{
+    &white{
+        color:white !important;
+    }
+    &black-3{
+        color:@black-back-2 !important;
+    }
+    &black{
+        color:@black-back-2;
+    }
+    &center{
+        text-align: center !important;
+    }
+    &gray{
+        color:@gray-1
+    }
+    &cyan{
+        color:@c-cyan !important;
+    }
+}
+
+.flex-wrap{
+    flex-wrap:wrap !important;
+}
+
+.align-items-stretch{
+    align-items:stretch;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.justify-content-{
+    &between{
+        justify-content:space-between;
+    }
+    &evenly{
+        justify-content:space-evenly;
+    }
+    &center{
+        justify-content:center;
+    }
+}
+
+.align-items-{
+    &center{
+        align-items:center;
+    }   
+    &start{
+        align-items:flex-start;
+    } 
+}
+
+.ml-auto{
+    margin-left:auto;
+}
+
+.mr-auto{
+    margin-right:auto
+}
+
+.mx-auto{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.w-{
+    &25{
+        width:25% !important;
+    }
+    &50{
+        width:50% !important;
+    }
+    &75{
+        width:75% !important;
+    }
+    &100{
+        width:100% !important;
+    }&md-15vw{
+        width:100%;
+    }
+}
+
+.w-15vw{
+    width:15vw;
+}
+
+.spacer-{
+    display: block;
+    width:100%;
+    &sm{
+        height:1rem;
+    }
+    &md{
+        height:2rem;
+    }
+    &lg{
+        height:3rem
+    }
+    &xl{
+        height:5rem;
+    }
+}
+
+.backlight{
+    padding:3px 9px;
+    border-radius:10px;
+    font-size:12px;
+    font-weight: bold;
+    &.stretch{
+        display: inline-block;
+        padding: 0px 15px;
+        text-align: center;
+        font-weight: bolder;
+        height: 20px;
+        font-size: 14px;
+    }
+    &.backlight{
+        &-cyan{
+            background-color:cyan;
+            color:@black-back-2;
+        }  
+        &-black-2{
+            background-color:@black-2;
+            color:white;
+        }
+        &-yellow{
+            background-color:@yellow;
+        }
+        &-gray-1{
+            background-color:@gray-1;
+            color:white;
+        }
+        &-red{
+            background-color:@backlight-red;
+        }
+        &-green{
+            background-color:@backlight-green;
+        }
+        &-blue{
+            background-color:@backlight-blue;
+        }
+        &-essential{
+            background-color:@essential;
+        }
+        &-advanced{
+            background-color:@advanced;
+        }
+        &-master{
+            background-color:@master;
+        }
+    }
+}
+
+.d-flex{
+    display:flex;
+}
+
+.d-none{
+    display:none !important;
+}
+
+.main-container{
+    padding-top:80px;
+}
+
+.main-menu nav ul li.skillup-nav:hover a{
+    color:@c-cyan;
+}
+
+.skillup-logo{
+    width:170px;
+}
+
+.skillup-btn{
+    height:40px;
+    padding:7px 20px;
+    display: inline-block;
+    width: auto;
+    border-radius:10px;
+    font-size:1rem;
+    cursor:pointer;
+    &.btn-outline-white{
+        border:1px solid white;
+    }
+    &.btn-outline-gray{
+        border:1px solid @gray-1
+    }
+    &.btn-outline-cyan{
+        border:1px solid @c-cyan;
+    }
+    &.btn-disabled{
+        color:@gray-1;
+        border-color:@gray-1;
+        color:@gray-1 !important;
+    }
+}
+
+.full-height{
+    height:calc(100vh - 80px)
+}
+
+.banner-wrapper{
+    width:100%;
+    height:calc( 100vh - 81px );
+    background-image:url(/static/img/skillup/main-banner-bg.png);
+    background-position:center;
+    background-size: cover;
+    .banner-content{
+        width:80%;
+        margin-left:10%;
+        color:white;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        .banner-title{
+            font-size:2.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.floating-wrapper{
+    background: #151515;
+    width: 80%;
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+    left: 10%;
+    top: -10vh;
+    box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.5);
+    h3{
+        font-size:35px;
+        margin-bottom: 20px;
+    }
+    .step-heading{
+        width: 55px;
+        height:55px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 30px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size:14px;
+        margin-bottom:20px;
+    }
+    &:after{
+        content:""
+    }
+}
+
+.control-wrapper{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    .btn-control{
+        width:20px;
+        height:20px;
+        border-radius:7px;
+        background-color:@gray-1;
+        &.active{
+            background-color:white;
+        }
+    }
+}
+
+.video-wrapper{
+   padding: 50% 0px 15%;
+}
+
+.skillup-card{
+    border-radius:15px;
+    background:@black-2;
+    color: white;
+    overflow:hidden;
+    display:flex;
+    position:relative;
+    .mentor-wrapper{
+        width: 35%;
+        background:@gray-1;
+        border-radius: 15px;
+        padding:10px;
+        box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.5);
+        z-index:1;
+        .mentor-grade{
+            text-align: center;
+        }
+        .mentor-video{
+            margin:30px auto;
+            width:86px;
+            height:86px;
+            background-size: cover;
+            cursor:pointer;
+            background-repeat: no-repeat;
+            border-radius:100px;
+            z-index:8000;
+            overflow:hidden;
+            position: relative;
+            &:after{
+                content:"";
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.5);
+                background-image:url('/static/img/skillup/icon-play-white.png');
+                background-position:center;
+                background-size:25px;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity:1;
+                visibility: visible;
+                transition:all .8s ease;
+            }
+        }
+        .mentor-name{
+            margin-bottom:20px;
+        }
+    }
+    .skillup-wrapper{
+        padding:15px;
+        width:70%;
+        position:relative;
+        .skillup-category{
+            align-self:flex-end;
+            color:@black-back-1;
+        }
+        .skillup-name{
+            color:white;
+            font-size:18px;
+            width: 100%;
+            margin:10px 0;
+        }
+        .skillup-difficulty{
+            font-size:11px;
+            margin-bottom:10px;
+            flex-grow:1;
+        }
+        .skillup-length{
+            font-size:11px;
+            flex-grow: 1;
+            text-align: right;
+            padding-left:30px;
+            background-image:url(/static/img/skillup/icon-clock-white.png);
+            background-repeat:no-repeat;
+            background-position: calc(100% - 35px) 1px;
+            background-size:15px;
+        }
+        .skillup-description{
+            font-size:12px;
+            margin-bottom:10px;
+        }
+        .skillup-schedule-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                font-size:11px;
+                width: 100%;
+            }
+            .skillup-days,.skillup-schedule{
+                font-size: 11px;
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                font-size:.9rem;
+                width:45%;
+            }
+        }
+        .skillup-overlay{
+            position:absolute;
+            top:0;
+            right:0;
+            background:rgba(0,0,0,.8);
+            width:110%;
+            height:100%;
+            justify-content:center;
+            align-items: center;
+            transition:all .5s ease;
+            visibility:hidden;
+            opacity:0;
+            display:flex;
+        }
+        &:hover{
+            cursor:pointer;
+            .skillup-overlay{
+                visibility: visible;
+                opacity:1;
+            }
+        }
+    }
+}
+
+.skillup-list{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    .skillup-item{
+        padding:20px 20px 20px 50px;
+        display: flex;
+        align-items: center;
+        border-radius:15px;
+        padding-left:50px;
+        background-size:20px;
+        background-repeat: no-repeat;
+        background-position:10px center;
+        transition: background-color .5s ease;
+        &:hover{
+            background-color:@black-2;
+            box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.5);
+            cursor:pointer;
+        }
+        &.icon-user-plus{
+            background-image:url(/static/img/skillup/icon-user-plus.png)
+        }
+        &.icon-check-circle{
+            background-image:url(/static/img/skillup/icon-check-circle.png)
+        }
+        &.icon-message-circle{
+            background-image:url(/static/img/skillup/icon-message-circle.png)
+        }
+        &.icon-video{
+            background-image:url(/static/img/skillup/icon-video.png)
+        }
+        &.icon-users{
+            background-image:url(/static/img/skillup/icon-users.png)
+        }
+        &.icon-share{
+            background-image:url(/static/img/skillup/icon-share-2.png)
+        }
+        &.icon-plus-circle{
+            background-image:url(/static/img/skillup/icon-plus-circle.png)
+        }
+    }
+}
+
+.demo-video{
+    margin-left: auto;
+    position: relative;
+    display: block;
+    margin-bottom: 100px;
+    &:after{
+        content: "";
+        width: 65%;
+        height: 80%;
+        background: #282828;
+        position: absolute;
+        top: 60%;
+        left: -50px;
+        border-radius: 15px;
+        display: block;
+        z-index: 0;   
+    }
+    img{
+        position: relative;
+        z-index:1;
+    }
+}
+
+.modal-video{
+    display:none;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(0, 0, 0, 0.85);
+    width:100%;
+    height:100%;
+    opacity: 0;
+    visibility: none;
+    position: fixed;
+    top:0;
+    left:0;
+    transition:all .5s ease;
+    &.shown{
+        opacity: 1;
+        visibility: visible;
+        z-index: 9999;
+        display:flex;
+    }
+    .close-modal{
+        margin-left:auto;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .video-wrapper{
+        padding: 25% 0 15% 0,
+    }
+    .skillup-logo{
+        margin-top:8px;
+        margin-left:6px;
+    }
+    .w-md-{
+        &100{
+            width:100% !important;
+        }
+        &75{
+            width: 75% !important;
+        }
+        &15vw{
+            width:15vw !important;
+        }
+    }
+    .d-md-flex{
+        display:flex;
+    }
+    .banner-wrapper{
+        background-position:left center;
+        .banner-content{
+            .banner-title{
+                font-size:50px;
+            }
+        }
+    }
+    .skillup-card{
+        .mentor-wrapper{
+            .card-heading{
+                height:40px;
+            }
+            .mentor-video{
+                &:after{
+                    opacity:0;
+                    visibility: hidden;
+                    background-size:15px;
+                    background-color: rgba(0,0,0,.2);
+                    opacity:.5;
+                    visibility: visible;
+                }
+            }
+            &:hover{
+                .mentor-video{
+                    &:after{
+                        opacity: 1;
+                        background-color: rgba(0,0,0,.5);
+                    }
+                }
+            }
+        }
+    }
+    .dynamic-text{
+        font-size:50px;
+    }
+}

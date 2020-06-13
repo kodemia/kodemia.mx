@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-//import skillupImago from '../static/img/skillup/skillup-imago.png'
+import Head from 'next/head'
 import skillupLogo from '../static/img/skillup/skillup-logo.png'
 
 //Assets
@@ -8,6 +8,12 @@ import kodersFrame from '../static/img/skillup/koders-frame.png'
 // Components
 import Layout from '../components/layout'
 import Card from '../components/skillup/card'
+
+const gtmHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4DXDWZ');`
 
 class SkillUp extends Component {
   _scrollTopTop() {
@@ -80,6 +86,20 @@ class SkillUp extends Component {
   render() {
     return (
       <>
+        <Head>
+          <meta property="og:title" content="skillup" />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:description"
+            content="Mejora tus habilidades compartiendo experiencias con mentores 100% en vivo"
+          />
+          <meta property="og:site_name" content="Skillup" />
+          <meta property="og:image" content={skillupLogo} />
+
+          {/* <!-- Google Tag Manager --> */}
+          <script dangerouslySetInnerHTML={{ __html: gtmHTML }} />
+          {/* <!-- End Google Tag Manager --> */}
+        </Head>
         <div className="modal-video flex-direction-column align-items-center justify-content-center">
           <div className="w-75 d-flex flex-direction-column">
             <div

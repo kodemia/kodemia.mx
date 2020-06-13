@@ -289,16 +289,15 @@ class SkillupDetail extends Component {
                             </div>
                           )
                         })}
-                        <div className="d-flex justify-content-between x:mrg-bottom-50">
-                          <div>
+                        <div className="d-flex flex-direction-column justify-content-between">
+                          <div className="d-flex justify-content-between">
                             <p className="x:fs-20">Duración</p>
-                            <div className="skillup-length x:fs-14">
+                            <div className="skillup-length x:fs-14 d-flex align-items-center">
                               {courseData.courseDuration} hrs
                             </div>
                           </div>
-                          <div>
-                            <p className="x:fs-20">Inversión</p>
-                            <div className="x:fs-14">
+                          <div className="x:mrg-top-30 x:mrg-bottom-30">
+                            <div className="x:fs-22 text-center">
                               $ {courseData.coursePrice} MXN
                             </div>
                           </div>

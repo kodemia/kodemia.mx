@@ -57,12 +57,19 @@ class SkillupDetail extends Component {
     event.stopPropagation()
     let modal = document.querySelector('.modal-video')
     let video = document.querySelector('#mentor-video')
+    let videoRoot = 'https://player.vimeo.com/video/'
+    let videoId = this.state.courseData.videoId || '427180425'
+    let videoConfig = '?color=ffffff&title=0&byline=0&portrait=0'
     if (modal.classList.contains('shown')) {
       modal.classList.remove('shown')
-      video.setAttribute('src', this.state.videoUrl)
+      video.setAttribute('src', videoRoot + videoId + videoConfig)
+      history.back()
     } else {
       modal.classList.add('shown')
-      video.setAttribute('src', this.state.videoUrl + '&autoplay=1')
+      video.setAttribute(
+        'src',
+        videoRoot + videoId + videoConfig + '&autoplay=1'
+      )
     }
   }
 

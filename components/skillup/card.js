@@ -8,12 +8,15 @@ class Card extends Component {
 
   handleVideoClick(event) {
     event.stopPropagation()
+    let videoRoot = 'https://player.vimeo.com/video/'
+    let videoId = event.target.dataset.videoId || '427180425'
+    let videoConfig = '?color=ffffff&title=0&byline=0&portrait=0'
     let modal = document.querySelector('.modal-video')
     let video = document.querySelector('#mentor-video')
-    let videoUrl = video.getAttribute('src')
-    video.setAttribute('src', videoUrl + '&autoplay=1')
+    //let videoUrl = video.getAttribute('src')
+    video.setAttribute('src', videoRoot + videoId + videoConfig + '&autoplay=1')
     modal.classList.contains('shown')
-      ? modal.classList.remove('shown')
+      ? (modal.classList.remove('shown'), history.back())
       : modal.classList.add('shown')
   }
 
@@ -31,6 +34,8 @@ class Card extends Component {
             <div
               style={{ backgroundImage: `url(${this.props.mentorPic})` }}
               className="mentor-video"
+              data-video-id={this.props.videoId}
+              data-some-prop="some"
               onClick={this.handleVideoClick}
             />
             <p className="mentor-name text-center">{this.props.mentorName}</p>

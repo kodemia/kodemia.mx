@@ -33,9 +33,12 @@ class SkillUp extends Component {
     event.stopPropagation()
     let modal = document.querySelector('.modal-video')
     let video = document.querySelector('#mentor-video')
+    //let videoRoot = 'https://player.vimeo.com/video/'
+    //let videoConfig = '?color=ffffff&title=0&byline=0&portrait=0'
     if (modal.classList.contains('shown')) {
       modal.classList.remove('shown')
       video.setAttribute('src', this.state.videoUrl)
+      history.back()
     } else {
       modal.classList.add('shown')
       video.setAttribute('src', this.state.videoUrl + '&autoplay=1')
@@ -55,7 +58,6 @@ class SkillUp extends Component {
               },
               0
             )
-
             activeSchedules != 0
               ? fetch(
                   `https://skillupdashboard.firebaseio.com/mentors/${
@@ -65,6 +67,7 @@ class SkillUp extends Component {
                   mentors.json().then(mentorData => {
                     coursesArray.push({ ...json[key], key, mentorData })
                     this.setState({ courses: coursesArray })
+                    window.scrollTo(0, 0)
                   })
                 })
               : null
@@ -220,6 +223,7 @@ class SkillUp extends Component {
                             mentorPic={course.mentorData.mentorPicUrl}
                             duration={course.courseDuration}
                             backlightClass={course.courseCategoryClass}
+                            videoId={course.videoId}
                             schedules={course.courseSchedules.filter(
                               schedule => {
                                 return schedule.isActive

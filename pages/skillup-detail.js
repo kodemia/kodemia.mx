@@ -612,9 +612,9 @@ class SkillupDetail extends Component {
                       className="about-item"
                       onClick={this.handleDetailClick}
                     >
-                      ¿Porque cuestan lo mismo todos los cursos?
+                      ¿Por qué cuestan lo mismo todos los cursos?
                       <p className="about-content">
-                        El valor del curso esta basado en el tiempo del mentor y
+                        El valor del curso está basado en el tiempo del mentor y
                         no en el conocimiento, removemos esa barrera para que tú
                         puedas elegir el curso que mejor se acomode a tus
                         necesidades.

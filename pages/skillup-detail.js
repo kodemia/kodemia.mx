@@ -297,7 +297,7 @@ class SkillupDetail extends Component {
                             </div>
                           </div>
                           <div>
-                            <p className="x:fs-20">Costo</p>
+                            <p className="x:fs-20">Inversión</p>
                             <div className="x:fs-14">
                               $ {courseData.coursePrice} MXN
                             </div>

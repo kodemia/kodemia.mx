@@ -509,7 +509,7 @@ class SkillupDetail extends Component {
                             Computadora de escritorio o laptop. Te recomendamos
                             un equipo con las siguientes características:
                             <ul>
-                              <li>Memoria ram minima de 8gb</li>
+                              <li>Memoria ram mínima de 8gb</li>
                               <li>Procesador i3, i5, i7 o equivalente</li>
                               <li>
                                 Conexión a internet de banda ancha, ideal mínimo

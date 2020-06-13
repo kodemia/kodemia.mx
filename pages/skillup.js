@@ -89,8 +89,8 @@ class SkillUp extends Component {
               Salir
             </div>
             <div
+              className="video-wrapper"
               style={{
-                padding: '25% 0 15% 0',
                 position: 'relative',
                 zIndex: 1,
                 width: '100%'

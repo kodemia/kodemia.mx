@@ -357,6 +357,9 @@
 .control-wrapper .btn-control.active {
   background-color: white;
 }
+.video-wrapper {
+  padding: 50% 0px 15%;
+}
 .skillup-card {
   border-radius: 15px;
   background: #282828;
@@ -567,6 +570,9 @@
   margin-left: auto;
 }
 @media only screen and (min-width: 1024px) {
+  .video-wrapper {
+    padding: 25% 0 15% 0;
+  }
   .skillup-logo {
     margin-top: 8px;
     margin-left: 6px;

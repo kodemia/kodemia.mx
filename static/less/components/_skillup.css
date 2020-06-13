@@ -5,7 +5,7 @@
 .dynamic-text {
   position: relative;
   display: block;
-  font-size: 50px;
+  font-size: 2.75rem;
   overflow: hidden;
   height: 75px;
 }
@@ -293,7 +293,7 @@
   background-size: cover;
 }
 .banner-wrapper .banner-content {
-  width: 50%;
+  width: 80%;
   margin-left: 10%;
   color: white;
   height: 80%;
@@ -303,7 +303,7 @@
   justify-content: space-evenly;
 }
 .banner-wrapper .banner-content .banner-title {
-  font-size: 50px;
+  font-size: 2.75rem;
   font-weight: bold;
 }
 .floating-wrapper {
@@ -575,6 +575,9 @@
   .banner-wrapper {
     background-position: left center;
   }
+  .banner-wrapper .banner-content .banner-title {
+    font-size: 50px;
+  }
   .skillup-card .mentor-wrapper .card-heading {
     height: 40px;
   }
@@ -589,5 +592,8 @@
   .skillup-card .mentor-wrapper:hover .mentor-video:after {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+  .dynamic-text {
+    font-size: 50px;
   }
 }

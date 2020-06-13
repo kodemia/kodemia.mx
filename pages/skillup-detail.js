@@ -428,14 +428,20 @@ class SkillupDetail extends Component {
                         <a className="text-white">Regístrate</a>
                       </div>
                     </Link>
-                    <div className="btn skillup-btn btn-outline-cyan w-50 x:mrg-bottom-30 text-white">
-                      Aparta tu lugar
+                    <div className="btn skillup-btn btn-outline-cyan">
+                      <a
+                        href={`https://api.whatsapp.com/send?phone=525621298680&text=Hola%2C%20quiero%20apartar%20mi%20lugar%20en%20el%20Skillup%20%27${courseName}%27`}
+                        target="_blank"
+                        className="text-white"
+                      >
+                        Aparta tu lugar
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div className="x:scol-12 m:scol-8">
                   <h2 className="no-decal text-white x:fs-34 x:mrg-bottom-40 x:mrg-top-30">
-                    Preguntas fecuentes
+                    Preguntas frecuentes
                   </h2>
                   <div className="about-wrapper">
                     <div
@@ -487,7 +493,7 @@ class SkillupDetail extends Component {
                       ¿Cómo se imparten las clases?
                       <p className="about-content">
                         Las imparte un mentor en vivo de manera remota a través
-                        de una videollamada, para que puedas interactuar con el
+                        de una videollamada, para que puedas interactuar con él
                         en tiempo real y aprender de su experiencia.
                       </p>
                     </div>
@@ -563,19 +569,6 @@ class SkillupDetail extends Component {
                       className="about-item"
                       onClick={this.handleDetailClick}
                     >
-                      ¿Cuánto tiempo dedican los mentores a mi aprendizaje?
-                      <p className="about-content">
-                        Durante la duración del curso el mentor te dará el
-                        soporte en tiempo real durante y extra clase para
-                        aplicar también los conocimientos en tus proyectos
-                        personales o profesionales. Sólo toma en cuenta que los
-                        mentores también comen y duermen.
-                      </p>
-                    </div>
-                    <div
-                      className="about-item"
-                      onClick={this.handleDetailClick}
-                    >
                       ¿Dan algún reconocimiento?
                       <p className="about-content">
                         Si, al final del curso te daremos un certificado de
@@ -605,8 +598,14 @@ class SkillupDetail extends Component {
                         atento al momento cuando lancemos promoción para que
                         aproveches y apartes tu lugar antes e terminen.
                         <br />A partir de 2 personas o si tienes interés en más
-                        de un curso [escríbenos por whatsapp](wahtsapp) para
-                        buscar el mayor descuento
+                        de un curso{' '}
+                        <a
+                          className="text-cyan"
+                          href={`https://api.whatsapp.com/send?phone=525621298680&text=Hola%2C%20quiero%20apartar%20mi%20lugar%20en%20el%20Skillup%20%27${courseName}%27`}
+                        >
+                          escríbenos por whatsapp
+                        </a>{' '}
+                        para buscar el mayor descuento
                       </p>
                     </div>
                     <div

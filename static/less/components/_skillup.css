@@ -333,7 +333,7 @@
 }
 .banner-wrapper {
   width: 100%;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 150px);
   background-image: url(/static/img/skillup/main-banner-bg-mobile.png);
   background-position: center;
   background-size: 70%;

@@ -314,7 +314,7 @@ class SkillupDetail extends Component {
                               <a className="text-white">Regístrate</a>
                             </div>
                           </Link>
-                          <div className="btn skillup-btn btn-outline-cyan">
+                          <div className="btn skillup-btn btn-outline-cyan btn-whatsapp">
                             <a
                               href={`https://api.whatsapp.com/send?phone=525621298680&text=Hola%2C%20quiero%20apartar%20mi%20lugar%20en%20%27${courseName}%27`}
                               target="_blank"
@@ -431,11 +431,11 @@ class SkillupDetail extends Component {
                         query: { courseName, courseKey }
                       }}
                     >
-                      <div className="btn skillup-btn x:mrg-bottom-20 text-white">
+                      <div className="btn skillup-btn x:mrg-bottom-20 w-50 mx-auto text-white">
                         <a className="text-white">Regístrate</a>
                       </div>
                     </Link>
-                    <div className="btn skillup-btn btn-outline-cyan">
+                    <div className="btn skillup-btn btn-outline-cyan w-50 mx-auto btn-whatsapp">
                       <a
                         href={`https://api.whatsapp.com/send?phone=525621298680&text=Hola%2C%20quiero%20apartar%20mi%20lugar%20%27${courseName}%27`}
                         target="_blank"

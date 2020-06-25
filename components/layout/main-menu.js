@@ -7,6 +7,19 @@ import Logo from '../icons/logo-full'
 import NavItems from './nav-items'
 
 class MainMenu extends Component {
+  _scrollTopTop() {
+    let viewportSize = window.innerWidth
+    let elementOffset = document.getElementById('skills-title').offsetTop
+    let scrollPoint =
+      viewportSize < 1024
+        ? elementOffset + window.innerHeight - 90
+        : elementOffset + window.innerHeight * 0.6 - 110
+    window.scroll({
+      left: 0,
+      top: scrollPoint,
+      behavior: 'smooth'
+    })
+  } //todo: make this a dynamic function
   constructor(props) {
     super(props)
 
@@ -110,21 +123,22 @@ class MainMenu extends Component {
                 </a>
                 <div className="d-flex align-items-center">
                   {this.state.atSkillup ? (
-                    <Link href="/skillup" prefetch>
-                      <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
-                        Cursos Skillup
-                      </a>
-                    </Link>
+                    <a
+                      className="btn x:fs-14 x:hide l:show x:mrg-left-20 btn-nav-white"
+                      onClick={() => this._scrollTopTop(500)}
+                    >
+                      SkillUp
+                    </a>
                   ) : (
                     <>
                       <Link href="/aplicar" prefetch>
-                        <a className="btn btn--white-o btn--small x:fs-14 txt-uppercase x:hide l:show">
+                        <a className="btn btn--white-o btn--small x:fs-14 x:hide l:show">
                           Aplicar
                         </a>
                       </Link>
                       <Link href="/skillup" prefetch>
                         <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
-                          Cursos Skillup
+                          SkillUp
                         </a>
                       </Link>
                     </>

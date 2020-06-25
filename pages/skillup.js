@@ -17,10 +17,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 class SkillUp extends Component {
   _scrollTopTop() {
+    let viewportSize = window.innerWidth
     let elementOffset = document.getElementById('skills-title').offsetTop
+    let scrollPoint =
+      viewportSize < 1024
+        ? elementOffset + window.innerHeight - 110
+        : elementOffset + window.innerHeight * 0.6 - 110
     window.scroll({
       left: 0,
-      top: elementOffset + window.innerHeight - 90,
+      top: scrollPoint,
       behavior: 'smooth'
     })
   } //todo: make this a dynamic function
@@ -52,6 +57,8 @@ class SkillUp extends Component {
   }
 
   componentDidMount() {
+    let viewportWidth = window.innerWidth
+    this.setState({ viewportWidth })
     let coursesArray = []
     fetch('https://skillupdashboard.firebaseio.com/courses/.json').then(
       courses => {
@@ -140,84 +147,97 @@ class SkillUp extends Component {
               <div className="banner-wrapper">
                 <div className="banner-content">
                   <div className="banner-title">
-                    Mejora tus <br />
-                    habilidades en <br />
+                    Aprende
                     <span className="dynamic-text" />
+                    online en VIVO
                   </div>
                   <p className="banner-text">
-                    Comparte experiencias con mentores 100% <br />
-                    en{' '}
-                    <span className="backlight backlight-cyan stretch">
+                    Comparte experiencias con mentores 100% en{' '}
+                    <span className="backlight backlight-cyan m:mrg-bt-0 stretch">
                       VIVO
                     </span>{' '}
-                    y llega al siguiente nivel{' '}
-                    <i className="emoji-rocket">🚀</i>
+                    y llega al siguiente nivel<i className="emoji-rocket">🚀</i>
                   </p>
-                  <div
-                    className="skillup-btn btn-outline-white"
-                    onClick={() => this._scrollTopTop(500)}
-                  >
-                    Conocer los #Skills
-                  </div>
+                  {this.state.viewportWidth < 1024 ? (
+                    <div
+                      className="skillup-btn x:mrg-bt-30 m:mrg-bt-0 chevron-down"
+                      onClick={() => this._scrollTopTop(500)}
+                    />
+                  ) : (
+                    <div
+                      className="skillup-btn btn-cyan x:mrg-bt-30 m:mrg-bt-0"
+                      onClick={() => this._scrollTopTop(500)}
+                    >
+                      Ver Cursos
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="scontainer container position-relative bg-black-3 ">
-                <div className="floating-wrapper">
-                  <div className="line">
-                    <div className="x:scol-12">
-                      <h3 className="text-white no-decal">
-                        ¿Cómo funciona{' '}
-                        <span>
-                          <img
-                            src={skillupLogo}
-                            alt=""
-                            className="skillup-logo"
-                          />
-                        </span>{' '}
-                        ?
-                      </h3>
+                {/*
+                  <div className="floating-wrapper">
+                    <div className="line">
+                      <div className="x:scol-12">
+                        <h3 className="text-white no-decal">
+                          ¿Cómo funciona{' '}
+                          <span>
+                            <img
+                              src={skillupLogo}
+                              alt=""
+                              className="skillup-logo"
+                            />
+                          </span>{' '}
+                          ?
+                        </h3>
+                      </div>
+                      <div className="line d-md-flex">
+                        <div className="x:scol-12 m:scol-4">
+                          <div className="backlight backlight-cyan text-black step-heading">
+                            1
+                          </div>
+                          <p className="text-white">
+                            Para iniciar, explora entre los diferentes #SkillUps y
+                            elige el que te ayude a complementar tu perfil.
+                          </p>
+                        </div>
+                        <div className="x:scol-12 m:scol-4">
+                          <div className="backlight backlight-cyan text-black step-heading">
+                            2
+                          </div>
+                          <p className="text-white">
+                            Ponte en contacto con nosotros y aparta tu lugar ya
+                            que son limitados.
+                          </p>
+                        </div>
+                        <div className="x:scol-12 m:scol-4">
+                          <div className="backlight backlight-cyan text-black step-heading">
+                            3
+                          </div>
+                          <p className="text-white">
+                            Ingresa a la sala e interactúa, comparte conocimiento
+                            y experiencias con los mentores y compañeros
+                            totalmente EN VIVO.
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="line d-md-flex">
-                      <div className="x:scol-12 m:scol-4">
-                        <div className="backlight backlight-cyan text-black step-heading">
-                          1
-                        </div>
-                        <p className="text-white">
-                          Para iniciar, explora entre los diferentes #SkillUps y
-                          elige el que te ayude a complementar tu perfil.
-                        </p>
-                      </div>
-                      <div className="x:scol-12 m:scol-4">
-                        <div className="backlight backlight-cyan text-black step-heading">
-                          2
-                        </div>
-                        <p className="text-white">
-                          Ponte en contacto con nosotros y aparta tu lugar ya
-                          que son limitados.
-                        </p>
-                      </div>
-                      <div className="x:scol-12 m:scol-4">
-                        <div className="backlight backlight-cyan text-black step-heading">
-                          3
-                        </div>
-                        <p className="text-white">
-                          Ingresa a la sala e interactúa, comparte conocimiento
-                          y experiencias con los mentores y compañeros
-                          totalmente EN VIVO.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  </div>*/}
+
                 <div className="line">
                   <div className="x:scol-12">
                     <h2
-                      className="text-white font-bold d-flex justify-content-between align-items-center x:fs-34 no-decal"
+                      className="text-white font-bold d-flex justify-content-between align-items-center x:fs-34 no-decal x:mrg-bt-10"
                       id="skills-title"
                     >
-                      <span>
-                        Encuentra tu siguiente <br />
-                        #SkillUp <i className="emoji-rocks">🤘</i>
+                      <span className="x:fs-24">
+                        Encuentra tu siguiente{' '}
+                        <span>
+                          <img
+                            src={skillupLogo}
+                            alt="SkillUp"
+                            className="skillup-logo"
+                          />
+                        </span>
                       </span>
                       <div className="control-wrapper d-none">
                         <div className="btn-control active" />

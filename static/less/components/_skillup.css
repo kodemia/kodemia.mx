@@ -7,7 +7,7 @@
   display: block;
   font-size: 2.5rem;
   overflow: hidden;
-  height: 75px;
+  height: 60px;
 }
 .dynamic-text:after {
   content: "";
@@ -21,17 +21,17 @@
 @keyframes spin {
   0% {
     top: -50px;
-    content: "Programación";
+    content: "programación";
   }
   5% {
     top: 0;
     opacity: 1;
-    content: "Programación";
+    content: "programación";
   }
   25% {
     top: 0;
     opacity: 1;
-    content: "Programación";
+    content: "programación";
   }
   30% {
     top: 50px;
@@ -40,17 +40,17 @@
   35% {
     opacity: 0;
     top: -50px;
-    content: "UX/UI";
+    content: "diseño UX/UI";
   }
   40% {
     top: 0;
     opacity: 1;
-    content: "UX/UI";
+    content: "diseño UX/UI";
   }
   60% {
     top: 0;
     opacity: 1;
-    content: "UX/UI";
+    content: "diseño UX/UI";
   }
   65% {
     top: 50px;
@@ -59,17 +59,17 @@
   70% {
     opacity: 0;
     top: -50px;
-    content: "Gestión TI";
+    content: "SCRUM";
   }
   75% {
     top: 0;
     opacity: 1;
-    content: "Gestión TI";
+    content: "SCRUM";
   }
   95% {
     top: 0;
     opacity: 1;
-    content: "Gestión TI";
+    content: "SCRUM";
   }
   100% {
     top: 50px;
@@ -78,11 +78,16 @@
 }
 .btn-nav-white {
   width: auto;
-  color: #282828;
-  background-color: white;
+  color: white;
+  border: 1px solid white;
   white-space: nowrap;
 }
+.btn-nav-white:active,
+.btn-nav-white:focus {
+  color: white;
+}
 .btn-nav-white:hover {
+  background: white;
   color: #282828;
 }
 .scontainer.container {
@@ -263,7 +268,7 @@
   color: #00ffff;
 }
 .skillup-logo {
-  width: 170px;
+  width: 130px;
 }
 .skillup-btn {
   height: 40px;
@@ -288,29 +293,71 @@
   border-color: #707070;
   color: #707070 !important;
 }
+.skillup-btn.btn-whatsapp {
+  background-image: url(/static/img/skillup/icon-wa.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: calc(100% - 45px) center;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.skillup-btn.btn-white {
+  background: white;
+  color: #0e0e0e;
+}
+.skillup-btn.btn-cyan {
+  background: #00ffff;
+  color: #0e0e0e;
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 13px;
+}
+.skillup-btn.chevron-down {
+  width: 45px;
+  height: 45px;
+  background: url('/static/img/skillup/chevron-down.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .full-height {
   height: calc(100vh - 80px);
 }
 .banner-wrapper {
   width: 100%;
-  height: calc(100vh - 81px);
-  background-image: url(/static/img/skillup/main-banner-bg.png);
+  height: calc(100vh - 150px);
+  background-image: url(/static/img/skillup/main-banner-bg-mobile.png);
   background-position: center;
-  background-size: cover;
+  background-size: 70%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 45vw -5vh;
 }
 .banner-wrapper .banner-content {
   width: 80%;
   margin-left: 10%;
   color: white;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 .banner-wrapper .banner-content .banner-title {
   font-size: 2.5rem;
   font-weight: bold;
+  width: 100%;
+}
+.banner-wrapper .banner-content .banner-text {
+  width: 90%;
 }
 .floating-wrapper {
   background: #151515;
@@ -396,7 +443,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url('/static/img/skillup/icon-play-white.png');
+  background-image: url('/static/img/skillup/icon-play-white.svg');
   background-position: center;
   background-size: 25px;
   background-repeat: no-repeat;
@@ -570,11 +617,14 @@
   margin-left: auto;
 }
 @media only screen and (min-width: 1024px) {
+  .skillup-btn.btn-whatsapp {
+    background-position: calc(100% - 10px) center;
+  }
   .video-wrapper {
     padding: 25% 0 15% 0;
   }
   .skillup-logo {
-    margin-top: 8px;
+    margin-top: 2px;
     margin-left: 6px;
   }
   .w-md-100 {
@@ -590,10 +640,31 @@
     display: flex;
   }
   .banner-wrapper {
-    background-position: left center;
+    width: 100%;
+    height: calc(60vh - 81px);
+    background-image: url(/static/img/skillup/main-banner-bg.png);
+    background-position: 90% center;
+    background-size: 50%;
+  }
+  .banner-wrapper .banner-content {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 5vw;
   }
   .banner-wrapper .banner-content .banner-title {
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50%;
+  }
+  .banner-wrapper .banner-content .banner-text {
+    font-size: 15px;
+    width: 41%;
   }
   .skillup-card .mentor-wrapper .card-heading {
     height: 40px;
@@ -611,6 +682,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
   .dynamic-text {
-    font-size: 50px;
+    font-size: 30px;
+    height: 45px;
   }
 }

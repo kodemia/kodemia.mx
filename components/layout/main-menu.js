@@ -26,7 +26,7 @@ class MainMenu extends Component {
     this.state = {
       isOpen: null,
       isMoving: null,
-      atSkillup: false
+      skillupSection: null
     }
 
     this.btnRef = React.createRef()
@@ -59,16 +59,17 @@ class MainMenu extends Component {
     }
   }
 
-  setIfSkillup = atSkillup => {
-    atSkillup
-      ? this.setState({ atSkillup: true })
-      : this.setState({ atSkillup: false })
-  }
-
   componentDidMount() {
     this.followme
-    const atSkillup = window.location.href.match('skillup')
-    this.setIfSkillup(atSkillup)
+
+    const skillupSection = window.location.href.match('skillup')
+      ? window.location.href
+          .split('/')
+          .pop()
+          .split('?')[0]
+      : null
+
+    this.setState({ skillupSection })
     document.addEventListener('click', this.closeMenu)
     document.addEventListener('scroll', this.followme)
   }
@@ -86,6 +87,45 @@ class MainMenu extends Component {
       navClass = 'animate-nav-out'
     } else if (isOpen === true) {
       navClass = 'animate-nav-in'
+    }
+
+    let extraButtons
+
+    if (!this.state.skillupSection) {
+      extraButtons = (
+        <>
+          <Link href="/aplicar" prefetch>
+            <a className="btn btn--white-o btn--small x:fs-14 x:hide l:show">
+              Aplicar
+            </a>
+          </Link>
+          <Link href="/skillup" prefetch>
+            <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
+              SkillUp
+            </a>
+          </Link>
+        </>
+      )
+    } else if (this.state.skillupSection === 'skillup') {
+      extraButtons = (
+        <a
+          className="btn x:fs-14 x:hide l:show x:mrg-left-20 btn-nav-white"
+          onClick={() => this._scrollTopTop(500)}
+        >
+          SkillUp
+        </a>
+      )
+    } else if (
+      this.state.skillupSection === 'skillup-detail' ||
+      this.state.skillupSection === 'skillup-form'
+    ) {
+      extraButtons = (
+        <Link href="/skillup" prefetch>
+          <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
+            SkillUp
+          </a>
+        </Link>
+      )
     }
 
     return (
@@ -121,29 +161,7 @@ class MainMenu extends Component {
                 >
                   <span />
                 </a>
-                <div className="d-flex align-items-center">
-                  {this.state.atSkillup ? (
-                    <a
-                      className="btn x:fs-14 x:hide l:show x:mrg-left-20 btn-nav-white"
-                      onClick={() => this._scrollTopTop(500)}
-                    >
-                      SkillUp
-                    </a>
-                  ) : (
-                    <>
-                      <Link href="/aplicar" prefetch>
-                        <a className="btn btn--white-o btn--small x:fs-14 x:hide l:show">
-                          Aplicar
-                        </a>
-                      </Link>
-                      <Link href="/skillup" prefetch>
-                        <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
-                          SkillUp
-                        </a>
-                      </Link>
-                    </>
-                  )}
-                </div>
+                <div className="d-flex align-items-center">{extraButtons}</div>
               </div>
             </div>
           </div>

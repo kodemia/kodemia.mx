@@ -29,6 +29,7 @@ class Courses extends Component {
             </div>
           </div>
         </div>
+        {/*
         <section id="cursos">
           <div className="twins l:scol-12 scol--full x:top bg-white l:center">
             <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
@@ -45,6 +46,7 @@ class Courses extends Component {
             </div>
           </div>
         </section>
+                */}
         <section id="">
           <div className="line" regular="twins:1024">
             <div className="twins l:scol-12 scol--full x:top bg-black l:center">
@@ -52,11 +54,21 @@ class Courses extends Component {
                 <div className="line">
                   <div className="x:scol-12 x:mrg-bottom-20">
                     <h3 className="c-white">
-                      Black Kode<Cursor white>r</Cursor>
+                      Javascrip<Cursor white>t</Cursor>
                     </h3>
                   </div>
                   {BlackCourses.map((course, i) => (
                     <Course course={course} key={i} color="black" />
+                  ))}
+                </div>
+                <div className="line">
+                  <div className="x:scol-12 x:mrg-bottom-20">
+                    <h3 className="c-white">
+                      Pytho<Cursor white>n</Cursor>
+                    </h3>
+                  </div>
+                  {WhiteCourses.map((course, i) => (
+                    <Course course={course} key={i} color="white" />
                   ))}
                 </div>
               </div>

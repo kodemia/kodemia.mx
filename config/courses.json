@@ -1,12 +1,25 @@
 {
     "black": [
         {
-          "name":  "Entrenamiento avanzado (Full Stack Sr)",
+          "name":  "Bootcamp Full Stack Developer (Presencial)",
           "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
-          "desc": "Incrementa tu conocimiento y defínete como un programador Sr.",
+          "desc": "Inicia en el mundo de la programación como FullStack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
-              "day": "Por",
-              "month": "definir",
+              "day": "5",
+              "month": "Oct",
+              "year": "2020",
+              "hour": "19:00 a 22:00"
+          },
+          "pastEvent": false,
+          "comingSoon": true
+        },
+        {
+          "name":  "Bootcamp Full Stack Developer (Live)",
+          "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+          "desc": "Inicia en el mundo de la programación como FullStack con MERN stack (Mongo, Express, React y Node)",
+          "schedule": {
+              "day": "5",
+              "month": "Oct",
               "year": "2020",
               "hour": "19:00 a 22:00"
           },
@@ -16,12 +29,12 @@
     ],
     "white": [
         {
-          "name": "Bootcamp MERN (Full Stack Jr)",
+          "name": "Bootcamp Full Stack Developer (Presencial)",
           "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
-          "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MERN (Mongo, Express, React y Node)",
+          "desc": "Inicia en el mundo de la programación como FullStack con Javascript y Python",
           "schedule": {
-              "day": "13",
-              "month": "Jul",
+              "day": "5",
+              "month": "Oct",
               "year": "2020",
               "hour": "19:00 a 22:00"
           },
@@ -29,12 +42,12 @@
           "comingSoon": true
         },
         {
-          "name": "Bootcamp MERN Live (Full Stack Jr)",
-          "link": "cursos/bootcamp-white-koder-live-aka-full-stack-jr",
-          "desc": "Iniciate en el mundo de la programación como Full Stack Jr. con el stack MERN (Mongo, Express, React y Node)",
+          "name":  "Bootcamp Full Stack Developer (Live)",
+          "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+          "desc": "Inicia en el mundo de la programación como FullStack con Javascript y Python",
           "schedule": {
-              "day": "13",
-              "month": "Jul",
+              "day": "5",
+              "month": "Oct",
               "year": "2020",
               "hour": "19:00 a 22:00"
           },

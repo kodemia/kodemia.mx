@@ -21,24 +21,26 @@ const About = () => (
         <div className="line">
           <div className="x:scol-12">
             <p className="s:fs-18">
-              Transformamos la vida de cualquier persona con experiencias
-              extremas en tecnologías de desarrollo web y móvil, activando
-              nuevas capacidades para aventurar su talento en nuevos o mejores
-              empleos y emprendimiento de innovación.
+              Transformamos la vida de las personas con experiencias extremas en
+              desarrollo web. Nos sumamos a tu objetivo y te acompañamos en el
+              proceso para desarrollar tu talento en programación a través de
+              nuestros programas intensivos. Desarrollamos tus habilidades
+              personales y profesionales para emprender o alcanzar mejores
+              empleos.
             </p>
           </div>
           <div className="x:scol-12">
-            <p className="s:fs-18">Academia de desarrollo de talento.</p>
+            {/*<p className="s:fs-18">Academia de desarrollo de talento.</p>*/}
             <div className="list-numeric s:fs-18">
               <ul>
-                <li number="1.">Programación web y móvil.</li>
-                <li number="2.">Formación en diseño UI/UX.</li>
+                <li number="1.">Bootcamp desarrollo web con Javascript</li>
+                <li number="2.">Bootcamp desarrollo web con Python</li>
               </ul>
             </div>
-            <p className="s:fs-18">
+            {/*<p className="s:fs-18">
               Formamos desarrolladores mediante programas intensivos y
               experiencias completamente personalizadas.
-            </p>
+</p>*/}
           </div>
         </div>
       </div>

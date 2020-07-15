@@ -46,7 +46,7 @@ const Contact = () => (
             </a>
           </p>
           <p className="x:fs-18 s:fs-20">
-            Calle tonala 10, Roma norte 06700 Ciudad de México, CDMX
+            Tonalá 10, Roma norte, 06700, Ciudad de México, CDMX
           </p>
         </div>
       </div>

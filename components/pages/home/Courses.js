@@ -27,14 +27,14 @@ class Courses extends Component {
             <div className="twins l:scol-12 scol--full x:top bg-black l:center">
               <div className="scontainer scontainer--half x:left x:pad-bt-20 s:pad-bt-40">
                 <div className="line">
-                  <div className="x:scol-12 x:mrg-bottom-50">
+                  <div className="x:scol-12 x:mrg-bottom-20 m:mrg-bottom-50">
                     <h2 className="c-white">
                       Bootcamp<Cursor white>s</Cursor>
                     </h2>
                   </div>
                 </div>
                 <div className="line">
-                  <div className="x:scol-12 x:mrg-bottom-40 x:mrg-top-40">
+                  <div className="x:scol-12 x:mrg-bottom-20 x:mrg-top-10 x:mrg-left-20 m:mrg-bottom-40 m:mrg-top-30">
                     <h3 className="c-white">
                       Javascrip<Cursor white>t</Cursor>
                     </h3>
@@ -44,7 +44,7 @@ class Courses extends Component {
                   ))}
                 </div>
                 <div className="line">
-                  <div className="x:scol-12 x:mrg-bottom-40 x:mrg-top-40">
+                  <div className="x:scol-12 x:mrg-bottom-20 x:mrg-top-20 x:mrg-left-20 m:mrg-bottom-40 m:mrg-top-40">
                     <h3 className="c-white">
                       Pytho<Cursor white>n</Cursor>
                     </h3>

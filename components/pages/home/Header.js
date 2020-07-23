@@ -79,14 +79,14 @@ class HeaderHome extends Component {
                 <div className="line">
                   <div className="x:scol-12 x:center">
                     <div className="content">
-                      <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white">
+                      <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white x:scol-12 m:scol-9">
                         Transforma tu vida programand
                         <Cursor white>o</Cursor>
                       </h1>
-                      <p className="desc s:fs-18 l:fs-20 x:mrg-top-20 c-grey-400">
+                      <p className="desc s:fs-18 l:fs-20 x:mrg-top-30 c-white-500">
                         Aprende a programar desde cero hasta Fullstack
                       </p>
-                      <div className="x:mrg-top-20">
+                      <div className="x:mrg-top-30">
                         <Link href="#cursos">
                           <Button>Conoce los Programas</Button>
                         </Link>

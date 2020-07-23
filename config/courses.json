@@ -1,5 +1,5 @@
 {
-    "black": [
+    "javascript": [
         {
           "name":  "Bootcamp Full Stack Developer (Presencial)",
           "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
@@ -27,7 +27,7 @@
           "comingSoon": true
         }
     ],
-    "white": [
+    "python": [
         {
           "name": "Bootcamp Full Stack Developer (Presencial)",
           "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",

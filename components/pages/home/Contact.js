@@ -44,6 +44,14 @@ const Contact = () => (
             <a className="txt-underline" href="tel:01800 212 0022">
               01800 212 0022
             </a>
+            <br />
+          </p>
+          <p className="x:fs-18 s:fs-20">
+            WhatsApp:
+            <br />
+            <a href="https://wa.me/525573255094" className="txt-underline">
+              +52 55 7325 5094
+            </a>
           </p>
           <p className="x:fs-18 s:fs-20">
             Tonalá 10, Roma norte, 06700, Ciudad de México, CDMX

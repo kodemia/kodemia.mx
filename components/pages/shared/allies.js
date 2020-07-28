@@ -6,11 +6,11 @@ import Cursor from '../../cursor'
 import AlliesList from '../../../config/allies.json'
 
 const Allies = () => (
-  <section className="x:pad-bt-20 bg-grey-50 s:pad-bt-40">
+  <section className="x:pad-bt-20 bg-black s:pad-bt-40">
     <div className="scontainer">
       <div className="line">
         <div className="x:scol-12 x:mrg-bottom-20">
-          <h2>
+          <h2 className="c-white">
             Algunos aliados de Kodemi<Cursor>a</Cursor>
           </h2>
         </div>
@@ -23,7 +23,7 @@ const Allies = () => (
               className="x:scol-6 s:scol-4 l:scol-3 x:center s:pad-lr-20 m:pad-lr-30"
             >
               <img
-                className="img-liquid"
+                className="img-liquid grayscale"
                 src={asset(ally.asset)}
                 alt={ally.name}
               />

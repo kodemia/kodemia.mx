@@ -83,7 +83,7 @@ class HeaderHome extends Component {
                         Transforma tu vida programand
                         <Cursor white>o</Cursor>
                       </h1>
-                      <p className="desc s:fs-18 l:fs-20 x:mrg-top-30 c-white-500">
+                      <p className="desc s:fs-18 l:fs-20 x:mrg-top-30 c-white">
                         Aprende a programar desde cero hasta Fullstack
                       </p>
                       <div className="x:mrg-top-30">

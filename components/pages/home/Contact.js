@@ -18,13 +18,8 @@ const Contact = () => (
         </div>
         <div className="x:scol-12 x:center">
           <img
-            className="img-liquid img-logo"
+            className="img-liquid img-logo grayscale"
             src={asset('/img/logos/isotipo-negro.png')}
-            alt="Kodemia"
-          />
-          <img
-            className="img-liquid img-logo x:mrg-negative-left-15"
-            src={asset('/img/logos/isotipo-blanco.png')}
             alt="Kodemia"
           />
         </div>

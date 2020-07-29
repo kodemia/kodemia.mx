@@ -12,12 +12,6 @@
     "classes": null
   },
   {
-    "name": "Galería",
-    "href": "/galeria",
-    "anchor": false,
-    "classes": null
-  },
-  {
     "name": "Contacto",
     "href": "/#contacto",
     "anchor": true,

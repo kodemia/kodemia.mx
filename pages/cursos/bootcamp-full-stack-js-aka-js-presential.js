@@ -11,12 +11,13 @@ import Regular from '../../static/js/shido-regular'
 import Cursor from '../../components/cursor'
 import Browser from '../../components/browser'
 import HeaderCourse from '../../components/pages/cursos/HeaderCourse'
-import Description from '../../components/pages/cursos/white-koder/description.md'
-import Testimonial from '../../components/pages/cursos/white-koder/testimonial.md'
-import Syllabus from '../../components/pages/cursos/white-koder/syllabus.md'
-import Location from '../../components/pages/cursos/white-koder/location.md'
-import Pricing from '../../components/pages/cursos/white-koder/pricing.md'
-import Benefits from '../../components/pages/cursos/white-koder/benefits.md'
+import Content from '../../components/pages/cursos/js-presential/content.md'
+import Description from '../../components/pages/cursos/js-presential/description.md'
+import Testimonial from '../../components/pages/cursos/js-presential/testimonial.md'
+import Syllabus from '../../components/pages/cursos/js-presential/syllabus.md'
+import Location from '../../components/pages/cursos/js-presential/location.md'
+import Pricing from '../../components/pages/cursos/js-presential/pricing.md'
+import Benefits from '../../components/pages/cursos/js-presential/benefits.md'
 
 class BootcampWhiteKoderPage extends Component {
   componentDidMount() {
@@ -27,11 +28,11 @@ class BootcampWhiteKoderPage extends Component {
     return (
       <Layout title="Bootcamp White Koder (Full Stack Jr) :: Kodemia">
         <HeaderCourse white>
-          <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-black">
-            Bootcamp White Koder
+          <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-black fw-semi-bold">
+            Bootcamp Full Stack Javascript (Presencial)
           </h1>
           <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-pink">
-            Iniciate en el mundo de la programación como Full Stack Jr.
+            Iniciate en el mundo de la programación como Full Stack
           </p>
           <div className="s:mrg-top-40">
             <a
@@ -41,7 +42,7 @@ class BootcampWhiteKoderPage extends Component {
               className="btn btn--white s:mrg-right-10"
               target="_blank"
             >
-              Descarga el temarío
+              Descarga el temario
             </a>
             <Link href="/aplicar?course=white-koder">
               <a className="btn btn--black">¡Aplica ahora!</a>
@@ -52,7 +53,27 @@ class BootcampWhiteKoderPage extends Component {
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                ¿A quién va dirigido<Cursor white>?</Cursor>
+                Fecha y Horari<Cursor black>o</Cursor>
+              </h2>
+            </div>
+            <Location />
+          </div>
+        </section>
+        <section className="x:pad-bt-20 s:pad-bt-40 bg-grey-50 c-black">
+          <div className="scontainer">
+            <div className="x: mrg-bottom-20">
+              <h2>
+                ¿A qué accedes con el Bootcamp<Cursor black>?</Cursor>
+              </h2>
+            </div>
+            <Content />
+          </div>
+        </section>
+        <section className="x:pad-bt-20 s:pad-bt-40 bg-grey-50 c-black">
+          <div className="scontainer">
+            <div className="x:mrg-bottom-20">
+              <h2 className="c-black">
+                Objetivo<Cursor black>s</Cursor>
               </h2>
             </div>
             <div className="line" regular="twins:1024">
@@ -79,34 +100,16 @@ class BootcampWhiteKoderPage extends Component {
                 </Browser>
               </div>
             </div>
-            <div className="line">
-              <div className="x:scol-12">
-                <hr className="hr--green" />
-              </div>
-              <div className="x:scol-12 x:fs-14 s:fs-16 ff-heading">
-                <Testimonial />
-              </div>
-            </div>
           </div>
         </section>
         <section className="x:pad-bt-20 s:pad-bt-40 bg-white bg-pattern-right c-black">
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                Estructura del Bootcam<Cursor white>p</Cursor>
+                Estructura del Bootcam<Cursor black>p</Cursor>
               </h2>
             </div>
             <Syllabus />
-          </div>
-        </section>
-        <section className="x:pad-bt-20 s:pad-bt-40 bg-grey-50 c-black">
-          <div className="scontainer">
-            <div className="x:mrg-bottom-20">
-              <h2 className="c-black">
-                Fecha y Horari<Cursor white>o</Cursor>
-              </h2>
-            </div>
-            <Location />
           </div>
         </section>
         <section className="x:pad-bt-20 s:pad-bt-40 bg-white bg-pattern-bottom-left">
@@ -129,7 +132,7 @@ class BootcampWhiteKoderPage extends Component {
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                Precios y Financiamient<Cursor white>o</Cursor>
+                Precios y Financiamient<Cursor black>o</Cursor>
               </h2>
             </div>
             <Pricing />
@@ -137,9 +140,14 @@ class BootcampWhiteKoderPage extends Component {
         </section>
         <section className="x:pad-bt-20 s:pad-bt-40 bg-white c-black">
           <div className="scontainer">
+            <div className="line">
+              <div className="x:scol-12 x:fs-14 x:mrg-bottom-35 s:fs-16 l:mrg-bottom-55 ff-heading">
+                <Testimonial />
+              </div>
+            </div>
             <div className="x:mrg-bottom-20">
               <h2 className="c-black">
-                Beneficio<Cursor>s</Cursor>
+                Beneficio<Cursor black>s</Cursor>
               </h2>
             </div>
             <Benefits />

@@ -2,36 +2,42 @@ __Módulo 0 - Introducción a la programación__
 - Pensamiento estructurado
 - Pensamiento lógico
 - Algoritmos
+- Pensamiento paralelo
 - Pseudocódigo
 - Diagramas de flujo
 
 __Módulo 1 - Desarrollador Web Front-End__
-- Instalación del entorno de desarrollo
-  - Uso de la consola
-  - Instalación de Node JS
-  - Instalación de MongoDB
-  - Instalación de Git
-- Composición de páginas web con HTML5 y CSS3
-- Uso de librerías de CSS y manejo de Bootstrap 4
-- Introducción a la programación con JavaScript
-- Uso de librerías JavaScript como jQuery
-- Introducción a Git y Github
+- Git y Github
+- HTML5
+- CSS3
+- SASS 
+- Bootstrap4
+- Responsividad / Media Queries
+- Maquetado
+- JavaScript (ES5 & ES6)
+  - Estructuras de datos
+  - Ciclos
+  - Estructuras de control
+  - Funciones
+- JQuery
+- AJAX
+- DOM
 
 __Módulo 2 - Desarrollador Back-End__
 - Linux y sistemas *NIX
 - Protocolos
-- Modelo Cliente servidor
+- Modelo Cliente-Servidor
 - Hypermedia
 - NodeJS y npm
-- Node JS y programación asíncrona con JavaScript
+- NodeJS y programación asíncrona con JavaScript
 - Aplicaciones web usando ExpressJS
 - Introducción a las bases de datos
 - Bases de datos no relacionales con MongoDB
 - Mongo y mongoose
-- Diseño de APIs con Node JS y Express
+- Diseño de API's con NodeJS y Express
 - Clean architecture
 - JWT
-- Publica tus aplicaciones a internet siguiendo buenas prácticas
+- Publica tus aplicaciones en Internet siguiendo buenas prácticas
 - Cloud (IBM & AWS)
 - Despliegues
 - Serverless technologies
@@ -39,7 +45,7 @@ __Módulo 2 - Desarrollador Back-End__
 
 __Módulo 3 - MERN Stack y microservicios__
 - Diseño de aplicaciones MVC
-- Programación asíncrona cliente-servidor
+- Programación asíncrona Cliente-Servidor
 - Introducción a ReactJS
 - Creación de componentes web
 - Aplicaciones MVC utilizando React y datos desde API’s

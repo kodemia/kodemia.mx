@@ -40,7 +40,7 @@ class Courses extends Component {
                     </h3>
                   </div>
                   {JavascriptCourses.map((course, i) => (
-                    <Course course={course} key={i} color="black" />
+                    <Course course={course} key={i} color="white" />
                   ))}
                 </div>
                 <div className="line">

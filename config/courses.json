@@ -2,7 +2,7 @@
     "javascript": [
         {
           "name":  "Bootcamp Full Stack Developer (Presencial)",
-          "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+          "link": "cursos/bootcamp-full-stack-js-aka-js-presential",
           "desc": "Inicia en el mundo de la programación como FullStack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
               "day": "5",
@@ -15,7 +15,7 @@
         },
         {
           "name":  "Bootcamp Full Stack Developer (Live)",
-          "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+          "link": "cursos/bootcamp-full-stack-js-aka-js-live",
           "desc": "Inicia en el mundo de la programación como FullStack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
               "day": "5",
@@ -30,7 +30,7 @@
     "python": [
         {
           "name": "Bootcamp Full Stack Developer (Presencial)",
-          "link": "cursos/bootcamp-white-koder-aka-full-stack-jr",
+          "link": "cursos/bootcamp-full-stack-py-aka-py-presential",
           "desc": "Inicia en el mundo de la programación como FullStack con Javascript y Python",
           "schedule": {
               "day": "5",
@@ -43,7 +43,7 @@
         },
         {
           "name":  "Bootcamp Full Stack Developer (Live)",
-          "link": "cursos/bootcamp-black-koder-aka-full-stack-sr",
+          "link": "cursos/bootcamp-full-stack-py-aka-py-live",
           "desc": "Inicia en el mundo de la programación como FullStack con Javascript y Python",
           "schedule": {
               "day": "5",

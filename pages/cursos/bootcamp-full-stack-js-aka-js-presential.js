@@ -37,8 +37,14 @@ class BootcampWhiteKoderPage extends Component {
           <div className="s:mrg-top-40">
             <a
               href={asset('docs/courses/bootcamps/JS_PRESENTIAL-DESKTOP.pdf')}
-              className="btn btn--white s:mrg-right-10"
-              media="only screen and(min-width: 599px)"
+              className="btn btn--white s:mrg-right-10 is-desktop"
+              target="_blank"
+            >
+              Descarga el temario
+            </a>
+            <a
+              href={asset('docs/courses/bootcamps/JS_PRESENTIAL-MOBILE.pdf')}
+              className="btn btn--white s:mrg-right-10 is-mobile"
               target="_blank"
             >
               Descarga el temario

@@ -39,7 +39,16 @@ class BootcampWhiteKoderPage extends Component {
               href={asset(
                 'docs/courses/bootcamps/PYTHON_PRESENTIAL-DESKTOP.pdf'
               )}
-              className="btn btn--white s:mrg-right-10"
+              className="btn btn--white s:mrg-right-10 is-desktop"
+              target="_blank"
+            >
+              Descarga el temario
+            </a>
+            <a
+              href={asset(
+                'docs/courses/bootcamps/PYTHON_PRESENTIAL-MOBILE.pdf'
+              )}
+              className="btn btn--white s:mrg-right-10 is-mobile"
               target="_blank"
             >
               Descarga el temario

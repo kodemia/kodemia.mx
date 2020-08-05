@@ -92,16 +92,10 @@ class BootcampWhiteKoderPage extends Component {
               <div className="l:scol-6 x:top twins">
                 <Browser white>
                   <pre>
-                    <span>const express = require('express')</span>
+                    <span>from django.http import HttpResponse</span>
                     <span>&nbsp;</span>
-                    <span>const app = express()</span>
-                    <span>
-                      app.get('/', (req, res) => res.send('Hello World!'))
-                    </span>
-                    <span>
-                      app.listen(3000, () => console.log('Listening on port
-                      3000!'))
-                    </span>
+                    <span>def index(request):</span>
+                    <span>&nbsp; return HttpResponse("Hello, world.")</span>
                     <span>&nbsp;</span>
                     <span>&nbsp;</span>
                     <span>&nbsp;</span>

@@ -87,7 +87,7 @@ class HeaderHome extends Component {
                         Aprende a programar desde cero hasta Fullstack
                       </p>
                       <div className="x:mrg-top-30">
-                        <Link href="#cursos">
+                        <Link href="#bootcamps">
                           <Button>Conoce los Programas</Button>
                         </Link>
                       </div>

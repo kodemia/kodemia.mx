@@ -56,18 +56,16 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               <div className="input-field mrg-x-top-5">
                 <Field component="select" name="course">
                   <option value="">Selecciona una opción</option>
-                  <option value="white-koder">
-                    White Koder (Full Stack Jr)
+                  <option value="javascript-presential">
+                    Full Stack Javascript (Presencial)
                   </option>
-                  <option value="black-koder">
-                    Black Koder (Full Stack Sr)
+                  <option value="javascript-live">
+                    Full Stack Javascript (Live)
                   </option>
-                  <option value="kodemia-kids">
-                    Kodemia kids ( Robotica para niños )
+                  <option value="python-presential">
+                    Full Stack Python (Presencial)
                   </option>
-                  <option value="front-end">
-                    Entrenamiento Profesional Front End
-                  </option>
+                  <option value="python-live">Full Stack Python (Live)</option>
                 </Field>
                 {touched.course && errors.course && (
                   <p className="form-error">{errors.course}</p>

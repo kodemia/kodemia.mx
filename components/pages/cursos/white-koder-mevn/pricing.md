@@ -2,7 +2,7 @@ __Precio__
 Mensualidades desde $4,208 MXN
 
 __Financiamiento__
-Otorgamos financiamiento a 6, 9 y 12 meses sin intereses.
+Obtén financiamiento a 12, 18, 24 y 36 meses. Con pagos desde $2,926 MXN
 
 Si tus causas y deseo de prepararte superan tu capacidad de pago, no te preocupes ni descartes la oportunidad,encontremos la solución juntos. Ponte en contacto con nosotros, nos interesa mucho escucharte.
 

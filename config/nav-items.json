@@ -1,19 +1,13 @@
 [
   {
     "name": "Programas",
-    "href": "/#cursos",
+    "href": "/#bootcamps",
     "anchor": true,
     "classes": null
   },
   {
     "name": "Mentores",
     "href": "/mentores",
-    "anchor": false,
-    "classes": null
-  },
-  {
-    "name": "Galería",
-    "href": "/galeria",
     "anchor": false,
     "classes": null
   },

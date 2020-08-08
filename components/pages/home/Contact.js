@@ -18,13 +18,8 @@ const Contact = () => (
         </div>
         <div className="x:scol-12 x:center">
           <img
-            className="img-liquid img-logo"
+            className="img-liquid img-logo grayscale"
             src={asset('/img/logos/isotipo-negro.png')}
-            alt="Kodemia"
-          />
-          <img
-            className="img-liquid img-logo x:mrg-negative-left-15"
-            src={asset('/img/logos/isotipo-blanco.png')}
             alt="Kodemia"
           />
         </div>
@@ -44,9 +39,17 @@ const Contact = () => (
             <a className="txt-underline" href="tel:01800 212 0022">
               01800 212 0022
             </a>
+            <br />
           </p>
           <p className="x:fs-18 s:fs-20">
-            Calle tonala 10, Roma norte 06700 Ciudad de México, CDMX
+            WhatsApp:
+            <br />
+            <a href="https://wa.me/525573255094" className="txt-underline">
+              +52 55 7325 5094
+            </a>
+          </p>
+          <p className="x:fs-18 s:fs-20">
+            Tonalá 10, Roma norte, 06700, Ciudad de México, CDMX
           </p>
         </div>
       </div>

@@ -64,6 +64,10 @@
   color: @c-pink;
 }
 
+.grayscale {
+  filter: grayscale(100%);
+}
+
 blockquote {
   margin: 0px;
 }
@@ -97,3 +101,14 @@ hr {
 /*[class*='scol-'] {
   outline: dashed 2px pink;
 }*/
+
+.is-desktop {
+  @media only screen and (max-width: 599px) {
+    display: none;
+  }
+}
+.is-mobile {
+  @media only screen and (min-width: 600px) { 
+    display: none;
+  }
+}

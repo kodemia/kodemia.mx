@@ -1,62 +1,62 @@
 [
   {
-    "name": "Agile Academy",
-    "asset": "img/allies/agile-academy.png"
-  },
-  {
-    "name": "Wave Community",
-    "asset": "img/allies/wave.png"
-  },
-  {
-    "name": "Consejo de la Comunicacion",
-    "asset": "img/allies/consejo-de-la-comunicacion.png"
-  },
-  {
-    "name": "Telmex Hub",
-    "asset": "img/allies/telmex-hub.png"
-  },
-  {
-    "name": "Soy Mexicano",
-    "asset": "img/allies/soy-mexicano.png"
-  },
-  {
-    "name": "Google",
-    "asset": "img/allies/google.png"
-  },
-  {
-    "name": "Microsoft",
-    "asset": "img/allies/microsoft.png"
-  },
-  {
-    "name": "Github Experts",
-    "asset": "img/allies/github-experts.png"
-  },
-  {
-    "name": "Econduce",
-    "asset": "img/allies/econduce.png"
-  },
-  {
-    "name": "dinkbit",
-    "asset": "img/allies/dinkbit.png"
-  },
-  {
-    "name": "COW",
-    "asset": "img/allies/cow.png"
-  },
-  {
-    "name": "IBM",
-    "asset":"img/allies/ibm.png"
-  }, 
-  {
-    "name": "Ingram",
-    "asset":"img/allies/ingram.png"
-  },
-  {
     "name": "Grin",
     "asset":"img/allies/grin.png"
   },
   {
     "name": "Iterando",
     "asset":"img/allies/iterando.png"
+  },
+  {
+    "name": "Refly",
+    "asset": "img/allies/refly.png"
+  },
+  {
+    "name": "Dinkbit",
+    "asset": "img/allies/dinkbit.png"
+  },
+  {
+    "name": "Bluepixel",
+    "asset": "img/allies/bluepixel-white.png"
+  },
+  {
+    "name": "IBM",
+    "asset":"img/allies/ibm.png"
+  },
+  {
+    "name": "Edrive",
+    "asset": "img/allies/edrive.png"
+  },
+  {
+    "name": "Wave Community",
+    "asset": "img/allies/wave-white.png"
+  },
+  {
+  "name": "Github Experts",
+  "asset": "img/allies/github-experts.png"
+  },
+  {
+    "name": "Econduce",
+    "asset": "img/allies/econduce.png"
+  },
+  {
+    "name": "COW",
+    "asset": "img/allies/cow-white.png"
+  }, 
+  {
+    "name": "Asociación de Internet",
+    "asset": "img/allies/asociacion-internet-white.png"
+  },
+  {
+    "name": "Casa Bravo",
+    "asset": "img/allies/casa-bravo.png"
+  },
+  {
+    "name": "Talent Network",
+    "asset":"img/allies/talent-network.png"
+  },
+  {
+  "name": "Toroto",
+  "asset": "img/allies/toroto.png"
   }
 ]

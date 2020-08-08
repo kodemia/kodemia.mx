@@ -130,7 +130,7 @@ class BootcampBlackKoderPage extends Component {
           <div className="scontainer">
             <div className="x:mrg-bottom-20">
               <h2 className="c-white">
-                Precios y Financiamient<Cursor white>o</Cursor>
+                Financiamient<Cursor white>o</Cursor>
               </h2>
             </div>
             <Pricing />

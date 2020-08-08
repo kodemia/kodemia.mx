@@ -60,7 +60,8 @@ exports.handler = async (event, context, callback) => {
     email: 'required|email',
     fullname: 'required',
     phone: 'required|digitsBetween:10,13',
-    course: 'required|in:white-koder,black-koder,kodemia-kids,front-end'
+    course:
+      'required|in:javascript-presential,javascript-live,python-presential,python-live'
   })
 
   const isValid = await validate.check()

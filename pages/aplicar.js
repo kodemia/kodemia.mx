@@ -15,7 +15,7 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
   <Layout title="Kodemia :: La primera academia real para programadores">
     <HeaderCourse>
       <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white">
-        Aplica al siguiente curso de Kodemia
+        Aplica al siguiente bootcamp de Kodemia
       </h1>
       <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-grey-400">
         Transforma tu carrera, incrementa tu conocimiento y convive con los
@@ -67,14 +67,14 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
               <div className="input-field mrg-x-top-5">
                 <Field component="select" name="course">
                   <option value="">Selecciona una opción</option>
-                  <option value="javascript-presential">
-                    Full Stack Javascript (Presencial)
+                  <option value="javascript-lifetime">
+                    Full Stack Javascript (Lifetime)
                   </option>
                   <option value="javascript-live">
                     Full Stack Javascript (Live)
                   </option>
-                  <option value="python-presential">
-                    Full Stack Python (Presencial)
+                  <option value="python-lifetime">
+                    Full Stack Python (Lifetime)
                   </option>
                   <option value="python-live">Full Stack Python (Live)</option>
                 </Field>

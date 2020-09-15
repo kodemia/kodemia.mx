@@ -11,13 +11,13 @@ import Regular from '../../static/js/shido-regular'
 import Cursor from '../../components/cursor'
 import Browser from '../../components/browser'
 import HeaderCourse from '../../components/pages/cursos/HeaderCourse'
-import Content from '../../components/pages/cursos/js-presential/content.md'
-import Description from '../../components/pages/cursos/js-presential/description.md'
-import Testimonial from '../../components/pages/cursos/js-presential/testimonial.md'
-import Syllabus from '../../components/pages/cursos/js-presential/syllabus.md'
-import Location from '../../components/pages/cursos/js-presential/location.md'
-import Pricing from '../../components/pages/cursos/js-presential/pricing.md'
-import Benefits from '../../components/pages/cursos/js-presential/benefits.md'
+import Content from '../../components/pages/cursos/js-lifetime/content.md'
+import Description from '../../components/pages/cursos/js-lifetime/description.md'
+import Testimonial from '../../components/pages/cursos/js-lifetime/testimonial.md'
+import Syllabus from '../../components/pages/cursos/js-lifetime/syllabus.md'
+import Location from '../../components/pages/cursos/js-lifetime/location.md'
+import Pricing from '../../components/pages/cursos/js-lifetime/pricing.md'
+import Benefits from '../../components/pages/cursos/js-lifetime/benefits.md'
 
 class BootcampWhiteKoderPage extends Component {
   componentDidMount() {
@@ -29,7 +29,7 @@ class BootcampWhiteKoderPage extends Component {
       <Layout title="Bootcamp White Koder (Full Stack Jr) :: Kodemia">
         <HeaderCourse white>
           <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-black fw-semi-bold">
-            Bootcamp Full Stack Javascript (Presencial)
+            Bootcamp Full Stack Javascript (Lifetime)
           </h1>
           <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-pink">
             Iniciate en el mundo de la programación como Full Stack

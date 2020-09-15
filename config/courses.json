@@ -1,8 +1,8 @@
 {
     "javascript": [
         {
-          "name":  "Bootcamp Full Stack Developer (Presencial)",
-          "link": "cursos/bootcamp-full-stack-js-aka-js-presential",
+          "name":  "Bootcamp Full Stack Developer (Lifetime)",
+          "link": "cursos/bootcamp-full-stack-js-aka-js-lifetime",
           "desc": "Inicia en el mundo de la programación como FullStack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
               "day": "19",
@@ -29,8 +29,8 @@
     ],
     "python": [
         {
-          "name": "Bootcamp Full Stack Developer (Presencial)",
-          "link": "cursos/bootcamp-full-stack-py-aka-py-presential",
+          "name": "Bootcamp Full Stack Developer (Lifetime)",
+          "link": "cursos/bootcamp-full-stack-py-aka-py-lifetime",
           "desc": "Inicia en el mundo de la programación como FullStack con Javascript y Python",
           "schedule": {
               "day": "19",

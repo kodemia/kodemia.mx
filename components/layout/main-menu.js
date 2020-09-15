@@ -7,26 +7,12 @@ import Logo from '../icons/logo-full'
 import NavItems from './nav-items'
 
 class MainMenu extends Component {
-  _scrollTopTop() {
-    let viewportSize = window.innerWidth
-    let elementOffset = document.getElementById('skills-title').offsetTop
-    let scrollPoint =
-      viewportSize < 1024
-        ? elementOffset + window.innerHeight - 90
-        : elementOffset + window.innerHeight * 0.6 - 110
-    window.scroll({
-      left: 0,
-      top: scrollPoint,
-      behavior: 'smooth'
-    })
-  } //todo: make this a dynamic function
   constructor(props) {
     super(props)
 
     this.state = {
       isOpen: null,
-      isMoving: null,
-      atSkillup: false
+      isMoving: null
     }
 
     this.btnRef = React.createRef()
@@ -47,35 +33,12 @@ class MainMenu extends Component {
     }
   }
 
-  followme = () => {
-    const $banner = this.bannerRef.current
-    const windowScrollTop = window.scrollY
-    const bannerHeight = $banner.offsetHeight
-
-    this.setState({ isMoving: false })
-
-    if (windowScrollTop >= bannerHeight) {
-      this.setState({ isMoving: true })
-    }
-  }
-
-  setIfSkillup = atSkillup => {
-    atSkillup
-      ? this.setState({ atSkillup: true })
-      : this.setState({ atSkillup: false })
-  }
-
   componentDidMount() {
-    this.followme
-    const atSkillup = window.location.href.match('skillup')
-    this.setIfSkillup(atSkillup)
     document.addEventListener('click', this.closeMenu)
-    document.addEventListener('scroll', this.followme)
   }
 
   componentWillUnmount() {
     document.removeEventListener('click', this.closeMenu)
-    document.addEventListener('scroll', this.followme)
   }
 
   render() {
@@ -121,29 +84,11 @@ class MainMenu extends Component {
                 >
                   <span />
                 </a>
-                <div className="d-flex align-items-center">
-                  {this.state.atSkillup ? (
-                    <a
-                      className="btn x:fs-14 x:hide l:show x:mrg-left-20 btn-nav-white"
-                      onClick={() => this._scrollTopTop(500)}
-                    >
-                      SkillUp
-                    </a>
-                  ) : (
-                    <>
-                      <Link href="/aplicar" prefetch>
-                        <a className="btn btn--white-o btn--small x:fs-14 x:hide l:show">
-                          Aplicar
-                        </a>
-                      </Link>
-                      <Link href="/skillup" prefetch>
-                        <a className="btn x:fs-14 txt-uppercase x:hide l:show x:mrg-left-20 btn-nav-white">
-                          SkillUp
-                        </a>
-                      </Link>
-                    </>
-                  )}
-                </div>
+                <Link href="/aplicar" prefetch>
+                  <a className="btn btn--white-o btn--small x:fs-14 x:hide l:show">
+                    Aplicar
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

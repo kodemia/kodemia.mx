@@ -7,7 +7,7 @@ Obtén financiamiento a 12, 18 y 24 meses. Con pagos desde $2,926 MXN
 Si tus causas y deseo de prepararte superan tu capacidad de pago, no te preocupes ni descartes la oportunidad, encontremos la solución juntos. Ponte en contacto con nosotros, nos interesa mucho escucharte.
 
 __Inversión__
-Bootcamp Full Stack Developer Presencial: $69,500 MXN (incluye IVA) + inscripción de $5,950
+Bootcamp Full Stack Developer Live: $69,500 MXN (incluye IVA) + inscripción de $5,950
 
 - Tarjeta de crédito
 - PayPal

@@ -2,12 +2,14 @@
 import Router from 'next/router'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import axios from 'axios'
 
 // Ours
 import Layout from '../components/layout'
 import Button from '../components/button-submit'
 import HeaderCourse from '../components/pages/cursos/HeaderCourse'
+
+//api
+import { submitApplyFrom } from '../lib/api'
 
 const ApplicantPage = ({ errors, touched, isSubmitting }) => (
   <Layout title="Kodemia :: La primera academia real para programadores">
@@ -25,11 +27,20 @@ const ApplicantPage = ({ errors, touched, isSubmitting }) => (
         <div className="line simple-form">
           <Form>
             <div className="x:scol-12">
-              <label className="x:fs-14">Nombre Completo</label>
+              <label className="x:fs-14">Nombre(s)</label>
               <div className="input-field mrg-x-top-5">
-                <Field className="input" type="text" name="fullname" />
-                {touched.fullname && errors.fullname && (
-                  <p className="form-error">{errors.fullname}</p>
+                <Field className="input" type="text" name="firstName" />
+                {touched.firstName && errors.firstName && (
+                  <p className="form-error">{errors.firstName}</p>
+                )}
+              </div>
+            </div>
+            <div className="x:scol-12">
+              <label className="x:fs-14">Apellidos</label>
+              <div className="input-field mrg-x-top-5">
+                <Field className="input" type="text" name="lastName" />
+                {touched.lastName && errors.lastName && (
+                  <p className="form-error">{errors.lastName}</p>
                 )}
               </div>
             </div>
@@ -94,16 +105,18 @@ ApplicantPage.getInitialProps = async ({ query }) => {
 }
 
 export default withFormik({
-  mapPropsToValues({ fullname, email, phone, course }) {
+  mapPropsToValues({ firstName, lastName, email, phone, course }) {
     return {
-      fullname: fullname || '',
+      firstName: firstName || '',
+      lastName: lastName || '',
       email: email || '',
       phone: phone || '',
       course: course || ''
     }
   },
   validationSchema: Yup.object().shape({
-    fullname: Yup.string().required('Por favor ingresa tu nombre completo'),
+    firstName: Yup.string().required('Por favor ingresa tu nombre '),
+    lastName: Yup.string().required('Por favor ingresa tus apellidos '),
     email: Yup.string()
       .email('El correo no es válido')
       .required('Por favor ingresa tu correo'),
@@ -114,23 +127,14 @@ export default withFormik({
       'Por favor elige al menos uno de los cursos que quieras asistir'
     )
   }),
-  async handleSubmit(values, { resetForm, setSubmitting }) {
+  async handleSubmit(values, { setSubmitting }) {
     /* let dataLayer = window.dataLayer || []
     function gtag() {
       dataLayer.push(arguments)
     } */
 
     try {
-      const res = await axios.post('/.netlify/functions/apply', values)
-
-      if (res && res.data.success) {
-        resetForm()
-        /* gtag('js', new Date())
-        gtag('config', 'AW-781067354')
-        gtag('event', 'conversion', {
-          send_to: 'AW-781067354/w_HcCKzxmI0BENrIuPQC'
-        }) */
-      }
+      await submitApplyFrom(values)
 
       Router.push('/thankyou')
     } catch (err) {

@@ -34,11 +34,5 @@
     "href": "/aplicar",
     "anchor": false,
     "classes": "l:hide"
-  },
-  {
-    "name": "Skillup",
-    "href": "/skillup",
-    "anchor": false,
-    "classes": "l:hide skillup-nav"
   }
 ]

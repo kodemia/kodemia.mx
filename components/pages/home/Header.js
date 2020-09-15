@@ -88,7 +88,7 @@ class HeaderHome extends Component {
                       </p>
                       <div className="x:mrg-top-30">
                         <Link href="#bootcamps">
-                          <Button>Conoce los Programas</Button>
+                          <Button>Conoce los Bootcamps</Button>
                         </Link>
                       </div>
                     </div>

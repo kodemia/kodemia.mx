@@ -9,7 +9,7 @@ import Button from '../components/button-submit'
 import HeaderCourse from '../components/pages/cursos/HeaderCourse'
 
 //api
-import { submitApplyFrom } from '../lib/api'
+import { submitApplyForm } from '../lib/api'
 
 const ApplicantPage = ({ errors, touched, isSubmitting }) => (
   <Layout title="Kodemia :: La primera academia real para programadores">
@@ -134,7 +134,7 @@ export default withFormik({
     } */
 
     try {
-      await submitApplyFrom(values)
+      await submitApplyForm(values)
 
       Router.push('/thankyou')
     } catch (err) {

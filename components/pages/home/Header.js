@@ -67,7 +67,7 @@ class HeaderHome extends Component {
           style={{
             height: this.state.height,
             backgroundImage:
-              'url(../../../static/img/backgrounds/portadakodemia.png)',
+              'url(../../../static/img/backgrounds/portadakodemia.webp)',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '75%',
             backgroundSize: 'cover'

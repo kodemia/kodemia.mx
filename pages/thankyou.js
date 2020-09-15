@@ -12,7 +12,7 @@ const ThankYouPage = () => (
   <Layout title="Kodemia :: La primera academia real para programadores">
     <HeaderCourse>
       <h1 className="title x:fs-22 s:fs-30 l:fs-40 c-white">
-        !Aplicación recibida!
+        ¡Aplicación recibida!
       </h1>
       <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-grey-400">
         Tu aplicación ha sido recibida y te hemos enviado toda la información,

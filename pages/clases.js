@@ -38,14 +38,14 @@ class Clases extends Component {
             const {
               date,
               description,
-              mentor,
+              mentor = {},
               playbackId,
               thumbnail,
               title,
               vimeoId = null
             } = klass
 
-            const { firstName, lastName } = mentor
+            const { firstName = '', lastName = '' } = mentor
             const mentorName = `${firstName} ${lastName}`
             const isAlt = !(index % 2 === 0)
 

@@ -84,7 +84,7 @@ class HeaderHome extends Component {
                         <Cursor white>o</Cursor>
                       </h1>
                       <p className="desc s:fs-18 l:fs-20 x:mrg-top-30 c-white">
-                        Aprende a programar desde cero hasta Fullstack
+                        Aprende a programar desde cero hasta Full Stack
                       </p>
                       <div className="x:mrg-top-30">
                         <Link href="#bootcamps">

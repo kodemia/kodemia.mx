@@ -10,7 +10,6 @@ __Inversión__
 Bootcamp Full Stack Developer Lifetime: $89,500 MXN (incluye IVA) + inscripción de $6,950
 
 - Tarjeta de crédito
-- PayPal
 - SPEI Transferencia interbancaria (10% de descuento en pago de contado)
 - Diferido a 4 pagos
 - Financiamiento

@@ -3,7 +3,7 @@
         {
           "name":  "Bootcamp Full Stack Developer (Lifetime)",
           "link": "cursos/bootcamp-full-stack-js-aka-js-lifetime",
-          "desc": "Inicia en el mundo de la programación como FullStack con MERN stack (Mongo, Express, React y Node)",
+          "desc": "Inicia en el mundo de la programación como Full Stack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
               "day": "19",
               "month": "Oct",
@@ -16,7 +16,7 @@
         {
           "name":  "Bootcamp Full Stack Developer (Live)",
           "link": "cursos/bootcamp-full-stack-js-aka-js-live",
-          "desc": "Inicia en el mundo de la programación como FullStack con MERN stack (Mongo, Express, React y Node)",
+          "desc": "Inicia en el mundo de la programación como Full Stack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
               "day": "19",
               "month": "Oct",
@@ -31,10 +31,10 @@
         {
           "name": "Bootcamp Full Stack Developer (Lifetime)",
           "link": "cursos/bootcamp-full-stack-py-aka-py-lifetime",
-          "desc": "Inicia en el mundo de la programación como FullStack con Javascript y Python",
+          "desc": "Inicia en el mundo de la programación como Full Stack con Javascript y Python",
           "schedule": {
-              "day": "19",
-              "month": "Oct",
+              "day": "16",
+              "month": "Nov",
               "year": "2020",
               "hour": "19:00 a 22:00"
           },
@@ -44,10 +44,10 @@
         {
           "name":  "Bootcamp Full Stack Developer (Live)",
           "link": "cursos/bootcamp-full-stack-py-aka-py-live",
-          "desc": "Inicia en el mundo de la programación como FullStack con Javascript y Python",
+          "desc": "Inicia en el mundo de la programación como Full Stack con Javascript y Python",
           "schedule": {
-              "day": "19",
-              "month": "Oct",
+              "day": "16",
+              "month": "Nov",
               "year": "2020",
               "hour": "19:00 a 22:00"
           },

@@ -32,7 +32,7 @@ class BootcampWhiteKoderPage extends Component {
             Bootcamp Full Stack Javascript (Lifetime)
           </h1>
           <p className="desc x:fs-14 s:fs-18 l:fs-20 x:mrg-top-20 c-pink">
-            Iniciate en el mundo de la programación como Full Stack
+            Iníciate en el mundo de la programación como Full Stack
           </p>
           <div className="s:mrg-top-40">
             <a

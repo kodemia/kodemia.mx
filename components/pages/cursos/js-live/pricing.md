@@ -1,8 +1,8 @@
 __Precio__
-Mensualidades desde $2,926 MXN
+Mensualidades desde $3,190 MXN
 
 __Financiamiento__
-Obtén financiamiento a 12, 18 y 24 meses. Con pagos desde $2,926 MXN
+Obtén financiamiento a 12, 18 y 24 meses. Con pagos desde $3,190 MXN
 
 Si tus causas y deseo de prepararte superan tu capacidad de pago, no te preocupes ni descartes la oportunidad, encontremos la solución juntos. Ponte en contacto con nosotros, nos interesa mucho escucharte.
 

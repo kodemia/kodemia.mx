@@ -19,6 +19,7 @@ class Courses extends Component {
     const regular = new Regular()
     regular.make()
   }
+
   render() {
     return (
       <>

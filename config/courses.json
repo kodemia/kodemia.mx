@@ -5,13 +5,14 @@
           "link": "cursos/bootcamp-full-stack-js-aka-js-lifetime",
           "desc": "Inicia en el mundo de la programación como Full Stack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
-              "day": "08",
-              "month": "Feb",
-              "year": "2021",
+              "day": "19",
+              "month": "Oct",
+              "year": "2020",
               "hour": "19:00 a 22:00"
           },
           "pastEvent": false,
-          "comingSoon": true
+          "comingSoon": true,
+          "enrollment":false
         },
         {
           "name":  "Bootcamp Full Stack Developer (Live)",
@@ -24,7 +25,8 @@
               "hour": "19:00 a 22:00"
           },
           "pastEvent": false,
-          "comingSoon": true
+          "comingSoon": false,
+          "enrollment":true
         }
     ],
     "python": [
@@ -39,7 +41,8 @@
               "hour": "19:00 a 22:00"
           },
           "pastEvent": false,
-          "comingSoon": false
+          "comingSoon": true,
+          "enrollment":false
         },
         {
           "name":  "Bootcamp Full Stack Developer (Live)",
@@ -52,7 +55,8 @@
               "hour": "19:00 a 22:00"
           },
           "pastEvent": false,
-          "comingSoon": false
+          "comingSoon": true,
+          "enrollment":false
         }
     ]
 }

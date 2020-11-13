@@ -68,6 +68,13 @@ const Course = ({ course, color }) => (
               </span>
             </p>
           ) : null}
+          {course.enrollment ? (
+            <p className="x:mrg-top-10">
+              <span className="x:fs-14 c-yellow-700 txt-uppercase">
+                Inscripciones abiertas
+              </span>
+            </p>
+          ) : null}
           {course.desc !== undefined ? <p>{course.desc}</p> : null}
         </div>
       </div>

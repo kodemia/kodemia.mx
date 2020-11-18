@@ -22,11 +22,13 @@ const Allies = () => (
               key={i}
               className="x:scol-6 s:scol-4 l:scol-3 x:center s:pad-lr-20 m:pad-lr-30"
             >
-              <img
-                className="img-liquid grayscale"
-                src={asset(ally.asset)}
-                alt={ally.name}
-              />
+              <a href={ally.href} target="_blank">
+                <img
+                  className="img-liquid grayscale"
+                  src={asset(ally.asset)}
+                  alt={ally.name}
+                />
+              </a>
             </div>
           ))}
         </div>

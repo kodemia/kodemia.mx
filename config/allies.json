@@ -1,62 +1,82 @@
 [
   {
     "name": "Grin",
-    "asset":"img/allies/grin.png"
+    "asset":"img/allies/grin.png",
+    "href": ""
   },
   {
     "name": "Iterando",
-    "asset":"img/allies/iterando.png"
+    "asset":"img/allies/iterando.png",
+    "href": ""
   },
   {
     "name": "Refly",
-    "asset": "img/allies/refly.png"
+    "asset": "img/allies/refly.png",
+    "href": ""
   },
   {
     "name": "Dinkbit",
-    "asset": "img/allies/dinkbit.png"
+    "asset": "img/allies/dinkbit.png",
+    "href": ""
   },
   {
     "name": "Bluepixel",
-    "asset": "img/allies/bluepixel-white.png"
+    "asset": "img/allies/bluepixel-white.png",
+    "href": ""
   },
   {
     "name": "IBM",
-    "asset":"img/allies/ibm.png"
+    "asset":"img/allies/ibm.png",
+    "href": ""
   },
   {
     "name": "Edrive",
-    "asset": "img/allies/edrive.png"
+    "asset": "img/allies/edrive.png",
+    "href": ""
   },
   {
     "name": "Wave Community",
-    "asset": "img/allies/wave-white.png"
+    "asset": "img/allies/wave-white.png",
+    "href": ""
   },
   {
-  "name": "Github Experts",
-  "asset": "img/allies/github-experts.png"
+    "name": "Github Experts",
+    "asset": "img/allies/github-experts.png",
+    "href": ""
   },
   {
     "name": "Econduce",
-    "asset": "img/allies/econduce.png"
+    "asset": "img/allies/econduce.png",
+    "href": ""
   },
   {
     "name": "COW",
-    "asset": "img/allies/cow-white.png"
+    "asset": "img/allies/cow-white.png",
+    "href": ""
   }, 
   {
     "name": "Asociación de Internet",
-    "asset": "img/allies/asociacion-internet-white.png"
+    "asset": "img/allies/asociacion-internet-white.png",
+    "href": ""
   },
   {
     "name": "Casa Bravo",
-    "asset": "img/allies/casa-bravo.png"
+    "asset": "img/allies/casa-bravo.png",
+    "href": ""
   },
   {
     "name": "Talent Network",
-    "asset":"img/allies/talent-network.png"
+    "asset":"img/allies/talent-network.png",
+    "href": ""
   },
   {
-  "name": "Toroto",
-  "asset": "img/allies/toroto.png"
+    "name": "Toroto",
+    "asset": "img/allies/toroto.png",
+    "href": ""
+  },
+  {
+    "name": "Jooble",
+    "asset": "img/allies/jooble.png",
+    "href": "https://mx.jooble.org/trabajo-programador"
   }
 ]

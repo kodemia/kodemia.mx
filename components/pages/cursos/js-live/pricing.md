@@ -1,18 +1,22 @@
 
-__Financiamiento__
-Obtén financiamiento a 12, 18 y 24 meses. Con pagos desde $3,509 MXN
+__Meses sin intereses__
+Aplica por un financiamiento de 15 ó 18 meses sin intereses con mensualidades desde $3,883.
+
 
 Si tus causas y deseo de prepararte superan tu capacidad de pago, no te preocupes ni descartes la oportunidad, encontremos la solución juntos. Ponte en contacto con nosotros, nos interesa mucho escucharte.
 
 __Inversión__
-Bootcamp Full Stack Developer Live: $65,500 MXN (incluye IVA) + inscripción de $5,700
+Bootcamp Full Stack Developer Live: $69,900 MXN (incluye IVA) + inscripción de $3,500*
 
-- Tarjeta de crédito
-- SPEI Transferencia interbancaria (10% de descuento en pago de contado)
-- Pre-pago Kodemia (4-12 meses)
-- Financiamiento
-- 15 o 18 MSI
+*Si aplicas a un financiamiento tu inscripción aumenta, se agrega el 5% del monto a financiar por la apertura del crédito.
+
+Puedes hacer tu pago con los siguientes métodos:
+  - Tarjeta de crédito
+  - SPEI Transferencia interbancaria
+  - Pre-pago Kodemia (4-12 meses)
+  - Financiamiento (12, 18 ó 24 meses)
+  - Meses sin intereses (15 ó 18 meses)
 
 __Inscripción__
 Apresúrate a reservar tu lugar, tenemos cupos limitados y una gran demanda. 
-Aparta tu lugar con sólo: $5,700
+Aparta tu lugar con sólo: $3,500.

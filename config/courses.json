@@ -1,21 +1,7 @@
 {
     "javascript": [
         {
-          "name":  "Bootcamp Full Stack Developer (Lifetime)",
-          "link": "cursos/bootcamp-full-stack-js-aka-js-lifetime",
-          "desc": "Inicia en el mundo de la programación como Full Stack con MERN stack (Mongo, Express, React y Node)",
-          "schedule": {
-              "day": "19",
-              "month": "Oct",
-              "year": "2020",
-              "hour": "19:00 a 22:00"
-          },
-          "pastEvent": false,
-          "comingSoon": true,
-          "enrollment":false
-        },
-        {
-          "name":  "Bootcamp Full Stack Developer (Live)",
+          "name":  "Bootcamp Full Stack Javascript (Modo Live)",
           "link": "cursos/bootcamp-full-stack-js-aka-js-live",
           "desc": "Inicia en el mundo de la programación como Full Stack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
@@ -26,32 +12,32 @@
           },
           "pastEvent": false,
           "comingSoon": false,
-          "enrollment":true
-        }
-    ],
-    "python": [
+          "enrollment": true
+        },
         {
-          "name": "Bootcamp Full Stack Developer (Lifetime)",
-          "link": "cursos/bootcamp-full-stack-py-aka-py-lifetime",
-          "desc": "Inicia en el mundo de la programación como Full Stack con Javascript y Python",
+          "name":  "Bootcamp Full Stack Javascript (Modo Live)",
+          "link": "cursos/bootcamp-full-stack-js-aka-js-lifetime",
+          "desc": "Inicia en el mundo de la programación como Full Stack con MERN stack (Mongo, Express, React y Node)",
           "schedule": {
-              "day": "16",
-              "month": "Nov",
-              "year": "2020",
+              "day": "",
+              "month": "Abr",
+              "year": "2021",
               "hour": "19:00 a 22:00"
           },
           "pastEvent": false,
           "comingSoon": true,
-          "enrollment":false
-        },
+          "enrollment": false
+        }
+    ],
+    "python": [
         {
-          "name":  "Bootcamp Full Stack Developer (Live)",
+          "name":  "Bootcamp Web Developer + Data (Modo Live)",
           "link": "cursos/bootcamp-full-stack-py-aka-py-live",
           "desc": "Inicia en el mundo de la programación como Full Stack con Javascript y Python",
           "schedule": {
-              "day": "16",
-              "month": "Nov",
-              "year": "2020",
+              "day": "15",
+              "month": "Mar",
+              "year": "2021",
               "hour": "19:00 a 22:00"
           },
           "pastEvent": false,

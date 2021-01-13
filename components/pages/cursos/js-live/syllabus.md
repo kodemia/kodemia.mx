@@ -5,49 +5,46 @@ __Módulo 0 - Introducción a la programación__
 - Pensamiento paralelo
 - Pseudocódigo
 - Diagramas de flujo
+- Primeros programas con Javascript
 
 __Módulo 1 - Desarrollador Web Front-End__
-- Git y Github
+- Git & Github
 - HTML5
 - CSS3
-- SASS 
-- Bootstrap4
+- Sass
+- Bootstrap 4
 - Responsividad / Media Queries
 - Maquetado
 - JavaScript (ES5 & ES6)
   - Estructuras de datos
-  - Ciclos
   - Estructuras de control
+  - Ciclos
   - Funciones
 - JQuery
 - AJAX
 - DOM
 
 __Módulo 2 - Desarrollador Back-End__
-- Linux y sistemas *NIX
-- Protocolos
+- Linux / Consola / Protocolos
+- La terminal / sistemas *NIX
 - Modelo Cliente-Servidor
 - Hypermedia
-- NodeJS y npm
-- NodeJS y programación asíncrona con JavaScript
-- Aplicaciones web usando ExpressJS
-- Introducción a las bases de datos
-- Bases de datos no relacionales con MongoDB
-- Mongo y mongoose
-- Diseño de API's con NodeJS y Express
+- REST / RESTfull / API
 - Clean architecture
-- JWT
-- Publica tus aplicaciones en Internet siguiendo buenas prácticas
+- NodeJS / npm
+- ExpressJS
+- Bases de datos
+- Mongo y Mongoose
+- NodeJS y programación asíncrona
+- Autenticación JWT
 - Cloud (IBM & AWS)
-- Despliegues
-- Serverless technologies
-- Watson services
+  - Despliegues / Funciones
+  - Load Balancer / Cloudant
+  - Watson services IA
 
-__Módulo 3 - MERN Stack y microservicios__
-- Diseño de aplicaciones MVC
-- Programación asíncrona Cliente-Servidor
-- Introducción a ReactJS
-- Creación de componentes web
-- Aplicaciones MVC utilizando React y datos desde API’s
-- Manejo de estados con React Hooks
-- Introducción a VueJS
+__Módulo 3 - Front-End moderno__
+- ReactJS
+- React Router
+- React Hooks
+- Fetch API
+- Babel

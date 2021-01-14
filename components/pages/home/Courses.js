@@ -47,7 +47,7 @@ class Courses extends Component {
                 <div className="line">
                   <div className="x:scol-12 x:mrg-bottom-20 x:mrg-top-20 x:mrg-left-20 m:mrg-bottom-40 m:mrg-top-40">
                     <h3 className="c-white">
-                      Pytho<Cursor white>n</Cursor>
+                      Javascript + Pytho<Cursor white>n</Cursor>
                     </h3>
                   </div>
                   {PythonCourses.map((course, i) => (
